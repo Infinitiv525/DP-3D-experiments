@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-19",
+  "repository": "BGLab/FlowBench",
+  "revision": "937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "method": "Read bounded ZIP local-header/decompressed NPY header from remote X partial download and Y HTTP Range response, without downloading data to the PC",
+  "X": {"member": "data.npy", "shape": [1000, 2, 128, 128, 128], "dtype": "float32", "fortran_order": false},
+  "Y": {"shape": [1000, 4, 128, 128, 128], "dtype": "float32", "fortran_order": false},
+  "X_first_sample": {
+    "channel_0_range": [-0.4882756, 1.0420108],
+    "channel_0_unique_count": 55342,
+    "channel_1_range": [198.0, 198.0],
+    "channel_1_unique_count": 1
+  },
+  "semantics_source": "https://arxiv.org/html/2503.17289v1 section 2.1: X=[SDF,Re], Y=[u,v,w,p]",
+  "full_archive_integrity_checked": false,
+  "all_samples_checked": false,
+  "warning": "Header and first-sample probe only; not a complete data or physics acceptance. Full SHA256/audit runs separately in job 121238."
+}

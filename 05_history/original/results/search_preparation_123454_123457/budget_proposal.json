@@ -1,0 +1,20 @@
+{
+  "status": "PROPOSED_NOT_APPROVED_NOT_FROZEN",
+  "measurement_source_job": "123454",
+  "measured_one_20epoch_process_wall_seconds": 486,
+  "trainer_elapsed_seconds": 484.1379839172587,
+  "budget_rule": "12 trials * one measured process time *1.2, rounded up to next900seconds. One manual config/seed/node only, not a worst-case runtime guarantee.",
+  "training_seconds_per_method_per_search_repeat": 7200,
+  "max_attempts_including_three_shared": 12,
+  "methods_with_search": 6,
+  "search_repetitions": 3,
+  "logical_training_search_gpu_hours_cap": 36.0,
+  "final_training_count_before_deduplication": 95,
+  "final_training_process_seconds_cap": 900,
+  "final_training_gpu_hours_cap": 23.75,
+  "llm_decisions_process_gpu_hours_cap": 6.3,
+  "qc_gpu_hours_allowance": 1.0,
+  "proposed_global_physical_gpu_hours_cap": 70,
+  "scope": "Main benchmark only; earlier pilot costs are recorded separately. Primary training budget does not hide LLM overhead; global physical cap includes overhead and failures.",
+  "important": "Not an authorization. Need current allocation balance, final data/boundary/latency audit, uniform frozen prompt, sampler resume/ledger integration and user approval before main search. Shared starts are charged to every method logically, executed once physically."
+}

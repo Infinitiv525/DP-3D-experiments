@@ -1,0 +1,43 @@
+{
+  "status": "FNO_RESOLUTION_BENCHMARK_OK",
+  "device": "NVIDIA H200",
+  "torch_version": "2.12.0+cu130",
+  "target_p99_ms": 5.0,
+  "results": [
+    {
+      "dimensions": [
+        64,
+        32,
+        16
+      ],
+      "parameter_count": 3984796,
+      "training_probe_loss": 1.0054913759231567,
+      "peak_gpu_memory_bytes": 230924288,
+      "iterations": 300,
+      "p50_ms": 0.7721279859542847,
+      "p95_ms": 0.7815727919340134,
+      "p99_ms": 0.7911373060941697,
+      "mean_ms": 0.7721849594513576
+    },
+    {
+      "dimensions": [
+        128,
+        64,
+        32
+      ],
+      "parameter_count": 3984796,
+      "training_probe_loss": 0.9981741905212402,
+      "peak_gpu_memory_bytes": 519405568,
+      "iterations": 300,
+      "p50_ms": 1.3621280193328857,
+      "p95_ms": 1.3687087655067445,
+      "p99_ms": 1.3708594608306885,
+      "mean_ms": 1.362312641143799
+    }
+  ],
+  "passes_target": {
+    "64x32x16": true,
+    "128x64x32": true
+  },
+  "scope_note": "Synthetic architecture benchmark, not trained-model accuracy."
+}

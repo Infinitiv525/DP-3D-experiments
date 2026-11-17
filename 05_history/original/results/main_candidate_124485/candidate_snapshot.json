@@ -1,0 +1,38 @@
+{
+  "status": "MAIN_CANDIDATE_SNAPSHOT_NOT_EXECUTION_FREEZE",
+  "manifest_file_sha256": "02dcf0694b7e669e57b318edde65fab6c5a43adb5840448ea04f76ef18a27b4a",
+  "source_files": {
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/main_protocol.py": "0ce2ed36236f67fad261fa1bbc48995b6363ac41bb09be19f6ac908868d7b776",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/test_main_protocol.py": "d52dc8f7a6f8b4ee71a2b7529ac9d0cad3a8e1d377c19a41d9e757921aba88bd",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/prepare_main_candidate.py": "1c7c4757923d941bc28f5452bc3c65233c227ca44a7faa90c7b4e45b58f7c462",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/training/train_flowbench_main.py": "69cb93cb90b146ca8f9c3f18878b186f0eee51b342f0d10947f0470bb3bf53f2",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/training/train_flowbench_protocol.py": "b1575230442c7a71e4dd9ad1b07f6327d30abff81be576310427e74c47155dae",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/training/train_flowbench_smoke.py": "8030d5f0ba7de270367a69659e9cccba45f52d2e41e8ddf90c8844e83098c15b",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/training/fno_model.py": "286fc76f885ffb365be9a8bf76acec71e15853ae816c6a1f820be30447477bf4",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/training/flowbench_physics.py": "dd26b896c30a7a0ccc317f562b19c2dd2119de34860076101ed3cd0e7a7a24e7",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/training/flowbench_protocol_metrics.py": "e4f0d2e6d89dd76e52a021655e2a75b2eb1f92a164345fc2bd05823010de56a2",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/configurator_contract_v3.py": "73983f4a52458e8146766b25203f918b441fd406800bc82db0a403b07dcd36d1",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/configurator_transport_v1.py": "08a4fda7e77825d0c36dc339842ed68cfe23f0c4ad9bc03759a1cf7c3145fa6d",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/propose_configuration_transport_v1.py": "1799e79456b4fb89368297ad5dd4145913b0a33d0455ee9d93049b04735e2784",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/propose_configuration_v3.py": "bf5df494ac08311d1eedd462268a501555badd9923efa0a5b75a811361b5c828",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/allocation_budget.py": "99e7e7328b727b05079dee3d182b28799683e369c40da0997234c73592d7c8f9",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/llm/settle_allocation_uid.py": "9d9574f5ad55a44ae8ac2ff88d36d153aab3b88a64476336b02fd649cd6456ac",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/scripts/116_prepare_main_candidate.sbatch": "027ecf87c88282ca457f5a1a762427768dfa74d323c68d0819c63a6ada5ee6fd"
+  },
+  "inputs": {
+    "/mnt/project/perun2601449/dp_llm_cfd/public_data/flowbench/937c672604d4c9f39aceedf1fa2f0a603695264b/uniform64_native_gauge/split.json": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+    "/mnt/project/perun2601449/dp_llm_cfd/public_data/flowbench/937c672604d4c9f39aceedf1fa2f0a603695264b/uniform64_native_gauge/pressure_gauge_audit.json": "349edcb7e806116ee91f827e87106d2b8c8ec9670cf313b28f9791fcdcec9d43",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/llm_feedback/cycle_123438/normalization.json": "4be8c93636019e6ab4765dc366e041dd28a0bc97fb560b715b0c44192edf2ce9",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/flowbench/data_audit_123590/summary.json": "19ad62c39f7997194c87489a64b586dc8da5103f18008a6b88cf886c66d601b6",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/llm_search_prepare/transport_review_123872/summary.json": "a7a37426382fb09ee7a779db79f2236acdde88f461db4b8ca72fd08d4dece383",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/config/llm_configurator_v3_20261021.json": "11df0b1e4f6c44fe0694fa7f2499bd0a8ce2828fd54d92a8c729c7c6ad618309",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/llm_feasibility/prepare_123299/qwen3_8b.json": "418e2df55103b04a7ade9299bc4c3c64ef7cb3ebe85761863bbf00cca7a78f07",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/llm_feasibility/prepare_123299/ministral3_8b.json": "a0f99f83c8af197e23e5d494f1bb564aee5b23c26aa07d0a067b286a8ba91bea",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/llm_feasibility/prepare_123299/phi4_mini.json": "92fc0c1b272b83199b6e5c6d5035f0c842df7fc12fb4665d8236e5ba7d6bc917",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/llm_feasibility/prepare_123299/granite33_8b.json": "1436534386790cddcf5757a1f16db1c63374666a99fc2131e1702c688fdc5db7"
+  },
+  "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf",
+  "transport_policy": "single_complete_json_fence_only_v1"
+}

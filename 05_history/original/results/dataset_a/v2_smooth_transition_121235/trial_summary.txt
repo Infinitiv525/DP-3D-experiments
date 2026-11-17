@@ -1,0 +1,13 @@
+status=SMOOTH_TRANSITION_TRIAL_COMPLETE
+scenario_id=a2_mp_001
+mesh_size_factor=1.0
+wake_transition_m=0.01
+tau_start=0
+tau_end=40
+continued_solver_wall_seconds=15051
+total_measured_wall_seconds=16074
+max_courant_tau2_40=0.2001386544
+continuity_tau2_40=8.381462839e-11
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_mp_001_solvgate_121235_5_smooth
+production_accepted=no
+note=Only_selected_times_exported_and_no_window_fidelity_acceptance_claimed

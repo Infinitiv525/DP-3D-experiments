@@ -1,0 +1,32 @@
+{
+  "status": "PAIRED_STARTUP_MESH_COMPARISON_COMPLETE",
+  "solver_job": "109914",
+  "fine_reference_job": "109888",
+  "screening_thresholds": {
+    "velocity_relative_l2": 0.05,
+    "pressure_relative_l2": 0.1
+  },
+  "interpretation": "Difference from the finer numerical solution, not error against physical truth.",
+  "results": [
+    {
+      "scenario_id": "a2_mp_001",
+      "tau_end": 2,
+      "velocity_relative_l2_common_fluid": 0.005632400050903742,
+      "pressure_mean_aligned_relative_l2_common_fluid": 0.12516805493800345,
+      "velocity_vector_rmse_over_u_inlet": 0.005655619709318721,
+      "pressure_rmse_over_u_inlet_squared": 0.0034359864410838654,
+      "mask_disagreement_fraction": 3.814697265625e-06,
+      "common_fluid_points": 261637,
+      "fine_solver_wall_s": 970,
+      "coarse_solver_wall_s": 266,
+      "solver_wall_speedup": 3.6466165413533833,
+      "fine_solver_core_h": 8.622222222222222,
+      "coarse_solver_core_h": 2.3644444444444446,
+      "fine_max_courant": 0.2003867678,
+      "coarse_max_courant": 0.2003172489,
+      "exploratory_field_screen_passed": false,
+      "production_mesh_accepted": false,
+      "limitation": "Startup at tau=2 only; no late-time, force or time-step convergence validation."
+    }
+  ]
+}

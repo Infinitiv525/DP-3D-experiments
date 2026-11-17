@@ -1,0 +1,9 @@
+PRÍPRAVA HLAVNÉHO EXPERIMENTU
+MAIN_CANDIDATE_PLANNING_CHECKS_PASSED
+9nových spoločných20epoch tréningov;18hľadaní,každé max12pokusov vrátane3shared.
+Najviac162adaptívnych návrhov a95finálnych tréningových použití, s5novými seedmi.
+Presné finálne duplikáty sa vykonajú iba raz, ale všetky priradenia zostanú uložené.
+Pilotné výsledky sa nedajú použiť ako hlavné výsledky. Test sa neotvára.
+Pripravené sú recepty, výber a deduplikácia, seedové pravidlá a approval-gated tréningový adaptér.
+Zatiaľ NIE je uvoľnené celé main riadenie ani test. Neexistuje používateľovo70GPU-h schválenie.
+Tento krok nespustil žiadnu GPU úlohu.

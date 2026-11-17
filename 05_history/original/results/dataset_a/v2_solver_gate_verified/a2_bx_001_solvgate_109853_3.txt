@@ -1,0 +1,11 @@
+status=DATASET_A_V2_SOLVER_GATE_OK
+scenario_id=a2_bx_001
+family=box
+tau_end=2
+physical_end_time_s=1.082352941
+time_steps=3376
+wall_seconds=705
+mpi_ranks=32
+max_courant=0.5069139411
+last_cumulative_continuity_error=1.610294252e-10
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_bx_001_solvgate_109853_3

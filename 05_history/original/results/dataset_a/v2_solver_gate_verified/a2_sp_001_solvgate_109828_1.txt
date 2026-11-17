@@ -1,0 +1,11 @@
+status=DATASET_A_V2_SOLVER_GATE_OK
+scenario_id=a2_sp_001
+family=sphere
+tau_end=2
+physical_end_time_s=1.013333333
+time_steps=638
+wall_seconds=64
+mpi_ranks=32
+max_courant=0.5024603345
+last_cumulative_continuity_error=-3.689412523e-11
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_sp_001_solvgate_109828_1

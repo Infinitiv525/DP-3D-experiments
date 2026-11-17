@@ -1,0 +1,12 @@
+ŠTYRI LOKÁLNE LLM A DVA NADVÄZUJÚCE POKUSY
+SEQUENTIAL_V3_PREFLIGHT_QC_NOT_PASSED
+Rovnaký prompt v3, prvý vstup, rozpočet a tri spoločné štarty. Druhý návrh vidí skutočný prvý výsledok.
+Random/TPE používa rovnaké shared dáta a seedy. Žiadny test ani hlavný experiment.
+qwen3_8b: completed=2, decision=97.84s
+ministral3_8b: completed=0, decision=219.80s
+phi4_mini: completed=2, decision=112.44s
+granite33_8b: completed=2, decision=161.64s
+random: completed=2, decision=0.00s
+tpe: completed=2, decision=0.00s
+Fyzický ledger vrátane1s/job: 0.328333GPU-h.
+Two epochs, two adaptive attempts and one search repetition. Do not infer model-family ranking or comparative LLM utility.

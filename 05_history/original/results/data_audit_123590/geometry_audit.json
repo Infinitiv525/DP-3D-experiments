@@ -1,0 +1,11 @@
+{
+  "status": "NATIVE_INPUT_GEOMETRY_AUDIT_COMPLETE",
+  "pair_count": 4950,
+  "native_cross_split_near_flags": [],
+  "coarse_cross_split_near_flags": [],
+  "exact_cross_split_coarse_sdf_collisions": [],
+  "broad_cross_split_similarity_count": 7,
+  "largest_cross_split_native_iou": 0.9350767583006069,
+  "max_input_recompute_delta": 0.0,
+  "test_Y_analyzed": false
+}

@@ -1,0 +1,39 @@
+VYHODNOTENIE FIDELITY OKIEN — 15. 10. 2026
+Solverove vetvy 110147, export a porovnanie 110746.
+
+Oba nove behy a exporty presli numerickymi/datovymi kontrolami.
+SHA-256 vzdialenych dat aj lokalnych metadat su v poriadku.
+Porovnavame tri konfiguracie rovnakej treningovej geometrie do tau=40.
+
+KANDIDAT OPROTI JEMNEJSEJ SIETI
+Okno tau    U globalne     U v uplave     Tlak (zarovnany priemer)
+4–12        1,284 %        2,334 %        20,055 %
+12–24       1,596 %        2,206 %        40,403 %
+24–40       1,525 %        2,103 %        43,173 %
+
+Prahy: U globalne a v uplave <=5 %, tlak <=10 %.
+U splna prahy, tlak ich prekrocil vo vsetkych oknach.
+Priemerny odpor Cd sa lisi nanajvys o 2,116 % (limit 5 %).
+Absolutny rozdiel priemerneho Cl je nanajvys 0,028725 (limit 0,05).
+
+KONTROLA CASOVEHO KROKU NA ROVNAKEJ REDSEJ SIETI
+Pri sprisneni ciela Co z 0,2 na 0,1 su rozdiely:
+U globalne najviac 0,127 %, U v uplave 0,206 %, tlak 0,810 %.
+Casove prahy aj prahy priemernych sil su splnene vo vsetkych oknach.
+Zmensovanie kroku na redsej sieti preto pravdepodobne nevyriesi hlavny
+tlakovy rozdiel medzi sietami.
+
+ROZHODNUTIE
+Redsia siet nesplnila celu branu a zatial nie je prijata pre produkciu.
+Prva produkcna davka zostava blokovana. Velkost CPU rozpoctu uz nie je
+hlavnym obmedzenim; treba overit kvalitu tlakovej referencie a kandidata.
+
+Co zatial nevieme: jemnejsia siet sama nema preukazanu konvergenciu.
+43 % znamena odchylku od jej numerickeho vysledku cez okno, nie overenu
+chybu oproti realite. Jednotlive snimky sa mozu lisit viac nez suhrn okna.
+Nejde o zlyhanie vypoctu, exportu alebo bilancie toku.
+
+Dalsi odporucany krok: lokalizovat rozdiel tlakov v existujucich poliach
+a overit casovu citlivost a tlakovu diskretizaciu jemnejsej referencie.
+Potom sa da cielene rozhodnut o sieti. Povodny limit sa spatne neuvolnuje.
+Pri tomto vyhodnoteni sa nove vypocty nespustili.

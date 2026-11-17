@@ -1,0 +1,37 @@
+{
+  "status": "EXPORT_RESOLUTION_STUDY_OK",
+  "reference_resolution": [
+    256,
+    128,
+    64
+  ],
+  "scenarios": [
+    "to002",
+    "tr002"
+  ],
+  "times_s": [
+    160.0,
+    180.0,
+    200.0
+  ],
+  "comparison_rows": 12,
+  "aggregates": {
+    "grid64": {
+      "cells_per_diameter_x": 3.4650002065301067,
+      "mask_disagreement_fraction": 0.00146484375,
+      "velocity_relative_l2_global": 0.0019495517093067367,
+      "velocity_relative_l2_wake": 0.004141928744502366,
+      "pressure_nrmse_global": 0.04222151326636473,
+      "divergence_rms_s_inv": 0.08190429048272026
+    },
+    "grid128": {
+      "cells_per_diameter_x": 6.9850000260211536,
+      "mask_disagreement_fraction": 0.00042724609375,
+      "velocity_relative_l2_global": 0.003973799757659435,
+      "velocity_relative_l2_wake": 0.0062434012070298195,
+      "pressure_nrmse_global": 0.04185213831563791,
+      "divergence_rms_s_inv": 0.06461672657809932
+    }
+  },
+  "interpretation_note": "This tests regular-grid sampling convergence, not CFD mesh convergence."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "BASELINE_VALIDATION_ROLLOUT_OK",
+  "validation_only": true,
+  "test_scenarios_read": false,
+  "rollout_steps": 200,
+  "physical_horizon_s": 40.0,
+  "scenario_summaries": [
+    {
+      "scenario_id": "va001",
+      "finite_all_steps": true,
+      "steps": 200,
+      "mean_rollout_mse_normalized": 1070798.6296052965,
+      "final_rollout_mse_normalized": 15324011.0,
+      "mean_persistence_mse_normalized": 0.6803828820367925,
+      "final_persistence_mse_normalized": 0.24533097445964813
+    },
+    {
+      "scenario_id": "va002",
+      "finite_all_steps": true,
+      "steps": 200,
+      "mean_rollout_mse_normalized": 2903946.340076236,
+      "final_rollout_mse_normalized": 46907100.0,
+      "mean_persistence_mse_normalized": 1.3414586855657398,
+      "final_persistence_mse_normalized": 0.3123442232608795
+    }
+  ],
+  "scope_note": "Smoke-model stability diagnostic, not final test evaluation."
+}

@@ -1,0 +1,22 @@
+status=CYLINDER3D_EXTENDED_ANIMATION_OK
+timestamp_utc=2026-10-08T13:56:48Z
+job_id=101829
+host=cn01
+temporary_reconstructed_data_removed=yes
+4.8M	/mnt/project/perun2601449/dp_llm_cfd/results/cylinder3d/cylinder3d_extended_re200_coarse_101826/visuals/velocity_midplane_30s.mp4
+48K	/mnt/project/perun2601449/dp_llm_cfd/results/cylinder3d/cylinder3d_extended_re200_coarse_101826/visuals/velocity_midplane_30s_preview.png
+{
+  "status": "CYLINDER3D_ANIMATION_OK",
+  "source_series": "/mnt/project/perun2601449/dp_llm_cfd/pilots/cylinder3d/cylinder3d_extended_re200_coarse_101826/VTK_animation_extended/cylinder3d_extended_re200_coarse_101826.vtm.series",
+  "frame_count": 301,
+  "time_start_s": 0.0,
+  "time_end_s": 30.0,
+  "fps": 10,
+  "velocity_range_m_s": [
+    2.0125866285525262e-05,
+    0.0352407805621624
+  ],
+  "video": "/mnt/project/perun2601449/dp_llm_cfd/results/cylinder3d/cylinder3d_extended_re200_coarse_101826/visuals/velocity_midplane_30s.mp4",
+  "preview": "/mnt/project/perun2601449/dp_llm_cfd/results/cylinder3d/cylinder3d_extended_re200_coarse_101826/visuals/velocity_midplane_30s_preview.png",
+  "note": "Pilot visualization, not a validated reference result."
+}

@@ -1,0 +1,32 @@
+STREDNE HUSTA SIET ZMIESANEJ DVOJICE — 15. 10. 2026
+Solver 109914, vyhodnotenie 109915; referencia 109888.
+
+Simulacia aj export presli numerickymi kontrolami.
+Kontrolne sucty vzdialenych vysledkov aj lokalnych metadat su v poriadku.
+
+Porovnanie pri tau=2 na rovnakom rastri 128x64x32:
+Povodna siet: 1 233 859 buniek, 970 s na 32 CPU.
+Stredna siet (faktor 1,4): 519 365 buniek, 266 s, zrychlenie 3,65x.
+Redsa siet (faktor 1,7): 291 997 buniek, 101 s, zrychlenie 9,60x.
+
+Odchylky voci povodnej sieti na spolocnych tekutinovych bodoch:
+Stredna siet: rychlost 0,563 %, tlak po zarovnani priemeru 12,517 %.
+Redsa siet: rychlost 0,630 %, tlak po zarovnani priemeru 12,846 %.
+Orientacne limity: rychlost do 5 %, tlak do 10 %.
+Oba kandidaty splnili rychlostny limit, ale prekrocili tlakovy.
+
+Stredna siet pocitala 2,63x dlhsie nez redsa, ale tlakova odchylka klesla
+iba o 0,329 percentualneho bodu. Nie je potvrdene, co tlakovy rozdiel
+sposobuje. Dalsi kandidat sa preto nema vyberat iba postupnym zvacsovanim
+poctu buniek bez diagnostiky existujucich poli.
+
+ODPORUCANIE
+Na existujucich datach zistit, kde v priestore sa tlakove riesenia lisia,
+ako vyzera odchylka v uplave a aku ulohu ma normalizacia chyby.
+Potom overit citlivost na casovy krok a pripadne navrhnut cielene
+zjemnenie. Nezvysovat spatne limit 10 % len preto, aby kandidat presiel.
+
+Obmedzenia: len skory stav tau=2, jedna geometria, jedno meranie casu.
+Povodna siet je numericka referencia, nie overena fyzikalna pravda.
+Toto nie je potvrdenie vhodnosti pre plne trajektorie a dataset.
+Pri tejto kontrole sa nove vypocty nespustali.

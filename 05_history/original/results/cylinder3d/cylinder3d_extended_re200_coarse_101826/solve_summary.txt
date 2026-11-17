@@ -1,0 +1,37 @@
+status=CYLINDER3D_EXTENDED_SOLVE_OK
+timestamp_utc=2026-10-08T13:50:42Z
+run_id=cylinder3d_extended_re200_coarse_101826
+job_id=101826
+host=cn01
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/pilots/cylinder3d/cylinder3d_extended_re200_coarse_101826
+result_dir=/mnt/project/perun2601449/dp_llm_cfd/results/cylinder3d/cylinder3d_extended_re200_coarse_101826
+latest_time_s=30
+saved_times_processor0=301
+solve_wall_seconds=184.938
+case_bytes=1728002438
+validation_status=extended_pilot_not_final_reference
+GAMG:  Solving for p, Initial residual = 0.0008405075023, Final residual = 4.818755525e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 2.598233265e-05, Final residual = 4.431677488e-08, No Iterations 3
+time step continuity errors : sum local = 3.675441366e-12, global = 9.986713226e-13, cumulative = -3.903249478e-09
+ExecutionTime = 146.03 s  ClockTime = 180 s
+
+forceCoeffs forceCoefficients write:
+    Coefficient	Total	Pressure	Viscous	Internal
+    Cd:	1.425276726	1.20627614	0.2190005865	0
+    Cd(f):	0.7127588383	0.6032772931	0.1094815452	0
+    Cd(r):	0.7125178882	0.6029988468	0.1095190414	0
+    Cl:	0.5157838824	0.4675116116	0.04827227089	0
+    Cl(f):	0.2568306389	0.2337558058	0.02307483311	0
+    Cl(r):	0.2589532435	0.2337558058	0.02519743777	0
+    CmPitch:	-0.001061302329	-2.249715601e-18	-0.001061302329	0
+    CmRoll:	0.0001204750469	0.0001392231423	-1.874809541e-05	0
+    CmYaw:	7.716680424e-05	9.261707783e-05	-1.545027359e-05	0
+    Cs:	-4.387840177e-07	1.288051191e-16	-4.387840178e-07	0
+    Cs(f):	7.694741223e-05	9.261707783e-05	-1.56696656e-05	0
+    Cs(r):	-7.738619625e-05	-9.261707783e-05	1.523088159e-05	0
+
+    writing force and moment coefficient files.
+
+End
+
+Finalising parallel run

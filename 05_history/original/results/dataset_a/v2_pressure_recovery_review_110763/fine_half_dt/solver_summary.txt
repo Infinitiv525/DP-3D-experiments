@@ -1,0 +1,11 @@
+status=PRESSURE_RECOVERY_SOLVER_OK
+label=fine_half_dt
+tau_start=24
+tau_end=28
+checkpoint=10.10526315792
+source_case=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/fidelity/a2_mp_001_fidelity_110147_fine_dt02
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/pressure_recovery/a2_mp_001_precovery_110763_fine_half_dt
+wall_seconds=5948
+core_hours=52.8711
+max_courant=0.2000640553
+continuity=-1.161193695e-10

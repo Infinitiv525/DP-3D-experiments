@@ -1,0 +1,15 @@
+status=DATASET_A_V2_SOLVER_GATE_OK
+scenario_id=a2_mp_001
+mesh_job=109913
+run_label=coarse
+family=mixed_pair
+tau_end=2
+physical_end_time_s=0.8421052632
+time_steps=2950
+wall_seconds=266
+mpi_ranks=32
+target_max_courant=0.2
+initial_delta_tau=0.0001
+max_courant=0.2003172489
+last_cumulative_continuity_error=5.036412122e-11
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_mp_001_solvgate_109914_5_coarse

@@ -1,0 +1,33 @@
+{
+  "status": "FULL_COST_PILOT_EXPORTED_AND_AUDITED",
+  "scenario_id": "a2_mp_001",
+  "tau_range": [
+    0,
+    400
+  ],
+  "state_count": 461,
+  "solver_core_hours": 138.24888889000002,
+  "export_wall_seconds": 1822.3086527325213,
+  "solver_stage_allocated_core_hours": 138.32888888888888,
+  "export_allocated_core_hours": 0.506196847981256,
+  "measured_solver_plus_export_core_hours": 138.83508573687013,
+  "compact_npz_bytes": 1743608661,
+  "max_sampled_inlet_outlet_imbalance_over_inlet": 5.893684206606081e-08,
+  "max_sampled_periodic_imbalance_over_inlet": 2.5752631579581333e-09,
+  "sampled_flux_screen_passed": true,
+  "finite_force_history_rows": 42736,
+  "maximum_exported_speed_over_inlet": 1.493364930152893,
+  "budget_original_cpu_core_h": 4237,
+  "remaining_budget_verified": false,
+  "illustrative_72_core_h": 9996.126173054648,
+  "illustrative_50_core_h": 6941.754286843507,
+  "per_scenario_ceiling_original_budget_72": 58.84722222222222,
+  "per_scenario_ceiling_original_budget_50": 84.74,
+  "production_mesh_accepted": false,
+  "limitations": [
+    "Single training geometry; different geometries may cost more or less.",
+    "Budget estimates exclude meshing, setup, cancelled runs, prior usage and other checks.",
+    "Long numerical stability and finite outputs do not prove physical accuracy or stationarity.",
+    "Coarse pressure screening differed about 12.85 percent from finer startup reference."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "UNIFORM_SERIES_VALIDATION_OK",
+  "scenario_id": "tr005",
+  "state_count": 201,
+  "start_time_s": 160.0,
+  "end_time_s": 200.0,
+  "time_step_s": 0.2,
+  "dimensions": [
+    64,
+    32,
+    16
+  ],
+  "total_npz_bytes": 93917584,
+  "valid_fraction_min": 0.99609375,
+  "valid_fraction_max": 0.99609375
+}

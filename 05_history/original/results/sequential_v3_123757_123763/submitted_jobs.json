@@ -1,0 +1,98 @@
+{
+  "jobs": [
+    {
+      "label": "qwen3_8b",
+      "job_id": "123758",
+      "wall_seconds_cap": 600
+    },
+    {
+      "label": "ministral3_8b",
+      "job_id": "123759",
+      "wall_seconds_cap": 600
+    },
+    {
+      "label": "phi4_mini",
+      "job_id": "123760",
+      "wall_seconds_cap": 600
+    },
+    {
+      "label": "granite33_8b",
+      "job_id": "123761",
+      "wall_seconds_cap": 600
+    },
+    {
+      "label": "controls",
+      "job_id": "123762",
+      "wall_seconds_cap": 360
+    }
+  ],
+  "freeze_sha256": "06830e31f5399f0fb27b6eec266d8b9606b93240d06b7a166ddbc26d1adb2ed1",
+  "main_authorized": false,
+  "budget": {
+    "gpu_seconds_limit": 3000,
+    "charged_or_reserved_gpu_seconds": 2765,
+    "available_gpu_seconds": 235,
+    "overrun_gpu_seconds": 0,
+    "state": {
+      "spec": {
+        "schema": 1,
+        "gpu_seconds_limit": 3000,
+        "identity": {
+          "purpose": "four-family v3 sequential technical preflight, NOT main experiment",
+          "version": "20261021-sequential-v1",
+          "user": "lutoke823",
+          "account": "perun2601449"
+        },
+        "code_sha256": "99e7e7328b727b05079dee3d182b28799683e369c40da0997234c73592d7c8f9"
+      },
+      "allocations": [
+        {
+          "label": "qwen3_8b",
+          "gpus": 1,
+          "wall_limit_seconds": 600,
+          "charged_gpu_seconds": 601,
+          "reservation_gpu_seconds": 601,
+          "job_id": "123758",
+          "status": "submitted_on_hold"
+        },
+        {
+          "label": "ministral3_8b",
+          "gpus": 1,
+          "wall_limit_seconds": 600,
+          "charged_gpu_seconds": 601,
+          "reservation_gpu_seconds": 601,
+          "job_id": "123759",
+          "status": "submitted_on_hold"
+        },
+        {
+          "label": "phi4_mini",
+          "gpus": 1,
+          "wall_limit_seconds": 600,
+          "charged_gpu_seconds": 601,
+          "reservation_gpu_seconds": 601,
+          "job_id": "123760",
+          "status": "submitted_on_hold"
+        },
+        {
+          "label": "granite33_8b",
+          "gpus": 1,
+          "wall_limit_seconds": 600,
+          "charged_gpu_seconds": 601,
+          "reservation_gpu_seconds": 601,
+          "job_id": "123761",
+          "status": "submitted_on_hold"
+        },
+        {
+          "label": "controls",
+          "gpus": 1,
+          "wall_limit_seconds": 360,
+          "charged_gpu_seconds": 361,
+          "reservation_gpu_seconds": 361,
+          "job_id": "123762",
+          "status": "submitted_on_hold"
+        }
+      ],
+      "revision": 11
+    }
+  }
+}

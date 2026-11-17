@@ -1,0 +1,18 @@
+{
+  "status": "NATIVE_FAMILY_LONG_WINDOW_SOLVER_COMPLETE",
+  "scenario_id": "a2_sc_001",
+  "branch": "coarse",
+  "case_dir": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/cylinder_spatial_20261024_v1/a2_sc_001_coarse_129254",
+  "time_states": 101,
+  "tau_range": [
+    0,
+    40
+  ],
+  "max_courant": 0.1045424348,
+  "final_cumulative_continuity": -1.789590781e-11,
+  "wall_seconds": 52237,
+  "mpi_ranks": 32,
+  "production_accepted": false,
+  "model_test_metrics_computed": false,
+  "source_freeze_sha256": "6cdecb54b83b130052e7f9c96bebc4288d7f12eabfd4e36e441240566c0831d1"
+}

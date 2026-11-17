@@ -1,0 +1,75 @@
+PREPOJENIE EXPERIMENTU A LATENCIA
+CONTROLLER_LATENCY_INTEGRATION_QC_PASSED
+Overený reálny tréning cez persistent random/TPE a lokálny Granite v2 suloženým dôvodom.
+Žiadne testové chyby ani výsledok oprínose LLM.
+model_only: wall p99=0.6883ms
+gpu_pipeline: wall p99=0.7232ms
+host_to_host: wall p99=1.0590ms
+Fyzická GPU spotreba sledovaných jobov vrátane1s/job rezervy: 0.063333GPU-h.
+latency_completed: True
+controller_completed: True
+no_test_evaluation: True
+all_timing_wrappers_equal: True
+unchanged_model_sources: True
+model_only_measurement_count: True
+model_only_wall_ms_finite: True
+model_only_wall_ms_p50_recomputed: True
+model_only_wall_ms_p95_recomputed: True
+model_only_wall_ms_p99_recomputed: True
+model_only_cuda_event_ms_finite: True
+model_only_cuda_event_ms_p50_recomputed: True
+model_only_cuda_event_ms_p95_recomputed: True
+model_only_cuda_event_ms_p99_recomputed: True
+model_only_round1_p99: True
+model_only_round2_p99: True
+model_only_round3_p99: True
+model_only_five_distinct_val_geometries: True
+gpu_pipeline_measurement_count: True
+gpu_pipeline_wall_ms_finite: True
+gpu_pipeline_wall_ms_p50_recomputed: True
+gpu_pipeline_wall_ms_p95_recomputed: True
+gpu_pipeline_wall_ms_p99_recomputed: True
+gpu_pipeline_cuda_event_ms_finite: True
+gpu_pipeline_cuda_event_ms_p50_recomputed: True
+gpu_pipeline_cuda_event_ms_p95_recomputed: True
+gpu_pipeline_cuda_event_ms_p99_recomputed: True
+gpu_pipeline_round1_p99: True
+gpu_pipeline_round2_p99: True
+gpu_pipeline_round3_p99: True
+gpu_pipeline_five_distinct_val_geometries: True
+host_to_host_measurement_count: True
+host_to_host_wall_ms_finite: True
+host_to_host_wall_ms_p50_recomputed: True
+host_to_host_wall_ms_p95_recomputed: True
+host_to_host_wall_ms_p99_recomputed: True
+host_to_host_cuda_event_ms_finite: True
+host_to_host_cuda_event_ms_p50_recomputed: True
+host_to_host_cuda_event_ms_p95_recomputed: True
+host_to_host_cuda_event_ms_p99_recomputed: True
+host_to_host_round1_p99: True
+host_to_host_round2_p99: True
+host_to_host_round3_p99: True
+host_to_host_five_distinct_val_geometries: True
+equal_shared_history: True
+random_real_saved_study_reloads: True
+random_single_adaptive_trial_counted: True
+random_macro_score_matches_ledger: True
+random_same_train_validation_membership: True
+random_same_normalization_seed_params: True
+random_measured_training_seconds_charged: True
+tpe_real_saved_study_reloads: True
+tpe_single_adaptive_trial_counted: True
+tpe_macro_score_matches_ledger: True
+tpe_same_train_validation_membership: True
+tpe_same_normalization_seed_params: True
+tpe_measured_training_seconds_charged: True
+tpe_restored_real_tell: True
+granite33_8b_real_saved_study_reloads: True
+granite33_8b_single_adaptive_trial_counted: True
+granite33_8b_macro_score_matches_ledger: True
+granite33_8b_same_train_validation_membership: True
+granite33_8b_same_normalization_seed_params: True
+granite33_8b_measured_training_seconds_charged: True
+llm_v2_reason_and_evidence_persisted: True
+llm_process_decision_seconds_charged: True
+physical_jobs_settled_and_within_global_cap: True

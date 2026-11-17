@@ -1,0 +1,35 @@
+PUBLIKACNY BALIK 3D – vytvoreny30.10.2026
+
+01_flowbench_3d_fno
+Hotovy samostatny experiment o LLMvybere konfiguracie FNO pre USTALENE
+3Dprudenie FlowBench. Nie klasickyPINN a nie casovy rollout.
+Zacni report/report.html alebo report/report.txt. V rovnakom priecinku
+su grafyPNG/SVG, comparison_numbers.json, report_inputs.json a povodne
+auditne receipts. Metodika obsahuje protokol, finalne meranie, release
+konfiguraciu a builder zhodny s SHA v povodnom output_receipt.json.
+Protokol je historicky dokument s postupnymi aktualizaciami; aktualne
+zavery a obmedzenia cítaj v hotovom reporte. Vysledok:LLM neprekonaliTPE
+v tomto konkretnom experimente. Tento vysledok sa pre clanok neprepisuje.
+
+02_vlastne_3d_cfd
+Oddelene male audity vlastnych3Dreferencnych dat. Kompletny numericky
+pilot1.0 ma461stavov. Jemnejsia celopriebehova referencia bola odoslana,
+ale jej konecne neskore porovnanie v tomto lokalnom baliku zatial nie je.
+Tieto podklady nie su hotovym porovnanim LLM na dynamickych3Ddatach.
+README v tejto podcasti rozlisuje stav a Perun cesty.
+
+Toto je KOPIA podkladov, nie presun povodnych zmrazenych suborov.
+Originaly zostali na povodnych cestach, aby fungovali existujuce auditne
+vazby a beziace ulohy. kopie_manifest.json uvadza zdroj,ciel,velkost aSHA
+kazdeho z53kopirovanych suborov. Pridane README nie su povodne vysledky.
+Povodne output receipts a inputhash boli overene pred kopirovanim.
+
+Velke CFDdata, vahy modelov, kompletne logy a dalsie experimentálne
+subory naPerune sa doPC nestahovali. Tento balik nie je plna off-line
+zaloha vsetkych HPC artefaktov. Report_inputs.json zachovava odkazy
+a kontrolne sucty zdrojov; originalne Perun artefakty treba zachovat.
+Verejny FlowBench treba pri priprave clanku riadne citovat.
+
+Rozhodnutie pouzivatela:3Dvysledky ponechat pre neskorsi clanok;
+hlavny novy dizertacny experiment pripravovat samostatne ako2DPINN.
+Zdrojovy text dizertacie sa pri tomto oddeleni nemenil.

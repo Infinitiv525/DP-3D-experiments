@@ -1,0 +1,56 @@
+{
+  "status": "FLOWBENCH_PRESSURE_GAUGE_ORDER_PROBE_COMPLETE",
+  "samples": [
+    {
+      "sample": 0,
+      "pressure_shift_added": 37,
+      "old_order_gauge_change_rmse": 0.5188240300346536,
+      "native_center_first_gauge_change_rmse": 1.9132058195563705e-12,
+      "old_pressure_centered_rms": 0.06784050157017758,
+      "native_center_first_pressure_centered_rms": 0.06592849794763214,
+      "old_vs_fixed_rmse": 0.01616439465532262,
+      "regions": {
+        "near_surface_sdf_0_to_0p05": {
+          "points": 6592,
+          "old_vs_fixed_rmse": 0.09677571560489785
+        },
+        "away_sdf_above_0p05": {
+          "points": 230368,
+          "old_vs_fixed_rmse": 0.0008767672534970402
+        }
+      }
+    },
+    {
+      "sample": 20,
+      "pressure_shift_added": 37,
+      "old_order_gauge_change_rmse": 0.6705679256355385,
+      "native_center_first_gauge_change_rmse": 1.3012198961272282e-13,
+      "old_pressure_centered_rms": 0.08597174964045465,
+      "native_center_first_pressure_centered_rms": 0.07715596208286084,
+      "old_vs_fixed_rmse": 0.037600541561950196,
+      "regions": {
+        "near_surface_sdf_0_to_0p05": {
+          "points": 5154,
+          "old_vs_fixed_rmse": 0.26151451531159925
+        },
+        "away_sdf_above_0p05": {
+          "points": 244976,
+          "old_vs_fixed_rmse": 0.0021692133870419633
+        }
+      }
+    }
+  ],
+  "native_shape": [
+    128,
+    128,
+    128
+  ],
+  "coarse_shape": [
+    64,
+    64,
+    64
+  ],
+  "test_evaluated": false,
+  "source_data_modified": false,
+  "scope": "Two train/validation cases only; shift invariance is an algebraic preprocessing test, not a full physical accuracy claim."
+}

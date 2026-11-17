@@ -1,0 +1,1 @@
+CPU_WORKFLOW_TESTS_PASSED: synthetic fixtures only; GPU jobs=0; test data not read.

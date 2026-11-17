@@ -1,0 +1,19 @@
+{
+  "status": "technical_synthetic_only_no_cfd_or_test_access",
+  "created": "2026-10-21",
+  "models": [
+    {"label":"qwen3_8b","repo":"Qwen/Qwen3-8B","revision":"b968826d9c46dd6066d109eabc6255188de91218","license":"apache-2.0","loader":"causal","disable_thinking":true},
+    {"label":"ministral3_8b","repo":"mistralai/Ministral-3-8B-Instruct-2512","revision":"5b26027e7b19eeb4b7352e1fed3926375dd2cb4d","license":"apache-2.0","loader":"mistral3_dequantize_fp8"},
+    {"label":"phi4_mini","repo":"microsoft/Phi-4-mini-instruct","revision":"cfbefacb99257ffa30c83adab238a50856ac3083","license":"mit","loader":"causal"},
+    {"label":"granite33_8b","repo":"ibm-granite/granite-3.3-8b-instruct","revision":"51dd4bc2ade4059a6bd87649d68aa11e4fb2529b","license":"apache-2.0","loader":"causal","disable_thinking":true}
+  ],
+  "deferred": {"repo":"google/gemma-3-12b-it","reason":"Gated license acceptance/authentication required; no token present. Granite is an explicit technical fallback, not a performance-based replacement."},
+  "packages": ["transformers==5.20.2","huggingface_hub==2.2.0","accelerate==1.15.0","safetensors==0.8.0","psutil==7.2.2","nvidia-ml-py==13.615.71","sentencepiece==0.2.2","mistral-common==1.12.0"],
+  "download_max_bytes": 85899345920,
+  "generation": {"seed":20261021,"max_new_tokens":512,"max_time_seconds":90,"max_input_tokens":8192,"do_sample":false,"max_repairs":1},
+  "probe_histories": [3,12,3],
+  "resource_sampling_seconds":0.2,
+  "gpu_job_limit_minutes_per_model":20,
+  "max_gpu_job_allocation_hours_total":1.3333333333333333,
+  "notes":["All histories and metrics are fabricated deterministic synthetic fixtures, NOT research results.","No accuracy superiority or experimental utility can be established by this smoke test.","Ministral checkpoint FP8 weights are dequantized to BF16 using the model-card recipe; not original pre-quantization BF16 weights.","Weights remain on PERUN; trust_remote_code=False; no external model API."]
+}

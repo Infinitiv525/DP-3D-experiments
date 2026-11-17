@@ -1,0 +1,60 @@
+{
+  "status": "PAIRED_VALIDATION_COMPARISON_COMPLETE",
+  "runs": {
+    "baseline": "uniform64_baseline_122336",
+    "control": "refine_control_122413",
+    "divergence": "refine_divergence_122412"
+  },
+  "same_initialization_normalization_split_and_training_budget_verified": true,
+  "sample_count": 150,
+  "geometry_groups": 15,
+  "seed_count": 1,
+  "test_evaluated": false,
+  "metrics": {
+    "fluid_velocity_relative_l2": {
+      "means": {
+        "baseline": 0.10998109618822734,
+        "control": 0.10137451534469923,
+        "divergence": 0.10898274178306262
+      },
+      "physics_minus_control": 0.007608226438363397,
+      "physics_relative_change_vs_control": 0.07505068125350323,
+      "geometry_cluster_bootstrap_95pct_delta_interval": [
+        0.0058159284492333724,
+        0.00938178249448538
+      ]
+    },
+    "fluid_centered_pressure_relative_l2": {
+      "means": {
+        "baseline": 0.682028915087382,
+        "control": 0.6620625162124634,
+        "divergence": 0.6618105353911717
+      },
+      "physics_minus_control": -0.0002519808212916308,
+      "physics_relative_change_vs_control": -0.0003805997396335581,
+      "geometry_cluster_bootstrap_95pct_delta_interval": [
+        -0.007718049501379331,
+        0.0060725980823238684
+      ]
+    },
+    "predicted_divergence_rms_unit_cube": {
+      "means": {
+        "baseline": 0.2926198544104894,
+        "control": 0.2874612639347712,
+        "divergence": 0.08715441462894281
+      },
+      "physics_minus_control": -0.20030684930582843,
+      "physics_relative_change_vs_control": -0.6968133603951616,
+      "geometry_cluster_bootstrap_95pct_delta_interval": [
+        -0.20462525252501168,
+        -0.19637949203389385
+      ]
+    }
+  },
+  "limitations": [
+    "Exploratory validation result, not confirmatory LLM evidence.",
+    "Cluster bootstrap conditions on one trained seed pair; it excludes training-seed uncertainty.",
+    "Intervals computed after observing pilot outcomes are descriptive, not preregistered significance tests.",
+    "Lower FD divergence than the interpolated reference is not proof of higher physical accuracy."
+  ]
+}

@@ -1,0 +1,11 @@
+status=DATASET_A_V2_SOLVER_GATE_OK
+scenario_id=a2_sc_001
+family=spanning_cylinder
+tau_end=2
+physical_end_time_s=0.9714285714
+time_steps=3058
+wall_seconds=531
+mpi_ranks=32
+max_courant=0.5008400888
+last_cumulative_continuity_error=-3.712643431e-10
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_sc_001_solvgate_109853_0

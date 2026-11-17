@@ -1,0 +1,15 @@
+{
+  "status": "SPANWISE_MODE_ANALYSIS_OK",
+  "sample_files": 6,
+  "span_m": 0.04,
+  "diameter_m": 0.01,
+  "span_over_diameter": 4.0,
+  "expected_mode_a_fourier_mode": 1,
+  "expected_mode_a_wavelength_over_diameter": 4.0,
+  "omega_x_lines_dominated_by_mode1": 4,
+  "omega_x_total_lines": 6,
+  "omega_x_mode1_energy_fraction_mean": 0.5078516976269921,
+  "omega_x_mode1_energy_fraction_min": 0.07746734342884654,
+  "omega_x_mode1_energy_fraction_max": 0.9524399018985804,
+  "interpretation": "mode1_is_consistent_with_a_4D_spanwise_structure_but_single_time_and_line_samples_do_not_alone_prove_Mode_A"
+}

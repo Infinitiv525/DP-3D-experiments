@@ -1,0 +1,401 @@
+{
+  "status": "PERSISTENT_CONTROLLER_REAL_PILOT_COMPLETE",
+  "technical_pilot": true,
+  "test_evaluated": false,
+  "identity": {
+    "config_sha256": "c0d274d4872607fa252913348162b1b342c0c3c7b45ba53e81084012972d09c0",
+    "split_sha256": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+    "cache_audit_sha256": "349edcb7e806116ee91f827e87106d2b8c8ec9670cf313b28f9791fcdcec9d43",
+    "feedback_sha256": "7dc354bae22ed43297a6da58c3760890aa67441d115e0364eb245bd5db3cb044",
+    "normalization_sha256": "4be8c93636019e6ab4765dc366e041dd28a0bc97fb560b715b0c44192edf2ce9",
+    "llm_config_sha256": "6a201e6b68e2d6e3a71b95da2a5d469c0a7cc07d26abc5d35348c6628de9a2c5",
+    "data_audit_sha256": "19ad62c39f7997194c87489a64b586dc8da5103f18008a6b88cf886c66d601b6",
+    "source_sha256": {
+      "llm/pilot_persistent_controller.py": "140799fc74aceb78a21039876afb62d764fbcd2132236a4705b3a562da86ba96",
+      "llm/persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+      "llm/search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01",
+      "llm/propose_local_configuration.py": "28f5522c8c92d73206ed1148c612378c67e49fc1de83784d856466677371bd22",
+      "llm/smoke_local_configurator.py": "5609bfab57f78e27e9369a861a1ef6f6929ad7479b5ce482d30b8396b30331b1",
+      "training/train_flowbench_protocol.py": "b1575230442c7a71e4dd9ad1b07f6327d30abff81be576310427e74c47155dae",
+      "training/train_flowbench_smoke.py": "8030d5f0ba7de270367a69659e9cccba45f52d2e41e8ddf90c8844e83098c15b",
+      "training/flowbench_protocol_metrics.py": "e4f0d2e6d89dd76e52a021655e2a75b2eb1f92a164345fc2bd05823010de56a2",
+      "training/flowbench_physics.py": "dd26b896c30a7a0ccc317f562b19c2dd2119de34860076101ed3cd0e7a7a24e7",
+      "training/fno_model.py": "286fc76f885ffb365be9a8bf76acec71e15853ae816c6a1f820be30447477bf4"
+    }
+  },
+  "allocation_entry": {
+    "charged_gpu_seconds": 601,
+    "gpus": 1,
+    "job_id": "123651",
+    "label": "controller_integration",
+    "reservation_gpu_seconds": 601,
+    "status": "submitted_on_hold",
+    "wall_limit_seconds": 600
+  },
+  "methods": [
+    {
+      "label": "random",
+      "search": {
+        "training_seconds": 235.97531093284488,
+        "decision_seconds": 0.0,
+        "remaining_training_seconds": 97.28511225711554,
+        "remaining_decision_seconds": 0.0,
+        "training_overrun_seconds": 0.0,
+        "decision_overrun_seconds": 0.0,
+        "attempts_spent": 4,
+        "state": {
+          "schema": 1,
+          "revision": 4,
+          "spec": {
+            "identity": {
+              "config_sha256": "c0d274d4872607fa252913348162b1b342c0c3c7b45ba53e81084012972d09c0",
+              "split_sha256": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+              "cache_audit_sha256": "349edcb7e806116ee91f827e87106d2b8c8ec9670cf313b28f9791fcdcec9d43",
+              "feedback_sha256": "7dc354bae22ed43297a6da58c3760890aa67441d115e0364eb245bd5db3cb044",
+              "normalization_sha256": "4be8c93636019e6ab4765dc366e041dd28a0bc97fb560b715b0c44192edf2ce9",
+              "llm_config_sha256": "6a201e6b68e2d6e3a71b95da2a5d469c0a7cc07d26abc5d35348c6628de9a2c5",
+              "data_audit_sha256": "19ad62c39f7997194c87489a64b586dc8da5103f18008a6b88cf886c66d601b6",
+              "source_sha256": {
+                "llm/pilot_persistent_controller.py": "140799fc74aceb78a21039876afb62d764fbcd2132236a4705b3a562da86ba96",
+                "llm/persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+                "llm/search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01",
+                "llm/propose_local_configuration.py": "28f5522c8c92d73206ed1148c612378c67e49fc1de83784d856466677371bd22",
+                "llm/smoke_local_configurator.py": "5609bfab57f78e27e9369a861a1ef6f6929ad7479b5ce482d30b8396b30331b1",
+                "training/train_flowbench_protocol.py": "b1575230442c7a71e4dd9ad1b07f6327d30abff81be576310427e74c47155dae",
+                "training/train_flowbench_smoke.py": "8030d5f0ba7de270367a69659e9cccba45f52d2e41e8ddf90c8844e83098c15b",
+                "training/flowbench_protocol_metrics.py": "e4f0d2e6d89dd76e52a021655e2a75b2eb1f92a164345fc2bd05823010de56a2",
+                "training/flowbench_physics.py": "dd26b896c30a7a0ccc317f562b19c2dd2119de34860076101ed3cd0e7a7a24e7",
+                "training/fno_model.py": "286fc76f885ffb365be9a8bf76acec71e15853ae816c6a1f820be30447477bf4"
+              },
+              "method": "random"
+            },
+            "method": "random",
+            "seed": 21261101,
+            "history": [
+              {
+                "parameters": {
+                  "learning_rate": 0.001,
+                  "weight_decay": 0.01,
+                  "pressure_weight": 1,
+                  "divergence_weight": 0
+                },
+                "S": 0.41856842825863916
+              },
+              {
+                "parameters": {
+                  "learning_rate": 0.0012236509356096372,
+                  "weight_decay": 2.9047728342589812e-06,
+                  "pressure_weight": 2,
+                  "divergence_weight": 0
+                },
+                "S": 0.40945750627365823
+              },
+              {
+                "parameters": {
+                  "learning_rate": 0.00106373191978169,
+                  "weight_decay": 1.5911205724559741e-06,
+                  "pressure_weight": 0.5,
+                  "divergence_weight": 0.003
+                },
+                "S": 0.5413124278679631
+              }
+            ],
+            "training_limit": 333.2604231899604,
+            "attempt_limit": 4,
+            "shared_seconds": 183.26042318996042,
+            "decision_limit": 0.0,
+            "software": {
+              "python": "3.12.15",
+              "numpy": "2.3.5",
+              "optuna": "5.0.0",
+              "sources": {
+                "persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+                "search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01"
+              }
+            }
+          },
+          "attempts": [
+            {
+              "number": 3,
+              "phase": "finished",
+              "parameters": {
+                "learning_rate": 0.0007362478103101123,
+                "weight_decay": 0.00020462418038839024,
+                "pressure_weight": 1,
+                "divergence_weight": 0.003
+              },
+              "metadata": {},
+              "owner": {
+                "mode": "slurm",
+                "job": "123651",
+                "user": "lutoke823",
+                "cluster": "slurm-perun2"
+              },
+              "training_seconds": 52.71488774288446,
+              "decision_seconds": 0.0,
+              "S": 0.4980533617942955,
+              "status": "complete"
+            }
+          ]
+        }
+      },
+      "next_attempt_blocked": true,
+      "completed_adaptive_trials": 1
+    },
+    {
+      "label": "tpe",
+      "search": {
+        "training_seconds": 235.52450096793473,
+        "decision_seconds": 0.0,
+        "remaining_training_seconds": 97.73592222202569,
+        "remaining_decision_seconds": 0.0,
+        "training_overrun_seconds": 0.0,
+        "decision_overrun_seconds": 0.0,
+        "attempts_spent": 4,
+        "state": {
+          "schema": 1,
+          "revision": 4,
+          "spec": {
+            "identity": {
+              "config_sha256": "c0d274d4872607fa252913348162b1b342c0c3c7b45ba53e81084012972d09c0",
+              "split_sha256": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+              "cache_audit_sha256": "349edcb7e806116ee91f827e87106d2b8c8ec9670cf313b28f9791fcdcec9d43",
+              "feedback_sha256": "7dc354bae22ed43297a6da58c3760890aa67441d115e0364eb245bd5db3cb044",
+              "normalization_sha256": "4be8c93636019e6ab4765dc366e041dd28a0bc97fb560b715b0c44192edf2ce9",
+              "llm_config_sha256": "6a201e6b68e2d6e3a71b95da2a5d469c0a7cc07d26abc5d35348c6628de9a2c5",
+              "data_audit_sha256": "19ad62c39f7997194c87489a64b586dc8da5103f18008a6b88cf886c66d601b6",
+              "source_sha256": {
+                "llm/pilot_persistent_controller.py": "140799fc74aceb78a21039876afb62d764fbcd2132236a4705b3a562da86ba96",
+                "llm/persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+                "llm/search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01",
+                "llm/propose_local_configuration.py": "28f5522c8c92d73206ed1148c612378c67e49fc1de83784d856466677371bd22",
+                "llm/smoke_local_configurator.py": "5609bfab57f78e27e9369a861a1ef6f6929ad7479b5ce482d30b8396b30331b1",
+                "training/train_flowbench_protocol.py": "b1575230442c7a71e4dd9ad1b07f6327d30abff81be576310427e74c47155dae",
+                "training/train_flowbench_smoke.py": "8030d5f0ba7de270367a69659e9cccba45f52d2e41e8ddf90c8844e83098c15b",
+                "training/flowbench_protocol_metrics.py": "e4f0d2e6d89dd76e52a021655e2a75b2eb1f92a164345fc2bd05823010de56a2",
+                "training/flowbench_physics.py": "dd26b896c30a7a0ccc317f562b19c2dd2119de34860076101ed3cd0e7a7a24e7",
+                "training/fno_model.py": "286fc76f885ffb365be9a8bf76acec71e15853ae816c6a1f820be30447477bf4"
+              },
+              "method": "tpe"
+            },
+            "method": "tpe",
+            "seed": 21261101,
+            "history": [
+              {
+                "parameters": {
+                  "learning_rate": 0.001,
+                  "weight_decay": 0.01,
+                  "pressure_weight": 1,
+                  "divergence_weight": 0
+                },
+                "S": 0.41856842825863916
+              },
+              {
+                "parameters": {
+                  "learning_rate": 0.0012236509356096372,
+                  "weight_decay": 2.9047728342589812e-06,
+                  "pressure_weight": 2,
+                  "divergence_weight": 0
+                },
+                "S": 0.40945750627365823
+              },
+              {
+                "parameters": {
+                  "learning_rate": 0.00106373191978169,
+                  "weight_decay": 1.5911205724559741e-06,
+                  "pressure_weight": 0.5,
+                  "divergence_weight": 0.003
+                },
+                "S": 0.5413124278679631
+              }
+            ],
+            "training_limit": 333.2604231899604,
+            "attempt_limit": 4,
+            "shared_seconds": 183.26042318996042,
+            "decision_limit": 0.0,
+            "software": {
+              "python": "3.12.15",
+              "numpy": "2.3.5",
+              "optuna": "5.0.0",
+              "sources": {
+                "persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+                "search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01"
+              }
+            }
+          },
+          "attempts": [
+            {
+              "number": 3,
+              "phase": "finished",
+              "parameters": {
+                "learning_rate": 0.00010201997531988224,
+                "weight_decay": 2.2430611320806945e-06,
+                "pressure_weight": 2,
+                "divergence_weight": 0
+              },
+              "metadata": {},
+              "owner": {
+                "mode": "slurm",
+                "job": "123651",
+                "user": "lutoke823",
+                "cluster": "slurm-perun2"
+              },
+              "training_seconds": 52.26407777797431,
+              "decision_seconds": 0.0,
+              "S": 0.8245611068354239,
+              "status": "complete"
+            }
+          ]
+        }
+      },
+      "next_attempt_blocked": true,
+      "completed_adaptive_trials": 1
+    },
+    {
+      "label": "granite33_8b",
+      "search": {
+        "training_seconds": 235.72789996303618,
+        "decision_seconds": 49.242702286690474,
+        "remaining_training_seconds": 97.53252322692424,
+        "remaining_decision_seconds": 160.75729771330953,
+        "training_overrun_seconds": 0.0,
+        "decision_overrun_seconds": 0.0,
+        "attempts_spent": 4,
+        "state": {
+          "schema": 1,
+          "revision": 5,
+          "spec": {
+            "identity": {
+              "config_sha256": "c0d274d4872607fa252913348162b1b342c0c3c7b45ba53e81084012972d09c0",
+              "split_sha256": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+              "cache_audit_sha256": "349edcb7e806116ee91f827e87106d2b8c8ec9670cf313b28f9791fcdcec9d43",
+              "feedback_sha256": "7dc354bae22ed43297a6da58c3760890aa67441d115e0364eb245bd5db3cb044",
+              "normalization_sha256": "4be8c93636019e6ab4765dc366e041dd28a0bc97fb560b715b0c44192edf2ce9",
+              "llm_config_sha256": "6a201e6b68e2d6e3a71b95da2a5d469c0a7cc07d26abc5d35348c6628de9a2c5",
+              "data_audit_sha256": "19ad62c39f7997194c87489a64b586dc8da5103f18008a6b88cf886c66d601b6",
+              "source_sha256": {
+                "llm/pilot_persistent_controller.py": "140799fc74aceb78a21039876afb62d764fbcd2132236a4705b3a562da86ba96",
+                "llm/persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+                "llm/search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01",
+                "llm/propose_local_configuration.py": "28f5522c8c92d73206ed1148c612378c67e49fc1de83784d856466677371bd22",
+                "llm/smoke_local_configurator.py": "5609bfab57f78e27e9369a861a1ef6f6929ad7479b5ce482d30b8396b30331b1",
+                "training/train_flowbench_protocol.py": "b1575230442c7a71e4dd9ad1b07f6327d30abff81be576310427e74c47155dae",
+                "training/train_flowbench_smoke.py": "8030d5f0ba7de270367a69659e9cccba45f52d2e41e8ddf90c8844e83098c15b",
+                "training/flowbench_protocol_metrics.py": "e4f0d2e6d89dd76e52a021655e2a75b2eb1f92a164345fc2bd05823010de56a2",
+                "training/flowbench_physics.py": "dd26b896c30a7a0ccc317f562b19c2dd2119de34860076101ed3cd0e7a7a24e7",
+                "training/fno_model.py": "286fc76f885ffb365be9a8bf76acec71e15853ae816c6a1f820be30447477bf4"
+              },
+              "method": "granite33_8b"
+            },
+            "method": "external",
+            "seed": 21261101,
+            "history": [
+              {
+                "parameters": {
+                  "learning_rate": 0.001,
+                  "weight_decay": 0.01,
+                  "pressure_weight": 1,
+                  "divergence_weight": 0
+                },
+                "S": 0.41856842825863916
+              },
+              {
+                "parameters": {
+                  "learning_rate": 0.0012236509356096372,
+                  "weight_decay": 2.9047728342589812e-06,
+                  "pressure_weight": 2,
+                  "divergence_weight": 0
+                },
+                "S": 0.40945750627365823
+              },
+              {
+                "parameters": {
+                  "learning_rate": 0.00106373191978169,
+                  "weight_decay": 1.5911205724559741e-06,
+                  "pressure_weight": 0.5,
+                  "divergence_weight": 0.003
+                },
+                "S": 0.5413124278679631
+              }
+            ],
+            "training_limit": 333.2604231899604,
+            "attempt_limit": 4,
+            "shared_seconds": 183.26042318996042,
+            "decision_limit": 210.0,
+            "software": {
+              "python": "3.12.15",
+              "numpy": "2.3.5",
+              "optuna": "5.0.0",
+              "sources": {
+                "persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+                "search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01"
+              }
+            }
+          },
+          "attempts": [
+            {
+              "number": 3,
+              "phase": "finished",
+              "parameters": {
+                "learning_rate": 0.001,
+                "weight_decay": 0.01,
+                "pressure_weight": 1,
+                "divergence_weight": 0
+              },
+              "metadata": {
+                "configuration_with_reason": {
+                  "learning_rate": 0.001,
+                  "weight_decay": 0.01,
+                  "pressure_weight": 1,
+                  "divergence_weight": 0,
+                  "reason": "Based on pilot results, a learning rate of 0.001 and weight decay of 0.01 performed well with a pressure weight of 1 and no divergence weight. This configuration minimized S, indicating a balance between velocity and pressure errors.",
+                  "evidence_ids": [
+                    "s01"
+                  ],
+                  "expected_effect": "Further reduction in S, maintaining or improving velocity and pressure errors.",
+                  "risk": "High pressure error suggests pressure handling might need adjustment."
+                },
+                "proposal_summary_sha256": "36ba9960bcecc503e9a82c792531b68551530fc271190254f54344c7936d385d",
+                "feedback_sha256": "f36ccf885e42a5a79e22dfea75e75c505b1696244202c67be29fd7d68d501fe5",
+                "outcome": {
+                  "exit_code": 0,
+                  "timed_out": false,
+                  "wall_seconds": 49.242702286690474
+                },
+                "prompt_contract_version": 2,
+                "model": {
+                  "label": "granite33_8b",
+                  "repo": "ibm-granite/granite-3.3-8b-instruct",
+                  "revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+                  "license": "apache-2.0",
+                  "loader": "causal",
+                  "disable_thinking": true
+                }
+              },
+              "owner": {
+                "mode": "slurm",
+                "job": "123651",
+                "user": "lutoke823",
+                "cluster": "slurm-perun2"
+              },
+              "training_seconds": 52.46747677307576,
+              "decision_seconds": 49.242702286690474,
+              "S": 0.4578790463356528,
+              "status": "complete"
+            }
+          ]
+        }
+      },
+      "next_attempt_blocked": true,
+      "completed_adaptive_trials": 1
+    }
+  ],
+  "warning": "Single adaptive proposal per method and one seed. No algorithm ranking, no test evaluation, no full four-family benchmark.",
+  "checks": {
+    "three_methods_completed": true,
+    "all_attempt_caps_block": true,
+    "no_training_budget_overrun": true,
+    "no_decision_budget_overrun": true
+  },
+  "elapsed_seconds": 207.0602253563702
+}

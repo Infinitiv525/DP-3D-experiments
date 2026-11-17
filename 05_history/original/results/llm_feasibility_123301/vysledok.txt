@@ -1,0 +1,45 @@
+TECHNICKÁ SKÚŠKA LOKÁLNYCH LLM - SYNTHETICKÉ ÚDAJE
+Nie je to dôkaz zlepšenia presnosti CFD ani úspechu hlavného experimentu.
+Váhy ostávajú na Perune. Skúška nečítala testové dáta ani CFD polia.
+Každý model dostal tri otázky vrátane opakovania a najviac jednu opravu.
+
+Model: Qwen/Qwen3-8B
+Stav: LOCAL_LLM_SYNTHETIC_SMOKE_COMPLETE
+Platné hneď na prvý pokus: 3/3
+Priemer / maximum času do návrhu po načítaní: 18.56 / 27.31 s
+Načítanie modelu v novom procese: 39.56 s
+Vzorkované maximum GPU pamäte / RAM: 16.48 / 16.10 GiB
+Čas GPU procesu: 0.03 h; Slurm runtime: 00:01:47
+Opakovanie krátkej otázky dalo rovnaké parametre: True
+
+Model: mistralai/Ministral-3-8B-Instruct-2512
+Stav: LOCAL_LLM_SYNTHETIC_SMOKE_COMPLETE
+Platné hneď na prvý pokus: 3/3
+Priemer / maximum času do návrhu po načítaní: 30.51 / 47.32 s
+Načítanie modelu v novom procese: 24.66 s
+Vzorkované maximum GPU pamäte / RAM: 19.00 / 10.59 GiB
+Čas GPU procesu: 0.03 h; Slurm runtime: 00:02:09
+Opakovanie krátkej otázky dalo rovnaké parametre: True
+
+Model: microsoft/Phi-4-mini-instruct
+Stav: LOCAL_LLM_SYNTHETIC_SMOKE_COMPLETE
+Platné hneď na prvý pokus: 3/3
+Priemer / maximum času do návrhu po načítaní: 20.62 / 29.37 s
+Načítanie modelu v novom procese: 20.58 s
+Vzorkované maximum GPU pamäte / RAM: 8.25 / 8.04 GiB
+Čas GPU procesu: 0.02 h; Slurm runtime: 00:01:35
+Opakovanie krátkej otázky dalo rovnaké parametre: True
+
+Model: ibm-granite/granite-3.3-8b-instruct
+Stav: LOCAL_LLM_SYNTHETIC_SMOKE_COMPLETE
+Platné hneď na prvý pokus: 3/3
+Priemer / maximum času do návrhu po načítaní: 29.07 / 42.76 s
+Načítanie modelu v novom procese: 41.89 s
+Vzorkované maximum GPU pamäte / RAM: 16.53 / 16.04 GiB
+Čas GPU procesu: 0.04 h; Slurm runtime: 00:02:20
+Opakovanie krátkej otázky dalo rovnaké parametre: True
+
+
+Synthetic validity/resources only; does NOT establish LLM search accuracy or benefit. Historical baseline timing includes its own setup/validation/timing and is NOT measured new-protocol trial runtime. Cold-plus-warm projection excludes Python import/startup and warm-up, so is not complete cold job cost.
+Keeping an LLM GPU allocated while waiting for FNO training consumes allocation too. Report cold-per-proposal and warm retained-service policies separately. Three synthetic probes cannot establish reliability or p99.
+Pri chybe modelu sa nesmie automaticky tvrdiť úspešný štvor-modelový pilot.

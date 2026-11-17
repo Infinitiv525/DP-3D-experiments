@@ -1,0 +1,35 @@
+PREPOJENIE LLM A REÁLNEHO TRÉNINGU - TECHNICKÝ PILOT
+FEEDBACK_PIPELINE_REVIEW_NOT_PASSED
+Tri spoločné tréningy a po jednom návrhu/tréningu štyroch LLM.
+Iba dve epochy na pokus; testovacie dáta neboli hodnotené.
+
+s01: S=0.418568, rýchlosť=19.10%, tlak=64.61%, proces=77.2s
+s02: S=0.409458, rýchlosť=20.46%, tlak=61.43%, proces=53.0s
+s03: S=0.541312, rýchlosť=21.89%, tlak=86.37%, proces=53.0s
+trial_qwen3_8b: S=0.373481, rýchlosť=20.06%, tlak=54.63%, proces=53.2s
+trial_ministral3_8b: S=0.530988, rýchlosť=18.05%, tlak=88.15%, proces=53.0s
+trial_phi4_mini: S=0.462063, rýchlosť=19.21%, tlak=73.20%, proces=53.2s
+
+Celý proces: 700.4s na jednom GPU (vrátane CPU práce medzi fázami).
+Kontroly:
+pipeline_complete: False
+s01_complete_train_val_only: True
+s01_score_and_selection: True
+s02_complete_train_val_only: True
+s02_score_and_selection: True
+s03_complete_train_val_only: True
+s03_score_and_selection: True
+trial_qwen3_8b_complete_train_val_only: True
+trial_qwen3_8b_score_and_selection: True
+trial_ministral3_8b_complete_train_val_only: True
+trial_ministral3_8b_score_and_selection: True
+trial_phi4_mini_complete_train_val_only: True
+trial_phi4_mini_score_and_selection: True
+identical_train_only_normalization: False
+qwen3_8b_proposal_feedback_trial_link: True
+ministral3_8b_proposal_feedback_trial_link: True
+phi4_mini_proposal_feedback_trial_link: True
+granite33_8b_proposal_feedback_trial_link: False
+
+Technical two-epoch pilot only. Different initial seeds, one proposal/model, no adaptive TPE/random comparison. No LLM efficacy ranking or 20epoch runtime claim.
+Zdôvodnenia sú uložené pri jednotlivých návrhoch aj v pôvodnom vysledok.txt.

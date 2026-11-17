@@ -1,0 +1,22 @@
+EXPLORATÍVNA KONTROLA VEREJNÉHO ZDÔVODNENIA GRANITE - 21.10.2026
+
+Zdroj: granite33_8b/proposal_3/summary.json, SHA256
+36ba9960bcecc503e9a82c792531b68551530fc271190254f54344c7936d385d
+Vstup: granite33_8b/feedback.json, SHA256
+f36ccf885e42a5a79e22dfea75e75c505b1696244202c67be29fd7d68d501fe5
+
+Granite vybral manuálnu konfiguráciu aodkázal na s01. Vreason tvrdí:
+"This configuration minimized S".
+Skutočná dodaná história: s01 S=0.41856842825863916,
+s02 S=0.40945750627365823, s03 S=0.5413124278679631.
+Keďže S minimalizujeme, najnižšie dodané skóre malo s02, nie s01.
+Ide teda o chybnú interpretáciu minima vposkytnutej histórii, nie dôkaz,
+že návrh hyperparametrov musí byť zlý. Jediný2epoch pokus nie je dosť
+na záver oúčinnosti metódy. Konfigurácia sa pre tento dôvod neprepisovala.
+
+Parser overuje existenciu evidence_ids aštruktúru výstupu, NIE pravdivosť
+všetkých tvrdení. Verejné reason je deklarované zdôvodnenie modelu,
+nie pozorovanie jeho vnútorného kauzálneho rozhodovania. Záverečné67QC
+kontrol preveruje technickú integráciu, nie úplnú sémantiku zdôvodnení.
+Toto je dodatočná opisná poznámka ztechnického pilota, nie nový primárny
+ukazovateľ ani dôvod spätne meniť priestor/protokol/rozpočet hľadania.

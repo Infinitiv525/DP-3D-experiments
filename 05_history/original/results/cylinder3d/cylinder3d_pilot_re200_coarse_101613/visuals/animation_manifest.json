@@ -1,0 +1,15 @@
+{
+  "status": "CYLINDER3D_ANIMATION_OK",
+  "source_series": "/mnt/project/perun2601449/dp_llm_cfd/pilots/cylinder3d/cylinder3d_pilot_re200_coarse_101613/VTK_animation/cylinder3d_pilot_re200_coarse_101613.vtm.series",
+  "frame_count": 41,
+  "time_start_s": 0.0,
+  "time_end_s": 2.0,
+  "fps": 10,
+  "velocity_range_m_s": [
+    0.00024282363301608711,
+    0.03522997349500656
+  ],
+  "video": "/mnt/project/perun2601449/dp_llm_cfd/results/cylinder3d/cylinder3d_pilot_re200_coarse_101613/visuals/velocity_midplane.mp4",
+  "preview": "/mnt/project/perun2601449/dp_llm_cfd/results/cylinder3d/cylinder3d_pilot_re200_coarse_101613/visuals/velocity_midplane_preview.png",
+  "note": "Pilot visualization, not a validated reference result."
+}

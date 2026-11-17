@@ -1,0 +1,2 @@
+run_id,mesh_job_id,solve_job_id,status,validation_status,reynolds_number,mesh_cells,max_non_orthogonality_deg,max_skewness,physical_end_time_s,solve_wall_seconds,mpi_ranks,max_rss_kb,max_courant_number,last_cumulative_continuity_error,cd_at_end,cl_at_end,mean_cd_last_0_5_s,mean_cl_last_0_5_s,std_cl_last_0_5_s
+cylinder3d_pilot_re200_coarse_101613,101613,101626,completed,pilot_not_final_reference,200,49621,25.9624781,0.5777009282,2.0,10.504,4,53680,0.51848,-2.06465375e-09,1.2926020947,0.0006112092549,1.321437903,0.001132626179,0.0002940175086

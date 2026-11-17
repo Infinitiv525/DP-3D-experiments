@@ -1,0 +1,10 @@
+status=DATASET_A_V2_MESH_GATE_OK
+scenario_id=a2_mp_001
+cells=1233859
+max_non_orthogonality=66.83346569
+max_skewness=0.9755168493
+low_determinant_cells=460
+low_determinant_fraction=0.000372814
+ami_source_mean_weight_sum=1
+ami_target_mean_weight_sum=1
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/meshes/a2_mp_001_meshgate_109123_5

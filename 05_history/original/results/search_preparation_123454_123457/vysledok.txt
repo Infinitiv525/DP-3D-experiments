@@ -1,0 +1,22 @@
+PRÍPRAVA HLAVNÉHO EXPERIMENTU - MERANIE A KONTROLY
+SEARCH_PREPARATION_QC_PASSED
+Plný20epoch proces: približne486s. Skóre nepochádza z testovej sady.
+Random/TPE boli overené iba jedným novým2epoch tréningom po rovnakom3pokusovom štarte.
+Deväť CPU testov overilo aj failure účtovanie a skutočný časový timeout procesu.
+
+NÁVRH: 2.00GPU-h tréningového rozpočtu/metódu/opakovanie, najviac12pokusov vrátane3shared.
+Šesť vyhľadávacích metód x3opakovania: logický tréningový strop36.00GPU-h.
+Spolu s finálnymi tréningmi, LLM a rezervou navrhujeme globálny fyzický strop70GPU-h.
+Strop nie je predpoveď spotreby ani schválenie spustenia. Zdieľané štarty sa fyzicky nevykonávajú zbytočne viackrát.
+Potrebujeme aktuálny zostatok alokácie a dokončenie auditov/freeze; hlavné porovnanie ešte nebežalo.
+
+Kontroly:
+runtime20_complete: True
+cpu_tests_passed: True
+nonllm_cycle_complete: True
+test_not_evaluated: True
+runtime_best_checkpoint_selection: True
+runtime_geometry_macro_score: True
+random_ledger_and_ids: True
+tpe_ledger_and_ids: True
+tpe_ask_tell_real_score: True

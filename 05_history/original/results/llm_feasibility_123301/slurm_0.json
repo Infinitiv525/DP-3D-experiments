@@ -1,0 +1,9 @@
+{
+  "JobId": "123304",
+  "JobState": "COMPLETED",
+  "RunTime": "00:01:47",
+  "StartTime": "2026-10-21T09:14:41",
+  "EndTime": "2026-10-21T09:16:28",
+  "NumCPUs": "4",
+  "AllocTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1"
+}

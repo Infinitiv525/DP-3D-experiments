@@ -1,0 +1,203 @@
+{
+  "status": "LOCAL_LLM_SYNTHETIC_SMOKE_COMPLETE",
+  "spec": {
+    "label": "ministral3_8b",
+    "repo": "mistralai/Ministral-3-8B-Instruct-2512",
+    "revision": "5b26027e7b19eeb4b7352e1fed3926375dd2cb4d",
+    "license": "apache-2.0",
+    "loader": "mistral3_dequantize_fp8"
+  },
+  "synthetic_only": true,
+  "test_evaluated": false,
+  "gpu": "NVIDIA H200",
+  "gpu_total_bytes": 150109880320,
+  "job_id": "123305",
+  "array_task": "1",
+  "torch": "2.12.0+cu130",
+  "cuda": "13.0",
+  "python": "3.12.15",
+  "packages": {
+    "transformers": "5.20.2",
+    "accelerate": "1.15.0",
+    "huggingface_hub": "2.2.0"
+  },
+  "config_sha256": "6a201e6b68e2d6e3a71b95da2a5d469c0a7cc07d26abc5d35348c6628de9a2c5",
+  "download_verification_record_sha256": "a0f99f83c8af197e23e5d494f1bb564aee5b23c26aa07d0a067b286a8ba91bea",
+  "decode": {
+    "seed": 20261021,
+    "max_new_tokens": 512,
+    "max_time_seconds": 90,
+    "max_input_tokens": 8192,
+    "do_sample": false,
+    "max_repairs": 1
+  },
+  "probes": [
+    {
+      "id": 0,
+      "history_count": 3,
+      "attempts": [
+        {
+          "repair": 0,
+          "input_tokens": 631,
+          "output_tokens": 188,
+          "encode_transfer_seconds": 0.0010985853150486946,
+          "generation_seconds": 47.31454673781991,
+          "first_token_seconds": 0.331716800108552,
+          "output_tokens_per_second": 3.973408031186444,
+          "validation_seconds": 4.962459206581116e-05,
+          "raw_output": "```json\n{\n  \"learning_rate\": 0.0015,\n  \"weight_decay\": 0.0005,\n  \"pressure_weight\": 0.5,\n  \"divergence_weight\": 0.003,\n  \"reason\": \"Balances lower pressure_weight (s03) with moderate learning_rate (s01) to reduce S while maintaining divergence control; avoids over-regularization (s01) or divergence bias (s02).\",\n  \"evidence_ids\": [\"s01\", \"s02\", \"s03\"],\n  \"expected_effect\": \"Further reduce S (~0.285) with stable divergence (~0.08) and efficient training.\",\n  \"risk\": \"Slightly higher velocity_error risk if pressure_weight is too low; divergence may rise if weight_decay is insufficient.\"\n}\n```",
+          "parsed": {
+            "learning_rate": 0.0015,
+            "weight_decay": 0.0005,
+            "pressure_weight": 0.5,
+            "divergence_weight": 0.003,
+            "reason": "Balances lower pressure_weight (s03) with moderate learning_rate (s01) to reduce S while maintaining divergence control; avoids over-regularization (s01) or divergence bias (s02).",
+            "evidence_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ],
+            "expected_effect": "Further reduce S (~0.285) with stable divergence (~0.08) and efficient training.",
+            "risk": "Slightly higher velocity_error risk if pressure_weight is too low; divergence may rise if weight_decay is insufficient."
+          },
+          "errors": [],
+          "strict_json": false,
+          "valid": true,
+          "peak_torch_allocated_bytes": 18035268608,
+          "peak_torch_reserved_bytes": 19650314240,
+          "generated_to_limit": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "You select four training hyperparameters for a fixed steady 3D FNO. This is a synthetic software test; every history value is fabricated, not real CFD. No tools, code, internet or dataset access. Minimize S=0.5*velocity_error+0.5*pressure_error; divergence is secondary and lower alone does not prove physical truth. Return ONE JSON object only, no Markdown or reasoning trace. Required keys: learning_rate, weight_decay, pressure_weight, divergence_weight, reason, evidence_ids, expected_effect, risk. learning_rate: real [0.0001,0.003]; weight_decay: real [0.000001,0.01]; pressure_weight: one of [0.25,0.5,1,2,4]; divergence_weight: one of [0,0.001,0.003,0.01,0.03]. reason, expected_effect and risk must be nonempty short strings, total under 100 words. evidence_ids must be a nonempty list of existing history IDs. Give a brief public justification, not hidden step-by-step reasoning. No claims that any proposed improvement is already measured."
+            },
+            {
+              "role": "user",
+              "content": "{\"history_is_synthetic\": true, \"history\": [{\"id\": \"s01\", \"learning_rate\": 0.001, \"weight_decay\": 0.01, \"pressure_weight\": 1, \"divergence_weight\": 0, \"velocity_error\": 0.18, \"pressure_error\": 0.43, \"S\": 0.305, \"divergence\": 0.28, \"training_gpu_hours\": 0.07}, {\"id\": \"s02\", \"learning_rate\": 0.0003, \"weight_decay\": 0.001, \"pressure_weight\": 2, \"divergence_weight\": 0.001, \"velocity_error\": 0.177, \"pressure_error\": 0.421, \"S\": 0.299, \"divergence\": 0.14, \"training_gpu_hours\": 0.07}, {\"id\": \"s03\", \"learning_rate\": 0.002, \"weight_decay\": 0.0001, \"pressure_weight\": 0.5, \"divergence_weight\": 0.003, \"velocity_error\": 0.174, \"pressure_error\": 0.412, \"S\": 0.293, \"divergence\": 0.09333, \"training_gpu_hours\": 0.07}], \"remaining_training_gpu_hours\": 0.21, \"task\": \"Propose one new configuration with concise justification, citing history IDs.\"}"
+            }
+          ]
+        }
+      ],
+      "valid": true,
+      "time_to_configuration_seconds": 47.32243151497096
+    },
+    {
+      "id": 1,
+      "history_count": 12,
+      "attempts": [
+        {
+          "repair": 0,
+          "input_tokens": 1597,
+          "output_tokens": 168,
+          "encode_transfer_seconds": 0.001557803712785244,
+          "generation_seconds": 42.33088633045554,
+          "first_token_seconds": 0.3578366916626692,
+          "output_tokens_per_second": 3.9687333425648137,
+          "validation_seconds": 5.4331496357917786e-05,
+          "raw_output": "```json\n{\n  \"learning_rate\": 0.0003,\n  \"weight_decay\": 0.0005,\n  \"pressure_weight\": 2,\n  \"divergence_weight\": 0.003,\n  \"reason\": \"Balances low velocity/pressure error (s02, s04) with moderate divergence (s03) while avoiding over-penalizing divergence alone.\",\n  \"evidence_ids\": [\"s02\", \"s03\", \"s04\"],\n  \"expected_effect\": \"Further reduce S (~0.28) with stable divergence (~0.09) and improved pressure-velocity tradeoff.\",\n  \"risk\": \"Slightly higher pressure error risk if divergence constraint overconstrains flow physics.\"\n}\n```",
+          "parsed": {
+            "learning_rate": 0.0003,
+            "weight_decay": 0.0005,
+            "pressure_weight": 2,
+            "divergence_weight": 0.003,
+            "reason": "Balances low velocity/pressure error (s02, s04) with moderate divergence (s03) while avoiding over-penalizing divergence alone.",
+            "evidence_ids": [
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "expected_effect": "Further reduce S (~0.28) with stable divergence (~0.09) and improved pressure-velocity tradeoff.",
+            "risk": "Slightly higher pressure error risk if divergence constraint overconstrains flow physics."
+          },
+          "errors": [],
+          "strict_json": false,
+          "valid": true,
+          "peak_torch_allocated_bytes": 18290498048,
+          "peak_torch_reserved_bytes": 19650314240,
+          "generated_to_limit": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "You select four training hyperparameters for a fixed steady 3D FNO. This is a synthetic software test; every history value is fabricated, not real CFD. No tools, code, internet or dataset access. Minimize S=0.5*velocity_error+0.5*pressure_error; divergence is secondary and lower alone does not prove physical truth. Return ONE JSON object only, no Markdown or reasoning trace. Required keys: learning_rate, weight_decay, pressure_weight, divergence_weight, reason, evidence_ids, expected_effect, risk. learning_rate: real [0.0001,0.003]; weight_decay: real [0.000001,0.01]; pressure_weight: one of [0.25,0.5,1,2,4]; divergence_weight: one of [0,0.001,0.003,0.01,0.03]. reason, expected_effect and risk must be nonempty short strings, total under 100 words. evidence_ids must be a nonempty list of existing history IDs. Give a brief public justification, not hidden step-by-step reasoning. No claims that any proposed improvement is already measured."
+            },
+            {
+              "role": "user",
+              "content": "{\"history_is_synthetic\": true, \"history\": [{\"id\": \"s01\", \"learning_rate\": 0.001, \"weight_decay\": 0.01, \"pressure_weight\": 1, \"divergence_weight\": 0, \"velocity_error\": 0.18, \"pressure_error\": 0.43, \"S\": 0.305, \"divergence\": 0.28, \"training_gpu_hours\": 0.07}, {\"id\": \"s02\", \"learning_rate\": 0.0003, \"weight_decay\": 0.001, \"pressure_weight\": 2, \"divergence_weight\": 0.001, \"velocity_error\": 0.177, \"pressure_error\": 0.421, \"S\": 0.299, \"divergence\": 0.14, \"training_gpu_hours\": 0.07}, {\"id\": \"s03\", \"learning_rate\": 0.002, \"weight_decay\": 0.0001, \"pressure_weight\": 0.5, \"divergence_weight\": 0.003, \"velocity_error\": 0.174, \"pressure_error\": 0.412, \"S\": 0.293, \"divergence\": 0.09333, \"training_gpu_hours\": 0.07}, {\"id\": \"s04\", \"learning_rate\": 0.001, \"weight_decay\": 0.01, \"pressure_weight\": 4, \"divergence_weight\": 0.01, \"velocity_error\": 0.171, \"pressure_error\": 0.403, \"S\": 0.287, \"divergence\": 0.07, \"training_gpu_hours\": 0.07}, {\"id\": \"s05\", \"learning_rate\": 0.0003, \"weight_decay\": 0.001, \"pressure_weight\": 1, \"divergence_weight\": 0, \"velocity_error\": 0.168, \"pressure_error\": 0.394, \"S\": 0.281, \"divergence\": 0.28, \"training_gpu_hours\": 0.07}, {\"id\": \"s06\", \"learning_rate\": 0.002, \"weight_decay\": 0.0001, \"pressure_weight\": 2, \"divergence_weight\": 0.001, \"velocity_error\": 0.165, \"pressure_error\": 0.434, \"S\": 0.2995, \"divergence\": 0.14, \"training_gpu_hours\": 0.07}, {\"id\": \"s07\", \"learning_rate\": 0.001, \"weight_decay\": 0.01, \"pressure_weight\": 0.5, \"divergence_weight\": 0.003, \"velocity_error\": 0.187, \"pressure_error\": 0.425, \"S\": 0.306, \"divergence\": 0.09333, \"training_gpu_hours\": 0.07}, {\"id\": \"s08\", \"learning_rate\": 0.0003, \"weight_decay\": 0.001, \"pressure_weight\": 4, \"divergence_weight\": 0.01, \"velocity_error\": 0.184, \"pressure_error\": 0.416, \"S\": 0.3, \"divergence\": 0.07, \"training_gpu_hours\": 0.07}, {\"id\": \"s09\", \"learning_rate\": 0.002, \"weight_decay\": 0.0001, \"pressure_weight\": 1, \"divergence_weight\": 0, \"velocity_error\": 0.181, \"pressure_error\": 0.407, \"S\": 0.294, \"divergence\": 0.28, \"training_gpu_hours\": 0.07}, {\"id\": \"s10\", \"learning_rate\": 0.001, \"weight_decay\": 0.01, \"pressure_weight\": 2, \"divergence_weight\": 0.001, \"velocity_error\": 0.178, \"pressure_error\": 0.398, \"S\": 0.288, \"divergence\": 0.14, \"training_gpu_hours\": 0.07}, {\"id\": \"s11\", \"learning_rate\": 0.0003, \"weight_decay\": 0.001, \"pressure_weight\": 0.5, \"divergence_weight\": 0.003, \"velocity_error\": 0.175, \"pressure_error\": 0.438, \"S\": 0.3065, \"divergence\": 0.09333, \"training_gpu_hours\": 0.07}, {\"id\": \"s12\", \"learning_rate\": 0.002, \"weight_decay\": 0.0001, \"pressure_weight\": 4, \"divergence_weight\": 0.01, \"velocity_error\": 0.172, \"pressure_error\": 0.429, \"S\": 0.3005, \"divergence\": 0.07, \"training_gpu_hours\": 0.07}], \"remaining_training_gpu_hours\": 0.21, \"task\": \"Propose one new configuration with concise justification, citing history IDs.\"}"
+            }
+          ]
+        }
+      ],
+      "valid": true,
+      "time_to_configuration_seconds": 42.33398228511214
+    },
+    {
+      "id": 2,
+      "history_count": 3,
+      "attempts": [
+        {
+          "repair": 0,
+          "input_tokens": 631,
+          "output_tokens": 167,
+          "encode_transfer_seconds": 0.0010064272210001945,
+          "generation_seconds": 1.8619584860280156,
+          "first_token_seconds": 0.024848154745996,
+          "output_tokens_per_second": 89.6905066644366,
+          "validation_seconds": 3.961008042097092e-05,
+          "raw_output": "```json\n{\n  \"learning_rate\": 0.0015,\n  \"weight_decay\": 0.0005,\n  \"pressure_weight\": 0.5,\n  \"divergence_weight\": 0.003,\n  \"reason\": \"Balanced trade-off: moderate LR/WD (s01/s03) + lower pressure_weight (s03) + divergence penalty (s03) to reduce S while maintaining stability.\",\n  \"evidence_ids\": [\"s01\", \"s03\"],\n  \"expected_effect\": \"Lower S (~0.28) with improved divergence (~0.08) and stable training.\",\n  \"risk\": \"Slightly higher pressure error risk if divergence constraint overpowers velocity.\"\n}\n```",
+          "parsed": {
+            "learning_rate": 0.0015,
+            "weight_decay": 0.0005,
+            "pressure_weight": 0.5,
+            "divergence_weight": 0.003,
+            "reason": "Balanced trade-off: moderate LR/WD (s01/s03) + lower pressure_weight (s03) + divergence penalty (s03) to reduce S while maintaining stability.",
+            "evidence_ids": [
+              "s01",
+              "s03"
+            ],
+            "expected_effect": "Lower S (~0.28) with improved divergence (~0.08) and stable training.",
+            "risk": "Slightly higher pressure error risk if divergence constraint overpowers velocity."
+          },
+          "errors": [],
+          "strict_json": false,
+          "valid": true,
+          "peak_torch_allocated_bytes": 18035282944,
+          "peak_torch_reserved_bytes": 19650314240,
+          "generated_to_limit": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "You select four training hyperparameters for a fixed steady 3D FNO. This is a synthetic software test; every history value is fabricated, not real CFD. No tools, code, internet or dataset access. Minimize S=0.5*velocity_error+0.5*pressure_error; divergence is secondary and lower alone does not prove physical truth. Return ONE JSON object only, no Markdown or reasoning trace. Required keys: learning_rate, weight_decay, pressure_weight, divergence_weight, reason, evidence_ids, expected_effect, risk. learning_rate: real [0.0001,0.003]; weight_decay: real [0.000001,0.01]; pressure_weight: one of [0.25,0.5,1,2,4]; divergence_weight: one of [0,0.001,0.003,0.01,0.03]. reason, expected_effect and risk must be nonempty short strings, total under 100 words. evidence_ids must be a nonempty list of existing history IDs. Give a brief public justification, not hidden step-by-step reasoning. No claims that any proposed improvement is already measured."
+            },
+            {
+              "role": "user",
+              "content": "{\"history_is_synthetic\": true, \"history\": [{\"id\": \"s01\", \"learning_rate\": 0.001, \"weight_decay\": 0.01, \"pressure_weight\": 1, \"divergence_weight\": 0, \"velocity_error\": 0.18, \"pressure_error\": 0.43, \"S\": 0.305, \"divergence\": 0.28, \"training_gpu_hours\": 0.07}, {\"id\": \"s02\", \"learning_rate\": 0.0003, \"weight_decay\": 0.001, \"pressure_weight\": 2, \"divergence_weight\": 0.001, \"velocity_error\": 0.177, \"pressure_error\": 0.421, \"S\": 0.299, \"divergence\": 0.14, \"training_gpu_hours\": 0.07}, {\"id\": \"s03\", \"learning_rate\": 0.002, \"weight_decay\": 0.0001, \"pressure_weight\": 0.5, \"divergence_weight\": 0.003, \"velocity_error\": 0.174, \"pressure_error\": 0.412, \"S\": 0.293, \"divergence\": 0.09333, \"training_gpu_hours\": 0.07}], \"remaining_training_gpu_hours\": 0.21, \"task\": \"Propose one new configuration with concise justification, citing history IDs.\"}"
+            }
+          ]
+        }
+      ],
+      "valid": true,
+      "time_to_configuration_seconds": 1.8644703980535269
+    }
+  ],
+  "attention": "sdpa",
+  "dtype": "bfloat16",
+  "warning": "Synthetic validity/cost check only. Not CFD accuracy, not profitability proven.",
+  "weight_origin": "original FP8 checkpoint dequantized to BF16, not pre-quantization BF16",
+  "tokenizer_load_seconds": 1.3951583364978433,
+  "model_process_cold_load_seconds": 24.662470034323633,
+  "cache_warning": "Process-cold load; filesystem cache not flushed, not physical cold-disk benchmark",
+  "parameter_count": 8918026240,
+  "chat_template_sha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+  "warmup_seconds": 4.340988345444202,
+  "all_probes_valid": true,
+  "all_first_attempts_valid": true,
+  "repeated_short_same_configuration": true,
+  "process_wall_seconds": 121.96764104440808,
+  "process_cpu_seconds": 111.47199456599999,
+  "one_gpu_process_active_hours_proxy": 0.033879900290113354,
+  "sampling_interval_seconds": 0.2,
+  "peak_sampled_rss_with_children_bytes": 11372773376,
+  "peak_sampled_nvml_process_gpu_bytes": 20405288960,
+  "nvml_warning": null,
+  "linux_ru_maxrss_kib": 11190192
+}

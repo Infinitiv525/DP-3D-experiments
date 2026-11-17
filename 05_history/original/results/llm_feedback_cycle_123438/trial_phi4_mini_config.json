@@ -1,0 +1,17 @@
+{
+  "revision": "937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "seed": 310003,
+  "pilot_only": true,
+  "training": {
+    "width": 12,
+    "layers": 2,
+    "modes": 4,
+    "epochs": 2,
+    "max_train_samples": 700,
+    "max_validation_samples": 150,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "pressure_weight": 1,
+    "divergence_weight": 0.003
+  }
+}

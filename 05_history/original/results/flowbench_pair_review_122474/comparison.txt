@@ -1,0 +1,10 @@
+FlowBench: matched additional training, no LLM.
+150 validation samples / 15 exact geometry groups; single training seed.
+fluid_velocity_relative_l2: baseline=0.1099811, extra-training control=0.10137452, divergence penalty=0.10898274; paired descriptive delta interval=[0.0058159284492333724, 0.00938178249448538]
+fluid_centered_pressure_relative_l2: baseline=0.68202892, extra-training control=0.66206252, divergence penalty=0.66181054; paired descriptive delta interval=[-0.007718049501379331, 0.0060725980823238684]
+predicted_divergence_rms_unit_cube: baseline=0.29261985, extra-training control=0.28746126, divergence penalty=0.087154415; paired descriptive delta interval=[-0.20462525252501168, -0.19637949203389385]
+baseline: best epoch 19, measured training+timing seconds 169.962
+control: best epoch 10, measured training+timing seconds 105.486
+divergence: best epoch 10, measured training+timing seconds 107.617
+Physics penalty trades about 0.76 percentage points of velocity error for lower FD divergence; pressure is nearly unchanged.
+No final test or LLM hypothesis was evaluated. Bootstrap does not include training-seed variability.

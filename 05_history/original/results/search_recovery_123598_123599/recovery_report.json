@@ -1,0 +1,366 @@
+{
+  "status": "PERSISTENT_SEARCH_SLURM_RECOVERY_PASSED",
+  "GPU_used": false,
+  "methods": {
+    "random": {
+      "training_seconds": 10.0,
+      "decision_seconds": 0.0,
+      "remaining_training_seconds": 20.0,
+      "remaining_decision_seconds": 20.0,
+      "training_overrun_seconds": 0.0,
+      "decision_overrun_seconds": 0.0,
+      "attempts_spent": 6,
+      "state": {
+        "attempts": [
+          {
+            "S": 0.3,
+            "decision_seconds": 0.0,
+            "metadata": {},
+            "number": 3,
+            "owner": {
+              "cluster": "slurm-perun2",
+              "job": "123598",
+              "mode": "slurm",
+              "user": "lutoke823"
+            },
+            "parameters": {
+              "divergence_weight": 0.01,
+              "learning_rate": 0.0001328525629197468,
+              "pressure_weight": 0.5,
+              "weight_decay": 4.892121465053042e-06
+            },
+            "phase": "finished",
+            "status": "complete",
+            "training_seconds": 2.0
+          },
+          {
+            "S": null,
+            "decision_seconds": 0.0,
+            "metadata": {},
+            "number": 4,
+            "owner": {
+              "cluster": "slurm-perun2",
+              "job": "123598",
+              "mode": "slurm",
+              "user": "lutoke823"
+            },
+            "parameters": {
+              "divergence_weight": 0.01,
+              "learning_rate": 0.002524043427998192,
+              "pressure_weight": 2,
+              "weight_decay": 0.002384032038411317
+            },
+            "phase": "finished",
+            "status": "interrupted_reserved_cost",
+            "training_seconds": 5.0
+          },
+          {
+            "number": 5,
+            "phase": "ready",
+            "parameters": {
+              "learning_rate": 0.00047493099630566257,
+              "weight_decay": 1.0524958217216555e-05,
+              "pressure_weight": 0.5,
+              "divergence_weight": 0.03
+            },
+            "metadata": {},
+            "owner": {
+              "mode": "slurm",
+              "job": "123599",
+              "user": "lutoke823",
+              "cluster": "slurm-perun2"
+            },
+            "training_seconds": 0.0,
+            "decision_seconds": 0.0,
+            "S": null,
+            "status": null
+          }
+        ],
+        "revision": 8,
+        "schema": 1,
+        "spec": {
+          "attempt_limit": 7,
+          "decision_limit": 20.0,
+          "history": [
+            {
+              "S": 0.4,
+              "parameters": {
+                "divergence_weight": 0.003,
+                "learning_rate": 0.0005902466456225451,
+                "pressure_weight": 1,
+                "weight_decay": 0.0016856333241475775
+              }
+            },
+            {
+              "S": 0.5,
+              "parameters": {
+                "divergence_weight": 0.003,
+                "learning_rate": 0.0001811489371384865,
+                "pressure_weight": 4,
+                "weight_decay": 0.0006615614068245561
+              }
+            },
+            {
+              "S": 0.6000000000000001,
+              "parameters": {
+                "divergence_weight": 0.01,
+                "learning_rate": 0.00014545300697458717,
+                "pressure_weight": 2,
+                "weight_decay": 1.2815841131970154e-06
+              }
+            }
+          ],
+          "identity": {
+            "fixture": 1,
+            "purpose": "synthetic_cpu_recovery_not_main"
+          },
+          "method": "random",
+          "seed": 91,
+          "shared_seconds": 3.0,
+          "software": {
+            "numpy": "2.3.5",
+            "optuna": "5.0.0",
+            "python": "3.12.15",
+            "sources": {
+              "persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+              "search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01"
+            }
+          },
+          "training_limit": 30.0
+        }
+      }
+    },
+    "tpe": {
+      "training_seconds": 10.0,
+      "decision_seconds": 0.0,
+      "remaining_training_seconds": 20.0,
+      "remaining_decision_seconds": 20.0,
+      "training_overrun_seconds": 0.0,
+      "decision_overrun_seconds": 0.0,
+      "attempts_spent": 6,
+      "state": {
+        "attempts": [
+          {
+            "S": 0.3,
+            "decision_seconds": 0.0,
+            "metadata": {},
+            "number": 3,
+            "owner": {
+              "cluster": "slurm-perun2",
+              "job": "123598",
+              "mode": "slurm",
+              "user": "lutoke823"
+            },
+            "parameters": {
+              "divergence_weight": 0.003,
+              "learning_rate": 0.002178270877611509,
+              "pressure_weight": 1,
+              "weight_decay": 0.009546664765021046
+            },
+            "phase": "finished",
+            "status": "complete",
+            "training_seconds": 2.0
+          },
+          {
+            "S": null,
+            "decision_seconds": 0.0,
+            "metadata": {},
+            "number": 4,
+            "owner": {
+              "cluster": "slurm-perun2",
+              "job": "123598",
+              "mode": "slurm",
+              "user": "lutoke823"
+            },
+            "parameters": {
+              "divergence_weight": 0.001,
+              "learning_rate": 0.0028824094560679237,
+              "pressure_weight": 0.25,
+              "weight_decay": 1.4070605777455204e-05
+            },
+            "phase": "finished",
+            "status": "interrupted_reserved_cost",
+            "training_seconds": 5.0
+          },
+          {
+            "number": 5,
+            "phase": "ready",
+            "parameters": {
+              "learning_rate": 0.002733936986968043,
+              "weight_decay": 0.00862441874542117,
+              "pressure_weight": 1,
+              "divergence_weight": 0
+            },
+            "metadata": {},
+            "owner": {
+              "mode": "slurm",
+              "job": "123599",
+              "user": "lutoke823",
+              "cluster": "slurm-perun2"
+            },
+            "training_seconds": 0.0,
+            "decision_seconds": 0.0,
+            "S": null,
+            "status": null
+          }
+        ],
+        "revision": 8,
+        "schema": 1,
+        "spec": {
+          "attempt_limit": 7,
+          "decision_limit": 20.0,
+          "history": [
+            {
+              "S": 0.4,
+              "parameters": {
+                "divergence_weight": 0.003,
+                "learning_rate": 0.0005902466456225451,
+                "pressure_weight": 1,
+                "weight_decay": 0.0016856333241475775
+              }
+            },
+            {
+              "S": 0.5,
+              "parameters": {
+                "divergence_weight": 0.003,
+                "learning_rate": 0.0001811489371384865,
+                "pressure_weight": 4,
+                "weight_decay": 0.0006615614068245561
+              }
+            },
+            {
+              "S": 0.6000000000000001,
+              "parameters": {
+                "divergence_weight": 0.01,
+                "learning_rate": 0.00014545300697458717,
+                "pressure_weight": 2,
+                "weight_decay": 1.2815841131970154e-06
+              }
+            }
+          ],
+          "identity": {
+            "fixture": 1,
+            "purpose": "synthetic_cpu_recovery_not_main"
+          },
+          "method": "tpe",
+          "seed": 91,
+          "shared_seconds": 3.0,
+          "software": {
+            "numpy": "2.3.5",
+            "optuna": "5.0.0",
+            "python": "3.12.15",
+            "sources": {
+              "persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+              "search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01"
+            }
+          },
+          "training_limit": 30.0
+        }
+      }
+    },
+    "external": {
+      "training_seconds": 5.0,
+      "decision_seconds": 5.0,
+      "remaining_training_seconds": 25.0,
+      "remaining_decision_seconds": 15.0,
+      "training_overrun_seconds": 0.0,
+      "decision_overrun_seconds": 0.0,
+      "attempts_spent": 5,
+      "state": {
+        "attempts": [
+          {
+            "S": 0.3,
+            "decision_seconds": 1.0,
+            "metadata": {
+              "reason": "synthetic"
+            },
+            "number": 3,
+            "owner": {
+              "cluster": "slurm-perun2",
+              "job": "123598",
+              "mode": "slurm",
+              "user": "lutoke823"
+            },
+            "parameters": {
+              "divergence_weight": 0.003,
+              "learning_rate": 0.0005902466456225451,
+              "pressure_weight": 1,
+              "weight_decay": 0.0016856333241475775
+            },
+            "phase": "finished",
+            "status": "complete",
+            "training_seconds": 2.0
+          },
+          {
+            "S": null,
+            "decision_seconds": 4.0,
+            "metadata": {},
+            "number": 4,
+            "owner": {
+              "cluster": "slurm-perun2",
+              "job": "123598",
+              "mode": "slurm",
+              "user": "lutoke823"
+            },
+            "parameters": null,
+            "phase": "finished",
+            "status": "interrupted_reserved_cost",
+            "training_seconds": 0.0
+          }
+        ],
+        "revision": 7,
+        "schema": 1,
+        "spec": {
+          "attempt_limit": 7,
+          "decision_limit": 20.0,
+          "history": [
+            {
+              "S": 0.4,
+              "parameters": {
+                "divergence_weight": 0.003,
+                "learning_rate": 0.0005902466456225451,
+                "pressure_weight": 1,
+                "weight_decay": 0.0016856333241475775
+              }
+            },
+            {
+              "S": 0.5,
+              "parameters": {
+                "divergence_weight": 0.003,
+                "learning_rate": 0.0001811489371384865,
+                "pressure_weight": 4,
+                "weight_decay": 0.0006615614068245561
+              }
+            },
+            {
+              "S": 0.6000000000000001,
+              "parameters": {
+                "divergence_weight": 0.01,
+                "learning_rate": 0.00014545300697458717,
+                "pressure_weight": 2,
+                "weight_decay": 1.2815841131970154e-06
+              }
+            }
+          ],
+          "identity": {
+            "fixture": 1,
+            "purpose": "synthetic_cpu_recovery_not_main"
+          },
+          "method": "external",
+          "seed": 91,
+          "shared_seconds": 3.0,
+          "software": {
+            "numpy": "2.3.5",
+            "optuna": "5.0.0",
+            "python": "3.12.15",
+            "sources": {
+              "persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+              "search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01"
+            }
+          },
+          "training_limit": 30.0
+        }
+      }
+    }
+  }
+}

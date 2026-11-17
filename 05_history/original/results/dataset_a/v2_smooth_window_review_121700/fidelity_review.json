@@ -1,0 +1,234 @@
+{
+  "status": "FIDELITY_WINDOWS_REVIEW_COMPLETE",
+  "job": "110147",
+  "case_paths": {
+    "fine_dt02": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_mp_001_solvgate_121235_5_smooth",
+    "coarse_dt01": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/fidelity/a2_mp_001_fidelity_110147_coarse_dt01",
+    "coarse_dt02": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/full_cost_pilot/a2_mp_001_fullcost_109922"
+  },
+  "fine_case_override": true,
+  "comparison_scope": "Smooth fine versus existing hard-transition coarse configuration; not pure h-only convergence",
+  "wake_bounds_xy_m": [
+    -0.0035,
+    0.08312094070244692,
+    -0.026060254037844385,
+    0.039020940702446924
+  ],
+  "results": [
+    {
+      "comparison": "mesh",
+      "tau_window": [
+        4,
+        12
+      ],
+      "reference": "fine_dt02",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.011981875024139454,
+        "velocity_relative_l2_wake": 0.021995257331984312,
+        "pressure_mean_aligned_relative_l2_global": 0.08871514241741241,
+        "mean_drag_coefficient_relative_difference": 3.367700459018443e-05,
+        "mean_lift_coefficient_absolute_difference": 0.010261658037282073
+      },
+      "force_stats": {
+        "fine_dt02": {
+          "mean_cd": 2.4119704178511263,
+          "mean_cl": -0.6868995818947526,
+          "std_cd": 0.07411322435878288,
+          "std_cl": 0.13549373707478074
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.4120516457899597,
+          "mean_cl": -0.6766379238574706,
+          "std_cd": 0.07117090297605269,
+          "std_cl": 0.12169492887236395
+        }
+      },
+      "exploratory_screen_passed": true
+    },
+    {
+      "comparison": "mesh",
+      "tau_window": [
+        12,
+        24
+      ],
+      "reference": "fine_dt02",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.018005071593106364,
+        "velocity_relative_l2_wake": 0.024614392457238343,
+        "pressure_mean_aligned_relative_l2_global": 0.08790086217934533,
+        "mean_drag_coefficient_relative_difference": 0.006569860943440056,
+        "mean_lift_coefficient_absolute_difference": 0.007226395576739764
+      },
+      "force_stats": {
+        "fine_dt02": {
+          "mean_cd": 2.2714905148036166,
+          "mean_cl": -0.558901579279332,
+          "std_cd": 0.0205362821006949,
+          "std_cl": 0.017285350683869268
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.2864138916202195,
+          "mean_cl": -0.5661279748560718,
+          "std_cd": 0.01587830749469314,
+          "std_cl": 0.011094593217815037
+        }
+      },
+      "exploratory_screen_passed": true
+    },
+    {
+      "comparison": "mesh",
+      "tau_window": [
+        24,
+        40
+      ],
+      "reference": "fine_dt02",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.017379283745605458,
+        "velocity_relative_l2_wake": 0.022775746976341712,
+        "pressure_mean_aligned_relative_l2_global": 0.0693635364817586,
+        "mean_drag_coefficient_relative_difference": 0.012330351279849426,
+        "mean_lift_coefficient_absolute_difference": 0.02035829634365094
+      },
+      "force_stats": {
+        "fine_dt02": {
+          "mean_cd": 2.2331056896613024,
+          "mean_cl": -0.5325944413137729,
+          "std_cd": 0.005234807566199318,
+          "std_cl": 0.0032518881331669476
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.2606406672598567,
+          "mean_cl": -0.5529527376574238,
+          "std_cd": 0.0027875979453115883,
+          "std_cl": 0.0013722525747018755
+        }
+      },
+      "exploratory_screen_passed": true
+    },
+    {
+      "comparison": "time_step",
+      "tau_window": [
+        4,
+        12
+      ],
+      "reference": "coarse_dt01",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.0009078382164880505,
+        "velocity_relative_l2_wake": 0.0016969803450444197,
+        "pressure_mean_aligned_relative_l2_global": 0.007180332870994104,
+        "mean_drag_coefficient_relative_difference": 0.00023791324145607196,
+        "mean_lift_coefficient_absolute_difference": 0.0032990619590688164
+      },
+      "force_stats": {
+        "coarse_dt01": {
+          "mean_cd": 2.411477923260537,
+          "mean_cl": -0.6799369858165394,
+          "std_cd": 0.07085597387227367,
+          "std_cl": 0.12060772188764675
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.4120516457899597,
+          "mean_cl": -0.6766379238574706,
+          "std_cd": 0.07117090297605269,
+          "std_cl": 0.12169492887236395
+        }
+      },
+      "exploratory_screen_passed": true
+    },
+    {
+      "comparison": "time_step",
+      "tau_window": [
+        12,
+        24
+      ],
+      "reference": "coarse_dt01",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.0012374091534653202,
+        "velocity_relative_l2_wake": 0.001965096868231871,
+        "pressure_mean_aligned_relative_l2_global": 0.00810231272729405,
+        "mean_drag_coefficient_relative_difference": 0.0002352282283091259,
+        "mean_lift_coefficient_absolute_difference": 0.00510016915380096
+      },
+      "force_stats": {
+        "coarse_dt01": {
+          "mean_cd": 2.2869518472514767,
+          "mean_cl": -0.5712281440098728,
+          "std_cd": 0.015562704644709682,
+          "std_cl": 0.010961561646453793
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.2864138916202195,
+          "mean_cl": -0.5661279748560718,
+          "std_cd": 0.01587830749469314,
+          "std_cl": 0.011094593217815037
+        }
+      },
+      "exploratory_screen_passed": true
+    },
+    {
+      "comparison": "time_step",
+      "tau_window": [
+        24,
+        40
+      ],
+      "reference": "coarse_dt01",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.0012703541965065324,
+        "velocity_relative_l2_wake": 0.002057605936097746,
+        "pressure_mean_aligned_relative_l2_global": 0.007275845110073662,
+        "mean_drag_coefficient_relative_difference": 0.0004167001514519446,
+        "mean_lift_coefficient_absolute_difference": 0.005486705917498447
+      },
+      "force_stats": {
+        "coarse_dt01": {
+          "mean_cd": 2.2615830692673415,
+          "mean_cl": -0.5584394435749223,
+          "std_cd": 0.0026796130047983683,
+          "std_cl": 0.0012093570972298256
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.2606406672598567,
+          "mean_cl": -0.5529527376574238,
+          "std_cd": 0.0027875979453115883,
+          "std_cl": 0.0013722525747018755
+        }
+      },
+      "exploratory_screen_passed": true
+    }
+  ],
+  "flux_audits": {
+    "fine_dt02": {
+      "max_sampled_inlet_outlet_relative_imbalance": 7.652631612279826e-09,
+      "max_sampled_periodic_relative_imbalance": 7.791368420683828e-10,
+      "sample_count": 7506,
+      "passed": true
+    },
+    "coarse_dt01": {
+      "max_sampled_inlet_outlet_relative_imbalance": 1.0652631577467108e-08,
+      "max_sampled_periodic_relative_imbalance": 1.4497894735490502e-09,
+      "sample_count": 8617,
+      "passed": true
+    },
+    "coarse_dt02": {
+      "max_sampled_inlet_outlet_relative_imbalance": 5.893684206606081e-08,
+      "max_sampled_periodic_relative_imbalance": 2.5752631579581333e-09,
+      "sample_count": 42736,
+      "passed": true
+    }
+  },
+  "all_exploratory_screens_passed": true,
+  "production_authorized_automatically": false,
+  "limitations": [
+    "Thresholds are exploratory study design choices, not externally established physical tolerances.",
+    "A two-mesh comparison is a discrepancy estimate, not a mesh-convergence proof.",
+    "The fine mesh retains adaptive stepping; this does not completely isolate spatial discretization.",
+    "The independently initialized fine run ends at tau 40; no fine late-time tau 320-400 trajectory is claimed.",
+    "Passing this training geometry does not validate all other families or authorize automatic bulk generation."
+  ]
+}

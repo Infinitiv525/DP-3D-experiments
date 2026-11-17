@@ -1,0 +1,68 @@
+ZAVERECNE MERANIE – uzamknuty dodatok, 22.10.2026
+
+Pouzivatel schvalil „Ano, spusti to“. Povodny trenovaci manifest ani jeho
+test_execution_released=false sa nemenia. Samostatne schvalenie uzamyka
+70 hotovych checkpointov a vsetkych95 odkazov. Ziadne dalsie trenovanie,
+vyber modelu na teste alebo ladene nastavenia po nahliadnuti do testu.
+
+PRESNOST: jediny beh, vsetkych150 uzamknutych testovacich pripadov
+(15 geometrii x10 Reynoldsovych cisel) pre kazdy zo70 fyzickych modelov.
+Zhodne modely sa meraju iba raz a ich povodne odkazy zostanu zachovane.
+FP32 inferencia, fluid=SDF>0, povodna train-only normalizacia, povodna
+float64 metrika relativnej chyby rychlosti a tlakovej chyby po odstraneni
+tlakovej konstanty. S=0.5Eu+0.5Ep. Najprv priemer10Re v geometrii, potom
+rovnake vahy15 geometrii. Divergencia predikcie aj referencie len diagnosticka.
+Ulozit kazdy pripad, geometriu, Eu/Ep/normy/divergencie, SHA modelov,
+normalizacie, splitu, zdrojov, prostredie, cas/CPU/RAM/GPU a vsetky aliasy.
+Bez vynechavania nevyhodnych pripadov. Neplatne hodnoty zastavia beh.
+
+RYCHLOST: oddeleny beh vsetkych70 modelov na tej istej pridelenej H200.
+Batch1,64^3,FP32,TF32 vypnute, cudnn.benchmark=false,4 CPU threads.
+Pevne vstupy: prvy index kazdej z15 validacnych geometrii, cyklicke poradie.
+Testovacie cielove hodnoty sa v tomto merani vobec neotvaraju.
+Kazdy model:3 kola, kazde3 rezimy;100 zahrievacich a1000 meranych volani
+na rezim/kolo. Poradie rezimov sa rotuje podla kola. Modely v poradi
+uzamknuteho final_plan, bez vylucovania, pretaktovania alebo kompilacie.
+model_only=normalizovane GPU features -> siet;
+gpu_pipeline=GPU vstup -> normalizacia + koordinaty + siet + denormalizacia;
+host_to_host=CPU vstup -> prenosGPU + gpu_pipeline + navratCPU.
+Pred meranim overit bitovo zhodne fyzikalne vystupy vsetkych wrapperov.
+Wall cas s explicitnou CUDA synchronizaciou; CUDA events zvlast.
+Hlavna hranica:gpu_pipeline wall p99<=5ms V KAZDOM z3 kol, nie iba spolocny
+percentil. p50/p95/p99 linear, min/max/mean, vsetky jednotlive casy ulozit.
+Disk, vytvaranieSDF, vizualizacia a LLM nie su sucastou inferencneho casu.
+Host-to-host reportovat oddelene; nie je to garancia celeho interaktivneho systemu.
+Zaznamenat GPU UUID/ovladac/verzie; zdielanieGPU, teplota a instrumentacia
+mozu ovplyvnit percentily. Tri kola nie su tri nezavisle vedecke replikacie.
+
+Bezpecnost: nova SHA autorizacia pred otvorenim targetov, vlastna overena
+Slurm rezervacia, trvaly jednorazovy claim pred nacitanim numerickych dat.
+Ziaden automaticky retry ani pri chybe. Dve alokacie po max7200s, kazda1GPU,
+v povodnom spolocnom limite70GPU-h. Po skonceni CPUafterany ulozi skutocny
+Slurm runtime a zauctuje ho. Merania pobeziace za sebou; vsetky vahy/data
+zostavaju naPerune. Lokalny disk dostane len male reporty.
+
+Statisticke nastavenia sa nemenia: ulozit tensor6metod x15geometrii x3search
+replikacie x5finalseed a pouzit povodny main_statistics.py (10k bootstrap,
+seed510001,4LLM-TPE kontrasty, Bonferroni98.75% intervaly s pribliznym pokrytim).
+Manualnych5 modelov popisat samostatne. Alias nie je nova nezavisla vzorka.
+Interpretaciu a znenie hypotez riesit az v dizertacii; zatial ulozit cisla.
+DodatokV2: prve odoslanieV1 zlyhalo na chybajucompsutil pri importe,
+pred claimom a pred otvorenimnumerickychdat. V2 odstranilo import treningovej
+orchestracie; pomocne atomicke zapisy a ledgeridentity su standardlibrary-only.
+Povodny pokus aj V1freeze zostavaju archivovane. Nie je to opakovanie testu,
+pretozeV1 nikdy neziskalo testove vysledky. Vedecke nastavenia su nezmenene.
+DodatokV3 – opravnena technicka repriza po preruseniV2:
+Pouzivatel na otazku, ci spustit zdokumentovane opakovanie po chybe,
+odpovedal „ano“. PovodnyV2claim a opened_test_ids=[10] zostanu zachovane.
+Prerusenietestu a jeho dovod budu uvedene pri vysledkoch; test uz nemozno
+opisat ako nikdy predtym ani ciastocne otvoreny. Ziadne dosiahnuteskore
+modelu sa zV2neulozilo a nesluzilo na zmenu/vyber modelov.
+Oprava iba tvaru fluidmasky pre povodnu diagnostiku divergencie.
+Najprv samostatny validation_smoke max900s/1GPU s vlastnou rezervaciou,
+vsetkych150validacnychpripadov prveho lockedmodelu, porovnanie s povodnym
+best_validation Eu/Ep/S tolerancia2e-6; diagnostika divergencie a kratke
+technicke overenie3latencywrapperov. Ziaden novy pristup k testY vpreflight.
+Az po jeho uspechu a uzavreti rezervacie spustit povodnych70modelov na teste
+aj plnu latenciu3x3x1000. Nijake automaticke opakovanie pri dalsejchybe.
+

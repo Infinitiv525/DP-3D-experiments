@@ -1,0 +1,156 @@
+{
+  "status": "FNO_MULTISEED_PILOT_OK",
+  "seed_count": 3,
+  "seeds": [
+    20261014,
+    20261015,
+    20261016
+  ],
+  "test_splits_read": false,
+  "descriptive_only_no_significance_claim": true,
+  "variants": {
+    "base": {
+      "selection_score": {
+        "mean": 1.4260972103278278,
+        "sample_std": 0.23834424925823944,
+        "median": 1.421148278354932
+      },
+      "mean_mse": {
+        "mean": 1.499573217864769,
+        "sample_std": 0.4605469391329375,
+        "median": 1.344522533370182
+      },
+      "tail_50_mean_mse": {
+        "mean": 1.8562583486239115,
+        "sample_std": 0.4231624931331784,
+        "median": 2.0796239840984345
+      },
+      "normalized_divergence_rms": {
+        "mean": 0.161328657906779,
+        "sample_std": 0.04173355529422507,
+        "median": 0.17305166163781338
+      },
+      "latency_p99_ms": {
+        "mean": 1.4077213025093078,
+        "sample_std": 0.00921042628044094,
+        "median": 1.4087238824367523
+      }
+    },
+    "control": {
+      "selection_score": {
+        "mean": 1.4951671919280642,
+        "sample_std": 0.02794531043545805,
+        "median": 1.4860319139726383
+      },
+      "mean_mse": {
+        "mean": 1.6737691083038226,
+        "sample_std": 0.025323127660865412,
+        "median": 1.682000101073645
+      },
+      "tail_50_mean_mse": {
+        "mean": 1.7842763934532802,
+        "sample_std": 0.11621668290259397,
+        "median": 1.718976189494133
+      },
+      "normalized_divergence_rms": {
+        "mean": 0.1437273063065494,
+        "sample_std": 0.008411177037279147,
+        "median": 0.14602681574491444
+      },
+      "latency_p99_ms": {
+        "mean": 1.417391344308853,
+        "sample_std": 0.00398811501707787,
+        "median": 1.4176348638534546
+      }
+    },
+    "physics": {
+      "selection_score": {
+        "mean": 1.494739837573073,
+        "sample_std": 0.08498878505370716,
+        "median": 1.5298593954559454
+      },
+      "mean_mse": {
+        "mean": 1.6811116292808828,
+        "sample_std": 0.08132243170905391,
+        "median": 1.691514760828577
+      },
+      "tail_50_mean_mse": {
+        "mean": 1.7779594953854876,
+        "sample_std": 0.30038283447792735,
+        "median": 1.943238496184349
+      },
+      "normalized_divergence_rms": {
+        "mean": 0.13143520512666745,
+        "sample_std": 0.027638991814837453,
+        "median": 0.13080380247189893
+      },
+      "latency_p99_ms": {
+        "mean": 1.416754656235377,
+        "sample_std": 0.008451267911575577,
+        "median": 1.4131606197357178
+      }
+    }
+  },
+  "paired_physics_vs_control": {
+    "selection_score": {
+      "mean_difference_physics_minus_control": -0.000427354354991379,
+      "mean_percent_difference": -0.04571951971518384,
+      "median_percent_difference": 0.21764983137848268,
+      "physics_wins_lower_is_better": 1,
+      "pairs": 3,
+      "per_seed_percent_difference": [
+        -5.099554234123508,
+        0.21764983137848268,
+        4.744745843599474
+      ]
+    },
+    "mean_mse": {
+      "mean_difference_physics_minus_control": 0.007342520977060045,
+      "mean_percent_difference": 0.41468936852651606,
+      "median_percent_difference": -0.14392400342620357,
+      "physics_wins_lower_is_better": 2,
+      "pairs": 3,
+      "per_seed_percent_difference": [
+        -3.055039585911002,
+        -0.14392400342620357,
+        4.443031694916754
+      ]
+    },
+    "tail_50_mean_mse": {
+      "mean_difference_physics_minus_control": -0.006316898067792269,
+      "mean_percent_difference": -0.4075767900563652,
+      "median_percent_difference": 1.2917965288604423,
+      "physics_wins_lower_is_better": 1,
+      "pairs": 3,
+      "per_seed_percent_difference": [
+        -16.73922401742144,
+        1.2917965288604423,
+        14.224697118391902
+      ]
+    },
+    "normalized_divergence_rms": {
+      "mean_difference_physics_minus_control": -0.012292101179881942,
+      "mean_percent_difference": -8.155306373580656,
+      "median_percent_difference": -2.679739682855618,
+      "physics_wins_lower_is_better": 2,
+      "pairs": 3,
+      "per_seed_percent_difference": [
+        -2.679739682855618,
+        -30.93359038803461,
+        9.14741095014826
+      ]
+    },
+    "latency_p99_ms": {
+      "mean_difference_physics_minus_control": -0.0006366880734762029,
+      "mean_percent_difference": -0.04333099311726207,
+      "median_percent_difference": -0.3156132959071538,
+      "physics_wins_lower_is_better": 2,
+      "pairs": 3,
+      "per_seed_percent_difference": [
+        -0.3156132959071538,
+        0.9284637291110212,
+        -0.7428434125556536
+      ]
+    }
+  }
+}

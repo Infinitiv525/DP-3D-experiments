@@ -1,0 +1,176 @@
+{
+  "status": "NATIVE_FAMILY_FIDELITY_REVIEW_COMPLETE",
+  "scenario": {
+    "scenario_id": "a2_sc_001",
+    "split": "train",
+    "family": "spanning_cylinder",
+    "arrangement": "single",
+    "u_inlet_m_s": "0.0175",
+    "reference_length_m": "0.0085",
+    "reynolds": "148.75",
+    "nu_m2_s": "1e-06",
+    "t_end_s": "194.28571",
+    "startup_dense_end_s": "38.857143",
+    "developed_dense_start_s": "155.42857",
+    "dense_write_interval_s": "0.19428571",
+    "sparse_write_interval_s": "1.9428571",
+    "expected_retained_states": "461",
+    "ood_axis": "none",
+    "test_locked": "false"
+  },
+  "comparison_windows": [
+    {
+      "window_tau": [
+        4,
+        12
+      ],
+      "metrics": {
+        "velocity_relative_l2_global": 0.004060404547765063,
+        "pressure_mean_aligned_relative_l2_global": 0.01881902166047307,
+        "velocity_relative_l2_wake": 0.007064944586068084,
+        "mean_drag_coefficient_relative_difference": 0.0077806080234207025,
+        "mean_lift_coefficient_absolute_difference": 0.0042588459725681
+      },
+      "force_means_cd_cl": {
+        "coarse": [
+          6.173086270194442,
+          0.0335758867801177
+        ],
+        "fine": [
+          6.221493270653748,
+          0.0378347327526858
+        ]
+      },
+      "passed": true
+    },
+    {
+      "window_tau": [
+        12,
+        24
+      ],
+      "metrics": {
+        "velocity_relative_l2_global": 0.007910894966963344,
+        "pressure_mean_aligned_relative_l2_global": 0.03350201562088729,
+        "velocity_relative_l2_wake": 0.01376684791420766,
+        "mean_drag_coefficient_relative_difference": 0.007908780053003949,
+        "mean_lift_coefficient_absolute_difference": 0.006229644939109699
+      },
+      "force_means_cd_cl": {
+        "coarse": [
+          5.836861247013929,
+          0.035010382809360224
+        ],
+        "fine": [
+          5.8833916979184355,
+          0.041240027748469923
+        ]
+      },
+      "passed": true
+    },
+    {
+      "window_tau": [
+        24,
+        40
+      ],
+      "metrics": {
+        "velocity_relative_l2_global": 0.030958664399698174,
+        "pressure_mean_aligned_relative_l2_global": 0.09547983340518466,
+        "velocity_relative_l2_wake": 0.04130644893749541,
+        "mean_drag_coefficient_relative_difference": 0.0038877025577922037,
+        "mean_lift_coefficient_absolute_difference": 0.007117173341694686
+      },
+      "force_means_cd_cl": {
+        "coarse": [
+          6.181832175286019,
+          0.005785475506288365
+        ],
+        "fine": [
+          6.205959098346213,
+          -0.0013316978354063203
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "all_exploratory_screens_passed": true,
+  "flux_audits": {
+    "coarse": {
+      "max_inlet_outlet_relative_imbalance": 1.382857141823213e-08,
+      "max_periodic_relative_imbalance": 2.326594285717241e-09,
+      "samples": 18597,
+      "passed": true
+    },
+    "fine": {
+      "max_inlet_outlet_relative_imbalance": 8.157142960848224e-09,
+      "max_periodic_relative_imbalance": 5.508999999976491e-09,
+      "samples": 14883,
+      "passed": true
+    }
+  },
+  "case_paths": {
+    "coarse": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/cylinder_spatial_20261024_v1/a2_sc_001_coarse_129254",
+    "fine": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/cylinder_temporal_20261023_v1/a2_sc_001_coarse_128179"
+  },
+  "source_hashes": {
+    "/mnt/project/perun2601449/dp_llm_cfd/results/native_expansion/cylinder_spatial_20261024_v1/family_runs/a2_sc_001_coarse_129254/summary.json": "a369009f802fdec399e38364bfb160ed3d5a615522aa2114d221939403b0f4c7",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/native_expansion/cylinder_temporal_20261023_v1/family_runs/a2_sc_001_coarse_128179/summary.json": "78f80bc9dde8d85074b41bb96b6e0f11de98c6164083cd9039c9188101404752"
+  },
+  "wake_bounds_xy_m": [
+    -0.0075,
+    0.06534319115880279,
+    -0.047843191158802784,
+    0.02984319115880278
+  ],
+  "discarded_overlap_history_rows": {
+    "coarse": {
+      "forces": 0,
+      "inletFlux": 0,
+      "outletFlux": 0,
+      "frontFlux": 0,
+      "backFlux": 0
+    },
+    "fine": {
+      "forces": 0,
+      "inletFlux": 0,
+      "outletFlux": 0,
+      "frontFlux": 0,
+      "backFlux": 0
+    }
+  },
+  "pressure_gauge_adjusted": true,
+  "exported_states_per_branch": 101,
+  "production_accepted": false,
+  "model_test_metrics_computed": false,
+  "source_freeze_sha256": "6cdecb54b83b130052e7f9c96bebc4288d7f12eabfd4e36e441240566c0831d1",
+  "limitations": [
+    "Keep existing exploratory tolerances; do not loosen thresholds after results",
+    "Two configuration comparisons are not mesh convergence or late tau320-400 verification",
+    "Successful numerical run alone does not certify physical fidelity",
+    "No bulk72-case production or LLM training on absent datasets",
+    "No weights or CFD arrays downloaded locally"
+  ],
+  "force_endpoint_audit": {
+    "coarse": {
+      "original_end_tau": 39.99937594650734,
+      "appended_actual_endpoint": true,
+      "endpoint_gap_tau": 0.0006240534926575947,
+      "method": "OpenFOAM offline forceCoeffs from saved final fields; no solver time stepping"
+    },
+    "fine": {
+      "original_end_tau": 39.99871848071254,
+      "appended_actual_endpoint": true,
+      "endpoint_gap_tau": 0.001281519287459787,
+      "method": "OpenFOAM offline forceCoeffs from saved final fields; no solver time stepping"
+    }
+  },
+  "recovery_freeze_sha256": "024146b201f8baea3acfeb6b3aca3c74f870af47f6e0b96e392821cdc45cbc0c",
+  "original_failed_review_preserved": true,
+  "analysis_solver_rerun": false,
+  "new_refinement_CFD_job": "129254",
+  "comparison_kind": "spatial_at_matched_temporal_settings",
+  "branch_definitions": {
+    "coarse": "candidate factor0.8",
+    "fine": "reference factor1.0, temporal128179"
+  },
+  "phase_alignment_used_for_acceptance": false
+}

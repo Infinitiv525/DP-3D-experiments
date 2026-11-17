@@ -1,0 +1,14 @@
+{
+  "phase": "technical_pilot",
+  "model": "ministral3_8b",
+  "transport_policy": "single_complete_json_fence_only_v1",
+  "freeze_sha256": "06830e31f5399f0fb27b6eec266d8b9606b93240d06b7a166ddbc26d1adb2ed1",
+  "replay_sha256": "74dd0731054eec93a5c036e8327d798c0047d4aca0b8a199ac1a04e645b8ada5",
+  "normalization_sha256": "4be8c93636019e6ab4765dc366e041dd28a0bc97fb560b715b0c44192edf2ce9",
+  "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf",
+  "sources": {
+    "run_transport_confirmation.py": "7304b8566405c31c9a3d8cf7098c68fe1e2a4a1396d7ef3f310e486af042a73a",
+    "propose_configuration_transport_v1.py": "1799e79456b4fb89368297ad5dd4145913b0a33d0455ee9d93049b04735e2784",
+    "configurator_transport_v1.py": "08a4fda7e77825d0c36dc339842ed68cfe23f0c4ad9bc03759a1cf7c3145fa6d"
+  }
+}

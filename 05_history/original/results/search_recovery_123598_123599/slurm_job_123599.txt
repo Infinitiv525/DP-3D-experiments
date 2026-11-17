@@ -1,0 +1,30 @@
+JobId=123599 JobName=dp-search-recovery-verify
+   UserId=lutoke823(507402392) GroupId=domain users(507400513) MCS_label=N/A
+   Priority=1268 Nice=0 Account=perun2601449 QOS=perun2601449
+   JobState=COMPLETED Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=00:05:00 TimeMin=N/A
+   SubmitTime=2026-10-21T11:05:56 EligibleTime=2026-10-21T11:05:59
+   AccrueTime=Unknown
+   StartTime=2026-10-21T11:05:59 EndTime=2026-10-21T11:05:59 Deadline=N/A
+   PreemptEligibleTime=2026-10-21T11:05:59 PreemptTime=None
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-21T11:05:59 Scheduler=Main
+   Partition=cpu_short AllocNode:Sid=login01:3307190
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=cn01
+   BatchHost=cn01
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=2G,node=1,billing=1
+   AllocTRES=cpu=1,mem=2G,node=1,billing=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=2G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Exclusive=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/mnt/project/perun2601449/dp_llm_cfd/test/scripts/104_verify_persistent_search.sbatch
+   SubmitLine=sbatch --parsable --dependency=afterany:123598 test/scripts/104_verify_persistent_search.sbatch 123598
+   WorkDir=/mnt/project/perun2601449/dp_llm_cfd
+   StdErr=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-search-recovery-verify_123599.err
+   StdIn=/dev/null
+   StdOut=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-search-recovery-verify_123599.out
+   TresPerTask=cpu=1
+

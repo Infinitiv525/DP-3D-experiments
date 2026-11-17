@@ -1,0 +1,326 @@
+{
+  "date": "2026-10-30",
+  "originals_preserved": true,
+  "existing_report_receipt_verified": true,
+  "existing_builder_hash_verified": true,
+  "files": [
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\01_testovacia_presnost.png",
+      "copy": "01_flowbench_3d_fno/report/01_testovacia_presnost.png",
+      "sha256": "2d00820491af152dd03dc1814fd9139c3af20c63983711c7d68bddbb3aa0ca09",
+      "bytes": 68117
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\01_testovacia_presnost.svg",
+      "copy": "01_flowbench_3d_fno/report/01_testovacia_presnost.svg",
+      "sha256": "e67c45619923fea49a3ee4d490de74b8367d0aaaa17fe1f68ad84bebffddd32b",
+      "bytes": 58158
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\02_porovnanie_llm_tpe.png",
+      "copy": "01_flowbench_3d_fno/report/02_porovnanie_llm_tpe.png",
+      "sha256": "6f54e170734df83e1d1fc6ffe38dd34f128edbe7584eb4a0251a80aa11661cfb",
+      "bytes": 48912
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\02_porovnanie_llm_tpe.svg",
+      "copy": "01_flowbench_3d_fno/report/02_porovnanie_llm_tpe.svg",
+      "sha256": "7a21191a8491666003e028f744f77f43daa5cdcaecedf967c406579a1878e5b6",
+      "bytes": 51400
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\03_naklady_vyberu.png",
+      "copy": "01_flowbench_3d_fno/report/03_naklady_vyberu.png",
+      "sha256": "2bf6f8e8cd813a5ea2a660452629a137877396db987e8a4a981f1f09361a9e03",
+      "bytes": 72532
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\03_naklady_vyberu.svg",
+      "copy": "01_flowbench_3d_fno/report/03_naklady_vyberu.svg",
+      "sha256": "9de9dca6cd3296314fc5978827f8ea098c08489e03be81d65803c7f6c7fee2fd",
+      "bytes": 59013
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\04_priebeh_hladania.png",
+      "copy": "01_flowbench_3d_fno/report/04_priebeh_hladania.png",
+      "sha256": "6665cb5fec70e02c3a21fa28919b0ccd9ac457e24874ddc95dff7265f7dbc267",
+      "bytes": 92174
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\04_priebeh_hladania.svg",
+      "copy": "01_flowbench_3d_fno/report/04_priebeh_hladania.svg",
+      "sha256": "1df46eda21a229c969a5665e412c073639707c13269147e4c97f64c9f9015d9e",
+      "bytes": 66179
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\05_latencia.png",
+      "copy": "01_flowbench_3d_fno/report/05_latencia.png",
+      "sha256": "19e83c409f1963c613172dacf01fb4911e05a1d32ffa90de3cb993c87f02b991",
+      "bytes": 50729
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\05_latencia.svg",
+      "copy": "01_flowbench_3d_fno/report/05_latencia.svg",
+      "sha256": "c9692bccb8c4ba4d3bb77b44c078ccc04ac757630f7cee4eb53aa88fee92e05b",
+      "bytes": 47569
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\comparison_numbers.json",
+      "copy": "01_flowbench_3d_fno/report/comparison_numbers.json",
+      "sha256": "7e0e6c91e36c5993bb718964cb80d42ebc7e4eb4ec303750fe5749ccd8b43fc6",
+      "bytes": 28695
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\contact_sheet.png",
+      "copy": "01_flowbench_3d_fno/report/contact_sheet.png",
+      "sha256": "6bace1835dc78ca53af5fc3dd62eadda09af1df3dcba06a2ab10b7d4fe1e1615",
+      "bytes": 205511
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\input_receipt.json",
+      "copy": "01_flowbench_3d_fno/report/input_receipt.json",
+      "sha256": "807f72c788445e14f014dda696f447fb43edec4636e1738b4c39a3e7572d051e",
+      "bytes": 164
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\output_receipt.json",
+      "copy": "01_flowbench_3d_fno/report/output_receipt.json",
+      "sha256": "3c7229ce38e45a1296095d64f9a77914ccfc2af7a541a31bbed7396e0925339c",
+      "bytes": 2333
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\report_inputs.json",
+      "copy": "01_flowbench_3d_fno/report/report_inputs.json",
+      "sha256": "d3ec70958151c8988286b1f6aa518f61862373b242881c77fe2349d956fe9da1",
+      "bytes": 2629359
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\report.html",
+      "copy": "01_flowbench_3d_fno/report/report.html",
+      "sha256": "098e47a3fac7765c5a0071d9c6613c769dea8c90761db83af066242b8f656d66",
+      "bytes": 20127
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\comparative_report_20261022_v1\\report.txt",
+      "copy": "01_flowbench_3d_fno/report/report.txt",
+      "sha256": "4812432476ac363569f890a6be65ab68bbafc7637d9ec535db8f4bc8974f5a9f",
+      "bytes": 18396
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\protokol.txt",
+      "copy": "01_flowbench_3d_fno/metodika/protokol_povodny.txt",
+      "sha256": "0423f4eac964e440019775d8a84554af73d831732c03ccd910046a8589898718",
+      "bytes": 55532
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\finalne_meranie_protokol_v3.txt",
+      "copy": "01_flowbench_3d_fno/metodika/finalne_meranie_protokol_v3.txt",
+      "sha256": "b5e8117b9c0a963aea2b42e1cbffc65b6543f8f1b4f01c4faa90237c7e729da1",
+      "bytes": 4483
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\analysis\\build_comparative_report_v1.py",
+      "copy": "01_flowbench_3d_fno/metodika/build_comparative_report_v1.py",
+      "sha256": "0b5be6d03671d00240756c09b1fb570058b44eb3d0ad153586e73e53e81b4fda",
+      "bytes": 30685
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\config\\flowbench_main_release_20261021.json",
+      "copy": "01_flowbench_3d_fno/metodika/flowbench_main_release_20261021.json",
+      "sha256": "c35074686a660e46c7f09b7b29b3a76b801456f03bfc147b182da121e828c95c",
+      "bytes": 4535
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_quality_review_20261023\\freeze.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_quality_review_20261023/freeze.json",
+      "sha256": "c39826d621a70edd1529e5037c167341b686b2504b249581dfdb0e445dbbe4bd",
+      "bytes": 1463
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_quality_review_20261023\\summary.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_quality_review_20261023/summary.json",
+      "sha256": "b392b38e91b767a13f5a128b6e5312c8f992f6b76af361bdc69c82db4810cbd1",
+      "bytes": 15971
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_quality_review_20261023\\unit_tests.log",
+      "copy": "02_vlastne_3d_cfd/podklady/native_quality_review_20261023/unit_tests.log",
+      "sha256": "ec4299037c8177c495c9ea8178d050fbd0bb88c851ffdb75a704c71d7b8a4405",
+      "bytes": 1039
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_refinement_20261023\\diagnostic_128127.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/diagnostic_128127.json",
+      "sha256": "21f70900f994feaf08b334b80413cf8390fbc18af32c8b440d008e1b26e17e79",
+      "bytes": 5361
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_refinement_20261023\\review_128119.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/review_128119.json",
+      "sha256": "d12c81f57161bd0c69f053fa1925d2492d779dd4b47a66a9311af45edf3ce259",
+      "bytes": 5621
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_refinement_20261023\\review_capture_submission.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/review_capture_submission.json",
+      "sha256": "bb2e9b090a0da310db7c7960e7fbeadb573b96aca9650529b91e29d3c6132379",
+      "bytes": 44
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_refinement_20261023\\review_submission.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/review_submission.json",
+      "sha256": "0bd262167e81335bbc4f894ae3e65e7b1ad3396c076d97d40215b2e06b98037c",
+      "bytes": 215
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_refinement_20261023\\review_v2_tests.log",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/review_v2_tests.log",
+      "sha256": "95a83091cfc34b247f8a54be19a861a16fe9065499cf1ffed0d397d74b9ee57f",
+      "bytes": 1518
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_refinement_20261023\\solver_summary.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/solver_summary.json",
+      "sha256": "1365bc4e7fe1fc17af023cb95c0f5939856c563a3cfdfcb6ec66524382d662f7",
+      "bytes": 583
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_temporal_20261023\\preflight.log",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_temporal_20261023/preflight.log",
+      "sha256": "b1f5a7f7c4a64b85e0161d478316c2d742cfa815eb513a071f8eef97510b2b6a",
+      "bytes": 1627
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_temporal_20261023\\review_128181.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_temporal_20261023/review_128181.json",
+      "sha256": "db6e8c76fe2e9af17950cb92c194a41034e5ac19d8755297afe9fc7e934f13ba",
+      "bytes": 5623
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_temporal_20261023\\review_submission.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_temporal_20261023/review_submission.json",
+      "sha256": "3b94437a471164f78837be156c8fb5197a54b328913f17519809671b019ccbad",
+      "bytes": 137
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_temporal_20261023\\solver_summary.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_temporal_20261023/solver_summary.json",
+      "sha256": "78f80bc9dde8d85074b41bb96b6e0f11de98c6164083cd9039c9188101404752",
+      "bytes": 581
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_temporal_20261023\\submission.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_temporal_20261023/submission.json",
+      "sha256": "f797f692b727699ad3c416698c5cec299d39512bdf29436a664e11cf908b9dff",
+      "bytes": 272
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_spatial_20261024\\preflight.log",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/preflight.log",
+      "sha256": "f33fa23d51fce44189dbadfb65c3b5349f630e816c55f213cd2a0d539d21d710",
+      "bytes": 1666
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_spatial_20261024\\review_129256.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/review_129256.json",
+      "sha256": "8643fff99cc4721e6a1f45a03b5ff3a412fe60e468c96add7bb794975e441c96",
+      "bytes": 5853
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_spatial_20261024\\review_submission.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/review_submission.json",
+      "sha256": "f7d47bd3771a2da5cd49b1f360371fc1ee35a0b5fe1e23b4d7ecfa36b94c8b97",
+      "bytes": 133
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_spatial_20261024\\scheduler_129254_0.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/scheduler_129254_0.json",
+      "sha256": "c7cce9b90dd1711e5cf3a4f51e0a3fe1456396c02cc08073adccc4fb20379f61",
+      "bytes": 400
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_spatial_20261024\\scheduler_129256.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/scheduler_129256.json",
+      "sha256": "236bc61f0f956ad22643bcec9dc7b8e56545fc49c0c2e3fa78bcc76390f69e0d",
+      "bytes": 391
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_spatial_20261024\\solver_summary.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/solver_summary.json",
+      "sha256": "a369009f802fdec399e38364bfb160ed3d5a615522aa2114d221939403b0f4c7",
+      "bytes": 582
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_spatial_20261024\\submission.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/submission.json",
+      "sha256": "304662e5e48dbda0b69394b6a5eb6c8dc5bb618ad598497e81d076241086312f",
+      "bytes": 243
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_20261025_v3\\completion_review_20261027.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/completion_review_20261027.json",
+      "sha256": "f5f927a9a6fb858ba8c9e43f454fc73e7b81caf73bdcf4d9f5250762c945e4c1",
+      "bytes": 4109
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_20261025_v3\\failed_start_130593.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/failed_start_130593.json",
+      "sha256": "2a050cd3f17116c7f75460f43e2d5f140c333eebacda61377d7c172557884abc",
+      "bytes": 388
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_20261025_v3\\chain_submission.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/chain_submission.json",
+      "sha256": "5da1665453c950d889d53509ad644bd12b8b17b198775f6ca6225c0dc57ab828",
+      "bytes": 1338
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_20261025_v3\\initialization.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/initialization.json",
+      "sha256": "562b5ec0b2b2e260547c2f20e27dde1a3561c89e268cedb55dcb3dcf01df85ea",
+      "bytes": 532
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_20261025_v3\\preflight.log",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/preflight.log",
+      "sha256": "9c3c4abcb32f4a20441639f877acb67e1630576f23ee0cc65b7b07dd9003c751",
+      "bytes": 2911
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_20261025_v3\\source_freeze.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/source_freeze.json",
+      "sha256": "f65e7570478d70a445bc3346bef4213b6d26085e84170c77ec8ab98239f0ccc4",
+      "bytes": 48037
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_20261025_v3\\summary.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/summary.json",
+      "sha256": "3ec9bb4e9109e72ebf05a216bee1f459d743d6a887c54c7edffc421e4fc7d14d",
+      "bytes": 886
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_fine_20261027_v1\\comparison_freeze.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_fine_20261027_v1/comparison_freeze.json",
+      "sha256": "2d2615780fe4cd24440190c1291a939290196fbd827bf604cd6f5a60757097d0",
+      "bytes": 25724
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_fine_20261027_v1\\chain_submission.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_fine_20261027_v1/chain_submission.json",
+      "sha256": "a942009ad52f3262c413ca4c83325fcf7db5e9d4496ba30e9c3341dcf57aec0a",
+      "bytes": 2073
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_fine_20261027_v1\\preflight.log",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_fine_20261027_v1/preflight.log",
+      "sha256": "8e39725d88a6a2491a973b25b2aa66a2ebf56153fd6b1d82f4fa33dfa6ced6be",
+      "bytes": 3350
+    },
+    {
+      "source": "C:\\Users\\lukas\\Desktop\\Skola\\PHD\\DP\\Mnimovka\\DP\\experiment_3d_llm_flow\\test\\results\\native_cylinder_full_fine_20261027_v1\\source_freeze.json",
+      "copy": "02_vlastne_3d_cfd/podklady/native_cylinder_full_fine_20261027_v1/source_freeze.json",
+      "sha256": "df3d417ceb9ecf2af142ed0e335e27ee9f9541cdff7bc7a236fa9c4b7bea918e",
+      "bytes": 25230
+    }
+  ]
+}

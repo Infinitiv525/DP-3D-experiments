@@ -1,0 +1,30 @@
+JobId=123590 JobName=dp-flowbench-audit
+   UserId=lutoke823(507402392) GroupId=domain users(507400513) MCS_label=N/A
+   Priority=1268 Nice=0 Account=perun2601449 QOS=perun2601449
+   JobState=COMPLETED Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:06:13 TimeLimit=00:45:00 TimeMin=N/A
+   SubmitTime=2026-10-21T10:57:17 EligibleTime=2026-10-21T10:57:17
+   AccrueTime=2026-10-21T10:57:17
+   StartTime=2026-10-21T10:57:17 EndTime=2026-10-21T11:03:30 Deadline=N/A
+   PreemptEligibleTime=2026-10-21T10:57:17 PreemptTime=None
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-21T10:57:17 Scheduler=Main
+   Partition=cpu_short AllocNode:Sid=login01:3262821
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=cn01
+   BatchHost=cn01
+   NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=8G,node=1,billing=4
+   AllocTRES=cpu=4,mem=8G,node=1,billing=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=4 MinMemoryNode=8G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Exclusive=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/mnt/project/perun2601449/dp_llm_cfd/test/scripts/102_audit_flowbench_dataset.sbatch
+   SubmitLine=sbatch --parsable test/scripts/102_audit_flowbench_dataset.sbatch
+   WorkDir=/mnt/project/perun2601449/dp_llm_cfd
+   StdErr=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-flowbench-audit_123590.err
+   StdIn=/dev/null
+   StdOut=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-flowbench-audit_123590.out
+   TresPerTask=cpu=4
+

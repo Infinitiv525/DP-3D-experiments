@@ -1,0 +1,9 @@
+status=UNIFORM_DATASET_A_EXPORT_OK
+scenario_id=ti002
+split=test_ID
+source_case=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/pilot/dense_pilot/ti002_dense160_200_108616_9
+snapshot_count=201
+npz_bytes=95491306
+wall_seconds=719
+temporary_reconstructed_times_removed=yes
+decomposed_source_preserved=yes

@@ -1,0 +1,51 @@
+PLNY PILOT 109922 A EXPORT 109923 — 15. 10. 2026
+
+VYSLEDOK
+Zmiesana dvojica, 291 997 buniek, faktor siete 1,7.
+Cely rozsah tau=0 az 400 dokoncil vypocet aj export.
+Vsetkych 461 stavov je kompletnych a ma overene kontrolne sucty.
+Data su na Perune; lokalne su iba male metadatove subory.
+
+NAMERANA CENA
+Hlavna solverova faza na 32 CPU: 4 h 19 min 22 s, 138,329 core-h.
+Export na jednom CPU: 30 min 22 s, 0,506 core-h.
+Spolu merane fazy: 138,835 CPU core-h.
+Cena nezahrna povodny meshing, starsie piloty ani buduce kontroly.
+Kompaktne polia: 1,744 GB (desiatkove); raw a rekonstrukcie dalsich asi 25 GiB.
+
+NUMERICKE KONTROLY
+Maximalne Co 0,20157; konecna kumulativna kontinuita 1,52e-11.
+Maximalna vzorkovana relativna nerovnovaha vstup/vystup 5,89e-8.
+Casovy harmonogram, mriezka, maska a konecnost exportov presli kontrolami.
+Historia sil: 42 736 riadkov s konecnymi hodnotami.
+Toto nepreukazuje fyzikalnu presnost, konvergenciu siete ani stacionaritu.
+Kratky tlakovy rozdiel voci jemnejsej referencii bol asi 12,85 %.
+
+ODHAD SADY PRI ROVNAKEJ CENE NA SCENAR
+72 scenarov: 9 996 core-h; s ilustrativnou rezervou 20 % asi 11 995.
+50 scenarov: 6 942 core-h; s ilustrativnou rezervou 20 % asi 8 330.
+Kompaktne polia pri rovnakej velkosti: asi 126 GB pre 72 alebo 87 GB pre 50.
+Ide o nasobky jednej geometrie, nie zarucenu cenu rozmanitej sady.
+
+DOLEZITA OPRAVA ROZPOCTU
+Povodna sprava pouzivatela obsahovala CPU "&#x34;4237".
+Po dekodovani HTML je to 44 237. Starsie vypocty pouzivali 4 237.
+Predchadzajuce tvrdenia o nedostacujucom rozpocte mohli preto vychadzat
+z desatnasobne nizsej hodnoty. Za toto nespravne citanie zodpoveda asistent.
+Nasledne potvrdene snimkou portalu 15. 10. 2026:
+CPU pridel 44 237, vykazana spotreba 1 118, rozdiel 43 119 core-h.
+GPU pridel 2 246, vykazana spotreba 1, rozdiel 2 245 GPU-h.
+Oneskorenie uctovania portalu nie je overene. Starsie tvrdenia o
+nedostatocnom prideli 4 237 sa nesmu pouzivat ako aktualny zaver.
+72 scenarov pri pilotnej cene s 20 % rezervou by stalo asi 27,8 %
+vykazaneho CPU rozdielu; potom by ostalo asi 31 124 core-h na ostatne
+vydavky. Je to ilustracia jednej geometrie, nie garancia ceny celej sady.
+
+Archivovany full_pilot_evaluation.json obsahuje stary predpoklad 4237.
+Je zachovany nezmeneny pre audit; namerane casy a velkosti su platne,
+ale polozka budget_original_cpu_core_h nie je potvrdeny pridel.
+
+Cela sada este nie je spustena. Preferovany ciel moze zostat 72 scenarov.
+Dalsim krokom je vyhradit cast dostupnych hodin na presnejsie kontrolne
+vypocty a overenie dalsich rodin. Vyznamnejsi rozpocet neodstranuje
+znamu tlakovu odchylku hrubsej siete ani nenahradza overenie presnosti.

@@ -1,0 +1,37 @@
+LOKALNA KONTROLA TLAKU — 16. 10. 2026
+Vypocty 110763 a vyhodnotenie 110766 skoncili.
+Vsetky styri vetvy presli numerickymi a exportnymi kontrolami.
+SHA-256 dat a stiahnutych metadat su v poriadku.
+
+VSETKY VETVY MAJU ROVNAKU JEMNEJSIU SIET A POCIATOCNY STAV TAU=24.
+Porovnavany koncovy cas je tau=28. Nejde o plnu novu trajektoriu.
+
+Najvacsia absolutna centrovana tlakova hodnota v CFD bunkach / Uref^2:
+Povodne nastavenie po restarte: 8,24.
+Prisnejsie linearne riesenie tlaku: 5,22.
+Viac PIMPLE korekcii: 17,56.
+Mensie cielove Co=0,1: 102,50.
+Povodna jemnejsia trajektoria bez noveho restartu: 8,42.
+
+ZAVER
+Ziadna z tychto zmien spike neodstranila. Mensi krok ich vyrazne zosilnil.
+Prisnejsie linearne riesenie pomohlo len ciastocne. Viac korekcii
+nezarucilo lepsi tlak. Jemnejsia konfiguracia preto stale nie je
+overenou tlakovou referenciou pre prijatie produkcnych dat.
+
+Povodny jemny vypocet a restart baseline sa pri tau=28 v tlaku lisia
+len o 0,309 %. Velke spicky preto nevznikli iba novym restartom.
+Vo vetve mensieho kroku sa zhorsilo aj kolisanie sil: smerodajna
+odchylka Cd je asi 0,0807 oproti 0,0071 na baseline.
+
+PODOZRENIE NA DALSIE OVERENIE
+Spicky zostavaju lokalizovane v blizkosti prechodu zjemnenej oblasti
+siete, pri y asi 0,030 m. Niektore okolite objemy buniek sa vyrazne
+lisia. To vsak este nie je dokaz, ze zlyhanie sposobuje tento prechod.
+Odporucame samostatny test plynulejsieho prechodu siete a/alebo
+samostatny test numerickej neortogonalnej korekcie. Nemiesat ich do
+jedinej zmeny, ktora by neumoznila urcit pricinu.
+
+Tlak sa nefiltruje, limity sa nezvysuju. Mensie extremy samy osebe
+nepotvrdzuju fyzikalnu presnost. Nova produkcna davka nebola spustena.
+Namerana cena styroch solverov spolu je asi 161,40 CPU core-h.

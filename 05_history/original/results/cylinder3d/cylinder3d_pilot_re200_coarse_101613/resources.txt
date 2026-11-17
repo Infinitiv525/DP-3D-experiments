@@ -1,0 +1,4 @@
+solve_wall_seconds=10.504
+allocated_mpi_ranks=4
+allocated_memory=12G
+101626.batch|00:00:00|53680K|0

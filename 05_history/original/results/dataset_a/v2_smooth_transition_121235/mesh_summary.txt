@@ -1,0 +1,15 @@
+status=DATASET_A_V2_MESH_GATE_OK
+scenario_id=a2_mp_001
+mesh_size_factor=1.0
+wake_transition_m=0.01
+cells=1525054
+max_non_orthogonality=67.58926822
+max_skewness=0.9315857752
+low_determinant_cells=460
+low_determinant_fraction=0.000301629
+ami_source_mean_weight_sum=1
+ami_target_mean_weight_sum=1
+inlet_faces=1082
+outlet_faces=1086
+obstacle_faces=16418
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/meshes/a2_mp_001_meshgate_121235_5

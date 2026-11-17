@@ -1,0 +1,334 @@
+{
+  "status": "FLOWBENCH_NATIVE_BOUNDARY_AUDIT_COMPLETE",
+  "selected_indices": [
+    0,
+    20
+  ],
+  "native_shape": [
+    128,
+    128,
+    128
+  ],
+  "samples": [
+    {
+      "sample": 0,
+      "split": "train",
+      "Re": 198.0,
+      "faces": {
+        "axis0_low": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 6.103515625e-05,
+          "velocity_rms_components": [
+            0.0883883461356163,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            -2.567894220352173,
+            0.0
+          ]
+        },
+        "axis0_high": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 0.0,
+          "velocity_rms_components": [
+            0.0883883461356163,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            -1.2596230506896973,
+            0.7462656497955322
+          ]
+        },
+        "axis1_low": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 6.103515625e-05,
+          "velocity_rms_components": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            -1.3290852308273315,
+            0.0
+          ]
+        },
+        "axis1_high": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 0.0,
+          "velocity_rms_components": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            -2.3300538063049316,
+            0.43342316150665283
+          ]
+        },
+        "axis2_low": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 6.103515625e-05,
+          "velocity_rms_components": [
+            0.0883883461356163,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            -2.2455575466156006,
+            0.11082107573747635
+          ]
+        },
+        "axis2_high": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 0.0,
+          "velocity_rms_components": [
+            0.0883883461356163,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            -2.2455570697784424,
+            0.11082099378108978
+          ]
+        }
+      },
+      "interior_crops": [
+        {
+          "boundary_layers_removed": 0,
+          "fluid_points": 1894400,
+          "pressure_mean": -1.2874261503129623,
+          "centered_pressure_rms": 0.06240771363608812,
+          "pressure_exact_zero_fraction": 5.278716216216216e-07,
+          "centered_pressure_abs_quantiles": [
+            0.026734030714573587,
+            0.06901274276679537,
+            0.20669836091095423,
+            2.0336918001084943
+          ],
+          "velocity_rms": 0.2180919051170349
+        },
+        {
+          "boundary_layers_removed": 1,
+          "fluid_points": 1797624,
+          "pressure_mean": -1.288105738349125,
+          "centered_pressure_rms": 0.053379875372456774,
+          "pressure_exact_zero_fraction": 0.0,
+          "centered_pressure_abs_quantiles": [
+            0.0266299368812295,
+            0.06716893892748632,
+            0.18506326694028108,
+            1.4425044925882073
+          ],
+          "velocity_rms": 0.20251040160655975
+        },
+        {
+          "boundary_layers_removed": 2,
+          "fluid_points": 1703872,
+          "pressure_mean": -1.2887285221686935,
+          "centered_pressure_rms": 0.04700528892245101,
+          "pressure_exact_zero_fraction": 0.0,
+          "centered_pressure_abs_quantiles": [
+            0.02649717222362513,
+            0.06517780531734471,
+            0.1628006647953416,
+            0.8745337296596145
+          ],
+          "velocity_rms": 0.19110232591629028
+        },
+        {
+          "boundary_layers_removed": 4,
+          "fluid_points": 1525248,
+          "pressure_mean": -1.289800196117151,
+          "centered_pressure_rms": 0.040248302346204044,
+          "pressure_exact_zero_fraction": 0.0,
+          "centered_pressure_abs_quantiles": [
+            0.026193082332611084,
+            0.06180505431472902,
+            0.1262194688856719,
+            0.5321666888654115
+          ],
+          "velocity_rms": 0.17427442967891693
+        },
+        {
+          "boundary_layers_removed": 8,
+          "fluid_points": 1202176,
+          "pressure_mean": -1.2914040451867386,
+          "centered_pressure_rms": 0.0336538886221943,
+          "pressure_exact_zero_fraction": 0.0,
+          "centered_pressure_abs_quantiles": [
+            0.02550661563873291,
+            0.056750499643583696,
+            0.08119273837635954,
+            0.25994364079068144
+          ],
+          "velocity_rms": 0.15424498915672302
+        }
+      ],
+      "native_vs_stride4_pressure_mean_difference": -0.001568014636271542
+    },
+    {
+      "sample": 20,
+      "split": "validation",
+      "Re": 147.0,
+      "faces": {
+        "axis0_low": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 6.103515625e-05,
+          "velocity_rms_components": [
+            0.0883883461356163,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            0.0,
+            2.981804370880127
+          ]
+        },
+        "axis0_high": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 0.0,
+          "velocity_rms_components": [
+            0.0883883461356163,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            2.9184842109680176,
+            5.427647590637207
+          ]
+        },
+        "axis1_low": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 6.103515625e-05,
+          "velocity_rms_components": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            0.0,
+            2.9818058013916016
+          ]
+        },
+        "axis1_high": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 0.0,
+          "velocity_rms_components": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            1.4516557455062866,
+            5.019545078277588
+          ]
+        },
+        "axis2_low": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 6.103515625e-05,
+          "velocity_rms_components": [
+            0.0883883461356163,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            0.0,
+            4.671606063842773
+          ]
+        },
+        "axis2_high": {
+          "points": 16384,
+          "pressure_exact_zero_fraction_fluid": 0.0,
+          "velocity_rms_components": [
+            0.0883883461356163,
+            0.0,
+            0.0
+          ],
+          "pressure_range": [
+            1.573379635810852,
+            4.669445037841797
+          ]
+        }
+      },
+      "interior_crops": [
+        {
+          "boundary_layers_removed": 0,
+          "fluid_points": 1998766,
+          "pressure_mean": 2.89353028898643,
+          "centered_pressure_rms": 0.07267625152314436,
+          "pressure_exact_zero_fraction": 5.00308690462015e-07,
+          "centered_pressure_abs_quantiles": [
+            0.027758916564717406,
+            0.0786368053892923,
+            0.2500266826670038,
+            2.89353028898643
+          ],
+          "velocity_rms": 0.2212560623884201
+        },
+        {
+          "boundary_layers_removed": 1,
+          "fluid_points": 1901990,
+          "pressure_mean": 2.8928147931003143,
+          "centered_pressure_rms": 0.060919518023640686,
+          "pressure_exact_zero_fraction": 0.0,
+          "centered_pressure_abs_quantiles": [
+            0.028012357244534325,
+            0.07566862296100152,
+            0.22545917798046544,
+            1.7670210223293732
+          ],
+          "velocity_rms": 0.20695646107196808
+        },
+        {
+          "boundary_layers_removed": 2,
+          "fluid_points": 1808238,
+          "pressure_mean": 2.892151495580574,
+          "centered_pressure_rms": 0.05274722830469119,
+          "pressure_exact_zero_fraction": 0.0,
+          "centered_pressure_abs_quantiles": [
+            0.028023103113273606,
+            0.07258381522168733,
+            0.20053825676324166,
+            1.0368605645848312
+          ],
+          "velocity_rms": 0.19644616544246674
+        },
+        {
+          "boundary_layers_removed": 4,
+          "fluid_points": 1629614,
+          "pressure_mean": 2.8909902483263674,
+          "centered_pressure_rms": 0.04424802670576333,
+          "pressure_exact_zero_fraction": 0.0,
+          "centered_pressure_abs_quantiles": [
+            0.027721524238586426,
+            0.06699943274375983,
+            0.15836734234898653,
+            0.6275131791791257
+          ],
+          "velocity_rms": 0.18079426884651184
+        },
+        {
+          "boundary_layers_removed": 8,
+          "fluid_points": 1306542,
+          "pressure_mean": 2.8891805535804056,
+          "centered_pressure_rms": 0.035402988465382125,
+          "pressure_exact_zero_fraction": 0.0,
+          "centered_pressure_abs_quantiles": [
+            0.026979101325156574,
+            0.05831990305326972,
+            0.1011038857947617,
+            0.31829963860404265
+          ],
+          "velocity_rms": 0.16190722584724426
+        }
+      ],
+      "native_vs_stride4_pressure_mean_difference": -0.0019055035016286581
+    }
+  ],
+  "test_targets_evaluated": false,
+  "stream_note": "ZIP decompression traverses earlier records but only selected train/validation records are interpreted; full archives were already SHA256-verified.",
+  "warning": "Two-case descriptive audit, not universal mask certification. Zero boundary values are observed, not automatically declared invalid or deleted.",
+  "production_accepted": false
+}

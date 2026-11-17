@@ -1,0 +1,17 @@
+AUDIT FLOWBENCH DÁT
+FLOWBENCH_DATA_AUDIT_PASSED
+Natívne vstupy všetkých1000vzoriek; cieľové polia iba700train+150validation.
+Hodnotenie modelu na testovej sade sa nevykonalo. Pôvodné dáta a rozdelenie sa nemenili.
+
+archive_and_cache_integrity: True
+exact_geometry_split_no_leakage: True
+no_exact_coarse_sdf_collisions_across_splits: True
+no_flagged_near_duplicates_across_splits: True
+reference_lid_and_walls_within_tolerance: True
+nondegenerate_pressure_norm: True
+native_to_coarse_recomputation_exact: True
+no_test_target_analysis: True
+
+Najvyšší solid IoU medzi rôznymi splitmi: 0.935077
+Natívne near-duplicate príznaky: 0, coarse: 0.
+QC/flag thresholds, not mesh convergence or proof of family-level OOD. Solid interpolation and nonzero reference FD divergence remain limitations. No input/split/target files were modified.

@@ -1,0 +1,24 @@
+{
+  "case_id": "cylinder3d_pilot_re200_coarse",
+  "purpose": "technical and scientific pilot before mesh-independence study",
+  "solver": "pimpleFoam",
+  "openfoam_api": 2412,
+  "units": "SI",
+  "fluid": "water-like incompressible Newtonian fluid",
+  "kinematic_viscosity_m2_s": 1e-6,
+  "inlet_velocity_m_s": 0.02,
+  "cylinder_diameter_m": 0.01,
+  "cylinder_span_m": 0.04,
+  "reynolds_number": 200,
+  "domain_m": {
+    "x": [-0.05, 0.15],
+    "y": [-0.05, 0.05],
+    "z": [-0.02, 0.02]
+  },
+  "span_boundary": "periodic",
+  "flow_model": "laminar",
+  "end_time_s": 2.0,
+  "max_courant_number": 0.5,
+  "mesh_level": "coarse pilot",
+  "validation_status": "not_validated_do_not_use_as_final_reference"
+}

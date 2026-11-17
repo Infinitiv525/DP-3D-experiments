@@ -1,0 +1,22 @@
+{
+  "revision": "937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "seed": 310000,
+  "pilot_only": false,
+  "phase": "main_training",
+  "stage": "shared",
+  "manifest_sha256": "2541674b338c58bdd80f319d8310019838eeb3d9a034b9571346af97b4e83bb1",
+  "fresh_initialization": true,
+  "purpose": "Approved main train/validation-only trial; no test evaluation.",
+  "training": {
+    "width": 12,
+    "layers": 2,
+    "modes": 4,
+    "epochs": 20,
+    "max_train_samples": 700,
+    "max_validation_samples": 150,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "pressure_weight": 1,
+    "divergence_weight": 0
+  }
+}

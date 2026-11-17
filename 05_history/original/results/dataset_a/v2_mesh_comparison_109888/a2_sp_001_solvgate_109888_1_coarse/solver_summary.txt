@@ -1,0 +1,15 @@
+status=DATASET_A_V2_SOLVER_GATE_OK
+scenario_id=a2_sp_001
+mesh_job=109887
+run_label=coarse
+family=sphere
+tau_end=2
+physical_end_time_s=1.013333333
+time_steps=2926
+wall_seconds=168
+mpi_ranks=32
+target_max_courant=0.2
+initial_delta_tau=0.0001
+max_courant=0.2002417236
+last_cumulative_continuity_error=2.293517425e-12
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_sp_001_solvgate_109888_1_coarse

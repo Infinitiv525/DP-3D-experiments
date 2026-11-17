@@ -1,0 +1,20 @@
+{
+  "status": "CYLINDER3D_EXTENDED_ANALYSIS_OK",
+  "run_id": "cylinder3d_extended_re200_coarse_101826",
+  "analysis_start_s": 10.0,
+  "analysis_end_s": 30.0,
+  "analysis_samples": 2001,
+  "mean_cd": 1.247610681404098,
+  "std_cd": 0.11733903128144293,
+  "mean_cl": 0.004502185584764362,
+  "rms_cl": 0.23677067436748003,
+  "peak_to_peak_cl": 1.1308666675099999,
+  "dominant_frequency_hz": 0.39980009995003357,
+  "strouhal_number": 0.19990004997501679,
+  "frequency_first_half_hz": 0.2997002997003061,
+  "frequency_second_half_hz": 0.3996003996003371,
+  "relative_frequency_difference": 0.2498751248749472,
+  "max_courant_number": 0.5185081725,
+  "last_cumulative_continuity_error": -3.903249478e-09,
+  "validation_status": "extended_pilot_not_final_reference"
+}

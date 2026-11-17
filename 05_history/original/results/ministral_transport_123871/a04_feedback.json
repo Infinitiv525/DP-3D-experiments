@@ -1,0 +1,73 @@
+{
+  "contract_version": 3,
+  "phase": "technical_pilot",
+  "epochs_per_trial": 2,
+  "remaining_training_seconds": 247.08477398753166,
+  "remaining_attempts": 1,
+  "history": [
+    {
+      "id": "s01",
+      "parameters": {
+        "learning_rate": 0.001,
+        "weight_decay": 0.01,
+        "pressure_weight": 1,
+        "divergence_weight": 0
+      },
+      "status": "complete",
+      "S": 0.41856842825863916,
+      "velocity_error": 0.19104738489812992,
+      "pressure_error": 0.6460894716191484,
+      "divergence": 0.37899314939975737,
+      "training_seconds": 77.2253215778619,
+      "decision_seconds": 0.0
+    },
+    {
+      "id": "s02",
+      "parameters": {
+        "learning_rate": 0.0012236509356096372,
+        "weight_decay": 2.9047728342589812e-06,
+        "pressure_weight": 2,
+        "divergence_weight": 0
+      },
+      "status": "complete",
+      "S": 0.40945750627365823,
+      "velocity_error": 0.2046421177183451,
+      "pressure_error": 0.6142728948289714,
+      "divergence": 0.36289852499961855,
+      "training_seconds": 53.04279103130102,
+      "decision_seconds": 0.0
+    },
+    {
+      "id": "s03",
+      "parameters": {
+        "learning_rate": 0.00106373191978169,
+        "weight_decay": 1.5911205724559741e-06,
+        "pressure_weight": 0.5,
+        "divergence_weight": 0.003
+      },
+      "status": "complete",
+      "S": 0.5413124278679631,
+      "velocity_error": 0.21892434204898825,
+      "pressure_error": 0.8637005136869378,
+      "divergence": 0.11485592479507128,
+      "training_seconds": 52.99231058079749,
+      "decision_seconds": 0.0
+    },
+    {
+      "id": "a03",
+      "parameters": {
+        "learning_rate": 0.0005,
+        "weight_decay": 1e-05,
+        "pressure_weight": 0.5,
+        "divergence_weight": 0.01
+      },
+      "status": "complete",
+      "training_seconds": 52.91522601246834,
+      "decision_seconds": 82.53644559253007,
+      "S": 0.605489202193469,
+      "velocity_error": 0.2187719522606702,
+      "pressure_error": 0.9922064521262679,
+      "divergence": 0.06563781961798668
+    }
+  ]
+}

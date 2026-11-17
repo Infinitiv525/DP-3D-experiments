@@ -1,0 +1,14 @@
+status=DATASET_A_V2_COST_CALIBRATION_OK
+scenario_id=a2_sp_001
+tau_start=2
+tau_end=4
+solver_wall_seconds=181
+mpi_ranks=32
+solver_core_hours=1.60889
+max_courant=0.4982863672
+last_cumulative_continuity_error=-3.61966549e-11
+case_bytes_before_reconstruction=528864832
+snapshot_npz_bytes=3660620
+one_snapshot_export_wall_seconds=4
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/calibration/a2_sp_001_cost_109880_0
+full_trajectory_validated=no

@@ -1,0 +1,145 @@
+{
+  "status": "TRAIN_CYLINDER_DIAGNOSTIC_COMPLETE",
+  "case_paths": {
+    "factor1.2": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/quality_extension_20261022_v1/a2_sc_001_coarse_126204",
+    "factor1.1": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/cylinder_refinement_20261023_v1/a2_sc_001_coarse_127873",
+    "factor1.0": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/quality_extension_20261022_v1/a2_sc_001_fine_126205"
+  },
+  "source_fingerprints": {
+    "factor1.2": {
+      "constant/transportProperties": "c0c8d4cc81ec7833ff32f8a3cadc958d9167cb33c92000ee4ff60a1e9cc9ced2",
+      "constant/turbulenceProperties": "fe00f20ea7bb9fc346f73fc86a963561de0ea11e81da2db2ae7bab8d4b2ada51",
+      "system/fvSchemes": "047200e6b928dec75b8145e520d232621f6c1ed7794c45833ae0ad40939d0832",
+      "system/fvSolution": "674d2817577ff43c9cda55eb61819cb3eb4c1d9b8962b021add07d153bf2f335",
+      "system/setExprFieldsDict": "178bdf1bbe41d9de5eb9506a447d6a549cd265a3f9499cce46326397ce19ba68",
+      "force_normalization": {
+        "magUInf": [
+          "0.0175"
+        ],
+        "lRef": [
+          "0.0085"
+        ],
+        "Aref": [
+          "7.225e-05"
+        ]
+      }
+    },
+    "factor1.1": {
+      "constant/transportProperties": "c0c8d4cc81ec7833ff32f8a3cadc958d9167cb33c92000ee4ff60a1e9cc9ced2",
+      "constant/turbulenceProperties": "fe00f20ea7bb9fc346f73fc86a963561de0ea11e81da2db2ae7bab8d4b2ada51",
+      "system/fvSchemes": "047200e6b928dec75b8145e520d232621f6c1ed7794c45833ae0ad40939d0832",
+      "system/fvSolution": "674d2817577ff43c9cda55eb61819cb3eb4c1d9b8962b021add07d153bf2f335",
+      "system/setExprFieldsDict": "178bdf1bbe41d9de5eb9506a447d6a549cd265a3f9499cce46326397ce19ba68",
+      "force_normalization": {
+        "magUInf": [
+          "0.0175"
+        ],
+        "lRef": [
+          "0.0085"
+        ],
+        "Aref": [
+          "7.225e-05"
+        ]
+      }
+    },
+    "factor1.0": {
+      "constant/transportProperties": "c0c8d4cc81ec7833ff32f8a3cadc958d9167cb33c92000ee4ff60a1e9cc9ced2",
+      "constant/turbulenceProperties": "fe00f20ea7bb9fc346f73fc86a963561de0ea11e81da2db2ae7bab8d4b2ada51",
+      "system/fvSchemes": "047200e6b928dec75b8145e520d232621f6c1ed7794c45833ae0ad40939d0832",
+      "system/fvSolution": "674d2817577ff43c9cda55eb61819cb3eb4c1d9b8962b021add07d153bf2f335",
+      "system/setExprFieldsDict": "178bdf1bbe41d9de5eb9506a447d6a549cd265a3f9499cce46326397ce19ba68",
+      "force_normalization": {
+        "magUInf": [
+          "0.0175"
+        ],
+        "lRef": [
+          "0.0085"
+        ],
+        "Aref": [
+          "7.225e-05"
+        ]
+      }
+    }
+  },
+  "configuration_file_hashes_identical": {
+    "constant/transportProperties": true,
+    "constant/turbulenceProperties": true,
+    "system/fvSchemes": true,
+    "system/fvSolution": true,
+    "system/setExprFieldsDict": true
+  },
+  "initial_metrics": {
+    "factor1.2": {
+      "mask_disagreement_fraction": 0.0,
+      "velocity_relative_l2": 0.0043799347270636665
+    },
+    "factor1.1": {
+      "mask_disagreement_fraction": 0.0,
+      "velocity_relative_l2": 0.003614147724355065
+    },
+    "factor1.0": {
+      "mask_disagreement_fraction": 0.0,
+      "velocity_relative_l2": 0.0
+    }
+  },
+  "lift_lag_diagnostics": {
+    "factor1.2": {
+      "window_tau": [
+        24,
+        36
+      ],
+      "max_lag_tau": 3.2,
+      "lag_step_tau": 0.02,
+      "convention": "positive lag compares branch(t+lag) to fine(t)",
+      "zero_lag_correlation": 0.9492802332286303,
+      "best_correlation": 0.9974217431498036,
+      "best_lag_tau": 0.2800000000000029,
+      "best_at_search_boundary": false,
+      "diagnostic_only": true,
+      "acceptance_metrics_replaced": false
+    },
+    "factor1.1": {
+      "window_tau": [
+        24,
+        36
+      ],
+      "max_lag_tau": 3.2,
+      "lag_step_tau": 0.02,
+      "convention": "positive lag compares branch(t+lag) to fine(t)",
+      "zero_lag_correlation": 0.5633781022037628,
+      "best_correlation": 0.9975700094088977,
+      "best_lag_tau": 0.9600000000000035,
+      "best_at_search_boundary": false,
+      "diagnostic_only": true,
+      "acceptance_metrics_replaced": false
+    }
+  },
+  "endpoint_audits": {
+    "factor1.2": {
+      "original_end_tau": 40.0,
+      "appended_actual_endpoint": false,
+      "endpoint_gap_tau": 0.0,
+      "method": "OpenFOAM offline forceCoeffs from saved final fields; no solver time stepping"
+    },
+    "factor1.1": {
+      "original_end_tau": 39.99941088340428,
+      "appended_actual_endpoint": true,
+      "endpoint_gap_tau": 0.0005891165957194744,
+      "method": "OpenFOAM offline forceCoeffs from saved final fields; no solver time stepping"
+    },
+    "factor1.0": {
+      "original_end_tau": 39.995900938380814,
+      "appended_actual_endpoint": true,
+      "endpoint_gap_tau": 0.004099061619186273,
+      "method": "OpenFOAM offline forceCoeffs from saved final fields; no solver time stepping"
+    }
+  },
+  "limitations": [
+    "Correlation after lag shift is diagnostic only, not acceptance or a proof of convergence",
+    "Initial interpolation/mask differences do not by themselves prove bad physical geometry",
+    "Fine1.0 is a numerical comparator, not ground truth"
+  ],
+  "production_accepted": false,
+  "ML_test_fields_used": false,
+  "freeze_sha256": "a71f8c5545eaf8e7666dcdac7b3d31d50ace0d78080f8dcce589567dc47147f5"
+}

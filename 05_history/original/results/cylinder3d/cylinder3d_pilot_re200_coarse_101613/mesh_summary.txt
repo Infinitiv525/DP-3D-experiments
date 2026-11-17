@@ -1,0 +1,42 @@
+status=CYLINDER3D_MESH_OK
+timestamp_utc=2026-10-08T09:36:51Z
+run_id=cylinder3d_pilot_re200_coarse_101613
+job_id=101613
+host=cn01
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/pilots/cylinder3d/cylinder3d_pilot_re200_coarse_101613
+result_dir=/mnt/project/perun2601449/dp_llm_cfd/results/cylinder3d/cylinder3d_pilot_re200_coarse_101613
+cell_count=49621
+reynolds_number=200
+diameter_m=0.01
+span_m=0.04
+inlet_velocity_m_s=0.02
+kinematic_viscosity_m2_s=1e-6
+strict_check_warning=see_logs/log.checkMesh.strict
+blockMesh_seconds=0.113
+snappyHexMesh_seconds=4.000
+checkMesh_seconds=0.140
+    No cellZones found.
+
+Checking basic pointZone addressing...
+               PointZone  PointsBoundingBox
+            frozenPoints       0(1e+150 1e+150 1e+150) (-1e+150 -1e+150 -1e+150)
+
+Checking geometry...
+    Overall domain bounding box (-0.05 -0.05 -0.02) (0.15 0.05 0.02)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (-1.429772739e-16 5.951639651e-17 -8.469516655e-16) OK.
+    Max cell openness = 3.049309727e-16 OK.
+    Max aspect ratio = 2.570029393 OK.
+    Minimum face area = 3.460479754e-07. Maximum face area = 1.115426218e-05.  Face area magnitudes OK.
+    Min volume = 2.883744534e-10. Max volume = 3.708213625e-08.  Total volume = 0.0007968773288.  Cell volumes OK.
+    Mesh non-orthogonality Max: 25.9624781 average: 5.881757774
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.5777009282 OK.
+    Coupled point location match (average 1.325901285e-17) OK.
+
+Mesh OK.
+
+End
+

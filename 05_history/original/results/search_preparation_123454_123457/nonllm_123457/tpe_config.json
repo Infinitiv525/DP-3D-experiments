@@ -1,0 +1,18 @@
+{
+  "revision": "937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "seed": 310003,
+  "pilot_only": true,
+  "purpose": "Two-epoch non-LLM ask/train/tell wiring pilot; no main-search or test evidence.",
+  "training": {
+    "width": 12,
+    "layers": 2,
+    "modes": 4,
+    "epochs": 2,
+    "max_train_samples": 700,
+    "max_validation_samples": 150,
+    "learning_rate": 0.00010201997531988224,
+    "weight_decay": 2.2430611320806945e-06,
+    "pressure_weight": 2,
+    "divergence_weight": 0
+  }
+}

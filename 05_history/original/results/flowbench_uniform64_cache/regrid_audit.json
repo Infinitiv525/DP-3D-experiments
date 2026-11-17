@@ -1,0 +1,38 @@
+{
+  "status": "FLOWBENCH_UNIFORM64_CACHE_COMPLETE",
+  "source_revision": "937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "resolution": [
+    64,
+    64,
+    64
+  ],
+  "method": "NumPy separable trilinear interpolation, coordinates linspace(0,127,64); endpoints aligned; no anti-aliasing filter",
+  "physical_acceptance": false,
+  "test_model_metrics_computed": false,
+  "channels": {
+    "X": {
+      "shape": [
+        1000,
+        2,
+        64,
+        64,
+        64
+      ],
+      "corner_max_absolute_error": 0.0,
+      "sha256": "4f72d19a1a2236d216923c3a7c7663bc26ea1c3c04f20197de9ffd1092bcd0ef"
+    },
+    "Y": {
+      "shape": [
+        1000,
+        4,
+        64,
+        64,
+        64
+      ],
+      "corner_max_absolute_error": 0.0,
+      "sha256": "2157286948e37a7eb5a095b56e967752d8e6de5e783385001997a20effb50204"
+    }
+  },
+  "split_sha256": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+  "warning": "Linear resampling preserves domain endpoints and lid but not a proof of spatial fidelity, geometry resolution, or NS residual consistency. No final LLM experiment authorized automatically."
+}

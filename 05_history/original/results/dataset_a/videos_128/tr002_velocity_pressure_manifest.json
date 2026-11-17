@@ -1,0 +1,35 @@
+{
+  "kind": "detail",
+  "scenarios": [
+    "tr002"
+  ],
+  "splits": [
+    "train"
+  ],
+  "frame_count": 201,
+  "time_start_s": 160.0,
+  "time_end_s": 200.0,
+  "fps": 15,
+  "video_duration_s": 13.4,
+  "quantities": [
+    "normalized mid-plane speed",
+    "gauge pressure coefficient"
+  ],
+  "speed_color_range": [
+    0.0,
+    2.0
+  ],
+  "pressure_color_range": [
+    -0.8037658929824829,
+    0.8037658929824829
+  ],
+  "status": "UNIFORM_DATASET_VIDEO_OK",
+  "video": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/videos_128/tr002_velocity_pressure.mp4",
+  "preview": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/videos_128/tr002_velocity_pressure_preview.png",
+  "video_bytes": 1113564,
+  "video_sha256": "fd36c9a6b528ea89188fad4b5cf5c5f1e7070e91df832764605c5b8c74fb6534",
+  "protected_test_splits_not_read": [
+    "test_ID",
+    "test_OOD"
+  ]
+}

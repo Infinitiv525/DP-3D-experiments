@@ -1,0 +1,269 @@
+{
+  "status": "TRANSPORT_CONFIRMATION_COMPLETE",
+  "identity": {
+    "phase": "technical_pilot",
+    "model": "ministral3_8b",
+    "transport_policy": "single_complete_json_fence_only_v1",
+    "freeze_sha256": "06830e31f5399f0fb27b6eec266d8b9606b93240d06b7a166ddbc26d1adb2ed1",
+    "replay_sha256": "74dd0731054eec93a5c036e8327d798c0047d4aca0b8a199ac1a04e645b8ada5",
+    "normalization_sha256": "4be8c93636019e6ab4765dc366e041dd28a0bc97fb560b715b0c44192edf2ce9",
+    "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf",
+    "sources": {
+      "run_transport_confirmation.py": "7304b8566405c31c9a3d8cf7098c68fe1e2a4a1396d7ef3f310e486af042a73a",
+      "propose_configuration_transport_v1.py": "1799e79456b4fb89368297ad5dd4145913b0a33d0455ee9d93049b04735e2784",
+      "configurator_transport_v1.py": "08a4fda7e77825d0c36dc339842ed68cfe23f0c4ad9bc03759a1cf7c3145fa6d"
+    }
+  },
+  "allocation": {
+    "charged_gpu_seconds": 601,
+    "gpus": 1,
+    "job_id": "123871",
+    "label": "transport_ministral3_8b",
+    "reservation_gpu_seconds": 601,
+    "status": "submitted_on_hold",
+    "wall_limit_seconds": 600
+  },
+  "test_evaluated": false,
+  "historical_ministral_failures_preserved": true,
+  "checks": {
+    "two_new_trials_complete": true,
+    "attempts_charged": true,
+    "same_first_feedback_as_original_four_families": true,
+    "second_feedback_includes_first": true,
+    "no_training_overrun": true,
+    "no_decision_overrun": true
+  },
+  "search": {
+    "training_seconds": 289.0411273939535,
+    "decision_seconds": 138.18157017417252,
+    "remaining_training_seconds": 194.21929579600692,
+    "remaining_decision_seconds": 281.8184298258275,
+    "training_overrun_seconds": 0.0,
+    "decision_overrun_seconds": 0.0,
+    "attempts_spent": 5,
+    "state": {
+      "schema": 1,
+      "revision": 9,
+      "spec": {
+        "identity": {
+          "phase": "technical_pilot",
+          "model": "ministral3_8b",
+          "transport_policy": "single_complete_json_fence_only_v1",
+          "freeze_sha256": "06830e31f5399f0fb27b6eec266d8b9606b93240d06b7a166ddbc26d1adb2ed1",
+          "replay_sha256": "74dd0731054eec93a5c036e8327d798c0047d4aca0b8a199ac1a04e645b8ada5",
+          "normalization_sha256": "4be8c93636019e6ab4765dc366e041dd28a0bc97fb560b715b0c44192edf2ce9",
+          "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf",
+          "sources": {
+            "run_transport_confirmation.py": "7304b8566405c31c9a3d8cf7098c68fe1e2a4a1396d7ef3f310e486af042a73a",
+            "propose_configuration_transport_v1.py": "1799e79456b4fb89368297ad5dd4145913b0a33d0455ee9d93049b04735e2784",
+            "configurator_transport_v1.py": "08a4fda7e77825d0c36dc339842ed68cfe23f0c4ad9bc03759a1cf7c3145fa6d"
+          }
+        },
+        "method": "external",
+        "seed": 21261101,
+        "history": [
+          {
+            "parameters": {
+              "learning_rate": 0.001,
+              "weight_decay": 0.01,
+              "pressure_weight": 1,
+              "divergence_weight": 0
+            },
+            "S": 0.41856842825863916
+          },
+          {
+            "parameters": {
+              "learning_rate": 0.0012236509356096372,
+              "weight_decay": 2.9047728342589812e-06,
+              "pressure_weight": 2,
+              "divergence_weight": 0
+            },
+            "S": 0.40945750627365823
+          },
+          {
+            "parameters": {
+              "learning_rate": 0.00106373191978169,
+              "weight_decay": 1.5911205724559741e-06,
+              "pressure_weight": 0.5,
+              "divergence_weight": 0.003
+            },
+            "S": 0.5413124278679631
+          }
+        ],
+        "training_limit": 483.2604231899604,
+        "attempt_limit": 5,
+        "shared_seconds": 183.26042318996042,
+        "decision_limit": 420.0,
+        "software": {
+          "python": "3.12.15",
+          "numpy": "2.3.5",
+          "optuna": "5.0.0",
+          "sources": {
+            "persistent_search.py": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+            "search_controls.py": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "number": 3,
+          "phase": "finished",
+          "parameters": {
+            "learning_rate": 0.0005,
+            "weight_decay": 1e-05,
+            "pressure_weight": 0.5,
+            "divergence_weight": 0.01
+          },
+          "metadata": {
+            "proposal": {
+              "summary_sha256": "9d03079dfc5cb9e3d7fca033a69a7743e7e8e936aaf7ff96dcd4a6f49cd406c4",
+              "configuration_with_reason": {
+                "learning_rate": 0.0005,
+                "weight_decay": 1e-05,
+                "pressure_weight": 0.5,
+                "divergence_weight": 0.01,
+                "reason": "Lower pressure_weight from 1/2 to 0.5 balances velocity/pressure tradeoff; divergence_weight 0.01 penalizes unphysical fields without overconstraining; mid-range learning_rate avoids overshooting while maintaining convergence; moderate weight_decay stabilizes gradients.",
+                "evidence_ids": [
+                  "s01",
+                  "s02",
+                  "s03"
+                ],
+                "expected_effect": "Improved S by reducing pressure_error dominance while maintaining velocity accuracy and enforcing divergence constraints.",
+                "risk": "Slightly higher divergence may occur if divergence_weight is too weak; pressure_weight reduction risks velocity degradation if not balanced."
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 82.53644559253007
+              },
+              "transport_policy": "single_complete_json_fence_only_v1"
+            },
+            "training": {
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 52.91522601246834
+              },
+              "summary_sha256": "15bc73fadff6d0888b601a27deb8ccd41d912887949de11032bdf2410063d117",
+              "measurement": {
+                "S": 0.605489202193469,
+                "velocity_error": 0.2187719522606702,
+                "pressure_error": 0.9922064521262679,
+                "geometry_count": 15,
+                "sample_count": 150,
+                "geometry_sample_counts": {
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10
+                },
+                "divergence": 0.06563781961798668
+              }
+            }
+          },
+          "owner": {
+            "mode": "slurm",
+            "job": "123871",
+            "user": "lutoke823",
+            "cluster": "slurm-perun2"
+          },
+          "training_seconds": 52.91522601246834,
+          "decision_seconds": 82.53644559253007,
+          "S": 0.605489202193469,
+          "status": "complete"
+        },
+        {
+          "number": 4,
+          "phase": "finished",
+          "parameters": {
+            "learning_rate": 0.0005,
+            "weight_decay": 1e-05,
+            "pressure_weight": 0.25,
+            "divergence_weight": 0.001
+          },
+          "metadata": {
+            "proposal": {
+              "summary_sha256": "1170cd8d5d0879939f51827d236063d08c25fb83f1ff33beb4a3e7b04f7b57aa",
+              "configuration_with_reason": {
+                "learning_rate": 0.0005,
+                "weight_decay": 1e-05,
+                "pressure_weight": 0.25,
+                "divergence_weight": 0.001,
+                "reason": "Lower pressure_weight reduces pressure_error dominance; small divergence_weight avoids over-constraining while improving divergence. Learning_rate and weight_decay balance stability and convergence.",
+                "evidence_ids": [
+                  "s01",
+                  "s02",
+                  "s03",
+                  "a03"
+                ],
+                "expected_effect": "Better S balance by reducing pressure_weight penalty and introducing mild divergence regularization; may improve velocity_error without sacrificing pressure accuracy.",
+                "risk": "Higher divergence_weight could destabilize training; lower pressure_weight may worsen pressure_error if velocity_error compensates poorly."
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 55.64512458164245
+              },
+              "transport_policy": "single_complete_json_fence_only_v1"
+            },
+            "training": {
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 52.865478191524744
+              },
+              "summary_sha256": "84587354b292ff6386e8ea90b8de6f55d87daa075f1ced46b04fedd3a6089e52",
+              "measurement": {
+                "S": 0.7066681580020194,
+                "velocity_error": 0.2124093477821353,
+                "pressure_error": 1.2009269682219035,
+                "geometry_count": 15,
+                "sample_count": 150,
+                "geometry_sample_counts": {
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10
+                },
+                "divergence": 0.1474836972852548
+              }
+            }
+          },
+          "owner": {
+            "mode": "slurm",
+            "job": "123871",
+            "user": "lutoke823",
+            "cluster": "slurm-perun2"
+          },
+          "training_seconds": 52.865478191524744,
+          "decision_seconds": 55.64512458164245,
+          "S": 0.7066681580020194,
+          "status": "complete"
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 244.04503359273076
+}

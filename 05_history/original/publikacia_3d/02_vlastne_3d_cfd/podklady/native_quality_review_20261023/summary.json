@@ -1,0 +1,482 @@
+{
+  "status": "REFERENCE_SCREENS_REVIEWED_REFINEMENT_REQUIRED",
+  "solver_runs": [
+    {
+      "scenario_id": "a2_cp_001",
+      "branch": "coarse",
+      "status": "NATIVE_FAMILY_LONG_WINDOW_SOLVER_COMPLETE",
+      "states": 101,
+      "max_co": 0.2009226245,
+      "continuity": -2.119727434e-11,
+      "summary_sha256": "70368c0abb3044f4cc58f2931707cb34478075b81c261fedeab7eca924c5b161"
+    },
+    {
+      "scenario_id": "a2_cp_001",
+      "branch": "fine",
+      "status": "NATIVE_FAMILY_LONG_WINDOW_SOLVER_COMPLETE",
+      "states": 101,
+      "max_co": 0.2011214404,
+      "continuity": 3.845628565e-11,
+      "summary_sha256": "27edc303dc50cba415e6071caf718a531e2f135f64f4b6c8c68353b1cdf8f26c"
+    },
+    {
+      "scenario_id": "a2_fc_001",
+      "branch": "coarse",
+      "status": "NATIVE_FAMILY_LONG_WINDOW_SOLVER_COMPLETE",
+      "states": 101,
+      "max_co": 0.200489019,
+      "continuity": 2.042740963e-11,
+      "summary_sha256": "07673711f367231fa68d3a558d25dd298b69cb388923fc680a1ed366b4aa19bc"
+    },
+    {
+      "scenario_id": "a2_fc_001",
+      "branch": "fine",
+      "status": "NATIVE_FAMILY_LONG_WINDOW_SOLVER_COMPLETE",
+      "states": 101,
+      "max_co": 0.2006986071,
+      "continuity": 2.863527365e-11,
+      "summary_sha256": "712e3d0fc002203d3eaf5db0cca9384bf1af8bb5f39e92e051ea5d850d62297f"
+    },
+    {
+      "scenario_id": "a2_sc_001",
+      "branch": "coarse",
+      "status": "NATIVE_FAMILY_LONG_WINDOW_SOLVER_COMPLETE",
+      "states": 101,
+      "max_co": 0.2014956355,
+      "continuity": -6.440411513e-11,
+      "summary_sha256": "a53e3fbef550a9101446e22048b46d24a769224fabd5e168050f52d019ec8dc2"
+    },
+    {
+      "scenario_id": "a2_sc_001",
+      "branch": "fine",
+      "status": "NATIVE_FAMILY_LONG_WINDOW_SOLVER_COMPLETE",
+      "states": 101,
+      "max_co": 0.2009880111,
+      "continuity": -4.111177011e-11,
+      "summary_sha256": "75d2287cc303d9fef311ad620fa34c610c8db4cd7b7a65b4bf150d61c2f3142d"
+    },
+    {
+      "scenario_id": "a2_sp_001",
+      "branch": "coarse",
+      "status": "NATIVE_FAMILY_LONG_WINDOW_SOLVER_COMPLETE",
+      "states": 101,
+      "max_co": 0.2008727456,
+      "continuity": -9.935710572e-12,
+      "summary_sha256": "7bc25a696c1b5aa8ad0d306b73f04ecd0c4f793b33061c0ca8cd1895de551150"
+    },
+    {
+      "scenario_id": "a2_sp_001",
+      "branch": "fine",
+      "status": "NATIVE_FAMILY_LONG_WINDOW_SOLVER_COMPLETE",
+      "states": 101,
+      "max_co": 0.2003998412,
+      "continuity": 1.013956952e-11,
+      "summary_sha256": "14ec54cceedb9482d54d00bb155f0d3626f49a7b5b9871660ea9c4b6e2c96fa2"
+    }
+  ],
+  "reviews": [
+    {
+      "scenario_id": "a2_cp_001",
+      "passed": true,
+      "windows": [
+        {
+          "window_tau": [
+            4,
+            12
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.00397931369504176,
+            "pressure_mean_aligned_relative_l2_global": 0.01428432315255027,
+            "velocity_relative_l2_wake": 0.006319503832473971,
+            "mean_drag_coefficient_relative_difference": 0.0063585422632859495,
+            "mean_lift_coefficient_absolute_difference": 0.01588172829703734
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              4.62931935674351,
+              -0.014688212084950556
+            ],
+            "fine": [
+              4.600069619652889,
+              -0.030569940381987896
+            ]
+          },
+          "passed": true
+        },
+        {
+          "window_tau": [
+            12,
+            24
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.00565012118519993,
+            "pressure_mean_aligned_relative_l2_global": 0.019231102649851426,
+            "velocity_relative_l2_wake": 0.008784123645912599,
+            "mean_drag_coefficient_relative_difference": 0.005328258243149716,
+            "mean_lift_coefficient_absolute_difference": 0.015611444713425033
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              4.515774777021452,
+              -0.012679452178944561
+            ],
+            "fine": [
+              4.491841087718895,
+              -0.028290896892369594
+            ]
+          },
+          "passed": true
+        },
+        {
+          "window_tau": [
+            24,
+            40
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.016704887207192334,
+            "pressure_mean_aligned_relative_l2_global": 0.04410300673376053,
+            "velocity_relative_l2_wake": 0.021910377338112432,
+            "mean_drag_coefficient_relative_difference": 0.005693631753923691,
+            "mean_lift_coefficient_absolute_difference": 0.011248231356079094
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              4.487965024319531,
+              -0.033732109963135394
+            ],
+            "fine": [
+              4.462556868827485,
+              -0.04498034131921449
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "flux_audits": {
+        "coarse": {
+          "max_inlet_outlet_relative_imbalance": 1.962222220163981e-08,
+          "max_periodic_relative_imbalance": 1.0921265555556827e-08,
+          "samples": 6615,
+          "passed": true
+        },
+        "fine": {
+          "max_inlet_outlet_relative_imbalance": 1.4122222091103125e-08,
+          "max_periodic_relative_imbalance": 6.480054444446579e-09,
+          "samples": 8014,
+          "passed": true
+        }
+      },
+      "review_path": "/mnt/project/perun2601449/dp_llm_cfd/results/native_expansion/quality_20261022_v1/family_reviews_v4/a2_cp_001_127817/review.json",
+      "review_sha256": "1a515ee4c05104ea5ada1921fbf5c787257c1735bb5963a23b21967434ebda0d"
+    },
+    {
+      "scenario_id": "a2_fc_001",
+      "passed": true,
+      "windows": [
+        {
+          "window_tau": [
+            4,
+            12
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.006211038741822514,
+            "pressure_mean_aligned_relative_l2_global": 0.03349947018650652,
+            "velocity_relative_l2_wake": 0.011716104150015026,
+            "mean_drag_coefficient_relative_difference": 0.011133946819953498,
+            "mean_lift_coefficient_absolute_difference": 0.005648145431454105
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              2.24628522905983,
+              0.007849505165908864
+            ],
+            "fine": [
+              2.2215506027905247,
+              0.0022013597344547587
+            ]
+          },
+          "passed": true
+        },
+        {
+          "window_tau": [
+            12,
+            24
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.009053347256943506,
+            "pressure_mean_aligned_relative_l2_global": 0.03390588014072896,
+            "velocity_relative_l2_wake": 0.01419446574885229,
+            "mean_drag_coefficient_relative_difference": 0.013062561745964357,
+            "mean_lift_coefficient_absolute_difference": 0.009344042946809487
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              2.119324990953125,
+              0.008814527907700523
+            ],
+            "fine": [
+              2.091998136127517,
+              -0.0005295150391089636
+            ]
+          },
+          "passed": true
+        },
+        {
+          "window_tau": [
+            24,
+            40
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.007896701882305518,
+            "pressure_mean_aligned_relative_l2_global": 0.03204767811254232,
+            "velocity_relative_l2_wake": 0.012452916537354643,
+            "mean_drag_coefficient_relative_difference": 0.015059803279211356,
+            "mean_lift_coefficient_absolute_difference": 0.014274283511265886
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              2.0863529143449266,
+              0.011470644097657866
+            ],
+            "fine": [
+              2.055399009600064,
+              -0.0028036394136080186
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "flux_audits": {
+        "coarse": {
+          "max_inlet_outlet_relative_imbalance": 1.482500001936688e-08,
+          "max_periodic_relative_imbalance": 4.5702500000051624e-09,
+          "samples": 5941,
+          "passed": true
+        },
+        "fine": {
+          "max_inlet_outlet_relative_imbalance": 2.2625000153540447e-08,
+          "max_periodic_relative_imbalance": 1.0771375000205533e-09,
+          "samples": 9081,
+          "passed": true
+        }
+      },
+      "review_path": "/mnt/project/perun2601449/dp_llm_cfd/results/native_expansion/quality_20261022_v1/family_reviews_v4/a2_fc_001_127817/review.json",
+      "review_sha256": "c0147e10ab95311e451a099c82c4f6dd59836c384475c9ae096a79960da1ca32"
+    },
+    {
+      "scenario_id": "a2_sc_001",
+      "passed": false,
+      "windows": [
+        {
+          "window_tau": [
+            4,
+            12
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.00497315273694865,
+            "pressure_mean_aligned_relative_l2_global": 0.021125768521071845,
+            "velocity_relative_l2_wake": 0.008822639370664846,
+            "mean_drag_coefficient_relative_difference": 0.007603919844619341,
+            "mean_lift_coefficient_absolute_difference": 0.009077308533193287
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              6.253252663407918,
+              0.031000635056559762
+            ],
+            "fine": [
+              6.20606226340626,
+              0.04007794358975305
+            ]
+          },
+          "passed": true
+        },
+        {
+          "window_tau": [
+            12,
+            24
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.01100481008749241,
+            "pressure_mean_aligned_relative_l2_global": 0.04399390230259207,
+            "velocity_relative_l2_wake": 0.019344731318761733,
+            "mean_drag_coefficient_relative_difference": 0.008693204746313908,
+            "mean_lift_coefficient_absolute_difference": 0.009787428809456183
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              5.917598236840804,
+              0.0285965645244858
+            ],
+            "fine": [
+              5.866598693236045,
+              0.03838399333394198
+            ]
+          },
+          "passed": true
+        },
+        {
+          "window_tau": [
+            24,
+            40
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.040658823581738224,
+            "pressure_mean_aligned_relative_l2_global": 0.1332256064839538,
+            "velocity_relative_l2_wake": 0.05932830299265921,
+            "mean_drag_coefficient_relative_difference": 0.01262078320563851,
+            "mean_lift_coefficient_absolute_difference": 0.032503471255875965
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              6.257841400205628,
+              0.032323379164341304
+            ],
+            "fine": [
+              6.179846892333448,
+              -0.00018009209153466222
+            ]
+          },
+          "passed": false
+        }
+      ],
+      "flux_audits": {
+        "coarse": {
+          "max_inlet_outlet_relative_imbalance": 2.262857153485737e-08,
+          "max_periodic_relative_imbalance": 1.660538857143616e-08,
+          "samples": 5930,
+          "passed": true
+        },
+        "fine": {
+          "max_inlet_outlet_relative_imbalance": 2.12142855598189e-08,
+          "max_periodic_relative_imbalance": 1.0987285714240721e-08,
+          "samples": 7451,
+          "passed": true
+        }
+      },
+      "review_path": "/mnt/project/perun2601449/dp_llm_cfd/results/native_expansion/quality_20261022_v1/family_reviews_v4/a2_sc_001_127817/review.json",
+      "review_sha256": "ffa83b44aaae41f3435649c161b8c9c0f67c61a8cc475403c43dc71816dab74b"
+    },
+    {
+      "scenario_id": "a2_sp_001",
+      "passed": true,
+      "windows": [
+        {
+          "window_tau": [
+            4,
+            12
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.002254307544945717,
+            "pressure_mean_aligned_relative_l2_global": 0.032436537261221386,
+            "velocity_relative_l2_wake": 0.00458339533649895,
+            "mean_drag_coefficient_relative_difference": 0.02537586289930662,
+            "mean_lift_coefficient_absolute_difference": 0.00856628150709687
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              0.757284066363541,
+              0.007784729393669032
+            ],
+            "fine": [
+              0.7385429029139409,
+              -0.0007815521134278374
+            ]
+          },
+          "passed": true
+        },
+        {
+          "window_tau": [
+            12,
+            24
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.0028453067243378698,
+            "pressure_mean_aligned_relative_l2_global": 0.03739261419947403,
+            "velocity_relative_l2_wake": 0.0054243582439068875,
+            "mean_drag_coefficient_relative_difference": 0.025308305007556514,
+            "mean_lift_coefficient_absolute_difference": 0.007955369875863342
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              0.7487040445259676,
+              0.007100838479126117
+            ],
+            "fine": [
+              0.7302233297724529,
+              -0.0008545313967372245
+            ]
+          },
+          "passed": true
+        },
+        {
+          "window_tau": [
+            24,
+            40
+          ],
+          "metrics": {
+            "velocity_relative_l2_global": 0.0031950332736003255,
+            "pressure_mean_aligned_relative_l2_global": 0.03731251725842685,
+            "velocity_relative_l2_wake": 0.005483003042337303,
+            "mean_drag_coefficient_relative_difference": 0.025271835171214643,
+            "mean_lift_coefficient_absolute_difference": 0.007815480190604343
+          },
+          "force_means_cd_cl": {
+            "coarse": [
+              0.7483098571036341,
+              0.006988481994139513
+            ],
+            "fine": [
+              0.7298648333382439,
+              -0.0008269981964648292
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "flux_audits": {
+        "coarse": {
+          "max_inlet_outlet_relative_imbalance": 1.1480000074113225e-08,
+          "max_periodic_relative_imbalance": 3.1205333330839904e-10,
+          "samples": 4636,
+          "passed": true
+        },
+        "fine": {
+          "max_inlet_outlet_relative_imbalance": 6.62666680787775e-09,
+          "max_periodic_relative_imbalance": 1.529199999872043e-10,
+          "samples": 7237,
+          "passed": true
+        }
+      },
+      "review_path": "/mnt/project/perun2601449/dp_llm_cfd/results/native_expansion/quality_20261022_v1/family_reviews_v4/a2_sp_001_127817/review.json",
+      "review_sha256": "2dd75f9a1493ced45d964a82a4960696472d4a247aa712afb04bc6db511484d3"
+    }
+  ],
+  "passed_families": 3,
+  "reviewed_families": 4,
+  "all_six_families_qualified": false,
+  "prior_box_and_mixed_screens": "previously passed startup windows only",
+  "production_accepted": false,
+  "main_llm_experiment_started": false,
+  "endpoint_recovery_job": 127805,
+  "review_job": 127817,
+  "failed_analysis_jobs_preserved": [
+    126206,
+    127809,
+    127813
+  ],
+  "next_refinement": {
+    "job": "127873",
+    "source_freeze_sha256": "e313b410d02f36fcda3967e8233408a02e272a93a36cb5135b7f36b46e95067c",
+    "purpose": "TRAIN-only follow-up of failed a2_sc_001 tau24-40 field fidelity screen; no production acceptance",
+    "fine_reference": {
+      "job": 126205,
+      "index": 0,
+      "branch": "fine",
+      "mesh_factor": 1,
+      "transition_m": 0.01
+    },
+    "production_accepted": false
+  },
+  "no_new_gpu_jobs": true
+}

@@ -1,0 +1,93 @@
+{
+  "status": "FLOWBENCH_PRE_SMOKE_REVIEW_COMPLETE",
+  "cache_sha256_verified": true,
+  "exact_geometry_split_disjoint": true,
+  "groups_per_split": {
+    "train": 70,
+    "validation": 15,
+    "test": 15
+  },
+  "samples": [
+    {
+      "split": "train",
+      "index": 0,
+      "Re": 198.0,
+      "solid_fraction": 0.09619140625,
+      "speed_rms_sdf_nonpositive": 0.0,
+      "speed_rms_sdf_positive": 0.18627186119556427,
+      "fluid_pressure_mean": -1.2889941930770874,
+      "fluid_pressure_range": [
+        -1.6772305965423584,
+        0.0
+      ]
+    },
+    {
+      "split": "train",
+      "index": 50,
+      "Re": 243.0,
+      "solid_fraction": 0.04705810546875,
+      "speed_rms_sdf_nonpositive": 1.766250170476269e-05,
+      "speed_rms_sdf_positive": 0.18964260816574097,
+      "fluid_pressure_mean": -1.5539013147354126,
+      "fluid_pressure_range": [
+        -1.842949628829956,
+        0.0
+      ]
+    },
+    {
+      "split": "train",
+      "index": 70,
+      "Re": 100.0,
+      "solid_fraction": 0.046966552734375,
+      "speed_rms_sdf_nonpositive": 8.588187483837828e-06,
+      "speed_rms_sdf_positive": 0.19452063739299774,
+      "fluid_pressure_mean": -3.97505259513855,
+      "fluid_pressure_range": [
+        -4.801967144012451,
+        0.0
+      ]
+    },
+    {
+      "split": "validation",
+      "index": 20,
+      "Re": 147.0,
+      "solid_fraction": 0.046783447265625,
+      "speed_rms_sdf_nonpositive": 9.252183190255892e-06,
+      "speed_rms_sdf_positive": 0.1917608380317688,
+      "fluid_pressure_mean": 2.891624689102173,
+      "fluid_pressure_range": [
+        0.0,
+        3.678952693939209
+      ]
+    },
+    {
+      "split": "validation",
+      "index": 30,
+      "Re": 136.0,
+      "solid_fraction": 0.046844482421875,
+      "speed_rms_sdf_nonpositive": 5.154695827513933e-05,
+      "speed_rms_sdf_positive": 0.19512031972408295,
+      "fluid_pressure_mean": 1.3734604120254517,
+      "fluid_pressure_range": [
+        0.0,
+        2.1981945037841797
+      ]
+    },
+    {
+      "split": "validation",
+      "index": 60,
+      "Re": 137.0,
+      "solid_fraction": 0.046966552734375,
+      "speed_rms_sdf_nonpositive": 5.310618689691182e-06,
+      "speed_rms_sdf_positive": 0.19257043302059174,
+      "fluid_pressure_mean": 3.5852761268615723,
+      "fluid_pressure_range": [
+        0.0,
+        4.405868053436279
+      ]
+    }
+  ],
+  "test_targets_inspected": false,
+  "physical_acceptance": false,
+  "warning": "SDF<=0 per updated author convention; descriptive coarse-grid checks only. Pressure gauges and near-duplicate families still need final audit."
+}

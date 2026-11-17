@@ -1,0 +1,77 @@
+{
+  "status": "BASELINE_SMOKE_TRAINING_OK",
+  "config_sha256": "31ef5ddf96de86936ad66e0f13d42b120c95641c3f6bd1890dd782a21a3b0c45",
+  "seed": 20261014,
+  "device": "NVIDIA H200",
+  "parameter_count": 228516,
+  "train_scenarios": [
+    "tr001",
+    "tr002",
+    "tr003",
+    "tr004",
+    "tr005",
+    "tr006"
+  ],
+  "validation_scenarios": [
+    "va001",
+    "va002"
+  ],
+  "protected_scenarios_not_read": [
+    "ti001",
+    "ti002",
+    "to001",
+    "to002"
+  ],
+  "train_pairs": 1200,
+  "validation_pairs": 400,
+  "best_validation_mse_normalized": 0.006167294643819332,
+  "persistence_validation_mse_normalized": 0.230060805529356,
+  "improvement_over_persistence_percent": 97.31927625410648,
+  "training_seconds": 16.46984300762415,
+  "peak_gpu_memory_bytes": 390136832,
+  "latency_batch1_bf16": {
+    "p50_ms": 0.3746879994869232,
+    "p95_ms": 0.3801407963037491,
+    "p99_ms": 1.28991485595703,
+    "mean_ms": 0.3958072528243065,
+    "iterations": 300
+  },
+  "metrics": [
+    {
+      "epoch": 1,
+      "train_mse_normalized": 0.06956242648884654,
+      "validation_mse_normalized": 0.02077548149973154,
+      "persistence_mse_normalized": 0.230060805529356,
+      "epoch_seconds": 4.054662977345288
+    },
+    {
+      "epoch": 2,
+      "train_mse_normalized": 0.014780210151026646,
+      "validation_mse_normalized": 0.01060611305758357,
+      "persistence_mse_normalized": 0.230060805529356,
+      "epoch_seconds": 3.0691254613921046
+    },
+    {
+      "epoch": 3,
+      "train_mse_normalized": 0.008607327447583277,
+      "validation_mse_normalized": 0.007749412367120385,
+      "persistence_mse_normalized": 0.230060805529356,
+      "epoch_seconds": 3.050172818824649
+    },
+    {
+      "epoch": 4,
+      "train_mse_normalized": 0.00706068342551589,
+      "validation_mse_normalized": 0.006167294643819332,
+      "persistence_mse_normalized": 0.230060805529356,
+      "epoch_seconds": 3.0687312092632055
+    },
+    {
+      "epoch": 5,
+      "train_mse_normalized": 0.0051799878757447,
+      "validation_mse_normalized": 0.007215521987527609,
+      "persistence_mse_normalized": 0.230060805529356,
+      "epoch_seconds": 3.07235446292907
+    }
+  ],
+  "scope_note": "Pipeline smoke test; not the final PINO or dissertation comparison."
+}

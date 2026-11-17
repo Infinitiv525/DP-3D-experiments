@@ -1,0 +1,227 @@
+{
+  "status": "FIDELITY_WINDOWS_REVIEW_COMPLETE",
+  "job": "110147",
+  "wake_bounds_xy_m": [
+    -0.0035,
+    0.08312094070244692,
+    -0.026060254037844385,
+    0.039020940702446924
+  ],
+  "results": [
+    {
+      "comparison": "mesh",
+      "tau_window": [
+        4,
+        12
+      ],
+      "reference": "fine_dt02",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.012839874265582347,
+        "velocity_relative_l2_wake": 0.023339985486082945,
+        "pressure_mean_aligned_relative_l2_global": 0.20055178401725485,
+        "mean_drag_coefficient_relative_difference": 0.006423109926766764,
+        "mean_lift_coefficient_absolute_difference": 0.0036120297458083206
+      },
+      "force_stats": {
+        "fine_dt02": {
+          "mean_cd": 2.3966576502456056,
+          "mean_cl": -0.6802499536032789,
+          "std_cd": 0.07304945004219517,
+          "std_cl": 0.1355624173188579
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.4120516457899597,
+          "mean_cl": -0.6766379238574706,
+          "std_cd": 0.07117090297605269,
+          "std_cl": 0.12169492887236395
+        }
+      },
+      "exploratory_screen_passed": false
+    },
+    {
+      "comparison": "mesh",
+      "tau_window": [
+        12,
+        24
+      ],
+      "reference": "fine_dt02",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.01596370477309704,
+        "velocity_relative_l2_wake": 0.022059135288223078,
+        "pressure_mean_aligned_relative_l2_global": 0.40403477770235185,
+        "mean_drag_coefficient_relative_difference": 0.015914134667827724,
+        "mean_lift_coefficient_absolute_difference": 0.019046100336184923
+      },
+      "force_stats": {
+        "fine_dt02": {
+          "mean_cd": 2.2505975786701753,
+          "mean_cl": -0.5470818745198869,
+          "std_cd": 0.020625075841231414,
+          "std_cl": 0.01652457794558243
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.2864138916202195,
+          "mean_cl": -0.5661279748560718,
+          "std_cd": 0.01587830749469314,
+          "std_cl": 0.011094593217815037
+        }
+      },
+      "exploratory_screen_passed": false
+    },
+    {
+      "comparison": "mesh",
+      "tau_window": [
+        24,
+        40
+      ],
+      "reference": "fine_dt02",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.015248975312761742,
+        "velocity_relative_l2_wake": 0.02102789480182517,
+        "pressure_mean_aligned_relative_l2_global": 0.4317255660896765,
+        "mean_drag_coefficient_relative_difference": 0.02116263992977399,
+        "mean_lift_coefficient_absolute_difference": 0.028724356690572606
+      },
+      "force_stats": {
+        "fine_dt02": {
+          "mean_cd": 2.2137910053341967,
+          "mean_cl": -0.5242283809668512,
+          "std_cd": 0.0081531283294526,
+          "std_cl": 0.008465042134093206
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.2606406672598567,
+          "mean_cl": -0.5529527376574238,
+          "std_cd": 0.0027875979453115883,
+          "std_cl": 0.0013722525747018755
+        }
+      },
+      "exploratory_screen_passed": false
+    },
+    {
+      "comparison": "time_step",
+      "tau_window": [
+        4,
+        12
+      ],
+      "reference": "coarse_dt01",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.0009078382164880505,
+        "velocity_relative_l2_wake": 0.0016969803450444197,
+        "pressure_mean_aligned_relative_l2_global": 0.007180332870994104,
+        "mean_drag_coefficient_relative_difference": 0.00023791324145607196,
+        "mean_lift_coefficient_absolute_difference": 0.0032990619590688164
+      },
+      "force_stats": {
+        "coarse_dt01": {
+          "mean_cd": 2.411477923260537,
+          "mean_cl": -0.6799369858165394,
+          "std_cd": 0.07085597387227367,
+          "std_cl": 0.12060772188764675
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.4120516457899597,
+          "mean_cl": -0.6766379238574706,
+          "std_cd": 0.07117090297605269,
+          "std_cl": 0.12169492887236395
+        }
+      },
+      "exploratory_screen_passed": true
+    },
+    {
+      "comparison": "time_step",
+      "tau_window": [
+        12,
+        24
+      ],
+      "reference": "coarse_dt01",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.0012374091534653202,
+        "velocity_relative_l2_wake": 0.001965096868231871,
+        "pressure_mean_aligned_relative_l2_global": 0.00810231272729405,
+        "mean_drag_coefficient_relative_difference": 0.0002352282283091259,
+        "mean_lift_coefficient_absolute_difference": 0.00510016915380096
+      },
+      "force_stats": {
+        "coarse_dt01": {
+          "mean_cd": 2.2869518472514767,
+          "mean_cl": -0.5712281440098728,
+          "std_cd": 0.015562704644709682,
+          "std_cl": 0.010961561646453793
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.2864138916202195,
+          "mean_cl": -0.5661279748560718,
+          "std_cd": 0.01587830749469314,
+          "std_cl": 0.011094593217815037
+        }
+      },
+      "exploratory_screen_passed": true
+    },
+    {
+      "comparison": "time_step",
+      "tau_window": [
+        24,
+        40
+      ],
+      "reference": "coarse_dt01",
+      "candidate": "coarse_dt02",
+      "metrics": {
+        "velocity_relative_l2_global": 0.0012703541965065324,
+        "velocity_relative_l2_wake": 0.002057605936097746,
+        "pressure_mean_aligned_relative_l2_global": 0.007275845110073662,
+        "mean_drag_coefficient_relative_difference": 0.0004167001514519446,
+        "mean_lift_coefficient_absolute_difference": 0.005486705917498447
+      },
+      "force_stats": {
+        "coarse_dt01": {
+          "mean_cd": 2.2615830692673415,
+          "mean_cl": -0.5584394435749223,
+          "std_cd": 0.0026796130047983683,
+          "std_cl": 0.0012093570972298256
+        },
+        "coarse_dt02": {
+          "mean_cd": 2.2606406672598567,
+          "mean_cl": -0.5529527376574238,
+          "std_cd": 0.0027875979453115883,
+          "std_cl": 0.0013722525747018755
+        }
+      },
+      "exploratory_screen_passed": true
+    }
+  ],
+  "flux_audits": {
+    "fine_dt02": {
+      "max_sampled_inlet_outlet_relative_imbalance": 2.8347368540600287e-08,
+      "max_sampled_periodic_relative_imbalance": 1.0245157894800208e-09,
+      "sample_count": 7756,
+      "passed": true
+    },
+    "coarse_dt01": {
+      "max_sampled_inlet_outlet_relative_imbalance": 1.0652631577467108e-08,
+      "max_sampled_periodic_relative_imbalance": 1.4497894735490502e-09,
+      "sample_count": 8617,
+      "passed": true
+    },
+    "coarse_dt02": {
+      "max_sampled_inlet_outlet_relative_imbalance": 5.893684206606081e-08,
+      "max_sampled_periodic_relative_imbalance": 2.5752631579581333e-09,
+      "sample_count": 42736,
+      "passed": true
+    }
+  },
+  "all_exploratory_screens_passed": false,
+  "production_authorized_automatically": false,
+  "limitations": [
+    "Thresholds are exploratory study design choices, not externally established physical tolerances.",
+    "A two-mesh comparison is a discrepancy estimate, not a mesh-convergence proof.",
+    "The fine mesh retains adaptive stepping; this does not completely isolate spatial discretization.",
+    "The independently initialized fine run ends at tau 40; no fine late-time tau 320-400 trajectory is claimed.",
+    "Passing this training geometry does not validate all other families or authorize automatic bulk generation."
+  ]
+}

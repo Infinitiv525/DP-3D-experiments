@@ -1,0 +1,35 @@
+{
+  "status": "UNIFORM_SNAPSHOT_EXPORT_OK",
+  "scenario_id": "to002",
+  "source_case": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/pilot/dense_pilot/to002_dense160_165_108582_11",
+  "time_s": 165.0,
+  "dimensions": [
+    64,
+    32,
+    16
+  ],
+  "bounds_m": [
+    -0.05,
+    0.15,
+    -0.05,
+    0.05,
+    -0.024,
+    0.024
+  ],
+  "valid_points": 32608,
+  "total_points": 32768,
+  "valid_fraction": 0.9951171875,
+  "velocity_min": [
+    -0.016331156715750694,
+    -0.02710532955825329,
+    -0.011949165724217892
+  ],
+  "velocity_max": [
+    0.04064052551984787,
+    0.022859985008835793,
+    0.011592987924814224
+  ],
+  "pressure_min": -0.0006474863039329648,
+  "pressure_max": 0.0004401279438752681,
+  "npz_bytes": 475993
+}

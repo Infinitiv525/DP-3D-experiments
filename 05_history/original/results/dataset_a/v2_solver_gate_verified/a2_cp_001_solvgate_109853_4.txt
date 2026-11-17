@@ -1,0 +1,11 @@
+status=DATASET_A_V2_SOLVER_GATE_OK
+scenario_id=a2_cp_001
+family=cylinder_pair
+tau_end=2
+physical_end_time_s=0.8
+time_steps=3198
+wall_seconds=594
+mpi_ranks=32
+max_courant=0.5286565266
+last_cumulative_continuity_error=-1.782328752e-10
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_cp_001_solvgate_109853_4

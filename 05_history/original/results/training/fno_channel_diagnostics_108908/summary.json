@@ -1,0 +1,422 @@
+{
+  "status": "FNO_CHANNEL_DIAGNOSTICS_OK",
+  "validation_scenarios_read": [
+    "va001",
+    "va002"
+  ],
+  "protected_scenarios_not_read": [
+    "ti001",
+    "ti002",
+    "to001",
+    "to002"
+  ],
+  "checkpoints": {
+    "physics": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_physics_refine_108896/best_model.pt",
+    "control": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_long_control_108902/best_model.pt"
+  },
+  "records": 1200,
+  "metrics": {
+    "control": {
+      "va001": {
+        "mean": {
+          "u_normalized_mse": 0.5115780033217743,
+          "v_normalized_mse": 1.493477692550514,
+          "w_normalized_mse": 0.2184314789925702,
+          "p_normalized_mse": 0.38995853493222965,
+          "u_rmse_m_s": 0.0025885411661874967,
+          "v_rmse_m_s": 0.004026085474179126,
+          "w_rmse_m_s": 0.00031837130682106364,
+          "p_rmse_m2_s2": 2.588277242807635e-05,
+          "velocity_relative_l2": 0.22300575203262268,
+          "pressure_gauge_relative_l2": 0.6010433750227093,
+          "wake_normalized_mse": 3.107438455298543,
+          "normalized_divergence_rms": 0.11726596564395457
+        },
+        "tail_50_mean": {
+          "u_normalized_mse": 0.5140934127569199,
+          "v_normalized_mse": 0.8197725546360016,
+          "w_normalized_mse": 0.40934085309505464,
+          "p_normalized_mse": 0.5066293728351593,
+          "u_rmse_m_s": 0.002707553692162037,
+          "v_rmse_m_s": 0.0031823301687836647,
+          "w_rmse_m_s": 0.00046728042419999835,
+          "p_rmse_m2_s2": 3.0316960874188226e-05,
+          "velocity_relative_l2": 0.19508364260196687,
+          "pressure_gauge_relative_l2": 0.7073439025878906,
+          "wake_normalized_mse": 1.8889136600494385,
+          "normalized_divergence_rms": 0.15957543408890834
+        },
+        "final": {
+          "u_normalized_mse": 0.6568877696990967,
+          "v_normalized_mse": 1.0087361335754395,
+          "w_normalized_mse": 0.4753316342830658,
+          "p_normalized_mse": 0.6553220152854919,
+          "u_rmse_m_s": 0.003067459212616086,
+          "v_rmse_m_s": 0.003566281870007515,
+          "w_rmse_m_s": 0.0005039789248257875,
+          "p_rmse_m2_s2": 3.455247497186065e-05,
+          "velocity_relative_l2": 0.21902333199977875,
+          "pressure_gauge_relative_l2": 0.8032991886138916,
+          "wake_normalized_mse": 3.172502040863037,
+          "normalized_divergence_rms": 0.17109649625516354
+        }
+      },
+      "va002": {
+        "mean": {
+          "u_normalized_mse": 1.1749996793596074,
+          "v_normalized_mse": 1.3823640009388327,
+          "w_normalized_mse": 1.6520061523467302,
+          "p_normalized_mse": 0.591774682959076,
+          "u_rmse_m_s": 0.0038588905712822453,
+          "v_rmse_m_s": 0.0038720341090811416,
+          "w_rmse_m_s": 0.0008967720574582927,
+          "p_rmse_m2_s2": 3.095010451716007e-05,
+          "velocity_relative_l2": 0.2401725107152015,
+          "pressure_gauge_relative_l2": 0.6161716499552131,
+          "wake_normalized_mse": 4.494454577043652,
+          "normalized_divergence_rms": 0.1515450754396582
+        },
+        "tail_50_mean": {
+          "u_normalized_mse": 1.9187625455856323,
+          "v_normalized_mse": 1.2439597761631012,
+          "w_normalized_mse": 2.007637164592743,
+          "p_normalized_mse": 0.9950311481952667,
+          "u_rmse_m_s": 0.005239713946357369,
+          "v_rmse_m_s": 0.003902196018025279,
+          "w_rmse_m_s": 0.0010354608902707696,
+          "p_rmse_m2_s2": 4.2561496229609475e-05,
+          "velocity_relative_l2": 0.28610160291194914,
+          "pressure_gauge_relative_l2": 0.8558314526081086,
+          "wake_normalized_mse": 5.5514758014678955,
+          "normalized_divergence_rms": 0.20046747159970268
+        },
+        "final": {
+          "u_normalized_mse": 2.195162057876587,
+          "v_normalized_mse": 0.9127033352851868,
+          "w_normalized_mse": 2.123260974884033,
+          "p_normalized_mse": 1.111970067024231,
+          "u_rmse_m_s": 0.00560746481642127,
+          "v_rmse_m_s": 0.0033922800794243813,
+          "w_rmse_m_s": 0.0010651620104908943,
+          "p_rmse_m2_s2": 4.500889190239832e-05,
+          "velocity_relative_l2": 0.28614792227745056,
+          "pressure_gauge_relative_l2": 0.9167191386222839,
+          "wake_normalized_mse": 5.727906703948975,
+          "normalized_divergence_rms": 0.21201155217540635
+        }
+      },
+      "all": {
+        "mean": {
+          "u_normalized_mse": 0.8432888413406908,
+          "v_normalized_mse": 1.4379208467446734,
+          "w_normalized_mse": 0.9352188156696503,
+          "p_normalized_mse": 0.4908666089456528,
+          "u_rmse_m_s": 0.003223715868734871,
+          "v_rmse_m_s": 0.003949059791630134,
+          "w_rmse_m_s": 0.0006075716821396782,
+          "p_rmse_m2_s2": 2.841643847261821e-05,
+          "velocity_relative_l2": 0.2315891313739121,
+          "pressure_gauge_relative_l2": 0.6086075124889612,
+          "wake_normalized_mse": 3.8009465161710976,
+          "normalized_divergence_rms": 0.13440552054180638
+        },
+        "tail_50_mean": {
+          "u_normalized_mse": 1.216427979171276,
+          "v_normalized_mse": 1.0318661653995513,
+          "w_normalized_mse": 1.2084890088438989,
+          "p_normalized_mse": 0.7508302605152131,
+          "u_rmse_m_s": 0.003973633819259703,
+          "v_rmse_m_s": 0.003542263093404472,
+          "w_rmse_m_s": 0.000751370657235384,
+          "p_rmse_m2_s2": 3.643922855189885e-05,
+          "velocity_relative_l2": 0.240592622756958,
+          "pressure_gauge_relative_l2": 0.7815876775979995,
+          "wake_normalized_mse": 3.720194730758667,
+          "normalized_divergence_rms": 0.1800214528443055
+        },
+        "final": {
+          "u_normalized_mse": 1.4260249137878418,
+          "v_normalized_mse": 0.9607197344303131,
+          "w_normalized_mse": 1.2992963045835495,
+          "p_normalized_mse": 0.8836460411548615,
+          "u_rmse_m_s": 0.004337462014518678,
+          "v_rmse_m_s": 0.003479280974715948,
+          "w_rmse_m_s": 0.0007845704676583409,
+          "p_rmse_m2_s2": 3.978068343712948e-05,
+          "velocity_relative_l2": 0.25258562713861465,
+          "pressure_gauge_relative_l2": 0.8600091636180878,
+          "wake_normalized_mse": 4.450204372406006,
+          "normalized_divergence_rms": 0.19155402421528495
+        }
+      }
+    },
+    "persistence": {
+      "va001": {
+        "mean": {
+          "u_normalized_mse": 0.485658849719257,
+          "v_normalized_mse": 2.0377146112619084,
+          "w_normalized_mse": 0.007120495026520075,
+          "p_normalized_mse": 0.19720041275111724,
+          "u_rmse_m_s": 0.0023899932510903455,
+          "v_rmse_m_s": 0.004599487375089666,
+          "w_rmse_m_s": 5.864853993500674e-05,
+          "p_rmse_m2_s2": 1.780311734393081e-05,
+          "velocity_relative_l2": 0.23999624911230058,
+          "pressure_gauge_relative_l2": 0.41718955885618925,
+          "wake_normalized_mse": 3.4922989042004335,
+          "normalized_divergence_rms": 0.028061846519987964
+        },
+        "tail_50_mean": {
+          "u_normalized_mse": 0.49752423697675113,
+          "v_normalized_mse": 2.083476971872151,
+          "w_normalized_mse": 0.007271238924222417,
+          "p_normalized_mse": 0.19757192109536845,
+          "u_rmse_m_s": 0.002427560293581337,
+          "v_rmse_m_s": 0.004666403185110539,
+          "w_rmse_m_s": 5.9348193562982484e-05,
+          "p_rmse_m2_s2": 1.7871142067633626e-05,
+          "velocity_relative_l2": 0.24354646150022746,
+          "pressure_gauge_relative_l2": 0.4189236656203866,
+          "wake_normalized_mse": 3.5652710732165724,
+          "normalized_divergence_rms": 0.028061846519987967
+        },
+        "final": {
+          "u_normalized_mse": 0.1652151197195053,
+          "v_normalized_mse": 0.6964161992073059,
+          "w_normalized_mse": 0.005090549122542143,
+          "p_normalized_mse": 0.11640845239162445,
+          "u_rmse_m_s": 0.0015383606078103185,
+          "v_rmse_m_s": 0.0029632023070007563,
+          "w_rmse_m_s": 5.2155042794765905e-05,
+          "p_rmse_m2_s2": 1.4562770047632512e-05,
+          "velocity_relative_l2": 0.1545889675617218,
+          "pressure_gauge_relative_l2": 0.3333037495613098,
+          "wake_normalized_mse": 1.3575127124786377,
+          "normalized_divergence_rms": 0.028061846519987964
+        }
+      },
+      "va002": {
+        "mean": {
+          "u_normalized_mse": 0.5688019832386635,
+          "v_normalized_mse": 2.3954892500303684,
+          "w_normalized_mse": 2.0120445009693504,
+          "p_normalized_mse": 0.38913291015196594,
+          "u_rmse_m_s": 0.002650445547042182,
+          "v_rmse_m_s": 0.005055140373005997,
+          "w_rmse_m_s": 0.0010015479620051337,
+          "p_rmse_m2_s2": 2.515155585570028e-05,
+          "velocity_relative_l2": 0.2497651431709528,
+          "pressure_gauge_relative_l2": 0.49925031688064336,
+          "wake_normalized_mse": 5.638173651061952,
+          "normalized_divergence_rms": 0.030441865461340038
+        },
+        "tail_50_mean": {
+          "u_normalized_mse": 0.5429669307917356,
+          "v_normalized_mse": 2.278955627679825,
+          "w_normalized_mse": 2.108209174871445,
+          "p_normalized_mse": 0.3783650180697441,
+          "u_rmse_m_s": 0.0025870504800695926,
+          "v_rmse_m_s": 0.004916152626974508,
+          "w_rmse_m_s": 0.0010243458597688005,
+          "p_rmse_m2_s2": 2.4803880041872616e-05,
+          "velocity_relative_l2": 0.24352743171155453,
+          "pressure_gauge_relative_l2": 0.49713986948132516,
+          "wake_normalized_mse": 5.581908144950867,
+          "normalized_divergence_rms": 0.030441865461340045
+        },
+        "final": {
+          "u_normalized_mse": 0.08423534035682678,
+          "v_normalized_mse": 0.2525428831577301,
+          "w_normalized_mse": 0.8179280757904053,
+          "p_normalized_mse": 0.10931438952684402,
+          "u_rmse_m_s": 0.0010984501568600535,
+          "v_rmse_m_s": 0.00178440916351974,
+          "w_rmse_m_s": 0.0006611067219637334,
+          "p_rmse_m2_s2": 1.411206085322192e-05,
+          "velocity_relative_l2": 0.09469228237867355,
+          "pressure_gauge_relative_l2": 0.2757449150085449,
+          "wake_normalized_mse": 1.4972549676895142,
+          "normalized_divergence_rms": 0.030441865461340045
+        }
+      },
+      "all": {
+        "mean": {
+          "u_normalized_mse": 0.5272304164789603,
+          "v_normalized_mse": 2.2166019306461386,
+          "w_normalized_mse": 1.0095824979979353,
+          "p_normalized_mse": 0.2931666614515416,
+          "u_rmse_m_s": 0.0025202193990662637,
+          "v_rmse_m_s": 0.004827313874047831,
+          "w_rmse_m_s": 0.0005300982509700703,
+          "p_rmse_m2_s2": 2.1477336599815543e-05,
+          "velocity_relative_l2": 0.2448806961416267,
+          "pressure_gauge_relative_l2": 0.4582199378684163,
+          "wake_normalized_mse": 4.565236277631193,
+          "normalized_divergence_rms": 0.029251855990664
+        },
+        "tail_50_mean": {
+          "u_normalized_mse": 0.5202455838842434,
+          "v_normalized_mse": 2.181216299775988,
+          "w_normalized_mse": 1.0577402068978337,
+          "p_normalized_mse": 0.2879684695825563,
+          "u_rmse_m_s": 0.0025073053868254645,
+          "v_rmse_m_s": 0.004791277906042524,
+          "w_rmse_m_s": 0.0005418470266658914,
+          "p_rmse_m2_s2": 2.133751105475312e-05,
+          "velocity_relative_l2": 0.24353694660589098,
+          "pressure_gauge_relative_l2": 0.4580317675508559,
+          "wake_normalized_mse": 4.57358960908372,
+          "normalized_divergence_rms": 0.029251855990664002
+        },
+        "final": {
+          "u_normalized_mse": 0.12472523003816605,
+          "v_normalized_mse": 0.474479541182518,
+          "w_normalized_mse": 0.4115093124564737,
+          "p_normalized_mse": 0.11286142095923424,
+          "u_rmse_m_s": 0.001318405382335186,
+          "v_rmse_m_s": 0.002373805735260248,
+          "w_rmse_m_s": 0.00035663088237924967,
+          "p_rmse_m2_s2": 1.4337415450427216e-05,
+          "velocity_relative_l2": 0.12464062497019768,
+          "pressure_gauge_relative_l2": 0.30452433228492737,
+          "wake_normalized_mse": 1.427383840084076,
+          "normalized_divergence_rms": 0.029251855990664002
+        }
+      }
+    },
+    "physics": {
+      "va001": {
+        "mean": {
+          "u_normalized_mse": 0.5823662067996338,
+          "v_normalized_mse": 1.5371692948741837,
+          "w_normalized_mse": 0.11912108923308551,
+          "p_normalized_mse": 0.35624891977757217,
+          "u_rmse_m_s": 0.0027708090651140083,
+          "v_rmse_m_s": 0.004055214662657818,
+          "w_rmse_m_s": 0.00024111248272674858,
+          "p_rmse_m2_s2": 2.482639699110223e-05,
+          "velocity_relative_l2": 0.22895025253295898,
+          "pressure_gauge_relative_l2": 0.5776029740273952,
+          "wake_normalized_mse": 3.148096531452611,
+          "normalized_divergence_rms": 0.11294158924876119
+        },
+        "tail_50_mean": {
+          "u_normalized_mse": 0.5453003543615341,
+          "v_normalized_mse": 0.6780339694023132,
+          "w_normalized_mse": 0.2011290028691292,
+          "p_normalized_mse": 0.4221446692943573,
+          "u_rmse_m_s": 0.0027891345182433722,
+          "v_rmse_m_s": 0.002866679225116968,
+          "w_rmse_m_s": 0.00032758457236923275,
+          "p_rmse_m2_s2": 2.768259055301314e-05,
+          "velocity_relative_l2": 0.18648958653211595,
+          "pressure_gauge_relative_l2": 0.6467718803882598,
+          "wake_normalized_mse": 1.4697366297245025,
+          "normalized_divergence_rms": 0.15543019560997479
+        },
+        "final": {
+          "u_normalized_mse": 0.6290144324302673,
+          "v_normalized_mse": 0.8301217555999756,
+          "w_normalized_mse": 0.22910712659358978,
+          "p_normalized_mse": 0.5379453301429749,
+          "u_rmse_m_s": 0.0030016740784049034,
+          "v_rmse_m_s": 0.0032351750414818525,
+          "w_rmse_m_s": 0.0003498914011288434,
+          "p_rmse_m2_s2": 3.1305513402912766e-05,
+          "velocity_relative_l2": 0.2049553245306015,
+          "pressure_gauge_relative_l2": 0.7285439372062683,
+          "wake_normalized_mse": 2.372145891189575,
+          "normalized_divergence_rms": 0.16694508830868626
+        }
+      },
+      "va002": {
+        "mean": {
+          "u_normalized_mse": 0.8469468799280002,
+          "v_normalized_mse": 1.360796142318286,
+          "w_normalized_mse": 1.7687351346574725,
+          "p_normalized_mse": 0.5210149683663622,
+          "u_rmse_m_s": 0.003294155416224385,
+          "v_rmse_m_s": 0.0038438097736798226,
+          "w_rmse_m_s": 0.0009202687485230853,
+          "p_rmse_m2_s2": 2.9460571759045707e-05,
+          "velocity_relative_l2": 0.22301411570049823,
+          "pressure_gauge_relative_l2": 0.5854720522463321,
+          "wake_normalized_mse": 4.293310347609222,
+          "normalized_divergence_rms": 0.14866601569503668
+        },
+        "tail_50_mean": {
+          "u_normalized_mse": 1.3176152062416078,
+          "v_normalized_mse": 1.264616117477417,
+          "w_normalized_mse": 1.9078372645378112,
+          "p_normalized_mse": 0.8061089622974396,
+          "u_rmse_m_s": 0.0043196452781558035,
+          "v_rmse_m_s": 0.0038973577041178944,
+          "w_rmse_m_s": 0.0009983453678432852,
+          "p_rmse_m2_s2": 3.8207585748750714e-05,
+          "velocity_relative_l2": 0.2546842074394226,
+          "pressure_gauge_relative_l2": 0.7677604305744171,
+          "wake_normalized_mse": 4.623037524223328,
+          "normalized_divergence_rms": 0.20317248843931568
+        },
+        "final": {
+          "u_normalized_mse": 1.7368839979171753,
+          "v_normalized_mse": 1.9324915409088135,
+          "w_normalized_mse": 2.4959521293640137,
+          "p_normalized_mse": 0.995972752571106,
+          "u_rmse_m_s": 0.00498790992423892,
+          "v_rmse_m_s": 0.004936119541525841,
+          "w_rmse_m_s": 0.0011548673501238227,
+          "p_rmse_m2_s2": 4.259665365680121e-05,
+          "velocity_relative_l2": 0.3064948320388794,
+          "pressure_gauge_relative_l2": 0.8696703314781189,
+          "wake_normalized_mse": 6.302746295928955,
+          "normalized_divergence_rms": 0.21655780911009742
+        }
+      },
+      "all": {
+        "mean": {
+          "u_normalized_mse": 0.714656543363817,
+          "v_normalized_mse": 1.448982718596235,
+          "w_normalized_mse": 0.9439281119452789,
+          "p_normalized_mse": 0.43863194407196715,
+          "u_rmse_m_s": 0.0030324822406691964,
+          "v_rmse_m_s": 0.00394951221816882,
+          "w_rmse_m_s": 0.000580690615624917,
+          "p_rmse_m2_s2": 2.7143484375073966e-05,
+          "velocity_relative_l2": 0.2259821841167286,
+          "pressure_gauge_relative_l2": 0.5815375131368637,
+          "wake_normalized_mse": 3.7207034395309164,
+          "normalized_divergence_rms": 0.13080380247189893
+        },
+        "tail_50_mean": {
+          "u_normalized_mse": 0.9314577803015709,
+          "v_normalized_mse": 0.9713250434398651,
+          "w_normalized_mse": 1.0544831337034701,
+          "p_normalized_mse": 0.6141268157958985,
+          "u_rmse_m_s": 0.003554389898199588,
+          "v_rmse_m_s": 0.003382018464617431,
+          "w_rmse_m_s": 0.000662964970106259,
+          "p_rmse_m2_s2": 3.294508815088193e-05,
+          "velocity_relative_l2": 0.22058689698576928,
+          "pressure_gauge_relative_l2": 0.7072661554813385,
+          "wake_normalized_mse": 3.046387076973915,
+          "normalized_divergence_rms": 0.17930134202464523
+        },
+        "final": {
+          "u_normalized_mse": 1.1829492151737213,
+          "v_normalized_mse": 1.3813066482543945,
+          "w_normalized_mse": 1.3625296279788017,
+          "p_normalized_mse": 0.7669590413570404,
+          "u_rmse_m_s": 0.003994792001321912,
+          "v_rmse_m_s": 0.004085647291503847,
+          "w_rmse_m_s": 0.0007523793756263331,
+          "p_rmse_m2_s2": 3.695108352985699e-05,
+          "velocity_relative_l2": 0.25572507828474045,
+          "pressure_gauge_relative_l2": 0.7991071343421936,
+          "wake_normalized_mse": 4.337446093559265,
+          "normalized_divergence_rms": 0.19175144870939184
+        }
+      }
+    }
+  }
+}

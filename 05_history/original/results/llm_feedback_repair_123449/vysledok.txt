@@ -1,0 +1,72 @@
+OPRAVNÝ TECHNICKÝ TEST GRANITE
+FEEDBACK_GRANITE_REPAIR_COMPLETE
+Pôvodný návrh pridal total_words; aj jedna oprava ho ponechala a tréning bol správne odmietnutý.
+Nová verzia promptu výslovne zakazuje všetky polia okrem ôsmich povolených.
+Pôvodné zlyhanie aj náklady zostávajú zachované. Toto nie je rovnaký prompt ako pôvodný pilot ostatných modelov.
+{
+  "status": "FEEDBACK_GRANITE_REPAIR_COMPLETE",
+  "source": "/mnt/project/perun2601449/dp_llm_cfd/results/llm_feedback/cycle_123438",
+  "prompt_contract_version": 2,
+  "test_evaluated": false,
+  "events": [
+    {
+      "stage": "proposal",
+      "exit_code": 0,
+      "wall_seconds": 96.88877898454666
+    },
+    {
+      "stage": "trial",
+      "exit_code": 0,
+      "wall_seconds": 106.12171542737633
+    }
+  ],
+  "warning": "Separate format-debugging repair. Original failed proposal retained. Not uniform-prompt efficacy comparison.",
+  "checks": {
+    "same_feedback": true,
+    "all_seven_normalizations_identical": true,
+    "proposal_parameters_equal_trained": true,
+    "paired_seed": true,
+    "validation_geometry_count": true,
+    "new_contract_recorded": true,
+    "test_not_evaluated": true
+  },
+  "configuration": {
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "pressure_weight": 1,
+    "divergence_weight": 0
+  },
+  "validation": {
+    "S": 0.4578790463356528,
+    "velocity_error": 0.1928210743737561,
+    "pressure_error": 0.7229370182975495,
+    "geometry_count": 15,
+    "sample_count": 150,
+    "geometry_sample_counts": {
+      "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+      "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+      "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+      "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+      "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+      "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+      "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+      "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+      "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+      "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10,
+      "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+      "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+      "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+      "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+      "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10
+    }
+  },
+  "public_justification": {
+    "reason": "Based on pilot results, a learning rate of 0.001 and weight decay of 0.01 performed well with pressure_weight of 1 and no divergence weight. This configuration minimized S effectively.",
+    "evidence_ids": [
+      "s01"
+    ],
+    "expected_effect": "Further reduction in S, maintaining low divergence.",
+    "risk": "High pressure_error, potential overfitting."
+  },
+  "elapsed_seconds": 203.05580891575664
+}

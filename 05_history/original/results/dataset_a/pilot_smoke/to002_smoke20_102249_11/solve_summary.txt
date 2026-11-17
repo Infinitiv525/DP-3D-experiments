@@ -1,0 +1,17 @@
+status=DATASET_A_SOLVER_SMOKE_OK
+timestamp_utc=2026-10-09T00:32:35Z
+scenario_id=to002
+split=test_OOD
+u_m_s=0.0270
+diameter_m=0.0120
+center_x_m=0.010
+center_y_m=-0.012
+reynolds=324.0
+latest_time_s=20
+mpi_ranks=32
+time_steps=8255
+wall_seconds=388
+max_courant_number=0.5119773087
+last_cumulative_continuity_error=1.515384903e-10
+case_bytes=138525330
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/pilot/smoke/to002_smoke20_102249_11

@@ -1,0 +1,10 @@
+status=UNIFORM_DATASET_A_128_EXPORT_OK
+scenario_id=va002
+split=validation
+source_case=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/pilot/dense_pilot/va002_dense160_200_108616_7
+dimensions=128x64x32
+snapshot_count=201
+npz_bytes=755220165
+wall_seconds=589
+temporary_reconstructed_times_removed=yes
+decomposed_source_preserved=yes

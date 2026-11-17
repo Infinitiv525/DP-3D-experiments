@@ -1,0 +1,20 @@
+[
+  {
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "pressure_weight": 1,
+    "divergence_weight": 0
+  },
+  {
+    "learning_rate": 0.0012236509356096372,
+    "weight_decay": 2.9047728342589812e-06,
+    "pressure_weight": 2,
+    "divergence_weight": 0
+  },
+  {
+    "learning_rate": 0.00106373191978169,
+    "weight_decay": 1.5911205724559741e-06,
+    "pressure_weight": 0.5,
+    "divergence_weight": 0.003
+  }
+]

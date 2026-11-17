@@ -1,0 +1,687 @@
+{
+  "status": "BOX_FIDELITY_REVIEW_COMPLETE",
+  "resume_job": "122973",
+  "protocol": {
+    "status": "frozen_before_box_window_solver_submission",
+    "scenario_id": "a2_bx_001",
+    "split": "train",
+    "purpose": "Independent second-family long-window pressure/velocity/force check before staged full-series generation",
+    "branches": {
+      "coarse": {
+        "mesh_job": 121722,
+        "factor": 1.7,
+        "wake_transition_m": 0.0
+      },
+      "fine": {
+        "factor": 1.0,
+        "wake_transition_m": 0.01
+      }
+    },
+    "u_inlet_m_s": 0.02125,
+    "reference_length_m": 0.0115,
+    "reference_area_m2": 0.00013225,
+    "max_co": 0.2,
+    "solve_tau": [
+      0,
+      40
+    ],
+    "delta_tau": 0.4,
+    "restart_at_tau": 2,
+    "comparison_windows_tau": [
+      [
+        4,
+        12
+      ],
+      [
+        12,
+        24
+      ],
+      [
+        24,
+        40
+      ]
+    ],
+    "screen_limits": {
+      "velocity_relative_l2_global_max": 0.05,
+      "velocity_relative_l2_wake_max": 0.05,
+      "pressure_mean_aligned_relative_l2_global_max": 0.1,
+      "mean_drag_coefficient_relative_difference_max": 0.05,
+      "mean_lift_coefficient_absolute_difference_max": 0.05
+    },
+    "limitations": [
+      "Exploratory limits carried unchanged from mixed-pair screen, not universal physical tolerances",
+      "Configuration comparison changes resolution and transition, not pure h-convergence",
+      "Not a fine time-step study or tau320-400 verification",
+      "No production acceptance without review"
+    ],
+    "test_metrics_used": false,
+    "production_accepted": false
+  },
+  "case_paths": {
+    "coarse": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_coarse_122475",
+    "fine": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476"
+  },
+  "results": [
+    {
+      "tau_window": [
+        4,
+        12
+      ],
+      "metrics": {
+        "velocity_relative_l2_global": 0.006522353510638607,
+        "pressure_mean_aligned_relative_l2_global": 0.03169198373913231,
+        "velocity_relative_l2_wake": 0.011766352185871007,
+        "mean_drag_coefficient_relative_difference": 0.026710742101451877,
+        "mean_lift_coefficient_absolute_difference": 0.0034805906162299178
+      },
+      "force_means_cd_cl": {
+        "coarse": [
+          1.6401451094308546,
+          0.006551972284719656
+        ],
+        "fine": [
+          1.5974753571525286,
+          0.0030713816684897386
+        ]
+      },
+      "passed": true
+    },
+    {
+      "tau_window": [
+        12,
+        24
+      ],
+      "metrics": {
+        "velocity_relative_l2_global": 0.0075287282366737224,
+        "pressure_mean_aligned_relative_l2_global": 0.033959224330783924,
+        "velocity_relative_l2_wake": 0.012843678677357952,
+        "mean_drag_coefficient_relative_difference": 0.03047586911750378,
+        "mean_lift_coefficient_absolute_difference": 0.009820296764298677
+      },
+      "force_means_cd_cl": {
+        "coarse": [
+          1.5805645036975304,
+          0.011736280224574016
+        ],
+        "fine": [
+          1.5338200059464961,
+          0.0019159834602753378
+        ]
+      },
+      "passed": true
+    },
+    {
+      "tau_window": [
+        24,
+        40
+      ],
+      "metrics": {
+        "velocity_relative_l2_global": 0.009060552447804357,
+        "pressure_mean_aligned_relative_l2_global": 0.0386996014967054,
+        "velocity_relative_l2_wake": 0.014764242516040176,
+        "mean_drag_coefficient_relative_difference": 0.03201797496029119,
+        "mean_lift_coefficient_absolute_difference": 0.017713533502133557
+      },
+      "force_means_cd_cl": {
+        "coarse": [
+          1.5692579402670652,
+          0.016677013145563167
+        ],
+        "fine": [
+          1.5205722946128388,
+          -0.00103652035657039
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "flux_audits": {
+    "coarse": {
+      "max_inlet_outlet_relative_imbalance": 1.5258823488849026e-08,
+      "max_periodic_relative_imbalance": 3.963858823537997e-09,
+      "passed": true,
+      "sample_count": 5221
+    },
+    "fine": {
+      "max_inlet_outlet_relative_imbalance": 1.487058822944652e-08,
+      "max_periodic_relative_imbalance": 1.047047058824674e-09,
+      "passed": true,
+      "sample_count": 8864
+    }
+  },
+  "raw_pressure_tau40": {
+    "coarse": {
+      "cells": 328123,
+      "centered_min_over_u2": -1.4038782226513178,
+      "centered_max_over_u2": 0.5614651881359671,
+      "volume_weighted_centered_rms_over_u2": 0.037538755846641375,
+      "warning": "Raw-cell descriptive screen, not a convergence proof or raster norm."
+    },
+    "fine": {
+      "cells": 1706341,
+      "centered_min_over_u2": -1.3253349165367023,
+      "centered_max_over_u2": 0.5628511581277333,
+      "volume_weighted_centered_rms_over_u2": 0.037653748922958884,
+      "warning": "Raw-cell descriptive screen, not a convergence proof or raster norm."
+    }
+  },
+  "discarded_overlap_history_rows": {
+    "coarse": {
+      "forces": 0,
+      "inletFlux": 0,
+      "outletFlux": 0,
+      "frontFlux": 0,
+      "backFlux": 0
+    },
+    "fine": {
+      "forces": 27,
+      "inletFlux": 27,
+      "outletFlux": 27,
+      "frontFlux": 27,
+      "backFlux": 27
+    }
+  },
+  "all_exploratory_screens_passed": true,
+  "production_authorized_automatically": false,
+  "restart_provenance": {
+    "checkpoint_time_s": 12.55529411763,
+    "checkpoint_name": "12.5552941176299999",
+    "checkpoint_tau": 23.19999999996848,
+    "original_job": 122476,
+    "ranks": 32,
+    "files": [
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor0/12.5552941176299999/U",
+        "bytes": 1405305,
+        "sha256": "5252e9c318be04607b378dfd115df7e0976fad0bcf969f809aa4024d95c4b6ef"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor0/12.5552941176299999/p",
+        "bytes": 470074,
+        "sha256": "da942da2f8f0ca45801d2bcad065b82fd9b4560adb6942caf6dd087becb92c74"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor0/12.5552941176299999/phi",
+        "bytes": 889382,
+        "sha256": "e9ef0944d234b545862cfae0061dfa0b6fcf58f06bdd4a989b4f325c76dd2dd0"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor1/12.5552941176299999/U",
+        "bytes": 1377498,
+        "sha256": "939335a4c033089701e4404b3590aa8e93cc376422c8892e8dc5362f41fec05c"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor1/12.5552941176299999/p",
+        "bytes": 460555,
+        "sha256": "9fd162f5c14beb37cfd1bcc9300846d72c1f8236027d075bb68b7e2d1284f4c1"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor1/12.5552941176299999/phi",
+        "bytes": 880999,
+        "sha256": "ef7fb60518a2ba39f2ebae75443ad8ae1ffdfc8fa21b9823501ec13339e771a2"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor2/12.5552941176299999/U",
+        "bytes": 1367422,
+        "sha256": "288686ffcabd31d89cd6d2642cd41e25483e76baeabd29a2d26e55dd4e8e5d19"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor2/12.5552941176299999/p",
+        "bytes": 457279,
+        "sha256": "8fd3b19d7451f16b1c82fc4f687c533e0089bf2cb669cdeb1779fabf5d40ae37"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor2/12.5552941176299999/phi",
+        "bytes": 873555,
+        "sha256": "f72d45350d3df0d29ed66792a3e32b07e80694c28e4f641769997d3120248412"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor3/12.5552941176299999/U",
+        "bytes": 1406646,
+        "sha256": "1c7994495b74384faba37ab7c2dc7499f47e98b7a12c63a4da54604a4a48f405"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor3/12.5552941176299999/p",
+        "bytes": 470439,
+        "sha256": "8d0a66133bf23368854b2d7834ce3e764751b412b229948a59a8c0ce6f3fcb5c"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor3/12.5552941176299999/phi",
+        "bytes": 888459,
+        "sha256": "5942745a73d5cc04f2268cb2b2a495439fd44305677998904bc0068d20ff9771"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor4/12.5552941176299999/U",
+        "bytes": 1406595,
+        "sha256": "e3d2beaba769239eac118b13c7c73ab9a8ad1b71ef6081b1388b505306454f35"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor4/12.5552941176299999/p",
+        "bytes": 470420,
+        "sha256": "a2d2cb8634063850377dc9e67c472fe78d5e3a8e99fc044c36dfe6223f0fe5a7"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor4/12.5552941176299999/phi",
+        "bytes": 890000,
+        "sha256": "a3041a3daf70da95b9eaedfc6c977dac3e724abe83e617c0896f40731336d53d"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor5/12.5552941176299999/U",
+        "bytes": 1375241,
+        "sha256": "e48b8c1f5c0271c872d9a081500adfa90f7e532f7b65657be885f51b0aaea30e"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor5/12.5552941176299999/p",
+        "bytes": 459802,
+        "sha256": "a29d81e5ecf4261eefb0227692fd32d5fd6a1ae19b73de9b4b8e335b16d52c01"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor5/12.5552941176299999/phi",
+        "bytes": 882254,
+        "sha256": "61c2d59cbc730478ea25ddecb19c83bf6f9d90e359664c27f11e042c8b1c161c"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor6/12.5552941176299999/U",
+        "bytes": 1401244,
+        "sha256": "14cd232c12f50f608b0b16747bb1a3c687571ad5ef1d70c1339664128915b517"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor6/12.5552941176299999/p",
+        "bytes": 468637,
+        "sha256": "b77319a413b97a7e753e45bd46c1a18a462a3e0a249cbf4ae7d1c88cb8b65056"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor6/12.5552941176299999/phi",
+        "bytes": 883417,
+        "sha256": "3900d155f42b3992f16066ec264bfbd94216b9df6664ca174fc3ed8a574b0e2c"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor7/12.5552941176299999/U",
+        "bytes": 1364412,
+        "sha256": "dac514adf83ac3f3d57d7dc2a41a6ac8e0d03410b017b8f28e5e04d22712880a"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor7/12.5552941176299999/p",
+        "bytes": 456109,
+        "sha256": "8c9cfaa73967564abed63f054bec425f79a19bce8e1472b44f59a71d360ec52d"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor7/12.5552941176299999/phi",
+        "bytes": 875115,
+        "sha256": "cbdf101304d5002109d3a827c8f91da48dd2d478cc6e4fa2f0dfcaafdf2e841a"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor8/12.5552941176299999/U",
+        "bytes": 1387635,
+        "sha256": "716786cf87046fa3dad74e18806264fbdb9cb98ef5fa9e7334108924dbf4ab76"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor8/12.5552941176299999/p",
+        "bytes": 463595,
+        "sha256": "5bf82e9605bea0548cac5d7c399b36ee647e431af1100ddcee69988e41cc6b80"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor8/12.5552941176299999/phi",
+        "bytes": 883014,
+        "sha256": "3728766e02430e55106a01b4c1fbcd359c3e271eb279e17dbd6ed034cfb500d0"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor9/12.5552941176299999/U",
+        "bytes": 1358271,
+        "sha256": "4c016ad5499fee23b2c76711869074450c9560bf78003bfdc20920fcc5048d69"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor9/12.5552941176299999/p",
+        "bytes": 450198,
+        "sha256": "e80de8e0da366f30ff66a40680864545bf794e4704391ea9d460255ca764da4a"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor9/12.5552941176299999/phi",
+        "bytes": 874042,
+        "sha256": "bb744ea26df6cc25dd228700f27a28a0cca04c15d5d9dfa56b6b30386f4de058"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor10/12.5552941176299999/U",
+        "bytes": 1408817,
+        "sha256": "b1fa207d7e889ef709c711b03f791e33eed577ae5ebd0b91b1a7490de870b6bf"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor10/12.5552941176299999/p",
+        "bytes": 471250,
+        "sha256": "c16215c4d07b47a63ed5adc12d3ae34c6364a751db10d118a1c5c128bcef7937"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor10/12.5552941176299999/phi",
+        "bytes": 890038,
+        "sha256": "c821f53f48f7b82fa0769170b69ab870b5e1dfa7558f108c65b331bd915bed30"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor11/12.5552941176299999/U",
+        "bytes": 1369198,
+        "sha256": "f2ddfdd0fb3fdd7c509768767cdb910005bc83a3c828f7d080c5b8e2a5fef5f5"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor11/12.5552941176299999/p",
+        "bytes": 457791,
+        "sha256": "07ebf678db7df0d40ae53c087360b86eb8cdde55ff6a26731474762e7ee1bfd0"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor11/12.5552941176299999/phi",
+        "bytes": 877995,
+        "sha256": "4f438a8b59bc030035da375c86bf194b6aeaea606f93789c873260c750a0728b"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor12/12.5552941176299999/U",
+        "bytes": 1347307,
+        "sha256": "ff19d4618711d7fa664e1817dcd4a47213746a393b6eec5c29c4078631240f6e"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor12/12.5552941176299999/p",
+        "bytes": 446602,
+        "sha256": "174a0b21d7ce9bdf583f5633d33b39eb1cf6352541ce17025825c49215ff05d1"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor12/12.5552941176299999/phi",
+        "bytes": 869654,
+        "sha256": "2da0e782781e6146cfbd89aa05d8c94588cede115873cfb01fc0c0b1993cb110"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor13/12.5552941176299999/U",
+        "bytes": 1378616,
+        "sha256": "32d05c680621137fa0bed7053de21e027523682b4ecf1b0c4da1a53058ded836"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor13/12.5552941176299999/p",
+        "bytes": 460360,
+        "sha256": "b081379e9558455cb660b302a4449dc390e31cbea8667cfb720f363beadbb3d5"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor13/12.5552941176299999/phi",
+        "bytes": 875489,
+        "sha256": "15b0b4e3afd4375d356499f45c1f27a7eb86873d7315cb5ba90454c9bf0f08f2"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor14/12.5552941176299999/U",
+        "bytes": 1410133,
+        "sha256": "42cc410448e710c802d416a0a8718c3d4c55cd0905a11c0e5c9dad05dbaae943"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor14/12.5552941176299999/p",
+        "bytes": 471606,
+        "sha256": "56a5f0d5154be115f16ab7a67766442bebf90143e9fd5a65b77ffe46197d8853"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor14/12.5552941176299999/phi",
+        "bytes": 888002,
+        "sha256": "95584400bbfb8c4050fc765acde8435f87263e7cee64b08800a7c784ea6dc948"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor15/12.5552941176299999/U",
+        "bytes": 1365192,
+        "sha256": "49a22f810e85b602c64587d762af281abd176d40e1b41b73d4a937d799d23046"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor15/12.5552941176299999/p",
+        "bytes": 456457,
+        "sha256": "070cc492d2570725b0e447c1fcde5ff426c4c0222bf8de0afb5dc1e6320b3a10"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor15/12.5552941176299999/phi",
+        "bytes": 875023,
+        "sha256": "0425e73d1507c134dafee9c83af864c50037f35b35290bafe21d7160bae3935a"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor16/12.5552941176299999/U",
+        "bytes": 1362542,
+        "sha256": "c2da9527cd00c35c5ac639c02bd3530b729975af8aafbdc67a15d4835052316c"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor16/12.5552941176299999/p",
+        "bytes": 455827,
+        "sha256": "2c5a5789bcef5cb319ac4f98945aceee46cfe7fee0d5351a995898742afd3511"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor16/12.5552941176299999/phi",
+        "bytes": 883639,
+        "sha256": "601baf045a5a6827efc29ff569cd7245ba57f5266071595c057f98c695d2c157"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor17/12.5552941176299999/U",
+        "bytes": 1366920,
+        "sha256": "44ecda73649d174ec3b6fa3a9aed96905618ad943d55332c279795ded99d839b"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor17/12.5552941176299999/p",
+        "bytes": 457369,
+        "sha256": "4d02af93e9201807543d23e4fea50a24d1b16e7b9569044468c3b0c8312a0228"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor17/12.5552941176299999/phi",
+        "bytes": 865789,
+        "sha256": "edc66a6f34cce2378fe589b06b5328b427aa69504f85f78875710146cc357075"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor18/12.5552941176299999/U",
+        "bytes": 1359435,
+        "sha256": "b49143a87f59b645665bb053b40346dc1a2a3a031a476c6404ac5ffc7970ecde"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor18/12.5552941176299999/p",
+        "bytes": 454876,
+        "sha256": "dc875e6ef7ae4913db4491f0329fb32a9bd7403246c63efcfb764d8fc5c6afa5"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor18/12.5552941176299999/phi",
+        "bytes": 855822,
+        "sha256": "0941f334fd8e37471166b850de24cc57b6bc34f4dcb09aa95a3f0364a56627af"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor19/12.5552941176299999/U",
+        "bytes": 1353459,
+        "sha256": "8cd6dfb6ccc813f34e13e035ba6a420d20fe1d49adf9fe5b99d674c6aefd8d69"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor19/12.5552941176299999/p",
+        "bytes": 452884,
+        "sha256": "85b9712b191cd7e183317da58969ae21767016b0d5f8ddd686624d0ea4c058df"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor19/12.5552941176299999/phi",
+        "bytes": 850324,
+        "sha256": "6a55b1a78ba7780fa8c1850a4b47f09ed6d0af3f08604cf584e66e5ffed38bd3"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor20/12.5552941176299999/U",
+        "bytes": 1346589,
+        "sha256": "8fbaa6b9a9b51b8d0b23384df07f15078f4cf3afc23d14411b1c39bcd4b3375b"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor20/12.5552941176299999/p",
+        "bytes": 450594,
+        "sha256": "49d1c7a910b3173259cb73bd4009778be0a3070e5b271dcc8ebae9be3f5d61f0"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor20/12.5552941176299999/phi",
+        "bytes": 875486,
+        "sha256": "d31db31039c3770ba26ba39fba7077f5472cf2ca33355939b149f98bd335dc95"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor21/12.5552941176299999/U",
+        "bytes": 1359778,
+        "sha256": "18723aa09657c60d6b6330956070bd0425868d6e6cec4a1c12855ac4f41e4379"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor21/12.5552941176299999/p",
+        "bytes": 455075,
+        "sha256": "f918d7c677ae22fd5883088a49c63c1ce2b673b9a3f712ba7ff94aa08cdec174"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor21/12.5552941176299999/phi",
+        "bytes": 859287,
+        "sha256": "c9e235e0902db95f0238ceb4a2c32abd7f549d63d9871b8462a33ed08d0b6fa0"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor22/12.5552941176299999/U",
+        "bytes": 1352414,
+        "sha256": "e9b3c69537a45bf662d1db6c81cbc37d177fd83ff3f262448e9b69e6d719bb81"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor22/12.5552941176299999/p",
+        "bytes": 452367,
+        "sha256": "061d687a4a570d07a470644c787fe6151a22971031c3e6119b7dbe2655320832"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor22/12.5552941176299999/phi",
+        "bytes": 850711,
+        "sha256": "df64d5380cccefadc7077419c614ac7b39c046dfe2fcace3399243fb34dcfaba"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor23/12.5552941176299999/U",
+        "bytes": 1348875,
+        "sha256": "5c2cb9c215b69f25b0acdf917ad6ada19a12f8179a13c29b210c753d9b4868f8"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor23/12.5552941176299999/p",
+        "bytes": 451356,
+        "sha256": "c8c3971139a6b4816140614ef2aaac58ed31b4ef83df5f74fe3c7aa633050d7b"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor23/12.5552941176299999/phi",
+        "bytes": 851966,
+        "sha256": "783eae2a20468cbd03b5ef290833784b21dbbef163070bbdadf4faf73171712a"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor24/12.5552941176299999/U",
+        "bytes": 1375549,
+        "sha256": "9e95758c6572d5ec4e1ba77698c0fcce25ab69878fe146b104b07da6bae5d2e7"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor24/12.5552941176299999/p",
+        "bytes": 460078,
+        "sha256": "e0e55c45f91f12a0158764d09b69d9edd392f471e4c02c318512e07c0b131fa0"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor24/12.5552941176299999/phi",
+        "bytes": 882490,
+        "sha256": "b8bc1ec3fe816314166b1278a8bf03441e9843f18857683cf1ec3d08b4c27d7c"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor25/12.5552941176299999/U",
+        "bytes": 1401829,
+        "sha256": "f3507a31cac72f9109d52927764edc90234006a591be433c9cfc5eb9e215b34f"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor25/12.5552941176299999/p",
+        "bytes": 468838,
+        "sha256": "c222d3153b3ce88fbeaf7bfb47f869aaf8d0ec7937ca5b3f85f6056317618cf8"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor25/12.5552941176299999/phi",
+        "bytes": 889018,
+        "sha256": "9accc1ec9ede0d33549d1fd211b8ce8e2541a2396d4f4decadfe53df9922c107"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor26/12.5552941176299999/U",
+        "bytes": 1379015,
+        "sha256": "e89d81ddd6e15ca83454552470d20613d7bd0b6040439c35fd56410b29bf1ee2"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor26/12.5552941176299999/p",
+        "bytes": 461656,
+        "sha256": "375d0a391b37ddfe5040c04f98b8a56fab6a04aa69cb7aea9ade1f328782ef19"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor26/12.5552941176299999/phi",
+        "bytes": 870100,
+        "sha256": "e8b198becf0e3057e50eaeef048d6cf841989aa6cd9b6efb87944e51fe4dc233"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor27/12.5552941176299999/U",
+        "bytes": 1388321,
+        "sha256": "4bb0648a5e43063d08452022818305cd4bd58fa180e2a8f1cff727f78f9f42a7"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor27/12.5552941176299999/p",
+        "bytes": 464674,
+        "sha256": "6b36bfe1f0302cb2d3141af748a9825036d4121dc3d88c0498a31556ba78e7c1"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor27/12.5552941176299999/phi",
+        "bytes": 871220,
+        "sha256": "f7554324e07124415897fc4d7eb732783dcf396316d2a809233f9c32598e38f3"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor28/12.5552941176299999/U",
+        "bytes": 1351752,
+        "sha256": "370e44102d9d572c67a72734a17d71d2be32c2ee34be565cf10ac35c9fda2ae8"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor28/12.5552941176299999/p",
+        "bytes": 451977,
+        "sha256": "dcf00b0dd55bbd26a82be8b3219b8dec135cfb8e3e5a3067eb58e63e5b9833fe"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor28/12.5552941176299999/phi",
+        "bytes": 868015,
+        "sha256": "cb4250c50f6a9553e9a664569107164a5690432c65ea6cc16e20a56fdca7365b"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor29/12.5552941176299999/U",
+        "bytes": 1403661,
+        "sha256": "0e7170ad160ee1c5b3ea833a58c957d3c98171c4bafe95184d247c280aaacb17"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor29/12.5552941176299999/p",
+        "bytes": 469534,
+        "sha256": "629002e0eec15ce514d620a4c59b74265713d3ca2ac5dd3fbe88c68995ca116a"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor29/12.5552941176299999/phi",
+        "bytes": 887474,
+        "sha256": "ab49b05ade93467f79e8f0b52be5430f4ed6e4b0d10495525ee5d5de1b3d2454"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor30/12.5552941176299999/U",
+        "bytes": 1394334,
+        "sha256": "5af55c4419065c357dc1589afa5d2a55f63210b04440e6302a1163ddb138b2b1"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor30/12.5552941176299999/p",
+        "bytes": 466511,
+        "sha256": "8533f6bd72710b0b82de713ff9e5e6635897c3de68f1de9bacfd4ae1050f6c89"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor30/12.5552941176299999/phi",
+        "bytes": 884421,
+        "sha256": "2acd40dbe6484429f33a6013d0fd87e9269a3a0b13e53cc5f70dc10c1b373b86"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor31/12.5552941176299999/U",
+        "bytes": 1351815,
+        "sha256": "700b81b28579f19dc3331495a811d4cf6c50977860a31a84f6a92d1f6e18abde"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor31/12.5552941176299999/p",
+        "bytes": 452168,
+        "sha256": "537d5107cdda29e61833db675d679e55088bc9772dd0f4e6518eee9f313819cc"
+      },
+      {
+        "path": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/box_fidelity/a2_bx_001_fine_122476/processor31/12.5552941176299999/phi",
+        "bytes": 852280,
+        "sha256": "0be8143fb8198267c17a12a3fef3d095aad0291b4ad243c86f9bc00be277b38f"
+      }
+    ],
+    "note": "Latest time equal on every rank; input checkpoint bytes hashed before continuation, no files removed."
+  },
+  "warning": "Fine run restarted at tau23.2 after timeout. Old post-checkpoint history tails clipped at later restart directory. Configuration discrepancy, not pure h-only/time-step convergence.",
+  "wake_bounds_xy_m": [
+    0.0,
+    0.08133907664697809,
+    -0.03233907664697809,
+    0.03233907664697809
+  ],
+  "exported_frames_per_branch": {
+    "coarse": 101,
+    "fine": 101
+  }
+}

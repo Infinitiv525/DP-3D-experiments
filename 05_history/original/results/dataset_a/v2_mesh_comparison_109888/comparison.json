@@ -1,0 +1,51 @@
+{
+  "status": "PAIRED_STARTUP_MESH_COMPARISON_COMPLETE",
+  "solver_job": "109888",
+  "screening_thresholds": {
+    "velocity_relative_l2": 0.05,
+    "pressure_relative_l2": 0.1
+  },
+  "interpretation": "Difference from the finer numerical solution, not error against physical truth.",
+  "results": [
+    {
+      "scenario_id": "a2_sp_001",
+      "tau_end": 2,
+      "velocity_relative_l2_common_fluid": 0.004000131803165313,
+      "pressure_mean_aligned_relative_l2_common_fluid": 0.09339317151195217,
+      "velocity_vector_rmse_over_u_inlet": 0.004003735281822148,
+      "pressure_rmse_over_u_inlet_squared": 0.0009738938373521892,
+      "mask_disagreement_fraction": 1.52587890625e-05,
+      "common_fluid_points": 262004,
+      "fine_solver_wall_s": 199,
+      "coarse_solver_wall_s": 168,
+      "solver_wall_speedup": 1.1845238095238095,
+      "fine_solver_core_h": 1.768888888888889,
+      "coarse_solver_core_h": 1.4933333333333334,
+      "fine_max_courant": 0.2004227551,
+      "coarse_max_courant": 0.2002417236,
+      "exploratory_field_screen_passed": true,
+      "production_mesh_accepted": false,
+      "limitation": "Startup at tau=2 only; no late-time, force or time-step convergence validation."
+    },
+    {
+      "scenario_id": "a2_mp_001",
+      "tau_end": 2,
+      "velocity_relative_l2_common_fluid": 0.006301815410243192,
+      "pressure_mean_aligned_relative_l2_common_fluid": 0.12845800694719747,
+      "velocity_vector_rmse_over_u_inlet": 0.006327794745372906,
+      "pressure_rmse_over_u_inlet_squared": 0.0035266588492331354,
+      "mask_disagreement_fraction": 3.814697265625e-06,
+      "common_fluid_points": 261637,
+      "fine_solver_wall_s": 970,
+      "coarse_solver_wall_s": 101,
+      "solver_wall_speedup": 9.603960396039604,
+      "fine_solver_core_h": 8.622222222222222,
+      "coarse_solver_core_h": 0.8977777777777778,
+      "fine_max_courant": 0.2003867678,
+      "coarse_max_courant": 0.2002364229,
+      "exploratory_field_screen_passed": false,
+      "production_mesh_accepted": false,
+      "limitation": "Startup at tau=2 only; no late-time, force or time-step convergence validation."
+    }
+  ]
+}

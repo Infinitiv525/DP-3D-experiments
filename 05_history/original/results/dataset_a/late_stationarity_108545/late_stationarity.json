@@ -1,0 +1,26 @@
+{
+  "status": "DATASET_A_LATE_STATIONARITY_ANALYSIS_OK",
+  "scenario_count": 12,
+  "late_stationarity_pass_count": 12,
+  "late_stationarity_fail_count": 0,
+  "comparison_windows_s": [
+    [
+      120,
+      140
+    ],
+    [
+      140,
+      160
+    ]
+  ],
+  "thresholds": {
+    "frequency_relative_difference_max": 0.05,
+    "mean_cd_relative_difference_max": 0.03,
+    "rms_cl_relative_difference_max": 0.1
+  },
+  "recommended_dense_continuation_s": [
+    160,
+    200
+  ],
+  "interpretation": "all_ready"
+}

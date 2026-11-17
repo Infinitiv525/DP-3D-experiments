@@ -1,0 +1,24 @@
+{
+  "status": "REFERENCE_DIVERGENCE_OK",
+  "scenario_id": "va001",
+  "split": "validation",
+  "states": 201,
+  "divergence_rms_s_inv": {
+    "mean": 0.060586509340191795,
+    "p50": 0.06020864478164444,
+    "p95": 0.06330663749480815,
+    "max": 0.06338276312377651
+  },
+  "normalized_divergence_rms": {
+    "mean": 0.027408182796753423,
+    "p50": 0.02723724406788677,
+    "p95": 0.028638716961937018,
+    "max": 0.028673154746470322
+  },
+  "protected_scenarios_not_read": [
+    "ti001",
+    "ti002",
+    "to001",
+    "to002"
+  ]
+}

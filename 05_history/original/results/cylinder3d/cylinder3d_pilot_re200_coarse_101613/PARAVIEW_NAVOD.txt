@@ -1,0 +1,73 @@
+AKO OTVORIŤ 3D PILOT V PARAVIEW
+================================
+
+1. Inštalácia
+-------------
+
+Ak ParaView ešte nie je nainštalovaný, stiahni Windows 64-bit verziu z:
+https://www.paraview.org/download/
+
+Pre bežné lokálne prezeranie vyber stabilnú verziu bez označenia MPI a súbor
+s inštalátorom .exe. MPI verzia nie je potrebná na otvorenie našich výsledkov.
+
+2. Otvorenie výsledku
+---------------------
+
+Spusti ParaView a zvoľ File -> Open. Otvor súbor:
+
+fields/cylinder3d_pilot_re200_coarse_101613.vtm.series
+
+Potom vľavo v paneli Properties klikni na zelené tlačidlo Apply. Súbor .series
+odkazuje na celý multiblock dataset: vnútorné 3D bunky aj hranice inlet,
+outlet, sideBottom, sideTop, front, back a cylinder. Jednotlivé .vtu a .vtp
+súbory nepresúvaj, pretože hlavný súbor na ne odkazuje relatívnymi cestami.
+
+3. Farebné pole rýchlosti
+-------------------------
+
+V hornej lište Color By vyber U a potom Magnitude. Klikni na Rescale to Data
+Range. Farba teraz ukazuje veľkosť rýchlosti v m/s. Ak vidíš iba vonkajší
+povrch kvádra, vytvor rez podľa nasledujúceho bodu.
+
+4. Rez cez stred valca a vírovú stopu
+-------------------------------------
+
+Označ načítaný dataset v Pipeline Browser a zvoľ Filters -> Slice.
+Nastav typ Plane, Origin približne (0.03, 0, 0) a Normal (0, 0, 1). Klikni
+Apply. Tým vznikne rovina z = 0, na ktorej je valec aj jeho stopa. Color By
+nastav na U -> Magnitude. Tlačidlom Rescale to Data Range uprav farebnú škálu.
+Pre pohľad kolmo na rez použi pohľad v smere osi Z a Reset Camera.
+
+Origin v smere x pri rovine s normálou Z nie je rozhodujúci; dôležitá je
+hodnota z = 0. Stred valca je v bode (0, 0, 0), priemer je 0,01 m a prúdenie
+smeruje zľava doprava.
+
+5. Tlak
+-------
+
+Na tom istom reze zmeň Color By z U na p a znovu použi Rescale to Data Range.
+Pri nekompresibilnom OpenFOAM je p kinematický tlak v jednotkách m2/s2, nie
+priamo Pa. Na fyzikálny tlakový rozdiel v Pa sa násobí hustotou kvapaliny.
+
+6. Zobrazenie siete
+-------------------
+
+Vyber pôvodný dataset alebo rez. V rozbaľovacom poli Representation zmeň
+Surface na Surface With Edges. Uvidíš jednotlivé bunky a lokálne zjemnenie pri
+valci a v stope. Pre čitateľnosť môžeš farbenie prepnúť na Solid Color.
+
+7. Čo je v tomto pilote dostupné
+--------------------------------
+
+Lokálny VTK export obsahuje posledný uložený stav v čase t = 2 s, polia U a p,
+vnútornú 3D sieť a všetky hranice vrátane valca. Zatiaľ nejde o animáciu,
+pretože pilot exportoval iba latestTime. Plnú časovú sériu vyexportujeme pri
+predĺženom validačnom behu. Časové priebehy odporu, vztlaku a sond sú už teraz
+kompletné v priečinku tables.
+
+8. Uloženie obrázka
+-------------------
+
+Keď nastavíš vhodný pohľad, použi File -> Save Screenshot. Do názvu vlož
+run_id cylinder3d_pilot_re200_coarse_101613 a čas t2, aby bol obrázok spätne
+dohľadateľný. Tento výsledok musí zostať označený ako PILOT – NOT VALIDATED.

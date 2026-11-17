@@ -1,0 +1,85 @@
+{
+  "status": "frozen_before_fidelity_window_runs",
+  "scenario_id": "a2_mp_001",
+  "split": "train",
+  "purpose": "Separate practical mesh/time-step differences before selecting production discretization.",
+  "solve_tau": [
+    0,
+    40
+  ],
+  "snapshot_delta_tau": 0.4,
+  "restart_checkpoint_tau": 2,
+  "comparison_windows_tau": [
+    [
+      4,
+      12
+    ],
+    [
+      12,
+      24
+    ],
+    [
+      24,
+      40
+    ]
+  ],
+  "fine_reference": {
+    "mesh_job": 109123,
+    "cells": 1233859,
+    "max_courant_target": 0.2
+  },
+  "candidate": {
+    "source_full_pilot_job": 109922,
+    "mesh_size_factor": 1.7,
+    "cells": 291997,
+    "max_courant_target": 0.2
+  },
+  "time_step_control": {
+    "mesh_size_factor": 1.7,
+    "cells": 291997,
+    "max_courant_target": 0.1
+  },
+  "field_comparison": {
+    "grid": [
+      128,
+      64,
+      32
+    ],
+    "mask": "pairwise intersection of valid fluid points, with excluded fractions reported",
+    "pressure": "subtract each pressure mean on the common full-domain fluid mask before L2 comparison",
+    "window_norm": "sqrt(sum_over_snapshots_and_points(squared_difference) / sum_over_snapshots_and_points(squared_reference))",
+    "wake_roi": "x from minimum obstacle center x to maximum(center x + half bounding-box diagonal) + 6 Lref; y bounds use center y +/- half bounding-box diagonal plus 2 Lref; full z; clipped to domain"
+  },
+  "exploratory_mesh_screen": {
+    "velocity_relative_l2_global_max": 0.05,
+    "velocity_relative_l2_wake_max": 0.05,
+    "pressure_mean_aligned_relative_l2_global_max": 0.1,
+    "mean_drag_coefficient_relative_difference_max": 0.05,
+    "mean_lift_coefficient_absolute_difference_max": 0.05
+  },
+  "exploratory_time_step_screen": {
+    "velocity_relative_l2_global_max": 0.01,
+    "velocity_relative_l2_wake_max": 0.01,
+    "pressure_mean_aligned_relative_l2_global_max": 0.02,
+    "mean_drag_coefficient_relative_difference_max": 0.01,
+    "mean_lift_coefficient_absolute_difference_max": 0.01
+  },
+  "force_normalization": {
+    "u_ref_m_s": 0.02375,
+    "length_ref_m": 0.01,
+    "area_ref_m2": 0.0001,
+    "patch": "obstacle"
+  },
+  "numerical_gate": {
+    "actual_max_courant": 0.55,
+    "absolute_final_cumulative_continuity": 1e-05,
+    "max_sampled_relative_flux_imbalance": 0.0001
+  },
+  "limitations": [
+    "Thresholds are exploratory study design choices, not externally established physical tolerances.",
+    "A two-mesh comparison is a discrepancy estimate, not a mesh-convergence proof.",
+    "The fine mesh retains adaptive stepping; this does not completely isolate spatial discretization.",
+    "The independently initialized fine run ends at tau 40; no fine late-time tau 320-400 trajectory is claimed.",
+    "Passing this training geometry does not validate all other families or authorize automatic bulk generation."
+  ]
+}

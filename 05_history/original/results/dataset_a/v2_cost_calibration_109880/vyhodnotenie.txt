@@ -1,0 +1,51 @@
+VYHODNOTENIE KALIBRACIE 109880 — 15. 10. 2026
+
+Oba scenare su treningove. Pocitali sme pokracovanie tau=2 az 4,
+nie cely rozbeh ani rozvinute prudenie. Riesenie je stale plne 3D.
+
+MERANIE
+Gula: 181 sekund x 32 CPU / 3600 = 1,60889 CPU core-h.
+Zmiesana dvojica: 885 sekund x 32 CPU / 3600 = 7,86667 CPU core-h.
+Maximalne Co: 0,498286 a 0,200177. Oba pod limitom 0,55.
+Kontinuita a hranicne toky presli kratkou kontrolou.
+Kontrolne sucty vzdialenych suborov su v poriadku.
+Export: pevna domena 0,20 x 0,10 x 0,04 m, raster 128 x 64 x 32.
+Kazdy pripad ma 6 casov od tau=2 po tau=4; do rastra bol exportovany
+iba posledny stav. Neexportovali sme zatial vsetkych sest stavov.
+
+VYPOCTOVY ODHAD
+Ak by rovnaka cena na jednotku tau platila az do tau=400:
+gula: 1,60889 x 200 = asi 322 core-h na cely scenar;
+zmiesana dvojica: 7,86667 x 200 = asi 1573 core-h na cely scenar.
+72 scenarov s cenou tejto gule: asi 23 168 core-h.
+Nie je to predpoved kazdej rodiny ani dolna hranica celej sady.
+Povodny pridel bol 4237 core-h, cast uz bola spotrebovana.
+Zostatok uctu nevieme potvrdit, pretoze sacct nefunguje.
+Samotne merane solverove useky spolu: 9,48 core-h, bez rezie.
+
+ULOZISKO
+Jeden komprimovany stav: gula 3 660 620 B, dvojica 3 716 829 B.
+461 stavov pri rovnakej kompresii: 1,69 az 1,71 GB na scenar.
+72 scenarov: asi 122 az 123 GB iba kompaktnych poli.
+Surove CFD data potrebuju dalsie miesto na Perune.
+Objem jedneho stavu sa moze pocas prudenia menit.
+
+CO Z TOHO VYPLYVA
+S aktualnou sietou nie je potvrdena realizovatelnost povodneho planu
+72 plnych trajektorii do tau=400. Dalsi velky vypocet nespustame.
+Menej ulozenych obrazkov zmensi data, ale nie pocet krokov riesica.
+
+NAVRH DALSIEHO KROKU
+1. Zistit skutocny zostavajuci CPU rozpocet v portali alebo od podpory.
+2. Pripravit redsiu 3D siet a porovnat ju s existujucou sietou na
+   rovnakom kratkom intervale a rovnakych pociatocnych podmienkach.
+   Overit chybu rychlosti/tlaku, bilanciu toku a dostupne silove metriky;
+   porovnat aj potrebny casovy krok a skutocne core-h.
+3. Podla nameranej presnosti a ceny zvolit pocet nezavislych scenarov
+   a dlzku priebehu. Pred treningom zapisat novu verziu protokolu.
+4. Zachovat oddelene treningove, validacne a uzamknute testovacie
+   geometrie a rovnaky rozpocet pre porovnavane konfiguracne metody.
+
+Vyber redsej siete ani kratsej trajektorie sa nesmie odvodit len z ceny:
+musi byt zdovodneny dostatocnou presnostou a javom, ktory chceme merat.
+Kratka stabilita sama nepreukazuje fyzikalnu presnost plnej simulacie.

@@ -1,0 +1,392 @@
+{
+  "status": "OWN_CFD_INTEGRITY_AUDITED_MAIN_DATASET_NOT_READY",
+  "pilot_scenarios": [
+    {
+      "scenario_id": "tr001",
+      "split": "train",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 201,
+      "protected_test_values_loaded": null,
+      "diagnostic_endpoints": [
+        {
+          "time_s": 160.0,
+          "fluid_fraction": 0.9967041015625,
+          "max_speed_over_inlet": 1.4324394464492798,
+          "centered_pressure_rms_over_u2": 0.0848405154375755
+        },
+        {
+          "time_s": 200.0,
+          "fluid_fraction": 0.9967041015625,
+          "max_speed_over_inlet": 1.4603986740112305,
+          "centered_pressure_rms_over_u2": 0.08614170208660409
+        }
+      ],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "tr002",
+      "split": "train",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 201,
+      "protected_test_values_loaded": null,
+      "diagnostic_endpoints": [
+        {
+          "time_s": 160.0,
+          "fluid_fraction": 0.996337890625,
+          "max_speed_over_inlet": 1.4510464668273926,
+          "centered_pressure_rms_over_u2": 0.08675037174878891
+        },
+        {
+          "time_s": 200.0,
+          "fluid_fraction": 0.996337890625,
+          "max_speed_over_inlet": 1.471693992614746,
+          "centered_pressure_rms_over_u2": 0.09025908950034454
+        }
+      ],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "tr003",
+      "split": "train",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 201,
+      "protected_test_values_loaded": null,
+      "diagnostic_endpoints": [
+        {
+          "time_s": 160.0,
+          "fluid_fraction": 0.9952392578125,
+          "max_speed_over_inlet": 1.5342735052108765,
+          "centered_pressure_rms_over_u2": 0.10362011779316747
+        },
+        {
+          "time_s": 200.0,
+          "fluid_fraction": 0.9952392578125,
+          "max_speed_over_inlet": 1.5273735523223877,
+          "centered_pressure_rms_over_u2": 0.10386342081467352
+        }
+      ],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "tr004",
+      "split": "train",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 201,
+      "protected_test_values_loaded": null,
+      "diagnostic_endpoints": [
+        {
+          "time_s": 160.0,
+          "fluid_fraction": 0.99658203125,
+          "max_speed_over_inlet": 1.4766942262649536,
+          "centered_pressure_rms_over_u2": 0.08838682394191721
+        },
+        {
+          "time_s": 200.0,
+          "fluid_fraction": 0.99658203125,
+          "max_speed_over_inlet": 1.478816032409668,
+          "centered_pressure_rms_over_u2": 0.08930894405860357
+        }
+      ],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "tr005",
+      "split": "train",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 201,
+      "protected_test_values_loaded": null,
+      "diagnostic_endpoints": [
+        {
+          "time_s": 160.0,
+          "fluid_fraction": 0.99609375,
+          "max_speed_over_inlet": 1.5055204629898071,
+          "centered_pressure_rms_over_u2": 0.10592441479826432
+        },
+        {
+          "time_s": 200.0,
+          "fluid_fraction": 0.99609375,
+          "max_speed_over_inlet": 1.5204743146896362,
+          "centered_pressure_rms_over_u2": 0.10391256052194867
+        }
+      ],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "tr006",
+      "split": "train",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 201,
+      "protected_test_values_loaded": null,
+      "diagnostic_endpoints": [
+        {
+          "time_s": 160.0,
+          "fluid_fraction": 0.99609375,
+          "max_speed_over_inlet": 1.4746297597885132,
+          "centered_pressure_rms_over_u2": 0.09355559570727139
+        },
+        {
+          "time_s": 200.0,
+          "fluid_fraction": 0.99609375,
+          "max_speed_over_inlet": 1.4910145998001099,
+          "centered_pressure_rms_over_u2": 0.09439784943136958
+        }
+      ],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "va001",
+      "split": "validation",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 201,
+      "protected_test_values_loaded": null,
+      "diagnostic_endpoints": [
+        {
+          "time_s": 160.0,
+          "fluid_fraction": 0.99658203125,
+          "max_speed_over_inlet": 1.5081309080123901,
+          "centered_pressure_rms_over_u2": 0.09584594963918977
+        },
+        {
+          "time_s": 200.0,
+          "fluid_fraction": 0.99658203125,
+          "max_speed_over_inlet": 1.5241492986679077,
+          "centered_pressure_rms_over_u2": 0.09726772448357408
+        }
+      ],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "va002",
+      "split": "validation",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 201,
+      "protected_test_values_loaded": null,
+      "diagnostic_endpoints": [
+        {
+          "time_s": 160.0,
+          "fluid_fraction": 0.9957275390625,
+          "max_speed_over_inlet": 1.5594457387924194,
+          "centered_pressure_rms_over_u2": 0.10423440789226382
+        },
+        {
+          "time_s": 200.0,
+          "fluid_fraction": 0.9957275390625,
+          "max_speed_over_inlet": 1.51095449924469,
+          "centered_pressure_rms_over_u2": 0.09669701567332416
+        }
+      ],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "ti001",
+      "split": "test_ID",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 0,
+      "protected_test_values_loaded": false,
+      "diagnostic_endpoints": [],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "ti002",
+      "split": "test_ID",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 0,
+      "protected_test_values_loaded": false,
+      "diagnostic_endpoints": [],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "to001",
+      "split": "test_OOD",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 0,
+      "protected_test_values_loaded": false,
+      "diagnostic_endpoints": [],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    },
+    {
+      "scenario_id": "to002",
+      "split": "test_OOD",
+      "frames": 201,
+      "all_sha256_checked": true,
+      "headers_checked": true,
+      "numeric_field_frames_checked": 0,
+      "protected_test_values_loaded": false,
+      "diagnostic_endpoints": [],
+      "time_range_s": [
+        160,
+        200
+      ],
+      "full_startup_available": false,
+      "preexisting_validation_status": "UNIFORM_SERIES_VALIDATION_OK"
+    }
+  ],
+  "pilot_frames_sha_verified": 2412,
+  "hash_errors": [],
+  "planned_v2_scenarios": 72,
+  "v2_split_counts": {
+    "train": 46,
+    "validation": 8,
+    "test_ID": 8,
+    "test_OOD": 10
+  },
+  "v2_production_directory_exists": false,
+  "v2_accepted_scenarios_from_existing_staged_protocol": 0,
+  "existing_long_reviews": {
+    "mixed_pair": {
+      "status": "FIDELITY_WINDOWS_REVIEW_COMPLETE",
+      "passed": true,
+      "scope_tau": [
+        0,
+        40
+      ]
+    },
+    "box": {
+      "status": "BOX_FIDELITY_REVIEW_COMPLETE",
+      "passed": true,
+      "scope_tau": [
+        0,
+        40
+      ]
+    }
+  },
+  "missing_long_window_families": [
+    {
+      "scenario_id": "a2_sc_001",
+      "index": 0,
+      "coarse_source": "a2_sc_001_solvgate_122390_0_staged_coarse",
+      "factor": 1.2,
+      "transition_m": 0.01
+    },
+    {
+      "scenario_id": "a2_sp_001",
+      "index": 1,
+      "coarse_source": "a2_sp_001_solvgate_122337_1_staged_coarse",
+      "factor": 1.4,
+      "transition_m": 0.01
+    },
+    {
+      "scenario_id": "a2_fc_001",
+      "index": 2,
+      "coarse_source": "a2_fc_001_solvgate_122337_2_staged_coarse",
+      "factor": 1.4,
+      "transition_m": 0.01
+    },
+    {
+      "scenario_id": "a2_cp_001",
+      "index": 4,
+      "coarse_source": "a2_cp_001_solvgate_122411_4_staged_coarse",
+      "factor": 1.2,
+      "transition_m": 0.01
+    }
+  ],
+  "ready_for_main_llm_training": false,
+  "all_four_llm_families_required": true,
+  "reasons": [
+    "Pilot has12single-cylinder scenarios and only t160-200, not full transient72scenario target",
+    "No accepted complete Dataset A v2 production series",
+    "Only2of6families have long-window configuration fidelity screens; late-time fidelity remains distinct"
+  ],
+  "numeric_test_fields_loaded": false,
+  "model_test_metrics_computed": false,
+  "source_hashes": {
+    "/mnt/project/perun2601449/dp_llm_cfd/test/config/dataset_a_pilot_scenarios.csv": "d07fbe6ae5c1fb15d4f24e0228da2c5e31cc89cecf99b8637e0db75ff55400a7",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/tr001/series_index.csv": "cf287074db8adad7bff8299ac78ec8f681535b7c4be209111f7a73ba90da58ae",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/tr002/series_index.csv": "29597cf5d93b58b89d4d8dc2a1fadd286c0b3069005fe3f15801e92f66b503f6",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/tr003/series_index.csv": "834322d1a110b40301041d41efaf4f327a972d7c89c71a444575a7f3d727077c",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/tr004/series_index.csv": "606c3043547f1a066185414ccdb361abe7645c9dc9cf79605fdf39056f3e4161",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/tr005/series_index.csv": "87931771b42e4c77ebb4684a00bee1601532eee88f80e6920087a89c1cd9a230",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/tr006/series_index.csv": "b48c35f54248740617a1f318fe7735f4f8525c9855d1ccec48f064281baa23ab",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/va001/series_index.csv": "9a8efc3d0acbf5f789832a64c85af7140397361afe07da647f0e026c36df7120",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/va002/series_index.csv": "2fa44ea35f96e77f4bb6c314142a7cd2a492c137174be4b0195e6a5710fb2f26",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/ti001/series_index.csv": "f352dd40e2ffe52e357988604a9db35204aac44fe6950f795d75c60a983ff530",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/ti002/series_index.csv": "d610d4c3dbf43834cf385a16bde658a998643ea102785274b45634cf04636eec",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/to001/series_index.csv": "86fcca09f757d2302be19717a68e4a694fb45161cd353fc7818434514e2162d2",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/to002/series_index.csv": "40fb030fc72398b7918f11b341bd091a0e3f7095a82b6009c11657e7fab8a0f4",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_smooth_window_review/121700/fidelity_review.json": "4061b1bb959bad8c752b45c5279a73731c4b6d3a2bc21db308e856d466fa643a",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_box_fidelity_review/122974/box_fidelity_review.json": "ab9d57e7042fa72c578d0ae4ae696b0a135f0153ccfd203036db82611f39d5e4",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_solver_gate/a2_sc_001_solvgate_122390_0_staged_coarse/solver_summary.txt": "f23c1c03d52809e6519ac5b4003a40bbf84f97cd24b313f78de5f4cfd85922cc",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_solver_gate/a2_sp_001_solvgate_122337_1_staged_coarse/solver_summary.txt": "aa66630375a2c1dd3f2e3c5b02bda4547808da0ddee1d8e4a47521ab3ddf1ee4",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_solver_gate/a2_fc_001_solvgate_122337_2_staged_coarse/solver_summary.txt": "4d2e818a4f565830e14c9440b818af035a12c6e4d6b98ce51ed3a34b82ef0815",
+    "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_solver_gate/a2_cp_001_solvgate_122411_4_staged_coarse/solver_summary.txt": "4fd52e9b4eece337c3f41b59ba0a5bae5274f6d146ba3312d3b4400e0e98ed16"
+  },
+  "auditor_source_sha256": "e8082d92a569fc668c0947c5a1e7f425e8e0f8538e35a47b2cacedc2878e9842",
+  "elapsed_seconds": 116.5219287549844
+}

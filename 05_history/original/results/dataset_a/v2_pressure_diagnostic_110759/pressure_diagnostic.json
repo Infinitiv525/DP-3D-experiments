@@ -1,0 +1,615 @@
+{
+  "status": "PRESSURE_SPATIAL_DIAGNOSTIC_COMPLETE",
+  "snapshots": [
+    {
+      "tau": 12,
+      "regions": {
+        "whole_domain": {
+          "points": 261637,
+          "relative_l2": 0.2532078836228835,
+          "reference_rms_over_u2": 0.030931572503270624,
+          "error_rms_over_u2": 0.00783211801068094,
+          "fraction_of_global_squared_error": 1.0
+        },
+        "upstream_x_below_minus_0p02": {
+          "points": 40960,
+          "relative_l2": 0.14375195445352584,
+          "reference_rms_over_u2": 0.029460074086702374,
+          "error_rms_over_u2": 0.004234943228309137,
+          "fraction_of_global_squared_error": 0.045771751089534615
+        },
+        "obstacle_neighborhood": {
+          "points": 27269,
+          "relative_l2": 0.09358667754541958,
+          "reference_rms_over_u2": 0.0770141527328076,
+          "error_rms_over_u2": 0.007207498678238959,
+          "fraction_of_global_squared_error": 0.0882634194919217
+        },
+        "downstream_wake": {
+          "points": 50400,
+          "relative_l2": 0.5965859937074907,
+          "reference_rms_over_u2": 0.02521995719328392,
+          "error_rms_over_u2": 0.015045873223415671,
+          "fraction_of_global_squared_error": 0.7108987110168439
+        },
+        "outlet_x_above_0p12": {
+          "points": 40960,
+          "relative_l2": 0.5742981948134936,
+          "reference_rms_over_u2": 0.005367135873113855,
+          "error_rms_over_u2": 0.00308233644324803,
+          "fraction_of_global_squared_error": 0.024247246312875725
+        }
+      },
+      "roughness": {
+        "fine": {
+          "six_neighbor_high_pass_rms_over_u2": 0.0026731737167228903,
+          "centered_rms_over_u2": 0.030931572503270624
+        },
+        "coarse": {
+          "six_neighbor_high_pass_rms_over_u2": 0.000853019921666223,
+          "centered_rms_over_u2": 0.029899212428264783
+        },
+        "coarse_half_dt": {
+          "six_neighbor_high_pass_rms_over_u2": 0.0008578061972575201,
+          "centered_rms_over_u2": 0.02989338418611124
+        }
+      },
+      "top_one_percent_points_fraction_of_squared_error": 0.69091228511733,
+      "largest_error_points": [
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.02936507947742939,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 0.8543516834877117,
+          "coarse_p_over_u2": -0.023465591843592443
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02936507947742939,
+            -0.012258064933121204
+          ],
+          "fine_p_over_u2": 0.629511116765402,
+          "coarse_p_over_u2": -0.021541230449787417
+        },
+        {
+          "xyz": [
+            0.03661417216062546,
+            0.03095238097012043,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": -0.662136498594689,
+          "coarse_p_over_u2": -0.02417585429878309
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02936507947742939,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 0.5594483644373112,
+          "coarse_p_over_u2": -0.020903442175836062
+        },
+        {
+          "xyz": [
+            0.03661417216062546,
+            0.03095238097012043,
+            -0.014838709495961666
+          ],
+          "fine_p_over_u2": -0.597906199037344,
+          "coarse_p_over_u2": -0.02414527189699512
+        },
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.02936507947742939,
+            -0.012258064933121204
+          ],
+          "fine_p_over_u2": 0.5057933488075665,
+          "coarse_p_over_u2": -0.024184429045063915
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02936507947742939,
+            -0.014838709495961666
+          ],
+          "fine_p_over_u2": 0.5061783126706805,
+          "coarse_p_over_u2": -0.02139496798083668
+        },
+        {
+          "xyz": [
+            0.03661417216062546,
+            0.02936507947742939,
+            -0.014838709495961666
+          ],
+          "fine_p_over_u2": -0.5168522408274159,
+          "coarse_p_over_u2": -0.02537248126471995
+        },
+        {
+          "xyz": [
+            0.03503936901688576,
+            0.03095238097012043,
+            -0.014838709495961666
+          ],
+          "fine_p_over_u2": -0.5070491032892404,
+          "coarse_p_over_u2": -0.025391210909849336
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02777777798473835,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 0.43938349644152863,
+          "coarse_p_over_u2": -0.02372521091047114
+        }
+      ],
+      "sources": {
+        "fine": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_fidelity/a2_mp_001_fidelity_110147_fine_dt02/compact/a2_mp_001_t5.05263.npz",
+        "coarse": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_full_cost_pilot/a2_mp_001_fullcost_109922/compact/a2_mp_001_t5.05263.npz",
+        "coarse_half_dt": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_fidelity/a2_mp_001_fidelity_110147_coarse_dt01/compact/a2_mp_001_t5.05263.npz"
+      }
+    },
+    {
+      "tau": 24,
+      "regions": {
+        "whole_domain": {
+          "points": 261637,
+          "relative_l2": 0.7180359231763913,
+          "reference_rms_over_u2": 0.040250418678284806,
+          "error_rms_over_u2": 0.028901246533898528,
+          "fraction_of_global_squared_error": 1.0
+        },
+        "upstream_x_below_minus_0p02": {
+          "points": 40960,
+          "relative_l2": 0.5721196553402295,
+          "reference_rms_over_u2": 0.023068859207792045,
+          "error_rms_over_u2": 0.013198147779054262,
+          "fraction_of_global_squared_error": 0.032647776720344725
+        },
+        "obstacle_neighborhood": {
+          "points": 27269,
+          "relative_l2": 0.22035885129383284,
+          "reference_rms_over_u2": 0.07715880602602423,
+          "error_rms_over_u2": 0.01700262586309837,
+          "fraction_of_global_squared_error": 0.036071890069041025
+        },
+        "downstream_wake": {
+          "points": 50400,
+          "relative_l2": 0.9701086509034633,
+          "reference_rms_over_u2": 0.05951918270085155,
+          "error_rms_over_u2": 0.05774007403279983,
+          "fraction_of_global_squared_error": 0.7688699706210796
+        },
+        "outlet_x_above_0p12": {
+          "points": 40960,
+          "relative_l2": 0.8484403693140856,
+          "reference_rms_over_u2": 0.012265120075222563,
+          "error_rms_over_u2": 0.010406223006303438,
+          "fraction_of_global_squared_error": 0.020296160809999658
+        }
+      },
+      "roughness": {
+        "fine": {
+          "six_neighbor_high_pass_rms_over_u2": 0.011332498430390869,
+          "centered_rms_over_u2": 0.040250418678284806
+        },
+        "coarse": {
+          "six_neighbor_high_pass_rms_over_u2": 0.0008158073090924389,
+          "centered_rms_over_u2": 0.03022988602451827
+        },
+        "coarse_half_dt": {
+          "six_neighbor_high_pass_rms_over_u2": 0.0008216730381297108,
+          "centered_rms_over_u2": 0.03019998143571067
+        }
+      },
+      "top_one_percent_points_fraction_of_squared_error": 0.7759130742577479,
+      "largest_error_points": [
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02936507947742939,
+            -0.012258064933121204
+          ],
+          "fine_p_over_u2": 6.22583127037997,
+          "coarse_p_over_u2": -0.02465210004873244
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.03095238097012043,
+            -0.012258064933121204
+          ],
+          "fine_p_over_u2": 3.143896542589687,
+          "coarse_p_over_u2": -0.02382050122514677
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02936507947742939,
+            -0.010967741720378399
+          ],
+          "fine_p_over_u2": 2.4727825027062984,
+          "coarse_p_over_u2": -0.02535745113175848
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.03095238097012043,
+            -0.010967741720378399
+          ],
+          "fine_p_over_u2": 2.3291051762555806,
+          "coarse_p_over_u2": -0.024496909717774008
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.03095238097012043,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 2.093134763000021,
+          "coarse_p_over_u2": -0.02372754149454721
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02936507947742939,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 2.0282255525043498,
+          "coarse_p_over_u2": -0.02418086630502257
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.03253968432545662,
+            -0.012258064933121204
+          ],
+          "fine_p_over_u2": 1.982672785289667,
+          "coarse_p_over_u2": -0.023107562184994452
+        },
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.03095238097012043,
+            -0.014838709495961666
+          ],
+          "fine_p_over_u2": -2.0025177053167518,
+          "coarse_p_over_u2": -0.025601010688867144
+        },
+        {
+          "xyz": [
+            0.04133858159184456,
+            0.03095238097012043,
+            -0.012258064933121204
+          ],
+          "fine_p_over_u2": 1.910626083691962,
+          "coarse_p_over_u2": -0.022225298510405375
+        },
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.02936507947742939,
+            -0.012258064933121204
+          ],
+          "fine_p_over_u2": 1.8858670407354698,
+          "coarse_p_over_u2": -0.027409885503578924
+        }
+      ],
+      "sources": {
+        "fine": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_fidelity/a2_mp_001_fidelity_110147_fine_dt02/compact/a2_mp_001_t10.1053.npz",
+        "coarse": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_full_cost_pilot/a2_mp_001_fullcost_109922/compact/a2_mp_001_t10.1053.npz",
+        "coarse_half_dt": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_fidelity/a2_mp_001_fidelity_110147_coarse_dt01/compact/a2_mp_001_t10.1053.npz"
+      }
+    },
+    {
+      "tau": 40,
+      "regions": {
+        "whole_domain": {
+          "points": 261637,
+          "relative_l2": 0.657833278300836,
+          "reference_rms_over_u2": 0.039448363655073336,
+          "error_rms_over_u2": 0.025950446386820435,
+          "fraction_of_global_squared_error": 1.0
+        },
+        "upstream_x_below_minus_0p02": {
+          "points": 40960,
+          "relative_l2": 0.07912438953986836,
+          "reference_rms_over_u2": 0.03780204930736165,
+          "error_rms_over_u2": 0.0029910640748009943,
+          "fraction_of_global_squared_error": 0.0020798046981659697
+        },
+        "obstacle_neighborhood": {
+          "points": 27269,
+          "relative_l2": 0.13209881383644345,
+          "reference_rms_over_u2": 0.06976749024492683,
+          "error_rms_over_u2": 0.009216202705700473,
+          "fraction_of_global_squared_error": 0.013145721346413461
+        },
+        "downstream_wake": {
+          "points": 50400,
+          "relative_l2": 0.9773339344349735,
+          "reference_rms_over_u2": 0.051540432055760074,
+          "error_rms_over_u2": 0.050372213243534435,
+          "fraction_of_global_squared_error": 0.7258113856206575
+        },
+        "outlet_x_above_0p12": {
+          "points": 40960,
+          "relative_l2": 0.7435987517703643,
+          "reference_rms_over_u2": 0.0020484346057704494,
+          "error_rms_over_u2": 0.0015232134159341249,
+          "fraction_of_global_squared_error": 0.0005393772615625316
+        }
+      },
+      "roughness": {
+        "fine": {
+          "six_neighbor_high_pass_rms_over_u2": 0.009542943677683026,
+          "centered_rms_over_u2": 0.039448363655073336
+        },
+        "coarse": {
+          "six_neighbor_high_pass_rms_over_u2": 0.0008103842577168326,
+          "centered_rms_over_u2": 0.030351860744317512
+        },
+        "coarse_half_dt": {
+          "six_neighbor_high_pass_rms_over_u2": 0.0008164741759444483,
+          "centered_rms_over_u2": 0.030329378853692763
+        }
+      },
+      "top_one_percent_points_fraction_of_squared_error": 0.8478434704740639,
+      "largest_error_points": [
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.02936507947742939,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 5.512134011478404,
+          "coarse_p_over_u2": -0.027382731868041865
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02936507947742939,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 3.031261354978494,
+          "coarse_p_over_u2": -0.024734791202661588
+        },
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.02936507947742939,
+            -0.014838709495961666
+          ],
+          "fine_p_over_u2": 2.986775197196634,
+          "coarse_p_over_u2": -0.027462052302140955
+        },
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.03095238097012043,
+            -0.014838709495961666
+          ],
+          "fine_p_over_u2": 2.1394972355871977,
+          "coarse_p_over_u2": -0.02611786165998585
+        },
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.03095238097012043,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 2.0959020516678564,
+          "coarse_p_over_u2": -0.025725525901423286
+        },
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.02936507947742939,
+            -0.012258064933121204
+          ],
+          "fine_p_over_u2": 2.032990669985986,
+          "coarse_p_over_u2": -0.028016018319575755
+        },
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.02777777798473835,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 1.8449442073378532,
+          "coarse_p_over_u2": -0.02930205934723825
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02777777798473835,
+            -0.013548387214541435
+          ],
+          "fine_p_over_u2": 1.4651753183016483,
+          "coarse_p_over_u2": -0.027406343862125433
+        },
+        {
+          "xyz": [
+            0.03818897530436516,
+            0.02777777798473835,
+            -0.014838709495961666
+          ],
+          "fine_p_over_u2": 1.331790009244756,
+          "coarse_p_over_u2": -0.029265270815620477
+        },
+        {
+          "xyz": [
+            0.03976377844810486,
+            0.02777777798473835,
+            -0.014838709495961666
+          ],
+          "fine_p_over_u2": 1.2691766507867628,
+          "coarse_p_over_u2": -0.027619400025074518
+        }
+      ],
+      "sources": {
+        "fine": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_fidelity/a2_mp_001_fidelity_110147_fine_dt02/compact/a2_mp_001_t16.8421.npz",
+        "coarse": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_full_cost_pilot/a2_mp_001_fullcost_109922/compact/a2_mp_001_t16.8421.npz",
+        "coarse_half_dt": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/v2_fidelity/a2_mp_001_fidelity_110147_coarse_dt01/compact/a2_mp_001_t16.8421.npz"
+      }
+    }
+  ],
+  "raw_cell_statistics_tau40": {
+    "fine": {
+      "cells": 1233859,
+      "volume_weighted_mean": -1.1339766475987692e-06,
+      "volume_weighted_centered_rms_over_u2": 0.05263233250582399,
+      "min_over_u2": -10.465946392085138,
+      "max_over_u2": 33.37700214768045,
+      "largest_absolute_cell_pressure": [
+        {
+          "xyz": [
+            0.038794913329184055,
+            0.02976883016526699,
+            -0.01387961907312274
+          ],
+          "p_over_u2": 33.37700214768045
+        },
+        {
+          "xyz": [
+            0.0382440434768796,
+            0.029744957573711872,
+            -0.014006528072059155
+          ],
+          "p_over_u2": 19.475846736639102
+        },
+        {
+          "xyz": [
+            0.039044289849698544,
+            0.02972597535699606,
+            -0.013279882725328207
+          ],
+          "p_over_u2": 14.852079985468615
+        },
+        {
+          "xyz": [
+            0.03908225428313017,
+            0.02953084511682391,
+            -0.01431984780356288
+          ],
+          "p_over_u2": 14.438990077407679
+        },
+        {
+          "xyz": [
+            0.03836812451481819,
+            0.029352441895753145,
+            -0.014295384287834167
+          ],
+          "p_over_u2": 11.690352428907117
+        }
+      ]
+    },
+    "coarse": {
+      "cells": 291997,
+      "volume_weighted_mean": -1.2985567485456397e-06,
+      "volume_weighted_centered_rms_over_u2": 0.03085497276897036,
+      "min_over_u2": -0.7726365039854649,
+      "max_over_u2": 0.5888021032594758,
+      "largest_absolute_cell_pressure": [
+        {
+          "xyz": [
+            0.011101761600002646,
+            0.0031775087118148804,
+            -0.006758825154975057
+          ],
+          "p_over_u2": -0.7726365039854649
+        },
+        {
+          "xyz": [
+            0.01119058532640338,
+            0.0032948614098131657,
+            0.006667919573374093
+          ],
+          "p_over_u2": -0.7204816142579015
+        },
+        {
+          "xyz": [
+            0.011235486017540097,
+            0.0032547145965509117,
+            -0.006917916121892631
+          ],
+          "p_over_u2": -0.7045557918447026
+        },
+        {
+          "xyz": [
+            0.008490934269502759,
+            0.007984439958818257,
+            -0.007140120142139494
+          ],
+          "p_over_u2": -0.6836506700552881
+        },
+        {
+          "xyz": [
+            0.010995716787874699,
+            0.003119213040918112,
+            0.0066692434484139085
+          ],
+          "p_over_u2": -0.6405608253767106
+        }
+      ]
+    },
+    "coarse_half_dt": {
+      "cells": 291997,
+      "volume_weighted_mean": -1.290820629249669e-06,
+      "volume_weighted_centered_rms_over_u2": 0.03084473434334711,
+      "min_over_u2": -0.7711405992724107,
+      "max_over_u2": 0.5904357198812086,
+      "largest_absolute_cell_pressure": [
+        {
+          "xyz": [
+            0.011101761600002646,
+            0.0031775087118148804,
+            -0.006758825154975057
+          ],
+          "p_over_u2": -0.7711405992724107
+        },
+        {
+          "xyz": [
+            0.01119058532640338,
+            0.0032948614098131657,
+            0.006667919573374093
+          ],
+          "p_over_u2": -0.717910999411514
+        },
+        {
+          "xyz": [
+            0.011235486017540097,
+            0.0032547145965509117,
+            -0.006917916121892631
+          ],
+          "p_over_u2": -0.6890064100695658
+        },
+        {
+          "xyz": [
+            0.008490934269502759,
+            0.007984439958818257,
+            -0.007140120142139494
+          ],
+          "p_over_u2": -0.685940939886571
+        },
+        {
+          "xyz": [
+            0.010995716787874699,
+            0.003119213040918112,
+            0.0066692434484139085
+          ],
+          "p_over_u2": -0.6466306653595576
+        }
+      ]
+    }
+  },
+  "regions_may_overlap": true,
+  "gauge": "Each raster field independently mean-centered on common fluid points.",
+  "roughness_warning": "Six-neighbor raster high-pass response is descriptive, not a proof of numerical instability.",
+  "raw_warning": "Raw statistics use volume-weighted mean; raster diagnostics use equal point weights.",
+  "acceptance_limits_changed": false
+}

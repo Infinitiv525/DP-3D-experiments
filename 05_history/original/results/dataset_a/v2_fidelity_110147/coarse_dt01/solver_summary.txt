@@ -1,0 +1,14 @@
+status=FIDELITY_WINDOW_SOLVER_OK
+scenario_id=a2_mp_001
+label=coarse_dt01
+tau_start=0
+tau_end=40
+target_max_courant=0.1
+max_courant=0.1005283647
+continuity=2.088654922e-11
+cells=291997
+wall_seconds=3450
+allocated_cpus=32
+core_hours=30.6667
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/fidelity/a2_mp_001_fidelity_110147_coarse_dt01
+source_case=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_mp_001_solvgate_109888_5_coarse

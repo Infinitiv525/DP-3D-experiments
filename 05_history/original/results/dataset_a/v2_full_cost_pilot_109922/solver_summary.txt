@@ -1,0 +1,12 @@
+status=FULL_COST_PILOT_SOLVER_OK
+scenario_id=a2_mp_001
+mesh_size_factor=1.7
+cells=291997
+tau_start=0
+tau_end=400
+expected_states=461
+allocated_cpus=32
+solver_stage_wall_seconds=15562
+case_bytes=13548605502
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/full_cost_pilot/a2_mp_001_fullcost_109922
+production_mesh_accepted=no

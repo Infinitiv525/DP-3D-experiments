@@ -1,0 +1,36 @@
+{
+  "kind": "overview",
+  "scenarios": [
+    "tr001",
+    "tr002",
+    "tr003",
+    "tr004",
+    "tr005",
+    "tr006",
+    "va001",
+    "va002"
+  ],
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "frame_count": 201,
+  "time_start_s": 160.0,
+  "time_end_s": 200.0,
+  "fps": 15,
+  "video_duration_s": 13.4,
+  "quantity": "mid-plane speed normalized by scenario inlet velocity",
+  "color_range": [
+    0.0,
+    2.0
+  ],
+  "status": "UNIFORM_DATASET_VIDEO_OK",
+  "video": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/videos_128/dataset_a_train_validation_overview.mp4",
+  "preview": "/mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/videos_128/dataset_a_train_validation_overview_preview.png",
+  "video_bytes": 1500966,
+  "video_sha256": "cb2984e69e7b93e04d380d3e1b7866bc6069b44ebfa74628b06c65f0a74c7c74",
+  "protected_test_splits_not_read": [
+    "test_ID",
+    "test_OOD"
+  ]
+}

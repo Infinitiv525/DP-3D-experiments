@@ -1,0 +1,8 @@
+ŠTYRI RODINY LLM - POTVRDENIE FORMÁTU A NADVÄZNOSTI
+FOUR_FAMILY_TRANSPORT_CONFIRMATION_QC_PASSED
+Qwen, Phi a Granite dokončili po2nové tréningy vpôvodnej v3 skúške; random/TPE tiež.
+Ministral dokončil samostatnú2krokovú skúšku so spoločným odobratím jediného JSON code fence.
+Pôvodné neúspešné pokusy zostali uložené a započítané. Žiadny hlavný experiment alebo test.
+Súhrnná fyzická cena tejto fázy vrátane1s/job: 0.396389GPU-h.
+Original three valid LLM families/control studies plus separate two-step Ministral confirmation. Uniform transport replay covers all four; not a fresh rerun of all four under the adapter.
+Technical two-epoch pilots only. Original failed Ministral trials remain failed/charged. No cross-family efficacy ranking, main search, final test or retrospective replacement.

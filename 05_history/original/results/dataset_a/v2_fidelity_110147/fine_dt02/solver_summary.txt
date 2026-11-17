@@ -1,0 +1,14 @@
+status=FIDELITY_WINDOW_SOLVER_OK
+scenario_id=a2_mp_001
+label=fine_dt02
+tau_start=0
+tau_end=40
+target_max_courant=0.2
+max_courant=0.20088226
+continuity=-4.159302897e-11
+cells=1233859
+wall_seconds=18984
+allocated_cpus=32
+core_hours=168.747
+case_dir=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/fidelity/a2_mp_001_fidelity_110147_fine_dt02
+source_case=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/gates/solver/a2_mp_001_solvgate_109888_5_fine

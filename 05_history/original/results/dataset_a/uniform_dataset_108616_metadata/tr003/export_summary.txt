@@ -1,0 +1,9 @@
+status=UNIFORM_DATASET_A_EXPORT_OK
+scenario_id=tr003
+split=train
+source_case=/mnt/project/perun2601449/dp_llm_cfd/dataset_a/pilot/dense_pilot/tr003_dense160_200_108616_2
+snapshot_count=201
+npz_bytes=95346948
+wall_seconds=708
+temporary_reconstructed_times_removed=yes
+decomposed_source_preserved=yes

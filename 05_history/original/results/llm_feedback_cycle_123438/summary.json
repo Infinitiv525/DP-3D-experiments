@@ -1,0 +1,383 @@
+{
+  "status": "FEEDBACK_PIPELINE_PILOT_INCOMPLETE",
+  "technical_pilot": true,
+  "test_evaluated": false,
+  "events": [
+    {
+      "stage": "s01",
+      "exit_code": 0,
+      "wall_seconds": 77.2253215778619,
+      "child_cpu_seconds": 55.321574
+    },
+    {
+      "stage": "s02",
+      "exit_code": 0,
+      "wall_seconds": 53.04279103130102,
+      "child_cpu_seconds": 52.00632399999999
+    },
+    {
+      "stage": "s03",
+      "exit_code": 0,
+      "wall_seconds": 52.99231058079749,
+      "child_cpu_seconds": 52.02253700000001
+    },
+    {
+      "stage": "proposal_qwen3_8b",
+      "exit_code": 0,
+      "wall_seconds": 85.43216298613697,
+      "child_cpu_seconds": 53.784275999999984
+    },
+    {
+      "stage": "trial_qwen3_8b",
+      "exit_code": 0,
+      "wall_seconds": 53.192547380924225,
+      "child_cpu_seconds": 52.144045999999996
+    },
+    {
+      "stage": "proposal_ministral3_8b",
+      "exit_code": 0,
+      "wall_seconds": 72.98183299135417,
+      "child_cpu_seconds": 54.51700499999996
+    },
+    {
+      "stage": "trial_ministral3_8b",
+      "exit_code": 0,
+      "wall_seconds": 52.992038995958865,
+      "child_cpu_seconds": 51.95072100000003
+    },
+    {
+      "stage": "proposal_phi4_mini",
+      "exit_code": 0,
+      "wall_seconds": 60.90063192602247,
+      "child_cpu_seconds": 44.196151999999984
+    },
+    {
+      "stage": "trial_phi4_mini",
+      "exit_code": 0,
+      "wall_seconds": 53.19092394690961,
+      "child_cpu_seconds": 52.15348499999997
+    },
+    {
+      "stage": "proposal_granite33_8b",
+      "exit_code": 1,
+      "wall_seconds": 138.36463320534676,
+      "child_cpu_seconds": 111.212145
+    }
+  ],
+  "trials": [
+    {
+      "id": "s01",
+      "configuration": {
+        "learning_rate": 0.001,
+        "weight_decay": 0.01,
+        "pressure_weight": 1,
+        "divergence_weight": 0
+      },
+      "seed": 310000,
+      "exit_code": 0,
+      "status": "FLOWBENCH_PROTOCOL_TECHNICAL_TRIAL_COMPLETE",
+      "validation": {
+        "S": 0.41856842825863916,
+        "velocity_error": 0.19104738489812992,
+        "pressure_error": 0.6460894716191484,
+        "geometry_count": 15,
+        "sample_count": 150,
+        "geometry_sample_counts": {
+          "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+          "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+          "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+          "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+          "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+          "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+          "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+          "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+          "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+          "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10,
+          "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+          "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+          "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+          "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+          "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10
+        }
+      },
+      "best_epoch": 2,
+      "predicted_divergence": 0.37899314939975737,
+      "training_process_wall_seconds": 77.2253215778619,
+      "checkpoint_sha256": "bb93c41172af94aaee8559dd633d9dc7105c407ac4f3b33cf90afd129448fff1"
+    },
+    {
+      "id": "s02",
+      "configuration": {
+        "learning_rate": 0.0012236509356096372,
+        "weight_decay": 2.9047728342589812e-06,
+        "pressure_weight": 2,
+        "divergence_weight": 0
+      },
+      "seed": 310001,
+      "exit_code": 0,
+      "status": "FLOWBENCH_PROTOCOL_TECHNICAL_TRIAL_COMPLETE",
+      "validation": {
+        "S": 0.40945750627365823,
+        "velocity_error": 0.2046421177183451,
+        "pressure_error": 0.6142728948289714,
+        "geometry_count": 15,
+        "sample_count": 150,
+        "geometry_sample_counts": {
+          "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+          "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+          "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+          "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+          "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+          "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+          "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+          "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+          "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+          "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10,
+          "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+          "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+          "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+          "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+          "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10
+        }
+      },
+      "best_epoch": 2,
+      "predicted_divergence": 0.36289852499961855,
+      "training_process_wall_seconds": 53.04279103130102,
+      "checkpoint_sha256": "a8170dfa2fde4b490d824f798cde8a50a90375b02783dfe0481c3efd843dc7a7"
+    },
+    {
+      "id": "s03",
+      "configuration": {
+        "learning_rate": 0.00106373191978169,
+        "weight_decay": 1.5911205724559741e-06,
+        "pressure_weight": 0.5,
+        "divergence_weight": 0.003
+      },
+      "seed": 310002,
+      "exit_code": 0,
+      "status": "FLOWBENCH_PROTOCOL_TECHNICAL_TRIAL_COMPLETE",
+      "validation": {
+        "S": 0.5413124278679631,
+        "velocity_error": 0.21892434204898825,
+        "pressure_error": 0.8637005136869378,
+        "geometry_count": 15,
+        "sample_count": 150,
+        "geometry_sample_counts": {
+          "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+          "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+          "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+          "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+          "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+          "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+          "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+          "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+          "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+          "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10,
+          "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+          "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+          "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+          "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+          "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10
+        }
+      },
+      "best_epoch": 1,
+      "predicted_divergence": 0.11485592479507128,
+      "training_process_wall_seconds": 52.99231058079749,
+      "checkpoint_sha256": "c097019d130cb7fb0461df66d0f4c999eee9ae7263a1e9f8df43734c775e2872"
+    },
+    {
+      "id": "trial_qwen3_8b",
+      "configuration": {
+        "learning_rate": 0.0012236509356096372,
+        "weight_decay": 2.9047728342589812e-06,
+        "pressure_weight": 2,
+        "divergence_weight": 0.003
+      },
+      "seed": 310003,
+      "exit_code": 0,
+      "status": "FLOWBENCH_PROTOCOL_TECHNICAL_TRIAL_COMPLETE",
+      "validation": {
+        "S": 0.3734812283770757,
+        "velocity_error": 0.20061626303873845,
+        "pressure_error": 0.5463461937154129,
+        "geometry_count": 15,
+        "sample_count": 150,
+        "geometry_sample_counts": {
+          "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+          "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+          "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+          "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+          "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+          "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+          "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+          "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+          "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+          "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10,
+          "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+          "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+          "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+          "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+          "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10
+        }
+      },
+      "best_epoch": 2,
+      "predicted_divergence": 0.10763281246026357,
+      "training_process_wall_seconds": 53.192547380924225,
+      "checkpoint_sha256": "6ace260f8d4dee1848c3c060b6f5b78276ecc470d9dcc12a4cd389f466ee4b93"
+    },
+    {
+      "id": "trial_ministral3_8b",
+      "configuration": {
+        "learning_rate": 0.0012236509356096372,
+        "weight_decay": 1e-06,
+        "pressure_weight": 0.5,
+        "divergence_weight": 0
+      },
+      "seed": 310003,
+      "exit_code": 0,
+      "status": "FLOWBENCH_PROTOCOL_TECHNICAL_TRIAL_COMPLETE",
+      "validation": {
+        "S": 0.5309876136492476,
+        "velocity_error": 0.18049307012370755,
+        "pressure_error": 0.8814821571747876,
+        "geometry_count": 15,
+        "sample_count": 150,
+        "geometry_sample_counts": {
+          "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+          "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+          "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+          "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+          "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+          "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+          "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+          "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+          "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+          "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10,
+          "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+          "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+          "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+          "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+          "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10
+        }
+      },
+      "best_epoch": 2,
+      "predicted_divergence": 0.351060307820638,
+      "training_process_wall_seconds": 52.992038995958865,
+      "checkpoint_sha256": "e85fbedb5b1fa5f387a3884dc803054c9bdda394ad44bd3cfa75c93eea01f576"
+    },
+    {
+      "id": "trial_phi4_mini",
+      "configuration": {
+        "learning_rate": 0.001,
+        "weight_decay": 0.01,
+        "pressure_weight": 1,
+        "divergence_weight": 0.003
+      },
+      "seed": 310003,
+      "exit_code": 0,
+      "status": "FLOWBENCH_PROTOCOL_TECHNICAL_TRIAL_COMPLETE",
+      "validation": {
+        "S": 0.4620628710278141,
+        "velocity_error": 0.19212347582855174,
+        "pressure_error": 0.7320022662270765,
+        "geometry_count": 15,
+        "sample_count": 150,
+        "geometry_sample_counts": {
+          "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+          "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+          "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+          "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+          "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+          "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+          "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+          "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+          "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+          "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10,
+          "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+          "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+          "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+          "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+          "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10
+        }
+      },
+      "best_epoch": 2,
+      "predicted_divergence": 0.10342356969912847,
+      "training_process_wall_seconds": 53.19092394690961,
+      "checkpoint_sha256": "2f81bcaad4230cba1396c4d236b21ef902a86fdf9e9fab15e5e406d7d3bc5956"
+    }
+  ],
+  "proposals": [
+    {
+      "model": "qwen3_8b",
+      "exit_code": 0,
+      "status": "LOCAL_FEEDBACK_PROPOSAL_COMPLETE",
+      "public_justification": {
+        "reason": "Balances pressure and divergence with moderate weights, showing lower S in s02 and s03.",
+        "evidence_ids": [
+          "s02",
+          "s03"
+        ],
+        "expected_effect": "Potential reduction in S with moderate pressure and divergence weights.",
+        "risk": "Higher pressure_weight may increase training instability."
+      },
+      "linked_trial_id": "trial_qwen3_8b",
+      "configuration": {
+        "learning_rate": 0.0012236509356096372,
+        "weight_decay": 2.9047728342589812e-06,
+        "pressure_weight": 2,
+        "divergence_weight": 0.003
+      }
+    },
+    {
+      "model": "ministral3_8b",
+      "exit_code": 0,
+      "status": "LOCAL_FEEDBACK_PROPOSAL_COMPLETE",
+      "public_justification": {
+        "reason": "Balanced pressure/velocity loss (0.5) with minimal divergence penalty; lower weight_decay stabilizes training while retaining prior best S (0.409).",
+        "evidence_ids": [
+          "s02"
+        ],
+        "expected_effect": "Improved pressure convergence with stable velocity; reduced overfitting risk.",
+        "risk": "Slight divergence increase if pressure_weight dominates; monitor divergence post-epochs."
+      },
+      "linked_trial_id": "trial_ministral3_8b",
+      "configuration": {
+        "learning_rate": 0.0012236509356096372,
+        "weight_decay": 1e-06,
+        "pressure_weight": 0.5,
+        "divergence_weight": 0
+      }
+    },
+    {
+      "model": "phi4_mini",
+      "exit_code": 0,
+      "status": "LOCAL_FEEDBACK_PROPOSAL_COMPLETE",
+      "public_justification": {
+        "reason": "Balancing velocity and pressure errors, with a slight emphasis on divergence to ensure physical accuracy.",
+        "evidence_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "expected_effect": "Improved S value, better balance between velocity and pressure errors, and maintained physical accuracy.",
+        "risk": "Moderate, as divergence weight is increased, which may slightly affect convergence speed."
+      },
+      "linked_trial_id": "trial_phi4_mini",
+      "configuration": {
+        "learning_rate": 0.001,
+        "weight_decay": 0.01,
+        "pressure_weight": 1,
+        "divergence_weight": 0.003
+      }
+    },
+    {
+      "model": "granite33_8b",
+      "exit_code": 1,
+      "status": "LOCAL_FEEDBACK_PROPOSAL_INVALID"
+    }
+  ],
+  "elapsed_seconds": 700.3831804152578,
+  "one_gpu_allocated_process_hours_proxy": 0.1945508836212361,
+  "pilot_config_sha256": "54f93989244b6f34af781689585de27c4f369da867eda4d882599a7635a016df",
+  "warning": "Only wiring and resource measurements: three shared starts then one proposal/trial per LLM. No Optuna/random adaptive comparison, no test, no main-search evidence."
+}

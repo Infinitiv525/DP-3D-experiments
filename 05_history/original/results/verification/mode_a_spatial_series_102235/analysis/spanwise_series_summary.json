@@ -1,0 +1,22 @@
+{
+  "status": "SPANWISE_MODE_SERIES_ANALYSIS_OK",
+  "time_samples": 27,
+  "first_time_s": 160.0,
+  "last_time_s": 420.0,
+  "profile_lines": 6,
+  "total_profiles": 162,
+  "span_over_diameter": 4.0,
+  "expected_mode_a_fourier_mode": 1,
+  "mode1_dominant_profiles": 89,
+  "mode1_dominant_fraction": 0.5493827160493827,
+  "mode1_energy_fraction_mean": 0.49742021773415396,
+  "mode1_energy_fraction_median": 0.4750889945316198,
+  "mode1_energy_fraction_energy_weighted": 0.7042691168416934,
+  "dominant_mode_counts": {
+    "1": 89,
+    "2": 56,
+    "3": 16,
+    "4": 1
+  },
+  "interpretation": "persistent_mode1_supports_a_4D_spanwise_structure; classification_as_Mode_A_should_be_reported_as_consistent_with_not_uniquely_proven"
+}

@@ -1,0 +1,47 @@
+POROVNANIE JEMNEJSEJ A REDSEJ 3D SIETE
+15. 10. 2026; simulacie 109888, vyhodnotenie 109889
+
+Vsetky styri simulacie, exporty a numericke kontroly presli.
+Kontrolne sucty vzdialenych vysledkov su v poriadku.
+Porovnavame rovnake geometrie a analyticke pociatocne polia do tau=2.
+Obe rozlisenia pouzivali cielove maxCo=0,2 a 32 CPU.
+
+GULA
+Pocet buniek: 696 897 -> 483 188.
+Cas riesica: 199 s -> 168 s.
+Zrychlenie: 1,18x (uspora casu 15,6 %).
+Odchylka rychlosti: 0,400 %.
+Odchylka tlaku po zarovnani priemeru: 9,339 %.
+Orientacne prahy 5 % pre rychlost a 10 % pre tlak: splnene.
+
+ZMIESANA DVOJICA
+Pocet buniek: 1 233 859 -> 291 997.
+Cas riesica: 970 s -> 101 s.
+Zrychlenie: 9,60x (uspora casu 89,6 %).
+Odchylka rychlosti: 0,630 %.
+Odchylka tlaku po zarovnani priemeru: 12,846 %.
+Rychlostny prah splneny, tlakovy prah prekroceny.
+Redsi kandidat preto nie je prijaty ako finalna referencna siet.
+
+CO VYSLEDOK ZNAMENA
+Pri zlozitejsej geometrii existuje velky priestor na usporu, ale agresivne
+zriedenie sa prejavilo v tlaku. Pri guli je presnost v orientacnych limitoch,
+no uspora je zatial mala. Jedna univerzalna uspora pre vsetky scenare
+sa z tychto dvoch pripadov neda urcit.
+
+Odchylky su relativne L2 normy na spolocnych platnych bodoch rovnakeho
+rastra 128x64x32. Referenciou je jemnejsia numericka siet, nie realita.
+Konstantny posun tlaku bol odstraneny. Globalne percento rychlosti moze
+zakryt lokalnu odchylku v uplave, preto ho treba doplnit lokalnymi metrikami.
+Vyhodnotili sme iba jeden stav tau=2, nie dlhu trajektoriu ani sily.
+Zrychlenie je namerane v jednom experimente a moze kolisat podla uzla.
+Ziadna z tychto sieti zatial nema konecne potvrdenie pre produkcny dataset.
+
+ODPORUCANIE
+Pre zmiesanu dvojicu vyskusat medzihustu siet (napriklad faktor 1,4 namiesto
+1,7) a hladat kompromis ceny a tlakovej odchylky pri rovnakych prahoch.
+Potom overit dlhsi interval, uplav, sily a vplyv casoveho kroku.
+Rozpocet celeho datasetu treba prehodnotit az po tychto meraniach.
+Pri tejto kontrole sa nove vypocty nespustali.
+
+Podrobne cisla su v comparison.json. Surove polia zostavaju na Perune.

@@ -1,0 +1,7 @@
+LATENCIA AKTUÁLNEHO MODELU - FP32
+FLOWBENCH_CURRENT_CHECKPOINT_LATENCY_AUDIT_COMPLETE
+Batch1,64^3,tri kolá po1000meraní/režim. Bez disk IO, SDF generovania a vizualizácie.
+model_only: wall p50=0.6798ms, p95=0.6852ms, p99=0.6883ms; všetky3kolá p99<=5ms: True
+gpu_pipeline: wall p50=0.7151ms, p95=0.7205ms, p99=0.7232ms; všetky3kolá p99<=5ms: True
+host_to_host: wall p50=1.0456ms, p95=1.0545ms, p99=1.0590ms; všetky3kolá p99<=5ms: True
+One checkpoint, one GPU allocation. No accuracy/test certification, no statistical independence claim for repeated timings; timing instrumentation included. Host GPU co-tenancy and clock variability remain limitations.

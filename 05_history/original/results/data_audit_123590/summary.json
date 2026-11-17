@@ -1,0 +1,64 @@
+{
+  "status": "FLOWBENCH_DATA_AUDIT_PASSED",
+  "checks": {
+    "archive_and_cache_integrity": true,
+    "exact_geometry_split_no_leakage": true,
+    "no_exact_coarse_sdf_collisions_across_splits": true,
+    "no_flagged_near_duplicates_across_splits": true,
+    "reference_lid_and_walls_within_tolerance": true,
+    "nondegenerate_pressure_norm": true,
+    "native_to_coarse_recomputation_exact": true,
+    "no_test_target_analysis": true
+  },
+  "geometry": {
+    "status": "NATIVE_INPUT_GEOMETRY_AUDIT_COMPLETE",
+    "pair_count": 4950,
+    "native_cross_split_near_flags": [],
+    "coarse_cross_split_near_flags": [],
+    "exact_cross_split_coarse_sdf_collisions": [],
+    "broad_cross_split_similarity_count": 7,
+    "largest_cross_split_native_iou": 0.9350767583006069,
+    "max_input_recompute_delta": 0.0,
+    "test_Y_analyzed": false
+  },
+  "label_sample_count": 850,
+  "boundary_failed_samples": [],
+  "degenerate_pressure_samples": [],
+  "max_target_recompute_delta": 0.0,
+  "max_native_wall_velocity_error": 0,
+  "max_coarse_wall_velocity_error": 0,
+  "reference_native_divergence_mean": 0.13144204308746418,
+  "reference_coarse_divergence_mean": 0.10594065947643401,
+  "max_native_solid_velocity": 0.006867858115583658,
+  "max_coarse_solid_velocity": 0.013647367246448994,
+  "config": {
+    "revision": "937c672604d4c9f39aceedf1fa2f0a603695264b",
+    "expected_samples": 1000,
+    "expected_geometry_groups": 100,
+    "expected_split_samples": {
+      "train": 700,
+      "validation": 150,
+      "test": 150
+    },
+    "expected_samples_per_geometry": 10,
+    "native_near_duplicate_solid_iou": 0.98,
+    "broad_similarity_solid_iou": 0.9,
+    "coarse_near_duplicate_solid_iou": 0.98,
+    "boundary_velocity_absolute_tolerance": 1e-05,
+    "relative_error_denominator_epsilon": 1e-12,
+    "verify_archive_sha256": true,
+    "test_input_geometry_audit_allowed": true,
+    "test_target_field_analysis_allowed": false,
+    "notes": [
+      "Thresholds fixed before audit. Flags require review, not automatic relabeling or split edits.",
+      "Compare SOLID masks, not fluid/background IoU, to avoid trivial similarity from large empty domain.",
+      "Boundary checks exclude conflicting wall/lid edge nodes; upper spatial axis1 lid u=1,v=w=0, other fluid face interiors zero.",
+      "All native X inputs inspected; native/coarse Y field diagnostics only train/validation. ZIP bytes may be traversed for CRC/hash, not test model evaluation."
+    ]
+  },
+  "split_sha256": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+  "elapsed_seconds": 371.4628610640066,
+  "test_targets_analyzed": false,
+  "model_test_metrics_evaluated": false,
+  "warning": "QC/flag thresholds, not mesh convergence or proof of family-level OOD. Solid interpolation and nonzero reference FD divergence remain limitations. No input/split/target files were modified."
+}

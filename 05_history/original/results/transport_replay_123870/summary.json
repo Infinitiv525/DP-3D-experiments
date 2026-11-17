@@ -1,0 +1,320 @@
+{
+  "status": "UNIFORM_TRANSPORT_REPLAY_PASSED",
+  "policy": "single_complete_json_fence_only_v1",
+  "checks": {
+    "four_families_present": true,
+    "all_recorded_payloads_semantically_valid": true,
+    "already_valid_payloads_unchanged": true,
+    "newly_accepted_only_complete_fence": true
+  },
+  "rows": [
+    {
+      "model": "qwen3_8b",
+      "id": "a03",
+      "repair": 0,
+      "source_summary_sha256": "2c628cb66763969ba26ff949aaf8f7654fd09b5d66cda1d655247d9416ab2a5c",
+      "source_feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+      "old_errors": [],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.0012236509356096372,
+        "weight_decay": 2.9047728342589812e-06,
+        "pressure_weight": 2,
+        "divergence_weight": 0,
+        "reason": "Higher pressure_weight may reduce pressure_error, which contributes significantly to S.",
+        "evidence_ids": [
+          "s02"
+        ],
+        "expected_effect": "Lower S due to reduced pressure_error with higher pressure_weight.",
+        "risk": "Potential increase in velocity_error if pressure_weight is too high."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": false,
+        "raw_strict_json_valid": true,
+        "payload_sha256": "0f882d15eb3adf2ad5584915d0ba25f918bb0a531d19c520f505151758a11368"
+      },
+      "already_valid_payload_unchanged": true
+    },
+    {
+      "model": "qwen3_8b",
+      "id": "a04",
+      "repair": 0,
+      "source_summary_sha256": "0786305a45c88b2225096298d5e006ae1f31e6636a3cec22defcab7bc97d9699",
+      "source_feedback_sha256": "c4664b3b73b83dd670187793867237178b581cb2819e865a3ec40c67946c2deb",
+      "old_errors": [],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.0012236509356096372,
+        "weight_decay": 2.9047728342589812e-06,
+        "pressure_weight": 2,
+        "divergence_weight": 0,
+        "reason": "High pressure_weight and low weight_decay with moderate learning_rate achieved lower S in previous trials.",
+        "evidence_ids": [
+          "s02",
+          "a03"
+        ],
+        "expected_effect": "Maintaining high pressure_weight and low weight_decay may further reduce S.",
+        "risk": "Higher pressure_weight could lead to overfitting if not balanced with divergence_weight."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": false,
+        "raw_strict_json_valid": true,
+        "payload_sha256": "664449e4853ab4170e325fec66b49af5bd5fc6b9e7eafef0faed388e6c5f78cf"
+      },
+      "already_valid_payload_unchanged": true
+    },
+    {
+      "model": "ministral3_8b",
+      "id": "a03",
+      "repair": 0,
+      "source_summary_sha256": "5eacb0777171b43d75397ee04c58ba77400c3c08ee2f08323566ceb3f5ca6795",
+      "source_feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+      "old_errors": [
+        "strict_json_required"
+      ],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.0005,
+        "weight_decay": 1e-05,
+        "pressure_weight": 0.5,
+        "divergence_weight": 0.01,
+        "reason": "Lower pressure_weight from 1/2 to 0.5 balances velocity/pressure tradeoff; divergence_weight 0.01 penalizes unphysical fields without overconstraining; mid-range learning_rate avoids overshooting while maintaining convergence; moderate weight_decay stabilizes gradients.",
+        "evidence_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "expected_effect": "Improved S by reducing pressure_error dominance while maintaining velocity accuracy and enforcing divergence constraints.",
+        "risk": "Slightly higher divergence may occur if divergence_weight is too weak; pressure_weight reduction risks velocity degradation if not balanced."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": true,
+        "raw_strict_json_valid": false,
+        "payload_sha256": "3321b3fa48629046001e711cf5171f4a5ab7efb2c87ed42e6481e852f5f38fdf"
+      },
+      "already_valid_payload_unchanged": null
+    },
+    {
+      "model": "ministral3_8b",
+      "id": "a03",
+      "repair": 1,
+      "source_summary_sha256": "5eacb0777171b43d75397ee04c58ba77400c3c08ee2f08323566ceb3f5ca6795",
+      "source_feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+      "old_errors": [
+        "strict_json_required"
+      ],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.0008,
+        "weight_decay": 5e-06,
+        "pressure_weight": 0.25,
+        "divergence_weight": 0.003,
+        "reason": "Lower pressure_weight reduces overemphasis on pressure; divergence_weight 0.003 gently enforces solenoidal fields; learning_rate balances speed/convergence; minimal weight_decay avoids over-regularization.",
+        "evidence_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "expected_effect": "Better velocity-pressure balance with controlled divergence; may reduce S by mitigating pressure_error dominance while preserving velocity accuracy.",
+        "risk": "Velocity error could rise if pressure_weight drop is too aggressive; divergence_weight may not fully suppress unphysical modes."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": true,
+        "raw_strict_json_valid": false,
+        "payload_sha256": "9b531505a33b0bf640063e23e6d43a1ed4d09b4499a2f08b377311aa6acb3955"
+      },
+      "already_valid_payload_unchanged": null
+    },
+    {
+      "model": "ministral3_8b",
+      "id": "a04",
+      "repair": 0,
+      "source_summary_sha256": "db87303623baa991e46c4ab45402362f0bc2124578c34ac483a819ebb3cfcb71",
+      "source_feedback_sha256": "157bc0db5aed54f92d112e9ec8508cd9b47a57253b0744c6a5b8af732eb0db3b",
+      "old_errors": [
+        "strict_json_required"
+      ],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.0005,
+        "weight_decay": 1e-05,
+        "pressure_weight": 0.5,
+        "divergence_weight": 0.01,
+        "reason": "Lower pressure_weight from 1/2 to 0.5 balances velocity/pressure tradeoff; divergence_weight 0.01 penalizes unphysical fields without overconstraining; mid-range learning_rate avoids overshooting while maintaining convergence; minimal weight_decay preserves gradient flow.",
+        "evidence_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "expected_effect": "Better S by reducing pressure_error dominance while maintaining velocity accuracy and improving divergence control.",
+        "risk": "Slightly slower convergence if divergence_weight overconstrains; may need fine-tuning if pressure/velocity balance shifts."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": true,
+        "raw_strict_json_valid": false,
+        "payload_sha256": "6134a8a6d58c753a0a270611b12cb1b0fd967a8a93fc3fc5ce0cebe4ce584ccc"
+      },
+      "already_valid_payload_unchanged": null
+    },
+    {
+      "model": "ministral3_8b",
+      "id": "a04",
+      "repair": 1,
+      "source_summary_sha256": "db87303623baa991e46c4ab45402362f0bc2124578c34ac483a819ebb3cfcb71",
+      "source_feedback_sha256": "157bc0db5aed54f92d112e9ec8508cd9b47a57253b0744c6a5b8af732eb0db3b",
+      "old_errors": [
+        "strict_json_required"
+      ],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.0008,
+        "weight_decay": 5e-06,
+        "pressure_weight": 0.25,
+        "divergence_weight": 0.003,
+        "reason": "Lower pressure_weight reduces overemphasis on pressure; divergence_weight 0.003 subtly enforces solenoidal fields; lower weight_decay avoids aggressive regularization; learning_rate balances speed/convergence.",
+        "evidence_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "expected_effect": "Improved S by relaxing pressure penalty while gently enforcing divergence; may reduce velocity_error without sacrificing pressure stability.",
+        "risk": "Divergence may worsen slightly if 0.003 is too weak; pressure_error could rise if 0.25 is insufficient."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": true,
+        "raw_strict_json_valid": false,
+        "payload_sha256": "e6fb0566143a9be7d3df1b1b003094baf1e8d84b7ab47db5cbdaafb975dcb60a"
+      },
+      "already_valid_payload_unchanged": null
+    },
+    {
+      "model": "phi4_mini",
+      "id": "a03",
+      "repair": 0,
+      "source_summary_sha256": "28ffbc551d759dce9e2690710f1d6d74bab8570cda44337d623ee068d37633a7",
+      "source_feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+      "old_errors": [],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.001,
+        "weight_decay": 0.01,
+        "pressure_weight": 1,
+        "divergence_weight": 0,
+        "reason": "Previous trials with lower divergence_weight and higher pressure_weight showed better S values.",
+        "evidence_ids": [
+          "s01",
+          "s02"
+        ],
+        "expected_effect": "Lower divergence_weight and higher pressure_weight should further reduce S, improving validation performance.",
+        "risk": "Increased pressure_weight may lead to overfitting, but the expected improvement in S outweighs this risk."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": false,
+        "raw_strict_json_valid": true,
+        "payload_sha256": "1d9f52a206cfa477cc55b6b7a2d41fd2828e13b7a8ad6f901cc28796b373f506"
+      },
+      "already_valid_payload_unchanged": true
+    },
+    {
+      "model": "phi4_mini",
+      "id": "a04",
+      "repair": 0,
+      "source_summary_sha256": "2877b730b1e1d63ae7578fb66a2e692545e6506eb679fb73f1718f22d43b396b",
+      "source_feedback_sha256": "0bbcf66e80362651cdbe70a9aade0094f65933b3c7c7e4d5221ba6d874f34e28",
+      "old_errors": [],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.001,
+        "weight_decay": 0.01,
+        "pressure_weight": 1,
+        "divergence_weight": 0,
+        "reason": "Previous trials with lower divergence_weight and higher learning_rate showed better S values.",
+        "evidence_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "expected_effect": "Lower S values with the same learning_rate and weight_decay, but with a slightly higher pressure_weight.",
+        "risk": "Slightly higher pressure_error, but expected to be within acceptable range."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": false,
+        "raw_strict_json_valid": true,
+        "payload_sha256": "857037d6f30246dd6ce39827f74439db2b65c0652937d89f2b6420b8a16a02df"
+      },
+      "already_valid_payload_unchanged": true
+    },
+    {
+      "model": "granite33_8b",
+      "id": "a03",
+      "repair": 0,
+      "source_summary_sha256": "3d0a25e2c75513e208e1ee6e9f43cc5c49960f2ca9feeb0df28d2b59e1aab691",
+      "source_feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+      "old_errors": [],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "pressure_weight": 1,
+        "divergence_weight": 0,
+        "reason": "Based on the history, a learning rate of 0.001 and a weight decay of 0.0001 seem to provide a good balance between velocity and pressure errors. The pressure weight of 1 indicates equal importance for both errors. No divergence weight is used as it's not a primary concern. This configuration is chosen for its balance and successful past performance.",
+        "evidence_ids": [
+          "s01",
+          "s02"
+        ],
+        "expected_effect": "Improved error balance and reduced S value.",
+        "risk": "Higher weight decay might lead to underfitting, while lower could result in overfitting."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": false,
+        "raw_strict_json_valid": true,
+        "payload_sha256": "79b77f01fa9f00191bc2c49c867ccbd769ac97e818c767da26cfb8cba6cca513"
+      },
+      "already_valid_payload_unchanged": true
+    },
+    {
+      "model": "granite33_8b",
+      "id": "a04",
+      "repair": 0,
+      "source_summary_sha256": "395bbded1c001cf2fa8b8b65bfde39484fef699e9e2917f1a3091d5a15039bec",
+      "source_feedback_sha256": "edaf6f93c30bf6563552876318b631f602f98b66eff4415f1e294eb521fab1df",
+      "old_errors": [],
+      "new_errors": [],
+      "payload": {
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "pressure_weight": 1,
+        "divergence_weight": 0,
+        "reason": "Based on the history, a learning rate of 0.001 and a weight decay of 0.0001 seem to provide a good balance between velocity and pressure errors. The pressure weight of 1 indicates equal importance for both errors. No divergence weight is used as it's not a primary concern.",
+        "evidence_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "expected_effect": "Improved performance with lower S values.",
+        "risk": "Higher weight decay might lead to underfitting, while lower could result in overfitting."
+      },
+      "transport": {
+        "policy": "single_complete_json_fence_only_v1",
+        "single_fence_removed": false,
+        "raw_strict_json_valid": true,
+        "payload_sha256": "e2c1a7e681b41104798dffe8a79ba6cc2199d4a4ebc1ba2a60f345389fd036a8"
+      },
+      "already_valid_payload_unchanged": true
+    }
+  ],
+  "recorded_response_count": 10,
+  "historical_trials_edited": false,
+  "new_model_generations": 0,
+  "new_trainings": 0,
+  "warning": "Offline parser robustness check, not a rerun or replacement of the failed Ministral study. Two real adaptive Ministral trainings remain unverified under this common transport policy."
+}

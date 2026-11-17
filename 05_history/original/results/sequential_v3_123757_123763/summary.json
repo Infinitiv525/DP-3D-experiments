@@ -1,0 +1,1389 @@
+{
+  "status": "SEQUENTIAL_V3_PREFLIGHT_QC_NOT_PASSED",
+  "checks": {
+    "five_allocations_settled": true,
+    "within_physical_limit": true,
+    "main_not_authorized": true,
+    "qwen3_8b_completed": true,
+    "qwen3_8b_immutable_identity": true,
+    "qwen3_8b_saved_search_replays": true,
+    "qwen3_8b_two_attempts_counted": true,
+    "qwen3_8b_next_ask_blocked": true,
+    "qwen3_8b_a03_history_count_and_budget": true,
+    "qwen3_8b_a03_same_initial_training_budget": true,
+    "qwen3_8b_a03_complete": true,
+    "qwen3_8b_a03_committed_score_and_files": true,
+    "qwen3_8b_a03_fresh_training_seed_data": true,
+    "qwen3_8b_a03_measured_training_charged": true,
+    "qwen3_8b_a03_common_prompt_decode_and_valid_json": true,
+    "qwen3_8b_a03_proposal_cost_and_provenance": true,
+    "qwen3_8b_a04_history_count_and_budget": true,
+    "qwen3_8b_a04_previous_trial_visible": true,
+    "qwen3_8b_a04_reduced_training_budget": true,
+    "qwen3_8b_a04_complete": true,
+    "qwen3_8b_a04_committed_score_and_files": true,
+    "qwen3_8b_a04_fresh_training_seed_data": true,
+    "qwen3_8b_a04_measured_training_charged": true,
+    "qwen3_8b_a04_common_prompt_decode_and_valid_json": true,
+    "qwen3_8b_a04_proposal_cost_and_provenance": true,
+    "ministral3_8b_completed": false,
+    "ministral3_8b_immutable_identity": true,
+    "ministral3_8b_saved_search_replays": true,
+    "ministral3_8b_two_attempts_counted": true,
+    "ministral3_8b_next_ask_blocked": true,
+    "ministral3_8b_a03_history_count_and_budget": true,
+    "ministral3_8b_a03_same_initial_training_budget": true,
+    "ministral3_8b_a03_complete": false,
+    "ministral3_8b_a04_history_count_and_budget": true,
+    "ministral3_8b_a04_previous_trial_visible": true,
+    "ministral3_8b_a04_reduced_training_budget": true,
+    "ministral3_8b_a04_complete": false,
+    "phi4_mini_completed": true,
+    "phi4_mini_immutable_identity": true,
+    "phi4_mini_saved_search_replays": true,
+    "phi4_mini_two_attempts_counted": true,
+    "phi4_mini_next_ask_blocked": true,
+    "phi4_mini_a03_history_count_and_budget": true,
+    "phi4_mini_a03_same_initial_training_budget": true,
+    "phi4_mini_a03_complete": true,
+    "phi4_mini_a03_committed_score_and_files": true,
+    "phi4_mini_a03_fresh_training_seed_data": true,
+    "phi4_mini_a03_measured_training_charged": true,
+    "phi4_mini_a03_common_prompt_decode_and_valid_json": true,
+    "phi4_mini_a03_proposal_cost_and_provenance": true,
+    "phi4_mini_a04_history_count_and_budget": true,
+    "phi4_mini_a04_previous_trial_visible": true,
+    "phi4_mini_a04_reduced_training_budget": true,
+    "phi4_mini_a04_complete": true,
+    "phi4_mini_a04_committed_score_and_files": true,
+    "phi4_mini_a04_fresh_training_seed_data": true,
+    "phi4_mini_a04_measured_training_charged": true,
+    "phi4_mini_a04_common_prompt_decode_and_valid_json": true,
+    "phi4_mini_a04_proposal_cost_and_provenance": true,
+    "granite33_8b_completed": true,
+    "granite33_8b_immutable_identity": true,
+    "granite33_8b_saved_search_replays": true,
+    "granite33_8b_two_attempts_counted": true,
+    "granite33_8b_next_ask_blocked": true,
+    "granite33_8b_a03_history_count_and_budget": true,
+    "granite33_8b_a03_same_initial_training_budget": true,
+    "granite33_8b_a03_complete": true,
+    "granite33_8b_a03_committed_score_and_files": true,
+    "granite33_8b_a03_fresh_training_seed_data": true,
+    "granite33_8b_a03_measured_training_charged": true,
+    "granite33_8b_a03_common_prompt_decode_and_valid_json": true,
+    "granite33_8b_a03_proposal_cost_and_provenance": true,
+    "granite33_8b_a04_history_count_and_budget": true,
+    "granite33_8b_a04_previous_trial_visible": true,
+    "granite33_8b_a04_reduced_training_budget": true,
+    "granite33_8b_a04_complete": true,
+    "granite33_8b_a04_committed_score_and_files": true,
+    "granite33_8b_a04_fresh_training_seed_data": true,
+    "granite33_8b_a04_measured_training_charged": true,
+    "granite33_8b_a04_common_prompt_decode_and_valid_json": true,
+    "granite33_8b_a04_proposal_cost_and_provenance": true,
+    "controls_completed": true,
+    "controls_immutable_identity": true,
+    "random_saved_search_replays": true,
+    "random_two_attempts_counted": true,
+    "random_next_ask_blocked": true,
+    "random_a03_history_count_and_budget": true,
+    "random_a03_same_initial_training_budget": true,
+    "random_a03_complete": true,
+    "random_a03_committed_score_and_files": true,
+    "random_a03_fresh_training_seed_data": true,
+    "random_a03_measured_training_charged": true,
+    "random_a04_history_count_and_budget": true,
+    "random_a04_previous_trial_visible": true,
+    "random_a04_reduced_training_budget": true,
+    "random_a04_complete": true,
+    "random_a04_committed_score_and_files": true,
+    "random_a04_fresh_training_seed_data": true,
+    "random_a04_measured_training_charged": true,
+    "tpe_saved_search_replays": true,
+    "tpe_two_attempts_counted": true,
+    "tpe_next_ask_blocked": true,
+    "tpe_a03_history_count_and_budget": true,
+    "tpe_a03_same_initial_training_budget": true,
+    "tpe_a03_complete": true,
+    "tpe_a03_committed_score_and_files": true,
+    "tpe_a03_fresh_training_seed_data": true,
+    "tpe_a03_measured_training_charged": true,
+    "tpe_a04_history_count_and_budget": true,
+    "tpe_a04_previous_trial_visible": true,
+    "tpe_a04_reduced_training_budget": true,
+    "tpe_a04_complete": true,
+    "tpe_a04_committed_score_and_files": true,
+    "tpe_a04_fresh_training_seed_data": true,
+    "tpe_a04_measured_training_charged": true,
+    "tpe_two_real_tells_restore": true,
+    "six_unique_methods": true,
+    "identical_initial_messages_all_six": true,
+    "identical_shared_history_all_six": true,
+    "identical_normalization": true
+  },
+  "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf",
+  "freeze_sha256": "06830e31f5399f0fb27b6eec266d8b9606b93240d06b7a166ddbc26d1adb2ed1",
+  "methods": [
+    {
+      "label": "qwen3_8b",
+      "job": "123758",
+      "attempts": [
+        {
+          "S": 0.372441625236561,
+          "decision_seconds": 47.73214130476117,
+          "metadata": {
+            "feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+            "proposal": {
+              "configuration_with_reason": {
+                "divergence_weight": 0,
+                "evidence_ids": [
+                  "s02"
+                ],
+                "expected_effect": "Lower S due to reduced pressure_error with higher pressure_weight.",
+                "learning_rate": 0.0012236509356096372,
+                "pressure_weight": 2,
+                "reason": "Higher pressure_weight may reduce pressure_error, which contributes significantly to S.",
+                "risk": "Potential increase in velocity_error if pressure_weight is too high.",
+                "weight_decay": 2.9047728342589812e-06
+              },
+              "feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+              "initial_messages_sha256": "4b92e1e26910058ca79963d14f736a67b6202796fc4228af84a3d13ed1c796fc",
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 47.73214130476117
+              },
+              "summary_sha256": "2c628cb66763969ba26ff949aaf8f7654fd09b5d66cda1d655247d9416ab2a5c",
+              "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf"
+            },
+            "training": {
+              "config_sha256": "82b744b0877996f831a9eed029ad5f256bf21b39d8bda8bb4537f2bb3b98589d",
+              "measurement": {
+                "S": 0.372441625236561,
+                "divergence": 0.4081634191672007,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 0.5448881427614148,
+                "sample_count": 150,
+                "velocity_error": 0.1999951077117071
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 52.610237413086
+              },
+              "outcome_sha256": "e1a81067cd9d5f00d05a6a3eee07982da5b022d95ec2befa0c60a8303bdbc743",
+              "summary_sha256": "4f508622afeb2aa7317e03c76936b9e34ec63f3aff118b570a0f7a0ef5b456d4"
+            }
+          },
+          "number": 3,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123758",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0,
+            "learning_rate": 0.0012236509356096372,
+            "pressure_weight": 2,
+            "weight_decay": 2.9047728342589812e-06
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 52.610237413086
+        },
+        {
+          "S": 0.39066139776771835,
+          "decision_seconds": 50.11148674413562,
+          "metadata": {
+            "feedback_sha256": "c4664b3b73b83dd670187793867237178b581cb2819e865a3ec40c67946c2deb",
+            "proposal": {
+              "configuration_with_reason": {
+                "divergence_weight": 0,
+                "evidence_ids": [
+                  "s02",
+                  "a03"
+                ],
+                "expected_effect": "Maintaining high pressure_weight and low weight_decay may further reduce S.",
+                "learning_rate": 0.0012236509356096372,
+                "pressure_weight": 2,
+                "reason": "High pressure_weight and low weight_decay with moderate learning_rate achieved lower S in previous trials.",
+                "risk": "Higher pressure_weight could lead to overfitting if not balanced with divergence_weight.",
+                "weight_decay": 2.9047728342589812e-06
+              },
+              "feedback_sha256": "c4664b3b73b83dd670187793867237178b581cb2819e865a3ec40c67946c2deb",
+              "initial_messages_sha256": "18e6ded333a654bc8dba553c7ed936b8906a59f8304cbc12b6e03d994b88bc6f",
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 50.11148674413562
+              },
+              "summary_sha256": "0786305a45c88b2225096298d5e006ae1f31e6636a3cec22defcab7bc97d9699",
+              "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf"
+            },
+            "training": {
+              "config_sha256": "f02ecdcd31b855cf77eb3d525626c6e4453669adeb9784e35c5cbeb1d3080e51",
+              "measurement": {
+                "S": 0.39066139776771835,
+                "divergence": 0.4407834045092265,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 0.581825281552964,
+                "sample_count": 150,
+                "velocity_error": 0.19949751398247276
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 53.51206437218934
+              },
+              "outcome_sha256": "e1019b007949c4a8ca841544536b8d323f28ec62e417c19a289836c268044f6a",
+              "summary_sha256": "0e69c17d0d488beb221a5283c63ad4ce94c0093bd3e3e6b77beed46851c0f97f"
+            }
+          },
+          "number": 4,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123758",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0,
+            "learning_rate": 0.0012236509356096372,
+            "pressure_weight": 2,
+            "weight_decay": 2.9047728342589812e-06
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 53.51206437218934
+        }
+      ],
+      "training_seconds_with_shared": 289.38272497523576,
+      "decision_seconds": 97.84362804889679
+    },
+    {
+      "label": "ministral3_8b",
+      "job": "123759",
+      "attempts": [
+        {
+          "S": null,
+          "decision_seconds": 111.84215559158474,
+          "metadata": {
+            "proposal": {
+              "feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+              "outcome": {
+                "exit_code": 1,
+                "timed_out": false,
+                "wall_seconds": 111.84215559158474
+              },
+              "status": "LOCAL_CONFIGURATOR_V3_INVALID"
+            }
+          },
+          "number": 3,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123759",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": null,
+          "phase": "finished",
+          "status": "invalid_reply",
+          "training_seconds": 0.0
+        },
+        {
+          "S": null,
+          "decision_seconds": 107.95593789033592,
+          "metadata": {
+            "proposal": {
+              "feedback_sha256": "157bc0db5aed54f92d112e9ec8508cd9b47a57253b0744c6a5b8af732eb0db3b",
+              "outcome": {
+                "exit_code": 1,
+                "timed_out": false,
+                "wall_seconds": 107.95593789033592
+              },
+              "status": "LOCAL_CONFIGURATOR_V3_INVALID"
+            }
+          },
+          "number": 4,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123759",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": null,
+          "phase": "finished",
+          "status": "invalid_reply",
+          "training_seconds": 0.0
+        }
+      ],
+      "training_seconds_with_shared": 183.26042318996042,
+      "decision_seconds": 219.79809348192066
+    },
+    {
+      "label": "phi4_mini",
+      "job": "123760",
+      "attempts": [
+        {
+          "S": 0.4578790463356528,
+          "decision_seconds": 70.30276036914438,
+          "metadata": {
+            "feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+            "proposal": {
+              "configuration_with_reason": {
+                "divergence_weight": 0,
+                "evidence_ids": [
+                  "s01",
+                  "s02"
+                ],
+                "expected_effect": "Lower divergence_weight and higher pressure_weight should further reduce S, improving validation performance.",
+                "learning_rate": 0.001,
+                "pressure_weight": 1,
+                "reason": "Previous trials with lower divergence_weight and higher pressure_weight showed better S values.",
+                "risk": "Increased pressure_weight may lead to overfitting, but the expected improvement in S outweighs this risk.",
+                "weight_decay": 0.01
+              },
+              "feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+              "initial_messages_sha256": "4b92e1e26910058ca79963d14f736a67b6202796fc4228af84a3d13ed1c796fc",
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 70.30276036914438
+              },
+              "summary_sha256": "28ffbc551d759dce9e2690710f1d6d74bab8570cda44337d623ee068d37633a7",
+              "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf"
+            },
+            "training": {
+              "config_sha256": "7a16e01f25d0fd46a548b400dba745cea6b15d28b4a4a236a657b6e1019c7b5f",
+              "measurement": {
+                "S": 0.4578790463356528,
+                "divergence": 0.32104321638743083,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 0.7229370182975495,
+                "sample_count": 150,
+                "velocity_error": 0.1928210743737561
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 53.46521578170359
+              },
+              "outcome_sha256": "2872f4fde2673accabe47df088a06c0a9c4b98c6e18402ac19ed34855da1e9be",
+              "summary_sha256": "174bb61552c0ec2feb350c855576a16d2e960740c35c31aebfd3554ee63bdf8b"
+            }
+          },
+          "number": 3,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123760",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0,
+            "learning_rate": 0.001,
+            "pressure_weight": 1,
+            "weight_decay": 0.01
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 53.46521578170359
+        },
+        {
+          "S": 0.4864486718954043,
+          "decision_seconds": 42.13476793561131,
+          "metadata": {
+            "feedback_sha256": "0bbcf66e80362651cdbe70a9aade0094f65933b3c7c7e4d5221ba6d874f34e28",
+            "proposal": {
+              "configuration_with_reason": {
+                "divergence_weight": 0,
+                "evidence_ids": [
+                  "s01",
+                  "s02",
+                  "s03"
+                ],
+                "expected_effect": "Lower S values with the same learning_rate and weight_decay, but with a slightly higher pressure_weight.",
+                "learning_rate": 0.001,
+                "pressure_weight": 1,
+                "reason": "Previous trials with lower divergence_weight and higher learning_rate showed better S values.",
+                "risk": "Slightly higher pressure_error, but expected to be within acceptable range.",
+                "weight_decay": 0.01
+              },
+              "feedback_sha256": "0bbcf66e80362651cdbe70a9aade0094f65933b3c7c7e4d5221ba6d874f34e28",
+              "initial_messages_sha256": "712ab5f167f8a9a8d9e1df9761023194bdbdefbd5d0126c48e5cda8c75963249",
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 42.13476793561131
+              },
+              "summary_sha256": "2877b730b1e1d63ae7578fb66a2e692545e6506eb679fb73f1718f22d43b396b",
+              "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf"
+            },
+            "training": {
+              "config_sha256": "c8e8ea118e375321bf10b2918262cb2a78b2ad7fc9f95e475bb1e5fbcd2100ce",
+              "measurement": {
+                "S": 0.4864486718954043,
+                "divergence": 0.3773437962929408,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 0.7671407105571593,
+                "sample_count": 150,
+                "velocity_error": 0.20575663323364937
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 52.707038475200534
+              },
+              "outcome_sha256": "1d1237478c4a56c211c61634fc6fed74d102ee7934d2baee22dcc49555a39033",
+              "summary_sha256": "e00bc3715466cdaeb6822049d450c6fb3119cad5e7fbad86fe4eb399b5a6cb4e"
+            }
+          },
+          "number": 4,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123760",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0,
+            "learning_rate": 0.001,
+            "pressure_weight": 1,
+            "weight_decay": 0.01
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 52.707038475200534
+        }
+      ],
+      "training_seconds_with_shared": 289.43267744686455,
+      "decision_seconds": 112.43752830475569
+    },
+    {
+      "label": "granite33_8b",
+      "job": "123761",
+      "attempts": [
+        {
+          "S": 0.4568533134262526,
+          "decision_seconds": 105.77200081199408,
+          "metadata": {
+            "feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+            "proposal": {
+              "configuration_with_reason": {
+                "divergence_weight": 0,
+                "evidence_ids": [
+                  "s01",
+                  "s02"
+                ],
+                "expected_effect": "Improved error balance and reduced S value.",
+                "learning_rate": 0.001,
+                "pressure_weight": 1,
+                "reason": "Based on the history, a learning rate of 0.001 and a weight decay of 0.0001 seem to provide a good balance between velocity and pressure errors. The pressure weight of 1 indicates equal importance for both errors. No divergence weight is used as it's not a primary concern. This configuration is chosen for its balance and successful past performance.",
+                "risk": "Higher weight decay might lead to underfitting, while lower could result in overfitting.",
+                "weight_decay": 0.0001
+              },
+              "feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+              "initial_messages_sha256": "4b92e1e26910058ca79963d14f736a67b6202796fc4228af84a3d13ed1c796fc",
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 105.77200081199408
+              },
+              "summary_sha256": "3d0a25e2c75513e208e1ee6e9f43cc5c49960f2ca9feeb0df28d2b59e1aab691",
+              "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf"
+            },
+            "training": {
+              "config_sha256": "243496a5859845adfdf13f7391bc5a7944edcb19f20cdc588977c8ccecd9fc5c",
+              "measurement": {
+                "S": 0.4568533134262526,
+                "divergence": 0.32423235177993776,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 0.7210698013677888,
+                "sample_count": 150,
+                "velocity_error": 0.19263682548471653
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 53.9743483569473
+              },
+              "outcome_sha256": "a612c5d0535a9480712258ffaef2242ae6be49af40d80a412fc9c1edd2fe6106",
+              "summary_sha256": "a470e15d87a22b7ba461f0a167efc6915267ebe8f12eb8edc38b470a6e29ceec"
+            }
+          },
+          "number": 3,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123761",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0,
+            "learning_rate": 0.001,
+            "pressure_weight": 1,
+            "weight_decay": 0.0001
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 53.9743483569473
+        },
+        {
+          "S": 0.48586451002353614,
+          "decision_seconds": 55.867087146267295,
+          "metadata": {
+            "feedback_sha256": "edaf6f93c30bf6563552876318b631f602f98b66eff4415f1e294eb521fab1df",
+            "proposal": {
+              "configuration_with_reason": {
+                "divergence_weight": 0,
+                "evidence_ids": [
+                  "s01",
+                  "s02",
+                  "s03"
+                ],
+                "expected_effect": "Improved performance with lower S values.",
+                "learning_rate": 0.001,
+                "pressure_weight": 1,
+                "reason": "Based on the history, a learning rate of 0.001 and a weight decay of 0.0001 seem to provide a good balance between velocity and pressure errors. The pressure weight of 1 indicates equal importance for both errors. No divergence weight is used as it's not a primary concern.",
+                "risk": "Higher weight decay might lead to underfitting, while lower could result in overfitting.",
+                "weight_decay": 0.0001
+              },
+              "feedback_sha256": "edaf6f93c30bf6563552876318b631f602f98b66eff4415f1e294eb521fab1df",
+              "initial_messages_sha256": "99f3942fa1becd2ccb4261c0796fbbfd05a83ebdea9b80bf0fe4222b28d73b0b",
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 55.867087146267295
+              },
+              "summary_sha256": "395bbded1c001cf2fa8b8b65bfde39484fef699e9e2917f1a3091d5a15039bec",
+              "system_prompt_sha256": "e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf"
+            },
+            "training": {
+              "config_sha256": "7a6459f6e67408e7294777a019d34eb5c41defec50d51a6d5dba49f27bb613ba",
+              "measurement": {
+                "S": 0.48586451002353614,
+                "divergence": 0.38001996020476025,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 0.7661708987290675,
+                "sample_count": 150,
+                "velocity_error": 0.20555812131800483
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 53.025942211039364
+              },
+              "outcome_sha256": "9fa2da7541cbf2311d505902709f35b211226b171e2cfc0ac09b80f0140fbd25",
+              "summary_sha256": "d43953bf15278e7f2e492c259727a41742ade4b23973d3f21aac9fcac824c4e4"
+            }
+          },
+          "number": 4,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123761",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0,
+            "learning_rate": 0.001,
+            "pressure_weight": 1,
+            "weight_decay": 0.0001
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 53.025942211039364
+        }
+      ],
+      "training_seconds_with_shared": 290.2607137579471,
+      "decision_seconds": 161.63908795826137
+    },
+    {
+      "label": "random",
+      "job": "123762",
+      "attempts": [
+        {
+          "S": 0.4980533617942955,
+          "decision_seconds": 0.0,
+          "metadata": {
+            "feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+            "training": {
+              "config_sha256": "4bebfe6e39e2c8680720c85baab03d65f1a88bd4b373f4f7708b09059084fcd0",
+              "measurement": {
+                "S": 0.4980533617942955,
+                "divergence": 0.10058259268601735,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 0.7938943405253281,
+                "sample_count": 150,
+                "velocity_error": 0.20221238306326286
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 106.52968999184668
+              },
+              "outcome_sha256": "d4634ece87c3bc06ee79e338ef1e8adf5898030a88a1735c938f11ed58f324b4",
+              "summary_sha256": "82890676acaaf961aca0a8d0df905b768e9f31f813a0dc73e83088b5f4c7e563"
+            }
+          },
+          "number": 3,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123762",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0.003,
+            "learning_rate": 0.0007362478103101123,
+            "pressure_weight": 1,
+            "weight_decay": 0.00020462418038839024
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 106.52968999184668
+        },
+        {
+          "S": 0.38674923850169646,
+          "decision_seconds": 0.0,
+          "metadata": {
+            "feedback_sha256": "02cc365e108a58a21fd9fecebcdff34c077ce5c6b42bf08dd0a48bf0c4229a51",
+            "training": {
+              "config_sha256": "c42dcc386bf195f83bea0bdae15db1d624653c4acb2746d21ad44876d6b031d0",
+              "measurement": {
+                "S": 0.38674923850169646,
+                "divergence": 0.05278696509699027,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 0.5675953314021865,
+                "sample_count": 150,
+                "velocity_error": 0.20590314560120634
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 52.349599765613675
+              },
+              "outcome_sha256": "01ea29898f526074bdb746e69edbaffa87267fafd1b9f62da416a8cad6c5f981",
+              "summary_sha256": "d31a4f92adcda2bfa7772ad99f6114a058a6dc6a25076a2e0aaaabf7e78dc3e0"
+            }
+          },
+          "number": 4,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123762",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0.03,
+            "learning_rate": 0.0015476365835901463,
+            "pressure_weight": 2,
+            "weight_decay": 0.0001668312418922665
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 52.349599765613675
+        }
+      ],
+      "training_seconds_with_shared": 342.1397129474208,
+      "decision_seconds": 0.0
+    },
+    {
+      "label": "tpe",
+      "job": "123762",
+      "attempts": [
+        {
+          "S": 0.8245611068354239,
+          "decision_seconds": 0.0,
+          "metadata": {
+            "feedback_sha256": "3287d65410d5525e74ea3d1cb574cb7093b7292f5ae771fbf48f4cd2ea571134",
+            "training": {
+              "config_sha256": "4460c67b02cff410a68e8c2cc5a202270c27556dd4b6a4992917df7cc353114c",
+              "measurement": {
+                "S": 0.8245611068354239,
+                "divergence": 0.300856640736262,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 1.267990622400576,
+                "sample_count": 150,
+                "velocity_error": 0.381131591270272
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 52.36265013553202
+              },
+              "outcome_sha256": "ac2afa7d56684896de679a524ebc2f645ce0225fb7e7ad18862b2e7b60d4bf62",
+              "summary_sha256": "fef57a1f8b23363e6389a93f17c142e75a7633c38c53c7360d742de180f9344b"
+            }
+          },
+          "number": 3,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123762",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0,
+            "learning_rate": 0.00010201997531988224,
+            "pressure_weight": 2,
+            "weight_decay": 2.2430611320806945e-06
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 52.36265013553202
+        },
+        {
+          "S": 0.31755664241311576,
+          "decision_seconds": 0.0,
+          "metadata": {
+            "feedback_sha256": "68fd80f46d596663ebc68a8740ae76a63c6e98ac541c1b830f91468f10305199",
+            "training": {
+              "config_sha256": "2e424db9cd1172ed9ac71cc4ba104a936dc1fcc4981a65d309af2f90e5f8f975",
+              "measurement": {
+                "S": 0.31755664241311576,
+                "divergence": 0.17071155707041422,
+                "geometry_count": 15,
+                "geometry_sample_counts": {
+                  "01e5113d512799965b890005330408c6bbd37cfff47476f863e9bf434d89be9d": 10,
+                  "0aed5d53c657d9c7d6187e613a24e42ba0ad27419fcac1b6a81396314379290c": 10,
+                  "18cb856031819a3711be85d2c9429e6265a7ed6a7ad48a218cf1be19cdc4264f": 10,
+                  "250a12fdbe0c084c08a64859f358a90198a31460537335f603136fcfa5949367": 10,
+                  "323231eeb72724ae06cd3f3805519d0ca17a0b422834d321ab3a6f971b8f18b4": 10,
+                  "4e8612688498b9d748ae6b0b978ae4a4ff4ed1f526b4fd11ec5b00549be2cd06": 10,
+                  "681d1dbfc5dbb98da808648169ee5c4c6e22abe7a10ade89974cc3b9c93eb4cf": 10,
+                  "6e5bc2e380d88c2dfecf1b92665129d25816873ff5ae4f83f8fd6763a8233e84": 10,
+                  "7aad02d904d8b1ba2ab2af97463ac6ab641ab986b29bfa6e40e1c83a98fc0d1a": 10,
+                  "7d68c92eac919151ed3c26e58559bf31192a623e319ef43603580a2cda794a5d": 10,
+                  "93ee71328ba10778ff623fb8bdd2f5d91a76a89c5e13d0db6e130c1f95bf7642": 10,
+                  "cc10c10127ff934f3d8930a35f4f0653c7b1b9884bd94104c8bcfec1544216d5": 10,
+                  "e8cb9c450962188add75871906f9f0daa3c1a0e6dca2917bb76831b039493198": 10,
+                  "ec5c549741828f854e8573df7023e3018e83a4f32b5aa9377f67a0ea024854f7": 10,
+                  "fa8597aa91bb4f8b99094f0178d2bd14a5cd39308c650abe063a841960787b6c": 10
+                },
+                "pressure_error": 0.4630920037280465,
+                "sample_count": 150,
+                "velocity_error": 0.172021281098185
+              },
+              "outcome": {
+                "exit_code": 0,
+                "timed_out": false,
+                "wall_seconds": 52.26224418077618
+              },
+              "outcome_sha256": "a6fe9b6674e6c5dff6f2356f923c75e9012a4600048c6d6cad5ac59391922168",
+              "summary_sha256": "22a4436db61536471f460a16af7f3821beca956b40dbc5836b1477e5ae7a0484"
+            }
+          },
+          "number": 4,
+          "owner": {
+            "cluster": "slurm-perun2",
+            "job": "123762",
+            "mode": "slurm",
+            "user": "lutoke823"
+          },
+          "parameters": {
+            "divergence_weight": 0.001,
+            "learning_rate": 0.002643433548332101,
+            "pressure_weight": 2,
+            "weight_decay": 0.00027095478935173123
+          },
+          "phase": "finished",
+          "status": "complete",
+          "training_seconds": 52.26224418077618
+        }
+      ],
+      "training_seconds_with_shared": 287.8853175062686,
+      "decision_seconds": 0.0
+    }
+  ],
+  "allocation": {
+    "gpu_seconds_limit": 3000,
+    "charged_or_reserved_gpu_seconds": 1182,
+    "available_gpu_seconds": 1818,
+    "overrun_gpu_seconds": 0,
+    "state": {
+      "allocations": [
+        {
+          "charged_gpu_seconds": 206,
+          "gpus": 1,
+          "job_id": "123758",
+          "label": "qwen3_8b",
+          "reservation_gpu_seconds": 601,
+          "status": "settled",
+          "wall_limit_seconds": 600,
+          "reported_runtime_seconds": 205,
+          "scheduler_fields": {
+            "JobId": "123758",
+            "JobName": "dp-seq-qwen3_8b",
+            "UserId": "lutoke823(507402392)",
+            "GroupId": "domain",
+            "MCS_label": "N/A",
+            "Priority": "1268",
+            "Nice": "0",
+            "Account": "perun2601449",
+            "QOS": "perun2601449",
+            "JobState": "COMPLETED",
+            "Reason": "None",
+            "Dependency": "(null)",
+            "Requeue": "0",
+            "Restarts": "0",
+            "BatchFlag": "1",
+            "Reboot": "0",
+            "ExitCode": "0:0",
+            "RunTime": "00:03:25",
+            "TimeLimit": "00:10:00",
+            "TimeMin": "N/A",
+            "SubmitTime": "2026-10-21T12:16:52",
+            "EligibleTime": "2026-10-21T12:16:52",
+            "AccrueTime": "2026-10-21T12:16:52",
+            "StartTime": "2026-10-21T12:16:52",
+            "EndTime": "2026-10-21T12:20:17",
+            "Deadline": "N/A",
+            "PreemptEligibleTime": "2026-10-21T12:16:52",
+            "PreemptTime": "None",
+            "SuspendTime": "None",
+            "SecsPreSuspend": "0",
+            "LastSchedEval": "2026-10-21T12:16:52",
+            "Scheduler": "Main",
+            "Partition": "gpu_short",
+            "ReqNodeList": "(null)",
+            "ExcNodeList": "(null)",
+            "NodeList": "gpu01",
+            "BatchHost": "gpu01",
+            "NumNodes": "1",
+            "NumCPUs": "4",
+            "NumTasks": "1",
+            "ReqTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "AllocTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "CoreSpec": "*",
+            "MinCPUsNode": "4",
+            "MinMemoryNode": "80G",
+            "MinTmpDiskNode": "0",
+            "Features": "(null)",
+            "DelayBoot": "00:00:00",
+            "OverSubscribe": "NO",
+            "Exclusive": "NO",
+            "Contiguous": "0",
+            "Licenses": "(null)",
+            "LicensesAlloc": "(null)",
+            "Network": "(null)",
+            "Command": "/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch",
+            "SubmitLine": "sbatch",
+            "WorkDir": "/mnt/project/perun2601449/dp_llm_cfd",
+            "StdErr": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-qwen3_8b_123758.err",
+            "StdIn": "/dev/null",
+            "StdOut": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-qwen3_8b_123758.out",
+            "TresPerNode": "gres/gpu:1",
+            "TresPerTask": "cpu=4"
+          },
+          "scheduler_sha256": "36deaaea7dcf747d48d0d27c699fd8c0199464a86576756f64ddc869998fd62e",
+          "scheduler_uid_proof": {
+            "authenticated_uid": 507402392,
+            "original_user_field": "507402392(507402392)",
+            "original_scheduler_sha256": "2ae45be7fe6fd866d39af085d9b12cef6d4f909ae15d6c574eb58b4f32262f47",
+            "original_scheduler_text": "JobId=123758 JobName=dp-seq-qwen3_8b UserId=507402392(507402392) GroupId=domain users(507400513) MCS_label=N/A Priority=1268 Nice=0 Account=perun2601449 QOS=perun2601449 JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:03:25 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-10-21T12:16:52 EligibleTime=2026-10-21T12:16:52 AccrueTime=2026-10-21T12:16:52 StartTime=2026-10-21T12:16:52 EndTime=2026-10-21T12:20:17 Deadline=N/A PreemptEligibleTime=2026-10-21T12:16:52 PreemptTime=None SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-21T12:16:52 Scheduler=Main Partition=gpu_short AllocNode:Sid=login01:3678565 ReqNodeList=(null) ExcNodeList=(null) NodeList=gpu01 BatchHost=gpu01 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 AllocTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=80G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Exclusive=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch SubmitLine=sbatch --hold --parsable --no-requeue --export=NIL --time=10 --job-name=dp-seq-qwen3_8b /mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch qwen3_8b /mnt/project/perun2601449/dp_llm_cfd/results/llm_search_prepare/sequential_preflight_123757/freeze.json WorkDir=/mnt/project/perun2601449/dp_llm_cfd StdErr=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-qwen3_8b_123758.err StdIn=/dev/null StdOut=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-qwen3_8b_123758.out TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n",
+            "normalization": "Display-name canonicalization ONLY after numeric UID verification"
+          }
+        },
+        {
+          "charged_gpu_seconds": 221,
+          "gpus": 1,
+          "job_id": "123759",
+          "label": "ministral3_8b",
+          "reservation_gpu_seconds": 601,
+          "status": "settled",
+          "wall_limit_seconds": 600,
+          "reported_runtime_seconds": 220,
+          "scheduler_fields": {
+            "JobId": "123759",
+            "JobName": "dp-seq-ministral3_8b",
+            "UserId": "lutoke823(507402392)",
+            "GroupId": "domain",
+            "MCS_label": "N/A",
+            "Priority": "1268",
+            "Nice": "0",
+            "Account": "perun2601449",
+            "QOS": "perun2601449",
+            "JobState": "FAILED",
+            "Reason": "NonZeroExitCode",
+            "Dependency": "(null)",
+            "Requeue": "0",
+            "Restarts": "0",
+            "BatchFlag": "1",
+            "Reboot": "0",
+            "ExitCode": "1:0",
+            "RunTime": "00:03:40",
+            "TimeLimit": "00:10:00",
+            "TimeMin": "N/A",
+            "SubmitTime": "2026-10-21T12:16:52",
+            "EligibleTime": "2026-10-21T12:16:52",
+            "AccrueTime": "2026-10-21T12:16:52",
+            "StartTime": "2026-10-21T12:16:53",
+            "EndTime": "2026-10-21T12:20:33",
+            "Deadline": "N/A",
+            "PreemptEligibleTime": "2026-10-21T12:16:53",
+            "PreemptTime": "None",
+            "SuspendTime": "None",
+            "SecsPreSuspend": "0",
+            "LastSchedEval": "2026-10-21T12:16:53",
+            "Scheduler": "Main",
+            "Partition": "gpu_short",
+            "ReqNodeList": "(null)",
+            "ExcNodeList": "(null)",
+            "NodeList": "gpu01",
+            "BatchHost": "gpu01",
+            "NumNodes": "1",
+            "NumCPUs": "4",
+            "NumTasks": "1",
+            "ReqTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "AllocTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "CoreSpec": "*",
+            "MinCPUsNode": "4",
+            "MinMemoryNode": "80G",
+            "MinTmpDiskNode": "0",
+            "Features": "(null)",
+            "DelayBoot": "00:00:00",
+            "OverSubscribe": "NO",
+            "Exclusive": "NO",
+            "Contiguous": "0",
+            "Licenses": "(null)",
+            "LicensesAlloc": "(null)",
+            "Network": "(null)",
+            "Command": "/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch",
+            "SubmitLine": "sbatch",
+            "WorkDir": "/mnt/project/perun2601449/dp_llm_cfd",
+            "StdErr": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-ministral3_8b_123759.err",
+            "StdIn": "/dev/null",
+            "StdOut": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-ministral3_8b_123759.out",
+            "TresPerNode": "gres/gpu:1",
+            "TresPerTask": "cpu=4"
+          },
+          "scheduler_sha256": "ea076dc0432f48ae3fbac8da2c80c8f7117328b2fdea42fe9e51f25ce8f3f194",
+          "scheduler_uid_proof": {
+            "authenticated_uid": 507402392,
+            "original_user_field": "507402392(507402392)",
+            "original_scheduler_sha256": "2259dea98ed8d301ced7f1ab675f543283fc651cca81f5e421fba3138d40ee25",
+            "original_scheduler_text": "JobId=123759 JobName=dp-seq-ministral3_8b UserId=507402392(507402392) GroupId=domain users(507400513) MCS_label=N/A Priority=1268 Nice=0 Account=perun2601449 QOS=perun2601449 JobState=FAILED Reason=NonZeroExitCode Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=1:0 RunTime=00:03:40 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-10-21T12:16:52 EligibleTime=2026-10-21T12:16:52 AccrueTime=2026-10-21T12:16:52 StartTime=2026-10-21T12:16:53 EndTime=2026-10-21T12:20:33 Deadline=N/A PreemptEligibleTime=2026-10-21T12:16:53 PreemptTime=None SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-21T12:16:53 Scheduler=Main Partition=gpu_short AllocNode:Sid=login01:3678565 ReqNodeList=(null) ExcNodeList=(null) NodeList=gpu01 BatchHost=gpu01 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 AllocTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=80G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Exclusive=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch SubmitLine=sbatch --hold --parsable --no-requeue --export=NIL --time=10 --job-name=dp-seq-ministral3_8b /mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch ministral3_8b /mnt/project/perun2601449/dp_llm_cfd/results/llm_search_prepare/sequential_preflight_123757/freeze.json WorkDir=/mnt/project/perun2601449/dp_llm_cfd StdErr=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-ministral3_8b_123759.err StdIn=/dev/null StdOut=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-ministral3_8b_123759.out TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n",
+            "normalization": "Display-name canonicalization ONLY after numeric UID verification"
+          }
+        },
+        {
+          "charged_gpu_seconds": 220,
+          "gpus": 1,
+          "job_id": "123760",
+          "label": "phi4_mini",
+          "reservation_gpu_seconds": 601,
+          "status": "settled",
+          "wall_limit_seconds": 600,
+          "reported_runtime_seconds": 219,
+          "scheduler_fields": {
+            "JobId": "123760",
+            "JobName": "dp-seq-phi4_mini",
+            "UserId": "lutoke823(507402392)",
+            "GroupId": "domain",
+            "MCS_label": "N/A",
+            "Priority": "1268",
+            "Nice": "0",
+            "Account": "perun2601449",
+            "QOS": "perun2601449",
+            "JobState": "COMPLETED",
+            "Reason": "None",
+            "Dependency": "(null)",
+            "Requeue": "0",
+            "Restarts": "0",
+            "BatchFlag": "1",
+            "Reboot": "0",
+            "ExitCode": "0:0",
+            "RunTime": "00:03:39",
+            "TimeLimit": "00:10:00",
+            "TimeMin": "N/A",
+            "SubmitTime": "2026-10-21T12:16:52",
+            "EligibleTime": "2026-10-21T12:16:52",
+            "AccrueTime": "2026-10-21T12:16:52",
+            "StartTime": "2026-10-21T12:16:53",
+            "EndTime": "2026-10-21T12:20:32",
+            "Deadline": "N/A",
+            "PreemptEligibleTime": "2026-10-21T12:16:53",
+            "PreemptTime": "None",
+            "SuspendTime": "None",
+            "SecsPreSuspend": "0",
+            "LastSchedEval": "2026-10-21T12:16:53",
+            "Scheduler": "Main",
+            "Partition": "gpu_short",
+            "ReqNodeList": "(null)",
+            "ExcNodeList": "(null)",
+            "NodeList": "gpu23",
+            "BatchHost": "gpu23",
+            "NumNodes": "1",
+            "NumCPUs": "4",
+            "NumTasks": "1",
+            "ReqTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "AllocTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "CoreSpec": "*",
+            "MinCPUsNode": "4",
+            "MinMemoryNode": "80G",
+            "MinTmpDiskNode": "0",
+            "Features": "(null)",
+            "DelayBoot": "00:00:00",
+            "OverSubscribe": "NO",
+            "Exclusive": "NO",
+            "Contiguous": "0",
+            "Licenses": "(null)",
+            "LicensesAlloc": "(null)",
+            "Network": "(null)",
+            "Command": "/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch",
+            "SubmitLine": "sbatch",
+            "WorkDir": "/mnt/project/perun2601449/dp_llm_cfd",
+            "StdErr": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-phi4_mini_123760.err",
+            "StdIn": "/dev/null",
+            "StdOut": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-phi4_mini_123760.out",
+            "TresPerNode": "gres/gpu:1",
+            "TresPerTask": "cpu=4"
+          },
+          "scheduler_sha256": "db75332a0f879216adb85ff5f0c8ce89a68c69991d52467a478ec6252f08907c",
+          "scheduler_uid_proof": {
+            "authenticated_uid": 507402392,
+            "original_user_field": "507402392(507402392)",
+            "original_scheduler_sha256": "ba669d9b6c5a65d9676269131a375cd382a4e85261dda4682f2e86fc01e295a0",
+            "original_scheduler_text": "JobId=123760 JobName=dp-seq-phi4_mini UserId=507402392(507402392) GroupId=domain users(507400513) MCS_label=N/A Priority=1268 Nice=0 Account=perun2601449 QOS=perun2601449 JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:03:39 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-10-21T12:16:52 EligibleTime=2026-10-21T12:16:52 AccrueTime=2026-10-21T12:16:52 StartTime=2026-10-21T12:16:53 EndTime=2026-10-21T12:20:32 Deadline=N/A PreemptEligibleTime=2026-10-21T12:16:53 PreemptTime=None SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-21T12:16:53 Scheduler=Main Partition=gpu_short AllocNode:Sid=login01:3678565 ReqNodeList=(null) ExcNodeList=(null) NodeList=gpu23 BatchHost=gpu23 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 AllocTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=80G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Exclusive=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch SubmitLine=sbatch --hold --parsable --no-requeue --export=NIL --time=10 --job-name=dp-seq-phi4_mini /mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch phi4_mini /mnt/project/perun2601449/dp_llm_cfd/results/llm_search_prepare/sequential_preflight_123757/freeze.json WorkDir=/mnt/project/perun2601449/dp_llm_cfd StdErr=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-phi4_mini_123760.err StdIn=/dev/null StdOut=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-phi4_mini_123760.out TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n",
+            "normalization": "Display-name canonicalization ONLY after numeric UID verification"
+          }
+        },
+        {
+          "charged_gpu_seconds": 270,
+          "gpus": 1,
+          "job_id": "123761",
+          "label": "granite33_8b",
+          "reservation_gpu_seconds": 601,
+          "status": "settled",
+          "wall_limit_seconds": 600,
+          "reported_runtime_seconds": 269,
+          "scheduler_fields": {
+            "JobId": "123761",
+            "JobName": "dp-seq-granite33_8b",
+            "UserId": "lutoke823(507402392)",
+            "GroupId": "domain",
+            "MCS_label": "N/A",
+            "Priority": "1268",
+            "Nice": "0",
+            "Account": "perun2601449",
+            "QOS": "perun2601449",
+            "JobState": "COMPLETED",
+            "Reason": "None",
+            "Dependency": "(null)",
+            "Requeue": "0",
+            "Restarts": "0",
+            "BatchFlag": "1",
+            "Reboot": "0",
+            "ExitCode": "0:0",
+            "RunTime": "00:04:29",
+            "TimeLimit": "00:10:00",
+            "TimeMin": "N/A",
+            "SubmitTime": "2026-10-21T12:16:52",
+            "EligibleTime": "2026-10-21T12:16:52",
+            "AccrueTime": "2026-10-21T12:16:52",
+            "StartTime": "2026-10-21T12:16:53",
+            "EndTime": "2026-10-21T12:21:22",
+            "Deadline": "N/A",
+            "PreemptEligibleTime": "2026-10-21T12:16:53",
+            "PreemptTime": "None",
+            "SuspendTime": "None",
+            "SecsPreSuspend": "0",
+            "LastSchedEval": "2026-10-21T12:16:53",
+            "Scheduler": "Main",
+            "Partition": "gpu_short",
+            "ReqNodeList": "(null)",
+            "ExcNodeList": "(null)",
+            "NodeList": "gpu23",
+            "BatchHost": "gpu23",
+            "NumNodes": "1",
+            "NumCPUs": "4",
+            "NumTasks": "1",
+            "ReqTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "AllocTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "CoreSpec": "*",
+            "MinCPUsNode": "4",
+            "MinMemoryNode": "80G",
+            "MinTmpDiskNode": "0",
+            "Features": "(null)",
+            "DelayBoot": "00:00:00",
+            "OverSubscribe": "NO",
+            "Exclusive": "NO",
+            "Contiguous": "0",
+            "Licenses": "(null)",
+            "LicensesAlloc": "(null)",
+            "Network": "(null)",
+            "Command": "/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch",
+            "SubmitLine": "sbatch",
+            "WorkDir": "/mnt/project/perun2601449/dp_llm_cfd",
+            "StdErr": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-granite33_8b_123761.err",
+            "StdIn": "/dev/null",
+            "StdOut": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-granite33_8b_123761.out",
+            "TresPerNode": "gres/gpu:1",
+            "TresPerTask": "cpu=4"
+          },
+          "scheduler_sha256": "3b7dba245dedfacf5c73eb34ddc6687b87857087cf0f98eb72ee15849a1c2d56",
+          "scheduler_uid_proof": {
+            "authenticated_uid": 507402392,
+            "original_user_field": "507402392(507402392)",
+            "original_scheduler_sha256": "dde2ab4a5dea04b57cee2cfe270f399ed3f9354f809c42222ff10f6087433f77",
+            "original_scheduler_text": "JobId=123761 JobName=dp-seq-granite33_8b UserId=507402392(507402392) GroupId=domain users(507400513) MCS_label=N/A Priority=1268 Nice=0 Account=perun2601449 QOS=perun2601449 JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:04:29 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-10-21T12:16:52 EligibleTime=2026-10-21T12:16:52 AccrueTime=2026-10-21T12:16:52 StartTime=2026-10-21T12:16:53 EndTime=2026-10-21T12:21:22 Deadline=N/A PreemptEligibleTime=2026-10-21T12:16:53 PreemptTime=None SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-21T12:16:53 Scheduler=Main Partition=gpu_short AllocNode:Sid=login01:3678565 ReqNodeList=(null) ExcNodeList=(null) NodeList=gpu23 BatchHost=gpu23 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 AllocTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=80G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Exclusive=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch SubmitLine=sbatch --hold --parsable --no-requeue --export=NIL --time=10 --job-name=dp-seq-granite33_8b /mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch granite33_8b /mnt/project/perun2601449/dp_llm_cfd/results/llm_search_prepare/sequential_preflight_123757/freeze.json WorkDir=/mnt/project/perun2601449/dp_llm_cfd StdErr=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-granite33_8b_123761.err StdIn=/dev/null StdOut=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-granite33_8b_123761.out TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n",
+            "normalization": "Display-name canonicalization ONLY after numeric UID verification"
+          }
+        },
+        {
+          "charged_gpu_seconds": 265,
+          "gpus": 1,
+          "job_id": "123762",
+          "label": "controls",
+          "reservation_gpu_seconds": 361,
+          "status": "settled",
+          "wall_limit_seconds": 360,
+          "reported_runtime_seconds": 264,
+          "scheduler_fields": {
+            "JobId": "123762",
+            "JobName": "dp-seq-controls",
+            "UserId": "lutoke823(507402392)",
+            "GroupId": "domain",
+            "MCS_label": "N/A",
+            "Priority": "1268",
+            "Nice": "0",
+            "Account": "perun2601449",
+            "QOS": "perun2601449",
+            "JobState": "COMPLETED",
+            "Reason": "None",
+            "Dependency": "(null)",
+            "Requeue": "0",
+            "Restarts": "0",
+            "BatchFlag": "1",
+            "Reboot": "0",
+            "ExitCode": "0:0",
+            "RunTime": "00:04:24",
+            "TimeLimit": "00:06:00",
+            "TimeMin": "N/A",
+            "SubmitTime": "2026-10-21T12:16:52",
+            "EligibleTime": "2026-10-21T12:16:52",
+            "AccrueTime": "2026-10-21T12:16:52",
+            "StartTime": "2026-10-21T12:16:53",
+            "EndTime": "2026-10-21T12:21:17",
+            "Deadline": "N/A",
+            "PreemptEligibleTime": "2026-10-21T12:16:53",
+            "PreemptTime": "None",
+            "SuspendTime": "None",
+            "SecsPreSuspend": "0",
+            "LastSchedEval": "2026-10-21T12:16:53",
+            "Scheduler": "Main",
+            "Partition": "gpu_short",
+            "ReqNodeList": "(null)",
+            "ExcNodeList": "(null)",
+            "NodeList": "gpu23",
+            "BatchHost": "gpu23",
+            "NumNodes": "1",
+            "NumCPUs": "4",
+            "NumTasks": "1",
+            "ReqTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "AllocTRES": "cpu=4,mem=80G,node=1,billing=5,gres/gpu=1",
+            "CoreSpec": "*",
+            "MinCPUsNode": "4",
+            "MinMemoryNode": "80G",
+            "MinTmpDiskNode": "0",
+            "Features": "(null)",
+            "DelayBoot": "00:00:00",
+            "OverSubscribe": "NO",
+            "Exclusive": "NO",
+            "Contiguous": "0",
+            "Licenses": "(null)",
+            "LicensesAlloc": "(null)",
+            "Network": "(null)",
+            "Command": "/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch",
+            "SubmitLine": "sbatch",
+            "WorkDir": "/mnt/project/perun2601449/dp_llm_cfd",
+            "StdErr": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-controls_123762.err",
+            "StdIn": "/dev/null",
+            "StdOut": "/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-controls_123762.out",
+            "TresPerNode": "gres/gpu:1",
+            "TresPerTask": "cpu=4"
+          },
+          "scheduler_sha256": "4cf4a932a5a977b6cc41fc5916833a91136ec3c4877ad8837d7a3d0005126381",
+          "scheduler_uid_proof": {
+            "authenticated_uid": 507402392,
+            "original_user_field": "507402392(507402392)",
+            "original_scheduler_sha256": "710853b298b7851c2fdb438ca06dd257904856c76217dc63d46870514c1bd8ea",
+            "original_scheduler_text": "JobId=123762 JobName=dp-seq-controls UserId=507402392(507402392) GroupId=domain users(507400513) MCS_label=N/A Priority=1268 Nice=0 Account=perun2601449 QOS=perun2601449 JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:04:24 TimeLimit=00:06:00 TimeMin=N/A SubmitTime=2026-10-21T12:16:52 EligibleTime=2026-10-21T12:16:52 AccrueTime=2026-10-21T12:16:52 StartTime=2026-10-21T12:16:53 EndTime=2026-10-21T12:21:17 Deadline=N/A PreemptEligibleTime=2026-10-21T12:16:53 PreemptTime=None SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-21T12:16:53 Scheduler=Main Partition=gpu_short AllocNode:Sid=login01:3678565 ReqNodeList=(null) ExcNodeList=(null) NodeList=gpu23 BatchHost=gpu23 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 AllocTRES=cpu=4,mem=80G,node=1,billing=5,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=80G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Exclusive=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch SubmitLine=sbatch --hold --parsable --no-requeue --export=NIL --time=6 --job-name=dp-seq-controls /mnt/project/perun2601449/dp_llm_cfd/test/scripts/111_sequential_preflight.sbatch controls /mnt/project/perun2601449/dp_llm_cfd/results/llm_search_prepare/sequential_preflight_123757/freeze.json WorkDir=/mnt/project/perun2601449/dp_llm_cfd StdErr=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-controls_123762.err StdIn=/dev/null StdOut=/mnt/project/perun2601449/dp_llm_cfd/logs/dp-seq-controls_123762.out TresPerNode=gres/gpu:1 TresPerTask=cpu=4\n",
+            "normalization": "Display-name canonicalization ONLY after numeric UID verification"
+          }
+        }
+      ],
+      "revision": 21,
+      "spec": {
+        "code_sha256": "99e7e7328b727b05079dee3d182b28799683e369c40da0997234c73592d7c8f9",
+        "gpu_seconds_limit": 3000,
+        "identity": {
+          "account": "perun2601449",
+          "purpose": "four-family v3 sequential technical preflight, NOT main experiment",
+          "user": "lutoke823",
+          "version": "20261021-sequential-v1"
+        },
+        "schema": 1
+      }
+    }
+  },
+  "test_evaluated": false,
+  "main_authorized": false,
+  "warning": "Two epochs, two adaptive attempts and one search repetition. Do not infer model-family ranking or comparative LLM utility."
+}

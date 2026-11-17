@@ -1,0 +1,24 @@
+{
+  "status": "REFERENCE_DIVERGENCE_OK",
+  "scenario_id": "tr005",
+  "split": "train",
+  "states": 201,
+  "divergence_rms_s_inv": {
+    "mean": 0.04058525241228436,
+    "p50": 0.04062389549122018,
+    "p95": 0.04118668917016236,
+    "max": 0.04122075519848057
+  },
+  "normalized_divergence_rms": {
+    "mean": 0.022428692122578205,
+    "p50": 0.022450047508305895,
+    "p95": 0.022761065067721308,
+    "max": 0.022779891030739265
+  },
+  "protected_scenarios_not_read": [
+    "ti001",
+    "ti002",
+    "to001",
+    "to002"
+  ]
+}

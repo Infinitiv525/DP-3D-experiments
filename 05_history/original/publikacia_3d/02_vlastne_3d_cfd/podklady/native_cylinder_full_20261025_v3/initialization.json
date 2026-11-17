@@ -1,0 +1,13 @@
+{
+  "status": "PRIVATE_CHECKPOINT40_CLONED",
+  "source_case": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/cylinder_temporal_20261023_v1/a2_sc_001_coarse_128179",
+  "case": "/mnt/project/perun2601449/dp_llm_cfd/dataset_a/v2/cylinder_full_20261025_v3/a2_sc_001",
+  "checkpoint": {
+    "tau": 40.0,
+    "time_s": 19.428571428571427,
+    "directory": "19.4285714285714519"
+  },
+  "source_modified": false,
+  "prefix_states_reused": 101,
+  "copy_proof_sha256": "98b26d229acd32660080afc3bb25f4a13c456ede115cb8760ba2d67d596e3ebf"
+}

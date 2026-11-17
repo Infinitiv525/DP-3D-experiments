@@ -1,0 +1,115 @@
+{
+  "status": "FULL_PILOT_COMPLETION_REVIEW_PASSED",
+  "date": "2026-10-27",
+  "states": 461,
+  "tau_range": [
+    0,
+    400
+  ],
+  "physical_time_range_s": [
+    0,
+    194.28571428571428
+  ],
+  "prefix_reused": 101,
+  "new_states": 360,
+  "manifest_sha256": "688103b2f9e28fdc8cbcabb99e8e550e049f0295905b01ec82ffafe883e502e3",
+  "compact_bytes": 1757447654,
+  "force_samples": 154690,
+  "force_first_tau": 0.0014931303642520591,
+  "force_last_tau": 400.0,
+  "scheduler": [
+    {
+      "status": "CPU_SCHEDULER_CAPTURED",
+      "job": "130607",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "cpu_count": 32,
+      "runtime_seconds": 22311,
+      "allocated_core_seconds": 713952,
+      "peak_memory_unavailable": true,
+      "query_sha256": "79abbbb2749974f6aeb516bf01211f90d763303101dc84774f6b79fc4c851d67",
+      "source_sha256": "90a7d429a61263ca8bce0254c6b9cdd3c40554821a813a4604cc256e4795a1ed"
+    },
+    {
+      "status": "CPU_SCHEDULER_CAPTURED",
+      "job": "130608",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "cpu_count": 32,
+      "runtime_seconds": 38835,
+      "allocated_core_seconds": 1242720,
+      "peak_memory_unavailable": true,
+      "query_sha256": "236911e555343504d30838b4f4c4dfa93956abab14e8231cd53a6d0526747ae9",
+      "source_sha256": "90a7d429a61263ca8bce0254c6b9cdd3c40554821a813a4604cc256e4795a1ed"
+    },
+    {
+      "status": "CPU_SCHEDULER_CAPTURED",
+      "job": "130609",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "cpu_count": 32,
+      "runtime_seconds": 38922,
+      "allocated_core_seconds": 1245504,
+      "peak_memory_unavailable": true,
+      "query_sha256": "006c4384f14d964b5e7162493ce81bf1fcaf8991bade0b67c1de82eac4ac7d87",
+      "source_sha256": "90a7d429a61263ca8bce0254c6b9cdd3c40554821a813a4604cc256e4795a1ed"
+    },
+    {
+      "status": "CPU_SCHEDULER_CAPTURED",
+      "job": "130610",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "cpu_count": 32,
+      "runtime_seconds": 44295,
+      "allocated_core_seconds": 1417440,
+      "peak_memory_unavailable": true,
+      "query_sha256": "0d4bac6af64c6c55f4305b1e9acc1c6af55c09d7883a36ad03512747de37ada6",
+      "source_sha256": "90a7d429a61263ca8bce0254c6b9cdd3c40554821a813a4604cc256e4795a1ed"
+    },
+    {
+      "status": "CPU_SCHEDULER_CAPTURED",
+      "job": "130611",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "cpu_count": 32,
+      "runtime_seconds": 22289,
+      "allocated_core_seconds": 713248,
+      "peak_memory_unavailable": true,
+      "query_sha256": "d5e56584c7825441cfd99e538bf7a21d104d6a84a2c96d68496f34f1dc19d52b",
+      "source_sha256": "90a7d429a61263ca8bce0254c6b9cdd3c40554821a813a4604cc256e4795a1ed"
+    },
+    {
+      "status": "CPU_SCHEDULER_CAPTURED",
+      "job": "130612",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "cpu_count": 32,
+      "runtime_seconds": 23076,
+      "allocated_core_seconds": 738432,
+      "peak_memory_unavailable": true,
+      "query_sha256": "848eec73e34001d8668da1bcb43329eb81932c40b8501a01c3c287791c1962df",
+      "source_sha256": "90a7d429a61263ca8bce0254c6b9cdd3c40554821a813a4604cc256e4795a1ed"
+    },
+    {
+      "status": "CPU_SCHEDULER_CAPTURED",
+      "job": "130613",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "cpu_count": 1,
+      "runtime_seconds": 2419,
+      "allocated_core_seconds": 2419,
+      "peak_memory_unavailable": true,
+      "query_sha256": "fd3f8511a357e3bc1d209493070da8a127e089c926c8d70f7cf2febfea9c8aaf",
+      "source_sha256": "90a7d429a61263ca8bce0254c6b9cdd3c40554821a813a4604cc256e4795a1ed"
+    }
+  ],
+  "allocated_core_hours_main_chain": 1687.1430555555555,
+  "max_actual_co": 0.1005057529,
+  "max_abs_final_continuity": 7.313900924e-11,
+  "all_manifest_file_sizes_and_metadata_hashes_checked": true,
+  "CFD_npz_rehashed_in_this_review": false,
+  "field_finiteness_and_npz_hash_source": "completed export130613; new review verifies its frozen manifest and file metadata, not a repeated numeric scan",
+  "late_fine_comparator_available": false,
+  "production_accepted": false,
+  "LLM_training_started": false
+}

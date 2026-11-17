@@ -1,0 +1,32 @@
+{
+  "status": "MAIN_CANDIDATE_PLANNING_CHECKS_PASSED",
+  "checks": {
+    "corrected_cache": true,
+    "revision_and_split": true,
+    "train_only_norm_identity": true,
+    "execution_disabled": true,
+    "results/flowbench/data_audit_123590/summary.json": true,
+    "results/llm_search_prepare/transport_review_123872/summary.json": true,
+    "qwen3_8b_pinned_model_manifest": true,
+    "ministral3_8b_pinned_model_manifest": true,
+    "phi4_mini_pinned_model_manifest": true,
+    "granite33_8b_pinned_model_manifest": true
+  },
+  "manifest_sha256": "2541674b338c58bdd80f319d8310019838eeb3d9a034b9571346af97b4e83bb1",
+  "shared_training_count": 9,
+  "independent_search_count": 18,
+  "adaptive_attempt_count_upper_bound": 162,
+  "maximum_final_training_references": 95,
+  "final_unique_training_count": "depends on validation-selected exact duplicates,5..95",
+  "scope": "FlowBench steady 3D corrected64 only; not own transient/free-surface CFD",
+  "main_execution_authorized": false,
+  "new_gpu_jobs": 0,
+  "test_evaluated": false,
+  "not_yet_released": [
+    "full main search-stage orchestration",
+    "main source freeze and execution review",
+    "explicit user approval of70GPU-h",
+    "separate final-test gate"
+  ],
+  "warning": "This is a planning/source snapshot, NOT MAIN_SOURCE_FREEZE_PASSED or user approval. Numerical main adapter not GPU-exercised in this step. Model manifests checked; model weights not rehashed here."
+}

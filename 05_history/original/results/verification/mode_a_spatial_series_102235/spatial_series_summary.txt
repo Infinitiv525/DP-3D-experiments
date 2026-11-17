@@ -1,0 +1,13 @@
+status=MODE_A_SPATIAL_SERIES_OK
+timestamp_utc=2026-10-09T00:19:34Z
+job_id=102235
+source_case=/mnt/project/perun2601449/dp_llm_cfd/verification/cylinder3d/cylinder3d_gmsh_re200_fine_t420_co050_102084
+first_sample_time_s=160
+last_sample_time_s=420
+sample_interval_s=10
+time_directories=27
+sample_lines_per_time=6
+points_per_line=109
+sample_files=162
+mpi_ranks=64
+wall_seconds=28

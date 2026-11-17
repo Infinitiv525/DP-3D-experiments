@@ -1,0 +1,9 @@
+{
+  "status": "SEARCH_CONTROLS_CPU_TESTS_PASSED",
+  "tests_run": 9,
+  "failures": [],
+  "errors": [],
+  "optuna": "5.0.0",
+  "synthetic_cpu_only": true,
+  "test_model_metrics_evaluated": false
+}

@@ -1,0 +1,25 @@
+status=OPENFOAM_NATIVE_SMOKE_OK
+timestamp_utc=2026-10-08T08:56:54Z
+job_id=101584
+host=cn01
+case=/mnt/project/perun2601449/dp_llm_cfd/smoke/native-openfoam-cavity-101584
+foam_api=2412
+solver=/mnt/project/perun2601449/dp_llm_cfd/envs/openfoam-2412/bin/icoFoam
+last_time=0.5
+mesh_summary:
+  nPoints: 882
+  nCells: 400
+  nFaces: 1640
+solver_tail:
+
+Courant Number mean: 0.222158 max: 0.852134
+smoothSolver:  Solving for Ux, Initial residual = 2.3091e-07, Final residual = 2.3091e-07, No Iterations 0
+smoothSolver:  Solving for Uy, Initial residual = 5.0684e-07, Final residual = 5.0684e-07, No Iterations 0
+DICPCG:  Solving for p, Initial residual = 8.63844e-07, Final residual = 8.63844e-07, No Iterations 0
+time step continuity errors : sum local = 8.8828e-09, global = 4.94571e-19, cumulative = 1.10417e-17
+DICPCG:  Solving for p, Initial residual = 9.59103e-07, Final residual = 9.59103e-07, No Iterations 0
+time step continuity errors : sum local = 9.66354e-09, global = 1.13175e-18, cumulative = 1.21735e-17
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+End
+

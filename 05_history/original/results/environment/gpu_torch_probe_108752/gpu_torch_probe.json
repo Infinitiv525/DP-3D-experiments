@@ -1,0 +1,36 @@
+{
+  "status": "GPU_TORCH_PROBE_OK",
+  "timestamp_unix": 1791960596.434863,
+  "python_version": "3.12.15",
+  "torch_version": "2.12.0+cu130",
+  "torch_cuda_build": "13.0",
+  "gpu_name": "NVIDIA H200",
+  "gpu_compute_capability": [
+    9,
+    0
+  ],
+  "gpu_total_memory_bytes": 150109880320,
+  "input_shape": [
+    1,
+    16,
+    64,
+    32,
+    16
+  ],
+  "output_shape": [
+    1,
+    4,
+    64,
+    32,
+    16
+  ],
+  "parameter_count": 41668,
+  "training_step_loss": 1.013646125793457,
+  "peak_memory_bytes": 29850112,
+  "inference_iterations": 200,
+  "inference_note": "Environment probe only; not final model latency.",
+  "p50_ms": 0.10044799745082855,
+  "p95_ms": 0.10153759829699993,
+  "p99_ms": 0.10347583800554273,
+  "mean_ms": 0.10049119975417853
+}

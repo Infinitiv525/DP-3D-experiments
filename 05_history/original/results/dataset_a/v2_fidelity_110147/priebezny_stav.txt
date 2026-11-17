@@ -1,0 +1,21 @@
+PRIEBEZNY STAV FIDELITY KONTROLY — 15. 10. 2026
+
+Obe solverove vetvy 110147 dokoncili tau=0–40.
+Jemnejsia siet: 5 h 16 min 24 s na 32 CPU, asi 168,75 core-h.
+Redsia siet s cielovym Co=0,1: 57 min 30 s, asi 30,67 core-h.
+Numericke kontroly Co a konecnej kontinuity presli.
+
+Nadvazny export a porovnanie: uloha 110746, pri kontrole bezi.
+Spracuje dve serie po 101 stavov a porovna ich s pilotom 109922.
+Rychlostne a tlakove metriky este nie su hotove.
+
+Predbezne rozdiely priemerneho odporu Cd, kandidat oproti jemnejsej sieti:
+tau 4–12: 0,642 %; tau 12–24: 1,591 %; tau 24–40: 2,116 %.
+Absolutny rozdiel priemerneho vztlakoveho koeficientu Cl je najviac 0,02873.
+Tieto silove ukazovatele splnaju orientacne limity pilotu.
+Pri sprisneni kroku na rovnakej redsej sieti je zmena priemerneho Cd
+najviac 0,0417 % a absolutna zmena priemerneho Cl najviac 0,00549.
+
+Ide iba o priebezny vysledok zo silovych historii. O prijati siete
+rozhodnu aj preddefinovane metriky tlaku a rychlosti v domene a uplave.
+Prva produkcna davka zatial nie je spustena.

@@ -1,0 +1,407 @@
+{
+  "status": "FLOWBENCH_CURRENT_CHECKPOINT_LATENCY_AUDIT_COMPLETE",
+  "technical_pilot": true,
+  "test_evaluated": false,
+  "test_targets_loaded": false,
+  "config": {
+    "version": 2,
+    "purpose": "Audit current corrected-cache runtime20 checkpoint, no model selection or test labels",
+    "checkpoint_relative": "results/llm_search_prepare/runtime20_123454",
+    "data_relative": "public_data/flowbench/937c672604d4c9f39aceedf1fa2f0a603695264b/uniform64_native_gauge",
+    "split_sha256": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+    "precision": "FP32 eager; complex64 FFT; TF32 disabled; no autocast, compile or CUDA graphs",
+    "batch_size": 1,
+    "validation_geometries": 5,
+    "rounds": 3,
+    "warmup_per_mode_per_round": 100,
+    "measured_per_mode_per_round": 1000,
+    "mode_order": [
+      "model_only",
+      "gpu_pipeline",
+      "host_to_host"
+    ],
+    "primary_5ms_measurement": "gpu_pipeline synchronized wall p99",
+    "thresholds_ms": [
+      5.0,
+      16.7,
+      33.3
+    ],
+    "max_process_seconds": 250,
+    "host_input": "ordinary pageable float32 RAM; NOT pinned-memory optimization",
+    "excluded": [
+      "disk IO",
+      "model loading",
+      "geometry/SDF generation",
+      "visualization",
+      "LLM decisions"
+    ],
+    "notes": "Steady mapping, not temporal rollout. Host-to-host includes H2D, preprocessing, model, denormalization, D2H. All modes evaluated with batch1 and a completed output each call. Latency alone is not accuracy certification."
+  },
+  "selected_validation_ids": [
+    20,
+    30,
+    60,
+    110,
+    120
+  ],
+  "checkpoint_sha256": "b313ed4f977ab6b0e42e57529745a37b4816ae93c35fc0f16d89bed726eeae98",
+  "split_sha256": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+  "config_sha256": "173753e6eea55acaddf8c3cd1ea1213879efb7a73e9593c231365c4abea76fe3",
+  "normalization_sha256": "4be8c93636019e6ab4765dc366e041dd28a0bc97fb560b715b0c44192edf2ce9",
+  "source_validation_S": 0.25366450166747495,
+  "output_equivalence_checks": [
+    {
+      "sample": 20,
+      "wrappers_bit_identical": true
+    },
+    {
+      "sample": 30,
+      "wrappers_bit_identical": true
+    },
+    {
+      "sample": 60,
+      "wrappers_bit_identical": true
+    },
+    {
+      "sample": 110,
+      "wrappers_bit_identical": true
+    },
+    {
+      "sample": 120,
+      "wrappers_bit_identical": true
+    }
+  ],
+  "gpu": "NVIDIA H200",
+  "gpu_info": "name, uuid, driver_version, memory.total [MiB], compute_mode\nNVIDIA H200, GPU-a44a6df7-2582-0d26-a951-8678a3327144, 580.159.04, 143771 MiB, Default\n",
+  "torch": "2.12.0+cu130",
+  "cuda": "13.0",
+  "numpy": "2.5.4",
+  "per_mode": {
+    "model_only": {
+      "n": 3000,
+      "wall_ms": {
+        "p50": 0.6798119284212589,
+        "p95": 0.6852201651781797,
+        "p99": 0.6883457582443953,
+        "min": 0.6719706580042839,
+        "max": 1.8109921365976334,
+        "mean": 0.6805391767993569,
+        "percentile_method": "numpy linear"
+      },
+      "cuda_event_ms": {
+        "p50": 0.6691840291023254,
+        "p95": 0.674560010433197,
+        "p99": 0.6773449838161468,
+        "min": 0.6613439917564392,
+        "max": 1.7997440099716187,
+        "mean": 0.6698738456567128,
+        "percentile_method": "numpy linear"
+      },
+      "wall_fraction_at_or_below": {
+        "5.0": 1.0,
+        "16.7": 1.0,
+        "33.3": 1.0
+      },
+      "all_round_wall_p99_le_5ms": true
+    },
+    "gpu_pipeline": {
+      "n": 3000,
+      "wall_ms": {
+        "p50": 0.7150797173380852,
+        "p95": 0.720544345676899,
+        "p99": 0.7232468947768211,
+        "min": 0.7077939808368683,
+        "max": 0.7412536069750786,
+        "mean": 0.7153781879072388,
+        "percentile_method": "numpy linear"
+      },
+      "cuda_event_ms": {
+        "p50": 0.7043200135231018,
+        "p95": 0.7096335798501968,
+        "p99": 0.7124806487560272,
+        "min": 0.6971840262413025,
+        "max": 0.7206400036811829,
+        "mean": 0.7046010133226712,
+        "percentile_method": "numpy linear"
+      },
+      "wall_fraction_at_or_below": {
+        "5.0": 1.0,
+        "16.7": 1.0,
+        "33.3": 1.0
+      },
+      "all_round_wall_p99_le_5ms": true
+    },
+    "host_to_host": {
+      "n": 3000,
+      "wall_ms": {
+        "p50": 1.0455911979079247,
+        "p95": 1.0545156430453062,
+        "p99": 1.05900090187788,
+        "min": 1.0313596576452255,
+        "max": 1.5880567952990532,
+        "mean": 1.0460099823152025,
+        "percentile_method": "numpy linear"
+      },
+      "cuda_event_ms": {
+        "p50": 1.035264015197754,
+        "p95": 1.0440335810184478,
+        "p99": 1.0482246124744414,
+        "min": 1.0211520195007324,
+        "max": 1.5772160291671753,
+        "mean": 1.03563677918911,
+        "percentile_method": "numpy linear"
+      },
+      "wall_fraction_at_or_below": {
+        "5.0": 1.0,
+        "16.7": 1.0,
+        "33.3": 1.0
+      },
+      "all_round_wall_p99_le_5ms": true
+    }
+  },
+  "per_round": {
+    "model_only": {
+      "1": {
+        "n": 1000,
+        "wall_ms": {
+          "p50": 0.6803828291594982,
+          "p95": 0.6861749570816755,
+          "p99": 0.6899569649249315,
+          "min": 0.6741136312484741,
+          "max": 1.8109921365976334,
+          "mean": 0.681927434168756,
+          "percentile_method": "numpy linear"
+        },
+        "cuda_event_ms": {
+          "p50": 0.6696640253067017,
+          "p95": 0.6753648221492767,
+          "p99": 0.6783363437652588,
+          "min": 0.6635839939117432,
+          "max": 1.7997440099716187,
+          "mean": 0.6711820479035377,
+          "percentile_method": "numpy linear"
+        },
+        "wall_fraction_at_or_below": {
+          "5.0": 1.0,
+          "16.7": 1.0,
+          "33.3": 1.0
+        }
+      },
+      "2": {
+        "n": 1000,
+        "wall_ms": {
+          "p50": 0.6795711815357208,
+          "p95": 0.68432935513556,
+          "p99": 0.6864768359810114,
+          "min": 0.6719706580042839,
+          "max": 0.6996514275670052,
+          "mean": 0.679848744533956,
+          "percentile_method": "numpy linear"
+        },
+        "cuda_event_ms": {
+          "p50": 0.6689759790897369,
+          "p95": 0.6737599968910217,
+          "p99": 0.6761609381437301,
+          "min": 0.6613439917564392,
+          "max": 0.6858559846878052,
+          "mean": 0.6692593609690666,
+          "percentile_method": "numpy linear"
+        },
+        "wall_fraction_at_or_below": {
+          "5.0": 1.0,
+          "16.7": 1.0,
+          "33.3": 1.0
+        }
+      },
+      "3": {
+        "n": 1000,
+        "wall_ms": {
+          "p50": 0.679532065987587,
+          "p95": 0.6847009062767029,
+          "p99": 0.6868737656623125,
+          "min": 0.6731618195772171,
+          "max": 0.7017049938440323,
+          "mean": 0.6798413516953588,
+          "percentile_method": "numpy linear"
+        },
+        "cuda_event_ms": {
+          "p50": 0.6688960194587708,
+          "p95": 0.6741136223077774,
+          "p99": 0.6762246334552765,
+          "min": 0.6622080206871033,
+          "max": 0.6908800005912781,
+          "mean": 0.6691801280975341,
+          "percentile_method": "numpy linear"
+        },
+        "wall_fraction_at_or_below": {
+          "5.0": 1.0,
+          "16.7": 1.0,
+          "33.3": 1.0
+        }
+      }
+    },
+    "gpu_pipeline": {
+      "1": {
+        "n": 1000,
+        "wall_ms": {
+          "p50": 0.7149549201130867,
+          "p95": 0.7209043018519878,
+          "p99": 0.7236476615071297,
+          "min": 0.7077939808368683,
+          "max": 0.7314188405871391,
+          "mean": 0.7153247660025954,
+          "percentile_method": "numpy linear"
+        },
+        "cuda_event_ms": {
+          "p50": 0.7042239904403687,
+          "p95": 0.7097920179367065,
+          "p99": 0.7128326141834259,
+          "min": 0.6971840262413025,
+          "max": 0.7206400036811829,
+          "mean": 0.704570560157299,
+          "percentile_method": "numpy linear"
+        },
+        "wall_fraction_at_or_below": {
+          "5.0": 1.0,
+          "16.7": 1.0,
+          "33.3": 1.0
+        }
+      },
+      "2": {
+        "n": 1000,
+        "wall_ms": {
+          "p50": 0.7145586423575878,
+          "p95": 0.7198518607765436,
+          "p99": 0.721939392387867,
+          "min": 0.7085651159286499,
+          "max": 0.7412536069750786,
+          "mean": 0.7148937387391925,
+          "percentile_method": "numpy linear"
+        },
+        "cuda_event_ms": {
+          "p50": 0.7038080096244812,
+          "p95": 0.7091535836458206,
+          "p99": 0.7113011419773102,
+          "min": 0.6980800032615662,
+          "max": 0.7201600074768066,
+          "mean": 0.7041350397467613,
+          "percentile_method": "numpy linear"
+        },
+        "wall_fraction_at_or_below": {
+          "5.0": 1.0,
+          "16.7": 1.0,
+          "33.3": 1.0
+        }
+      },
+      "3": {
+        "n": 1000,
+        "wall_ms": {
+          "p50": 0.7156203500926495,
+          "p95": 0.7209746632725,
+          "p99": 0.7232468947768211,
+          "min": 0.7094964385032654,
+          "max": 0.7367068901658058,
+          "mean": 0.7159160589799285,
+          "percentile_method": "numpy linear"
+        },
+        "cuda_event_ms": {
+          "p50": 0.7047680020332336,
+          "p95": 0.7100480198860168,
+          "p99": 0.7125443434715271,
+          "min": 0.6985599994659424,
+          "max": 0.7201279997825623,
+          "mean": 0.7050974400639534,
+          "percentile_method": "numpy linear"
+        },
+        "wall_fraction_at_or_below": {
+          "5.0": 1.0,
+          "16.7": 1.0,
+          "33.3": 1.0
+        }
+      }
+    },
+    "host_to_host": {
+      "1": {
+        "n": 1000,
+        "wall_ms": {
+          "p50": 1.0458719916641712,
+          "p95": 1.0551280807703733,
+          "p99": 1.0606250073760748,
+          "min": 1.032210886478424,
+          "max": 1.5880567952990532,
+          "mean": 1.0468234550207853,
+          "percentile_method": "numpy linear"
+        },
+        "cuda_event_ms": {
+          "p50": 1.0356160402297974,
+          "p95": 1.0446399450302124,
+          "p99": 1.048783403635025,
+          "min": 1.0216000080108643,
+          "max": 1.5772160291671753,
+          "mean": 1.036452256679535,
+          "percentile_method": "numpy linear"
+        },
+        "wall_fraction_at_or_below": {
+          "5.0": 1.0,
+          "16.7": 1.0,
+          "33.3": 1.0
+        }
+      },
+      "2": {
+        "n": 1000,
+        "wall_ms": {
+          "p50": 1.04539655148983,
+          "p95": 1.0535863693803549,
+          "p99": 1.0586838703602552,
+          "min": 1.0313596576452255,
+          "max": 1.0856520384550095,
+          "mean": 1.0454025827348232,
+          "percentile_method": "numpy linear"
+        },
+        "cuda_event_ms": {
+          "p50": 1.0351200103759766,
+          "p95": 1.0431040525436401,
+          "p99": 1.0467875623703002,
+          "min": 1.0211520195007324,
+          "max": 1.0751999616622925,
+          "mean": 1.0350356483459473,
+          "percentile_method": "numpy linear"
+        },
+        "wall_fraction_at_or_below": {
+          "5.0": 1.0,
+          "16.7": 1.0,
+          "33.3": 1.0
+        }
+      },
+      "3": {
+        "n": 1000,
+        "wall_ms": {
+          "p50": 1.045535784214735,
+          "p95": 1.0545293800532818,
+          "p99": 1.0585714410990477,
+          "min": 1.031460240483284,
+          "max": 1.091310754418373,
+          "mean": 1.045803909189999,
+          "percentile_method": "numpy linear"
+        },
+        "cuda_event_ms": {
+          "p50": 1.0351680517196655,
+          "p95": 1.0440720438957214,
+          "p99": 1.0482892680168152,
+          "min": 1.021183967590332,
+          "max": 1.0809279680252075,
+          "mean": 1.0354224325418473,
+          "percentile_method": "numpy linear"
+        },
+        "wall_fraction_at_or_below": {
+          "5.0": 1.0,
+          "16.7": 1.0,
+          "33.3": 1.0
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 10.645707682706416,
+  "peak_allocated_bytes": 178856960,
+  "warning": "One checkpoint, one GPU allocation. No accuracy/test certification, no statistical independence claim for repeated timings; timing instrumentation included. Host GPU co-tenancy and clock variability remain limitations."
+}

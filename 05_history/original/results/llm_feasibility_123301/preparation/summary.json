@@ -1,0 +1,411 @@
+{
+  "status": "LOCAL_MODELS_DOWNLOAD_COMPLETE",
+  "total_bytes": 61313251943,
+  "models": [
+    {
+      "status": "LOCAL_MODEL_VERIFIED",
+      "spec": {
+        "label": "qwen3_8b",
+        "repo": "Qwen/Qwen3-8B",
+        "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+        "license": "apache-2.0",
+        "loader": "causal",
+        "disable_thinking": true
+      },
+      "path": "/mnt/project/perun2601449/dp_llm_cfd/public_models/llm_feasibility/qwen3_8b/b968826d9c46dd6066d109eabc6255188de91218",
+      "download_bytes": 16397459696,
+      "download_and_verification_seconds": 71.94136442300805,
+      "files": [
+        {
+          "file": "LICENSE",
+          "bytes": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "README.md",
+          "bytes": 16660,
+          "sha256": "0f36caaff9c2516411a7738db384606263ba653c1e63e61d72f511606164d5a6",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "config.json",
+          "bytes": 728,
+          "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "generation_config.json",
+          "bytes": 239,
+          "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "merges.txt",
+          "bytes": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "model-00001-of-00005.safetensors",
+          "bytes": 3996250744,
+          "sha256": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+          "official_lfs_sha256": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f"
+        },
+        {
+          "file": "model-00002-of-00005.safetensors",
+          "bytes": 3993160032,
+          "sha256": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+          "official_lfs_sha256": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282"
+        },
+        {
+          "file": "model-00003-of-00005.safetensors",
+          "bytes": 3959604768,
+          "sha256": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+          "official_lfs_sha256": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836"
+        },
+        {
+          "file": "model-00004-of-00005.safetensors",
+          "bytes": 3187841392,
+          "sha256": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+          "official_lfs_sha256": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a"
+        },
+        {
+          "file": "model-00005-of-00005.safetensors",
+          "bytes": 1244659840,
+          "sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+          "official_lfs_sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff"
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "bytes": 32878,
+          "sha256": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "tokenizer.json",
+          "bytes": 11422654,
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "official_lfs_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "bytes": 9732,
+          "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "vocab.json",
+          "bytes": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "official_lfs_sha256": null
+        }
+      ]
+    },
+    {
+      "status": "LOCAL_MODEL_VERIFIED",
+      "spec": {
+        "label": "ministral3_8b",
+        "repo": "mistralai/Ministral-3-8B-Instruct-2512",
+        "revision": "5b26027e7b19eeb4b7352e1fed3926375dd2cb4d",
+        "license": "apache-2.0",
+        "loader": "mistral3_dequantize_fp8"
+      },
+      "path": "/mnt/project/perun2601449/dp_llm_cfd/public_models/llm_feasibility/ministral3_8b/5b26027e7b19eeb4b7352e1fed3926375dd2cb4d",
+      "download_bytes": 20875282355,
+      "download_and_verification_seconds": 88.63875154699781,
+      "files": [
+        {
+          "file": "README.md",
+          "bytes": 20311,
+          "sha256": "2f37208c16b180cfcc12f94c1a61dd720c5d8106ec3802d7e20c6818dcde5044",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "SYSTEM_PROMPT.txt",
+          "bytes": 2361,
+          "sha256": "0a735af35f974ddfc9fc87c6cb64ee096e833a22deeba131b84463d7efc23544",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "chat_template.jinja",
+          "bytes": 11912,
+          "sha256": "74eeb55fd3341286ec3fd44e902b7120721acc81cd394e96b431f85e93a1ea56",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "config.json",
+          "bytes": 1903,
+          "sha256": "196c38570bb4bc8168a59cc0189c9a9b9974be8dcca6b46dfc109dbd250c01aa",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "consolidated.safetensors",
+          "bytes": 10420633176,
+          "sha256": "ab5e41c341ac8331e653f572218e6bf29082b2360c0207c1f84d9a3c963b27fe",
+          "official_lfs_sha256": "ab5e41c341ac8331e653f572218e6bf29082b2360c0207c1f84d9a3c963b27fe"
+        },
+        {
+          "file": "generation_config.json",
+          "bytes": 131,
+          "sha256": "e0923390059f84a9180b00e5501778acc45ea9856cd7f2fd68208b360927c677",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "model-00001-of-00003.safetensors",
+          "bytes": 4983094790,
+          "sha256": "5a4d6e02534a2a10ce9b54ee1d91020617429d348f09de4cf912bcae362a9fc9",
+          "official_lfs_sha256": "5a4d6e02534a2a10ce9b54ee1d91020617429d348f09de4cf912bcae362a9fc9"
+        },
+        {
+          "file": "model-00002-of-00003.safetensors",
+          "bytes": 4992892530,
+          "sha256": "ca3b3df6c15e1f1e19977b1bb3e1bb8ec77798c2687f0dd87337b0737002f619",
+          "official_lfs_sha256": "ca3b3df6c15e1f1e19977b1bb3e1bb8ec77798c2687f0dd87337b0737002f619"
+        },
+        {
+          "file": "model-00003-of-00003.safetensors",
+          "bytes": 444667504,
+          "sha256": "ee2a5e33fe9dfdc8c013aa856fbafcb1bb9b4168f96ddef9484baa23adcb5d35",
+          "official_lfs_sha256": "ee2a5e33fe9dfdc8c013aa856fbafcb1bb9b4168f96ddef9484baa23adcb5d35"
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "bytes": 103195,
+          "sha256": "91360719f4ce9383f46bb5750cd0b8cb4aec070dd8804c11ed94585a9924409b",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "params.json",
+          "bytes": 1185,
+          "sha256": "3d7e9a056d06e624e5b2fa81c74c4c58640cd8449f4f864c5da8133118a0b96d",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "processor_config.json",
+          "bytes": 976,
+          "sha256": "ece2373c2ae391bce18785a1810543bc6173a1f28b6767cffab2c35dbea5f002",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "tekken.json",
+          "bytes": 16753784,
+          "sha256": "600bb27946565481ecf51ba8aee252e49b9a68507866080ac9c30185bb312843",
+          "official_lfs_sha256": "600bb27946565481ecf51ba8aee252e49b9a68507866080ac9c30185bb312843"
+        },
+        {
+          "file": "tokenizer.json",
+          "bytes": 17077420,
+          "sha256": "99cf274236c60277fcfad861a5a1007518687ad06ba8938760f50b55ffa0b1ef",
+          "official_lfs_sha256": "99cf274236c60277fcfad861a5a1007518687ad06ba8938760f50b55ffa0b1ef"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "bytes": 21177,
+          "sha256": "4a05af595aa11c3436d3b68a616219ae99b303426f708a12b31bc9ce32530728",
+          "official_lfs_sha256": null
+        }
+      ]
+    },
+    {
+      "status": "LOCAL_MODEL_VERIFIED",
+      "spec": {
+        "label": "phi4_mini",
+        "repo": "microsoft/Phi-4-mini-instruct",
+        "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+        "license": "mit",
+        "loader": "causal"
+      },
+      "path": "/mnt/project/perun2601449/dp_llm_cfd/public_models/llm_feasibility/phi4_mini/cfbefacb99257ffa30c83adab238a50856ac3083",
+      "download_bytes": 7693973821,
+      "download_and_verification_seconds": 37.07653968498926,
+      "files": [
+        {
+          "file": "LICENSE",
+          "bytes": 1084,
+          "sha256": "fa8235e5b48faca34e3ca98cf4f694ef08bd216d28b58071a1f85b1d50cb814d",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "NOTICE.md",
+          "bytes": 1809,
+          "sha256": "a3386cc7125ec75ed34d4f0a340c47782982095e251d322e01d8ecab22d87ba4",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "README.md",
+          "bytes": 29246,
+          "sha256": "c4f34916182a3ee87d95d00c92847cfa687ab21dc338a577275f0c34cf0e1dfd",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "added_tokens.json",
+          "bytes": 249,
+          "sha256": "d4f2aceb0f20b71dd1f4bcc7e052e4412946bf281840b8f83d39f259571af486",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "config.json",
+          "bytes": 2504,
+          "sha256": "ac65d86061d3d0d704ee2511fd0eb8713ef19eb6eedba17c3080a4165d5b933b",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "generation_config.json",
+          "bytes": 168,
+          "sha256": "3e3f48753753f92d2b958679151861d4fd7bf26e4dfc41fd47056116c4914dcd",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "merges.txt",
+          "bytes": 2418348,
+          "sha256": "856ce61180bb689282eed6b3a6838bb1f438399be23aefe9d20eb379791fb4ad",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "model-00001-of-00002.safetensors",
+          "bytes": 4903637712,
+          "sha256": "bc703090b63eda16f639fa4de7ac54635c23105ab1da2f6ec4d3403151d38ee6",
+          "official_lfs_sha256": "bc703090b63eda16f639fa4de7ac54635c23105ab1da2f6ec4d3403151d38ee6"
+        },
+        {
+          "file": "model-00002-of-00002.safetensors",
+          "bytes": 2768428504,
+          "sha256": "7ff79b9d2d31076bac2663393451f6530f4fc8ca49b09002116c92c373dba983",
+          "official_lfs_sha256": "7ff79b9d2d31076bac2663393451f6530f4fc8ca49b09002116c92c373dba983"
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "bytes": 16273,
+          "sha256": "613a98d5e5716ca96fa75931abedc9c5a5d95f488ce4d62df71e639fe3ac6c59",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "special_tokens_map.json",
+          "bytes": 587,
+          "sha256": "aff38493227d813e29fcf8406e8e90062f1f031aa47d589325e9c31d89ac7cc3",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "tokenizer.json",
+          "bytes": 15524095,
+          "sha256": "382cc235b56c725945e149cc25f191da667c836655efd0857b004320e90e91ea",
+          "official_lfs_sha256": "382cc235b56c725945e149cc25f191da667c836655efd0857b004320e90e91ea"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "bytes": 2932,
+          "sha256": "9c9b6bc0c94d95f69f826c41069a3e8b387ac3ced89601d201886e99240ac9db",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "vocab.json",
+          "bytes": 3910310,
+          "sha256": "6cb65a857824fa6615bb1782d95d882617a8bbce1da0317118586b36f39e98bd",
+          "official_lfs_sha256": null
+        }
+      ]
+    },
+    {
+      "status": "LOCAL_MODEL_VERIFIED",
+      "spec": {
+        "label": "granite33_8b",
+        "repo": "ibm-granite/granite-3.3-8b-instruct",
+        "revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+        "license": "apache-2.0",
+        "loader": "causal",
+        "disable_thinking": true
+      },
+      "path": "/mnt/project/perun2601449/dp_llm_cfd/public_models/llm_feasibility/granite33_8b/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "download_bytes": 16346536071,
+      "download_and_verification_seconds": 72.25528970999585,
+      "files": [
+        {
+          "file": "README.md",
+          "bytes": 27608,
+          "sha256": "827b04e8019ae72397d7303e8b30f315d4b8f5d1cd18f9f4e3f0d7808f069a35",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "added_tokens.json",
+          "bytes": 207,
+          "sha256": "bb33d55934aa82d29cc62f3d19cdbc60f315763f6ccee21bdfd8b3bde2f33d3b",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "config.json",
+          "bytes": 790,
+          "sha256": "1313edf0d39dcf7ed35a072d341ec11b516c12acc4267cfb6d248c6bdcdddcb7",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "generation_config.json",
+          "bytes": 132,
+          "sha256": "9c95e80167f08fbeb1feba239e0749507c25d18ffab43ffa10887821eed21c38",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "merges.txt",
+          "bytes": 441810,
+          "sha256": "303127a244b0078878156c17229f36d11b7a3a3f8e47b7cfdbb304ff46be5030",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "model-00001-of-00004.safetensors",
+          "bytes": 4974694288,
+          "sha256": "b309f7b9e116fafc27c1100629bfcccbcebdab18a4bf7df7accfa728260dc57e",
+          "official_lfs_sha256": "b309f7b9e116fafc27c1100629bfcccbcebdab18a4bf7df7accfa728260dc57e"
+        },
+        {
+          "file": "model-00002-of-00004.safetensors",
+          "bytes": 4991447808,
+          "sha256": "f2e40f157f0139e4b67bbaa4b10efa351162c062771cb543b143c6916a687266",
+          "official_lfs_sha256": "f2e40f157f0139e4b67bbaa4b10efa351162c062771cb543b143c6916a687266"
+        },
+        {
+          "file": "model-00003-of-00004.safetensors",
+          "bytes": 4970460032,
+          "sha256": "5cf5203a027b7055c995a9d4bdb3a4c9dd44849ae6c9eefa6a16852a816bea76",
+          "official_lfs_sha256": "5cf5203a027b7055c995a9d4bdb3a4c9dd44849ae6c9eefa6a16852a816bea76"
+        },
+        {
+          "file": "model-00004-of-00004.safetensors",
+          "bytes": 1405169256,
+          "sha256": "76ac0c0dbd790a1e003d2fc098a297bfe82a422c129046e9d4e67e6ed3d820f0",
+          "official_lfs_sha256": "76ac0c0dbd790a1e003d2fc098a297bfe82a422c129046e9d4e67e6ed3d820f0"
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "bytes": 29836,
+          "sha256": "c3a88218300666c35343b129857d4e8583ee1b15bf68d90ab976f51744560379",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "special_tokens_map.json",
+          "bytes": 801,
+          "sha256": "21ce694081bb9ae1bd4bc64549e72e0799ebb74705e6b650e3585d85b71ebdc1",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "tokenizer.json",
+          "bytes": 3476578,
+          "sha256": "91168e938f05796aa6dcca7e485e4b30ab52785320c7a6391ecef86e6c84681e",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "tokenizer_config.json",
+          "bytes": 9930,
+          "sha256": "f65a6a5a911424c85f157c40cfbdf06e025814c755480ba2e998d7fba1178664",
+          "official_lfs_sha256": null
+        },
+        {
+          "file": "vocab.json",
+          "bytes": 776995,
+          "sha256": "80ab859339a2525fdfbda14bc39df02dffb824aefdaf86426217bbb146d17e01",
+          "official_lfs_sha256": null
+        }
+      ]
+    }
+  ],
+  "no_test_or_cfd_data_used": true
+}

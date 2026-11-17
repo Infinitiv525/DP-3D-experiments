@@ -1,0 +1,16 @@
+{
+  "status": "CYLINDER3D_MODE_A_MODULATION_ANALYSIS_OK",
+  "analysis_start_s": 30.0,
+  "analysis_end_s": 159.99999999999721,
+  "analysis_duration_s": 129.99999999999721,
+  "primary_frequency_hz": 0.3898757786529924,
+  "primary_strouhal_number": 0.1949378893264962,
+  "observed_primary_periods": 50,
+  "candidate_modulation_frequency_hz": 0.0076911244423934775,
+  "candidate_modulation_period_s": 130.02,
+  "candidate_modulation_strouhal_number": 0.003845562221196739,
+  "modulation_to_primary_frequency_ratio": 0.019727115310846064,
+  "observed_modulation_cycles": 0.9998461775111307,
+  "interpretation": "candidate_low_frequency_quasiperiodic_modulation; force history alone does not prove the spatial Mode A mechanism",
+  "reference_doi": "10.1017/jfm.2026.11225"
+}
