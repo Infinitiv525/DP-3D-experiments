@@ -1,0 +1,25 @@
+{
+  "status": "FULL_LENGTH_PILOT_NUMERICALLY_COMPLETE",
+  "scenario_id": "a2_sc_001",
+  "split": "train",
+  "states": 461,
+  "tau_range": [
+    0,
+    400
+  ],
+  "prefix_reused": 101,
+  "new_exports": 360,
+  "manifest_sha256": "688103b2f9e28fdc8cbcabb99e8e550e049f0295905b01ec82ffafe883e502e3",
+  "force_history_sha256": "06554d6e067ffbdd6aa4c951d98b851d06983838401fe39cb9adea4e5c30e573",
+  "source_freeze_sha256": "f65e7570478d70a445bc3346bef4213b6d26085e84170c77ec8ab98239f0ccc4",
+  "late_fine_comparator_available": false,
+  "production_accepted": false,
+  "LLM_training_started": false,
+  "limitations": [
+    "Only one TRAIN geometry",
+    "Full numerical stability and completeness do not establish late physical fidelity",
+    "No matched fine0.8 full-length comparator yet",
+    "Segmented restarts are recorded",
+    "No production acceptance or new neural test metrics"
+  ]
+}

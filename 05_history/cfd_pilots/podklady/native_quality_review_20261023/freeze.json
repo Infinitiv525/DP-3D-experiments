@@ -1,0 +1,19 @@
+{
+  "source_files": {
+    "/mnt/project/perun2601449/dp_llm_cfd/test/analysis/native_force_endpoint_support_v2.py": "d577f6023e5d5b21dadb378401315c6c2b3b028f0c3337bf02c2fdb8e6493609",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/analysis/test_native_force_endpoint_v2.py": "1a8b588e2e73a08f2d4dbff53c78b9383610bba50242ce320b208f12f1aa2e97",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/analysis/native_review_serialization_v1.py": "375b3cafd203ed05a7fa5ab488c9eb950ed27694bf60ffe06548694081d5980c",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/analysis/test_native_review_serialization_v1.py": "07c18783cccb786f6b782ae040dd97e92174b0e8bbe94ec2d4e4024a21418a0b",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/analysis/review_native_family_windows_v4.py": "f43a3bca36221ce425aa891172a7363f44aae222209aa32a605a6c08a748524f",
+    "/mnt/project/perun2601449/dp_llm_cfd/test/scripts/135_review_native_families_v4.sbatch": "c5e6b30a8807989e7f736759ee03b1f2e9b2367a7f142dccf2aac88be9de84b9"
+  },
+  "endpoint_summary_sha256": "ac1d07a985ec4bf87f4644ed6b2711f2b0dcb7279e1f0c40d081664e045ba406",
+  "original_source_freeze_sha256": "422eef342ab311aaf906f175d3477f5c071b1c94de08c7d4cb6f3524dad30d94",
+  "prior_attempts": [
+    126206,
+    127809,
+    127813
+  ],
+  "reason": "Lossless conversion of all NumPy scalars in JSON report; previous fix addressed endpoint flag but flux flag also NumPy bool; numerical analysis unchanged",
+  "physics_limits_unchanged": true
+}

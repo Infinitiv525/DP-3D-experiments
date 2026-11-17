@@ -1,0 +1,79 @@
+{
+  "status": "RELEASED",
+  "stages": [
+    {
+      "index": 0,
+      "job": "130607",
+      "tau_start": 40,
+      "tau_end": 80,
+      "delta_tau": 0.4
+    },
+    {
+      "index": 1,
+      "job": "130608",
+      "tau_start": 80,
+      "tau_end": 160,
+      "delta_tau": 4
+    },
+    {
+      "index": 2,
+      "job": "130609",
+      "tau_start": 160,
+      "tau_end": 240,
+      "delta_tau": 4
+    },
+    {
+      "index": 3,
+      "job": "130610",
+      "tau_start": 240,
+      "tau_end": 320,
+      "delta_tau": 4
+    },
+    {
+      "index": 4,
+      "job": "130611",
+      "tau_start": 320,
+      "tau_end": 360,
+      "delta_tau": 0.4
+    },
+    {
+      "index": 5,
+      "job": "130612",
+      "tau_start": 360,
+      "tau_end": 400,
+      "delta_tau": 0.4
+    }
+  ],
+  "export_job": "130613",
+  "capture_jobs": [
+    {
+      "job": "130614",
+      "target": "130607"
+    },
+    {
+      "job": "130615",
+      "target": "130608"
+    },
+    {
+      "job": "130616",
+      "target": "130609"
+    },
+    {
+      "job": "130617",
+      "target": "130610"
+    },
+    {
+      "job": "130618",
+      "target": "130611"
+    },
+    {
+      "job": "130619",
+      "target": "130612"
+    },
+    {
+      "job": "130620",
+      "target": "130613"
+    }
+  ],
+  "freeze_sha256": "f65e7570478d70a445bc3346bef4213b6d26085e84170c77ec8ab98239f0ccc4"
+}

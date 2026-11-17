@@ -1,0 +1,1184 @@
+[
+  {
+    "source": "experiment_3d_llm_flow/test/training/audit_protocol_latency.py",
+    "target": "04_source/original/test/training/audit_protocol_latency.py",
+    "sha256": "26b6887bcb2565ad264e31192b283ae2a306d37818e4fec78884efa959f3b21d",
+    "bytes": 8401
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/evaluate_baseline_rollout.py",
+    "target": "04_source/original/test/training/evaluate_baseline_rollout.py",
+    "sha256": "f00ea270adb441843665df8fd0b032596405301fc6c1437c5a751e137417b28b",
+    "bytes": 6070
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/evaluate_flowbench_smoke.py",
+    "target": "04_source/original/test/training/evaluate_flowbench_smoke.py",
+    "sha256": "f3a184efc9043e271bc1ee7b647824bb6542243cabc08bd0a5ef5825c06fdcc4",
+    "bytes": 5494
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/evaluate_v4_recurrent_v1.py",
+    "target": "04_source/original/test/training/evaluate_v4_recurrent_v1.py",
+    "sha256": "ec923e40f5b4d331009161625e87b34ef687e6f9044f06e051467515d5ebbabb",
+    "bytes": 2435
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/flowbench_physics.py",
+    "target": "04_source/original/test/training/flowbench_physics.py",
+    "sha256": "dd26b896c30a7a0ccc317f562b19c2dd2119de34860076101ed3cd0e7a7a24e7",
+    "bytes": 1134
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/flowbench_protocol_metrics.py",
+    "target": "04_source/original/test/training/flowbench_protocol_metrics.py",
+    "sha256": "e4f0d2e6d89dd76e52a021655e2a75b2eb1f92a164345fc2bd05823010de56a2",
+    "bytes": 3815
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/fno_model.py",
+    "target": "04_source/original/test/training/fno_model.py",
+    "sha256": "286fc76f885ffb365be9a8bf76acec71e15853ae816c6a1f820be30447477bf4",
+    "bytes": 5746
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/measure_final_models_v1.py",
+    "target": "04_source/original/test/training/measure_final_models_v1.py",
+    "sha256": "e667ec8b0704ba821a8a6dc15dbb26b9b16046ee173b1eef7da20d7735c3c5a0",
+    "bytes": 12799
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/measure_final_models_v2.py",
+    "target": "04_source/original/test/training/measure_final_models_v2.py",
+    "sha256": "a3546612d532ead2f38d05cd4b7f988f1a692f7454b72c5ff2fc8a7989b5f9ff",
+    "bytes": 12774
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/measure_final_models_v3.py",
+    "target": "04_source/original/test/training/measure_final_models_v3.py",
+    "sha256": "93c818d17c6ffba2c3ac4256ac67acb73190e56ece6bc6486f2023ce7e4ea2e8",
+    "bytes": 13536
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/measure_final_models_v4.py",
+    "target": "04_source/original/test/training/measure_final_models_v4.py",
+    "sha256": "d97ad820200bcd9382a1c280b79b3a8466492ef1e54e3f13631b67229e252b3c",
+    "bytes": 13289
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/test_final_numerical_metrics_v3.py",
+    "target": "04_source/original/test/training/test_final_numerical_metrics_v3.py",
+    "sha256": "06e6f8b87d67ac519040b2c837449a41164697da7a4cdd7a5d8842275959b99f",
+    "bytes": 2680
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/test_final_numerical_metrics_v4.py",
+    "target": "04_source/original/test/training/test_final_numerical_metrics_v4.py",
+    "sha256": "cb88961f1a6c33cbfd1763acd853906653d967689e980fd0a1fe4c5185f986d1",
+    "bytes": 2680
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/test_flowbench_protocol.py",
+    "target": "04_source/original/test/training/test_flowbench_protocol.py",
+    "sha256": "43bad8378839d868937595f9a2edd4d74970f5bea641303fc5d2344adacfcedb",
+    "bytes": 2491
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/train_baseline_smoke.py",
+    "target": "04_source/original/test/training/train_baseline_smoke.py",
+    "sha256": "507aec471cb202cfc8f8310b8e08c9a9b6f583e790182cc6d026d429d340b82c",
+    "bytes": 13460
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/train_flowbench_main.py",
+    "target": "04_source/original/test/training/train_flowbench_main.py",
+    "sha256": "9431575aeace6f28410771848b6a2edb0d38df42330246d6105a232dc55d2f04",
+    "bytes": 4396
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/train_flowbench_protocol.py",
+    "target": "04_source/original/test/training/train_flowbench_protocol.py",
+    "sha256": "b1575230442c7a71e4dd9ad1b07f6327d30abff81be576310427e74c47155dae",
+    "bytes": 9444
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/train_flowbench_smoke.py",
+    "target": "04_source/original/test/training/train_flowbench_smoke.py",
+    "sha256": "8030d5f0ba7de270367a69659e9cccba45f52d2e41e8ddf90c8844e83098c15b",
+    "bytes": 11220
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/train_fno_multistep.py",
+    "target": "04_source/original/test/training/train_fno_multistep.py",
+    "sha256": "a298f596a47763c76d60d11a1b70aac9f02fb9fc2006dd5ad314d573f4173bed",
+    "bytes": 25864
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/training/validate_final_adapter_v4.py",
+    "target": "04_source/original/test/training/validate_final_adapter_v4.py",
+    "sha256": "3bc145d883adf3508e730d45aabc556f63e20f259969998ed361cdb9efb0f658",
+    "bytes": 5963
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/aggregate_fno_multiseed.py",
+    "target": "04_source/original/test/analysis/aggregate_fno_multiseed.py",
+    "sha256": "567fc4acd140df885b215b7fe6c940e95a1fb125b47043ca7a781dd4aabd0a18",
+    "bytes": 5283
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/aggregate_reference_divergence.py",
+    "target": "04_source/original/test/analysis/aggregate_reference_divergence.py",
+    "sha256": "2149dfa465940523d0115ccb6691173fc8609303f353d40f97b05d0782ab892a",
+    "bytes": 1870
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_cylinder3d_extended.py",
+    "target": "04_source/original/test/analysis/analyze_cylinder3d_extended.py",
+    "sha256": "facef864f7b41e38aa1f4bb95fb2277655c17630a992f3554a638110f968c673",
+    "bytes": 6380
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_dataset_a_late_stationarity.py",
+    "target": "04_source/original/test/analysis/analyze_dataset_a_late_stationarity.py",
+    "sha256": "7da30587896ffffdf727abe00115e4221c1dd02b725760ede8426140a1421989",
+    "bytes": 4919
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_dataset_a_warmup.py",
+    "target": "04_source/original/test/analysis/analyze_dataset_a_warmup.py",
+    "sha256": "766c4af8f7c2c9adc501c0d82245d539cf098f43a7ec965eac8d8fbc2c70456e",
+    "bytes": 6872
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_export_resolution.py",
+    "target": "04_source/original/test/analysis/analyze_export_resolution.py",
+    "sha256": "e15ec969fb6799fc5386b603230bf654e6c42c5ddd7c4eba302e63f44a2131f2",
+    "bytes": 7633
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_grid_verification.py",
+    "target": "04_source/original/test/analysis/analyze_grid_verification.py",
+    "sha256": "aea4b9390d27898bc17a5136210bef369d366f8ef5fb6d8c2961ba062b572205",
+    "bytes": 10035
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_mode_a_modulation.py",
+    "target": "04_source/original/test/analysis/analyze_mode_a_modulation.py",
+    "sha256": "2f6e401b5b0d1ff7cecae94a6a4fff3edf8598bb34cf9a365bce8c7c8e854d28",
+    "bytes": 8036
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_reference_divergence.py",
+    "target": "04_source/original/test/analysis/analyze_reference_divergence.py",
+    "sha256": "f4a1d9f712be0f2c6ca91b147653962becd4d379a5107b4271b9d21d1aaa684f",
+    "bytes": 4676
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_spanwise_mode.py",
+    "target": "04_source/original/test/analysis/analyze_spanwise_mode.py",
+    "sha256": "14a14e99220df1766c47f238697509aa4d85d84de7d34c9532ad9dd33dc760d6",
+    "bytes": 6334
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_spanwise_mode_series.py",
+    "target": "04_source/original/test/analysis/analyze_spanwise_mode_series.py",
+    "sha256": "48866b880510e4a2c79ba50984b4df011d270801e0a78b57dff0441be3ca3bbf",
+    "bytes": 7621
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/analyze_time_step_verification.py",
+    "target": "04_source/original/test/analysis/analyze_time_step_verification.py",
+    "sha256": "6d1a13ebc27b8cdbe297b53b2e930cbbf1c2acc174d0c148e6fea004cc5fc4cc",
+    "bytes": 6915
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/audit_flowbench_boundaries.py",
+    "target": "04_source/original/test/analysis/audit_flowbench_boundaries.py",
+    "sha256": "8f24f5ab967ca64e9f58dfdf156295ddf83408b1490fc13b389b7aee80f7dcd1",
+    "bytes": 3676
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/audit_flowbench_dataset.py",
+    "target": "04_source/original/test/analysis/audit_flowbench_dataset.py",
+    "sha256": "a8e4d4431dad660ed3bce7cbf642d1cf10d6c699ad0a27c6269c4090fb7862b7",
+    "bytes": 13973
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/audit_own_cfd_readiness_v1.py",
+    "target": "04_source/original/test/analysis/audit_own_cfd_readiness_v1.py",
+    "sha256": "e8082d92a569fc668c0947c5a1e7f425e8e0f8538e35a47b2cacedc2878e9842",
+    "bytes": 8022
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/benchmark_fno_resolution.py",
+    "target": "04_source/original/test/analysis/benchmark_fno_resolution.py",
+    "sha256": "26251d482715953526a8c3a5f6abefe73157df9972da97a1b9d7e48803569432",
+    "bytes": 3941
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/build_comparative_report_v1.py",
+    "target": "04_source/original/test/analysis/build_comparative_report_v1.py",
+    "sha256": "0b5be6d03671d00240756c09b1fb570058b44eb3d0ad153586e73e53e81b4fda",
+    "bytes": 30685
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/compare_dataset_a_v2_meshes.py",
+    "target": "04_source/original/test/analysis/compare_dataset_a_v2_meshes.py",
+    "sha256": "dd8986dea4d391ee0006c46b161eae46b6712b5db63e5315ec0a8304197d58a0",
+    "bytes": 5151
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/compare_flowbench_refinement.py",
+    "target": "04_source/original/test/analysis/compare_flowbench_refinement.py",
+    "sha256": "5f3e4fcb0f3a3246692ef188fd70d91d35f208622bacf3abf7189c2fc20c547e",
+    "bytes": 3957
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/compute_fno_training_statistics.py",
+    "target": "04_source/original/test/analysis/compute_fno_training_statistics.py",
+    "sha256": "57f6184d9290caa660b0f8ce476b282857073d241e504ef69d1b8ea966a70b58",
+    "bytes": 2179
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/diagnose_native_cylinder_phase_v1.py",
+    "target": "04_source/original/test/analysis/diagnose_native_cylinder_phase_v1.py",
+    "sha256": "dd9e0a45d1db029abf12e6cdbfd81be01d94a8d994647f1620e33cfe2cf3867d",
+    "bytes": 4985
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/diagnose_pressure_fields.py",
+    "target": "04_source/original/test/analysis/diagnose_pressure_fields.py",
+    "sha256": "b23829e94588bb1e1c7286a0b97df1dd29585620a2986442c801849c4dc0cd82",
+    "bytes": 9010
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/evaluate_box_fidelity.py",
+    "target": "04_source/original/test/analysis/evaluate_box_fidelity.py",
+    "sha256": "88aa3755cf03834816e8ec565f5df615647cc11f1561377a6174da8271236c59",
+    "bytes": 9206
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/evaluate_fidelity_windows.py",
+    "target": "04_source/original/test/analysis/evaluate_fidelity_windows.py",
+    "sha256": "3708e409180f5f343c5576cf20fe22b354c2eac664b5b3095083cfbaa9501f61",
+    "bytes": 12571
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/evaluate_fno_channels.py",
+    "target": "04_source/original/test/analysis/evaluate_fno_channels.py",
+    "sha256": "5bc8f3a5f31ada7985338e37a93eb68c09dc60c40d8bbd22f649f73f1fc5c18e",
+    "bytes": 10001
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/evaluate_full_cost_pilot.py",
+    "target": "04_source/original/test/analysis/evaluate_full_cost_pilot.py",
+    "sha256": "5f438b6a3334f300c1b1fc10e199cca822276315ae5093106b923ba65b933172",
+    "bytes": 8037
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/evaluate_pressure_recovery.py",
+    "target": "04_source/original/test/analysis/evaluate_pressure_recovery.py",
+    "sha256": "066a420e23383c388e5ebbe5b4e2329ce05f79e23cf731912a4355dacabe4035",
+    "bytes": 7327
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/export_uniform_snapshot.py",
+    "target": "04_source/original/test/analysis/export_uniform_snapshot.py",
+    "sha256": "00e5e66948251596d7d01c2a8d939f80658ad04fe88575aff7acfad34f0d4458",
+    "bytes": 4930
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/flowbench_resampling.py",
+    "target": "04_source/original/test/analysis/flowbench_resampling.py",
+    "sha256": "9515fc7803c1c931db2e979ed929b830b3df5110b31f0756e5a8d7799d333329",
+    "bytes": 568
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/generate_dataset_a_v2_manifest.py",
+    "target": "04_source/original/test/analysis/generate_dataset_a_v2_manifest.py",
+    "sha256": "549e3557463029f1a01a0ac10332ce1cdc543e2eb0362b936673f00aee3d9844",
+    "bytes": 8987
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/gpu_torch_probe.py",
+    "target": "04_source/original/test/analysis/gpu_torch_probe.py",
+    "sha256": "32aba2a3f60a7c5bb41535d51619e693d15de3a5bf4981289f32757dc518225d",
+    "bytes": 3295
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_cylinder_full_fine_v1.py",
+    "target": "04_source/original/test/analysis/native_cylinder_full_fine_v1.py",
+    "sha256": "1e7ab2d36770ecf43cd1d198d0861932ca7a134aad2c8a55547341494c93d79f",
+    "bytes": 13332
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_cylinder_full_v1.py",
+    "target": "04_source/original/test/analysis/native_cylinder_full_v1.py",
+    "sha256": "43e6089820c629efee4d48e3097c71e3ac1891c9b6680c64b50e2786f11c5aa5",
+    "bytes": 12266
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_cylinder_full_v2.py",
+    "target": "04_source/original/test/analysis/native_cylinder_full_v2.py",
+    "sha256": "93501443ed102d1233cdf39edd1f7330e3009274a7f6b27d542207ccd306ceca",
+    "bytes": 12365
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_cylinder_full_v3.py",
+    "target": "04_source/original/test/analysis/native_cylinder_full_v3.py",
+    "sha256": "7ad56efc88033f238a428184d21df7bfefda50c94ca9670480f67a150587a28d",
+    "bytes": 12424
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_cylinder_refinement_v1.py",
+    "target": "04_source/original/test/analysis/native_cylinder_refinement_v1.py",
+    "sha256": "c2d6f4bd2f49f102ab328eb20e2c13676936641798a86328500ab24fed46d4fc",
+    "bytes": 6490
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_cylinder_spatial_v1.py",
+    "target": "04_source/original/test/analysis/native_cylinder_spatial_v1.py",
+    "sha256": "b430272ebd2dea9358633547bd4a9e5e807839172dfbcf67c508d5e5902e2530",
+    "bytes": 6469
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_cylinder_temporal_v1.py",
+    "target": "04_source/original/test/analysis/native_cylinder_temporal_v1.py",
+    "sha256": "0a2141410563e602d7939acbcc85482676f781085e6d05927b9218cab0841faf",
+    "bytes": 6463
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_force_dictionary_v1.py",
+    "target": "04_source/original/test/analysis/native_force_dictionary_v1.py",
+    "sha256": "147222610d210258713a27e54ee03508bbca360a4c02b4d9f07a9f1ed7509cb5",
+    "bytes": 814
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_force_endpoint_support_v1.py",
+    "target": "04_source/original/test/analysis/native_force_endpoint_support_v1.py",
+    "sha256": "80d1467901fb4c8544a8c4fb7985dd1bd44e4a0a156140b92d83b979eb3d7ee8",
+    "bytes": 1859
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_force_endpoint_support_v2.py",
+    "target": "04_source/original/test/analysis/native_force_endpoint_support_v2.py",
+    "sha256": "d577f6023e5d5b21dadb378401315c6c2b3b028f0c3337bf02c2fdb8e6493609",
+    "bytes": 1879
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_quality_case_v1.py",
+    "target": "04_source/original/test/analysis/native_quality_case_v1.py",
+    "sha256": "acc87ba6d034a0b10489bd0cc2671605704af103dd0f6b6f92a5b798a66cbc82",
+    "bytes": 6431
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/native_review_serialization_v1.py",
+    "target": "04_source/original/test/analysis/native_review_serialization_v1.py",
+    "sha256": "375b3cafd203ed05a7fa5ab488c9eb950ed27694bf60ffe06548694081d5980c",
+    "bytes": 840
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/plot_flowbench_predictions.py",
+    "target": "04_source/original/test/analysis/plot_flowbench_predictions.py",
+    "sha256": "d91c32690d604e375d5b3df53764c124c80e666ebf7380b473a7ec3a679a5762",
+    "bytes": 1477
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/plot_fno_channel_diagnostics.py",
+    "target": "04_source/original/test/analysis/plot_fno_channel_diagnostics.py",
+    "sha256": "a4d1ad4e290aea0029ce38c6e881d7b8acc6766190c17cad9c681759a4ca85ab",
+    "bytes": 3018
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/plot_uniform_snapshot.py",
+    "target": "04_source/original/test/analysis/plot_uniform_snapshot.py",
+    "sha256": "0ace1e31c22a34af84747d52e63eee6923f516b6c40030a3689277281895337e",
+    "bytes": 1781
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/prepare_flowbench.py",
+    "target": "04_source/original/test/analysis/prepare_flowbench.py",
+    "sha256": "a3705d9e7e491e9bd38fa08c6d3a9479b74d504ae24dfb6a7ded79f8b2f7c9af",
+    "bytes": 9167
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/prepare_flowbench_native_gauge.py",
+    "target": "04_source/original/test/analysis/prepare_flowbench_native_gauge.py",
+    "sha256": "f0a4ca352eb777df446969bc7d76e4bc0da1116996fb0a567734ee24ac664a49",
+    "bytes": 3740
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/probe_flowbench_pressure_gauge.py",
+    "target": "04_source/original/test/analysis/probe_flowbench_pressure_gauge.py",
+    "sha256": "24a46d4794ba020cb2b2c921435849db4f609884d2b72acbf58c3e468fcca475",
+    "bytes": 2637
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/recover_native_force_endpoints_v1.py",
+    "target": "04_source/original/test/analysis/recover_native_force_endpoints_v1.py",
+    "sha256": "063e3300ed595e94abd31b4f0b0d9b2b3a1215981379b364aadf771d54fbe18a",
+    "bytes": 3323
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/regrid_flowbench.py",
+    "target": "04_source/original/test/analysis/regrid_flowbench.py",
+    "sha256": "955583437212e2e564b36368b12d9e3345b345fbce15bf40b81fbf8a93079b2a",
+    "bytes": 3090
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_flowbench.py",
+    "target": "04_source/original/test/analysis/review_flowbench.py",
+    "sha256": "9169ca0098d700a36725e7811d4b34568bb778bfab11f4a8920ff1624bbb996f",
+    "bytes": 3708
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_native_cylinder_late_v1.py",
+    "target": "04_source/original/test/analysis/review_native_cylinder_late_v1.py",
+    "sha256": "9733deb7b2be14012c871b759f13921b47b6cf215c4b76bab68482d339568198",
+    "bytes": 5986
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_native_cylinder_refinement_v1.py",
+    "target": "04_source/original/test/analysis/review_native_cylinder_refinement_v1.py",
+    "sha256": "d6216d806f319fe8ab245c5c59a39ece1a47e2914b9df41d37e8fcd61f8b8d63",
+    "bytes": 9283
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_native_cylinder_refinement_v2.py",
+    "target": "04_source/original/test/analysis/review_native_cylinder_refinement_v2.py",
+    "sha256": "0fcb9c44ea6d67bb832cfb222ae3e80112016a4505f08099e0c3950721c48f00",
+    "bytes": 9886
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_native_cylinder_spatial_v1.py",
+    "target": "04_source/original/test/analysis/review_native_cylinder_spatial_v1.py",
+    "sha256": "9125de5fb47fb24b72291279c3fa74125e9877db536521958d87557171c2ace0",
+    "bytes": 10016
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_native_cylinder_temporal_v1.py",
+    "target": "04_source/original/test/analysis/review_native_cylinder_temporal_v1.py",
+    "sha256": "589b462b0096deb0f26ff344b1efbd7cd0cdae5385894f96dc66aa2c6ff343b6",
+    "bytes": 9220
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_native_family_windows_v1.py",
+    "target": "04_source/original/test/analysis/review_native_family_windows_v1.py",
+    "sha256": "1c48f24480e399c0038dda80c752cee7ab448659fcaef25b4b7208f75b1cfe7f",
+    "bytes": 7645
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_native_family_windows_v2.py",
+    "target": "04_source/original/test/analysis/review_native_family_windows_v2.py",
+    "sha256": "b7f5e75beb66c897c69fc0b909109c69a0a77be15ae9e30fab23f9f40d14b82c",
+    "bytes": 7970
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_native_family_windows_v3.py",
+    "target": "04_source/original/test/analysis/review_native_family_windows_v3.py",
+    "sha256": "8075e809222661d037485486a4601af945d1dfed2e0e06788c1bcb40ec97b6cd",
+    "bytes": 7970
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/review_native_family_windows_v4.py",
+    "target": "04_source/original/test/analysis/review_native_family_windows_v4.py",
+    "sha256": "f43a3bca36221ce425aa891172a7363f44aae222209aa32a605a6c08a748524f",
+    "bytes": 8032
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/stage_local_main_v40.py",
+    "target": "04_source/original/test/analysis/stage_local_main_v40.py",
+    "sha256": "20aa92e4667bbbaf94430e9bcb0e3e4bcc721ea68109b9eb5108e8a105f50888",
+    "bytes": 5342
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_flowbench_dataset_audit.py",
+    "target": "04_source/original/test/analysis/test_flowbench_dataset_audit.py",
+    "sha256": "072ba95bff1fa8301559974d77a453267c0a26e323f41f28c41abc37f0414d67",
+    "bytes": 1631
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_cylinder_full_fine_v1.py",
+    "target": "04_source/original/test/analysis/test_native_cylinder_full_fine_v1.py",
+    "sha256": "f5785038bccc0b34df5ce2c51a6aa325c47ecb12176e9f9bf6acfd5b19fb418f",
+    "bytes": 3665
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_cylinder_full_v1.py",
+    "target": "04_source/original/test/analysis/test_native_cylinder_full_v1.py",
+    "sha256": "b5da1cbfd081d905ce25844cf1e9182901d94df3916891c57f43fb29d99625fd",
+    "bytes": 2216
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_cylinder_full_v2.py",
+    "target": "04_source/original/test/analysis/test_native_cylinder_full_v2.py",
+    "sha256": "9337ff9003d480ade9a7bf80bfb257d53c60e056150bace923494171cbb5facd",
+    "bytes": 2429
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_cylinder_full_v3.py",
+    "target": "04_source/original/test/analysis/test_native_cylinder_full_v3.py",
+    "sha256": "910f992b169f7f49dfa447dd944eb484a0b455b69930b64b5353c22ac82d9089",
+    "bytes": 3620
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_cylinder_late_v1.py",
+    "target": "04_source/original/test/analysis/test_native_cylinder_late_v1.py",
+    "sha256": "85b1a72721792c1b4a99250419a1a4af3612ee4fcd2eb29bdfa726eeb1b7508e",
+    "bytes": 1254
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_force_dictionary_v1.py",
+    "target": "04_source/original/test/analysis/test_native_force_dictionary_v1.py",
+    "sha256": "84b24021914b06816d80fddb4f6d404f415cd069ca8479b4aa77963a6880c74d",
+    "bytes": 1276
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_force_endpoint_v1.py",
+    "target": "04_source/original/test/analysis/test_native_force_endpoint_v1.py",
+    "sha256": "0701b524476665ff50c0fa82bb69653232c43c9df8abc3199e57e37b711d34be",
+    "bytes": 1567
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_force_endpoint_v2.py",
+    "target": "04_source/original/test/analysis/test_native_force_endpoint_v2.py",
+    "sha256": "1a8b588e2e73a08f2d4dbff53c78b9383610bba50242ce320b208f12f1aa2e97",
+    "bytes": 1685
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_quality_v1.py",
+    "target": "04_source/original/test/analysis/test_native_quality_v1.py",
+    "sha256": "40bb78fb33656872f2b447eda5b36b2be99b4d81d0502fb32f199ac90f28b25c",
+    "bytes": 3957
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/test_native_review_serialization_v1.py",
+    "target": "04_source/original/test/analysis/test_native_review_serialization_v1.py",
+    "sha256": "07c18783cccb786f6b782ae040dd97e92174b0e8bbe94ec2d4e4024a21418a0b",
+    "bytes": 964
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/analysis/validate_uniform_series.py",
+    "target": "04_source/original/test/analysis/validate_uniform_series.py",
+    "sha256": "5977f0118e9eef5711206a3cffaf16f2baaf31c9d28bdc58e60f84afcf4a2dc2",
+    "bytes": 4518
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/allocation_budget.py",
+    "target": "04_source/original/test/llm/allocation_budget.py",
+    "sha256": "99e7e7328b727b05079dee3d182b28799683e369c40da0997234c73592d7c8f9",
+    "bytes": 8943
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/audit_transport_replay.py",
+    "target": "04_source/original/test/llm/audit_transport_replay.py",
+    "sha256": "d739eb194a4a5c34c8bc613224e1e3bc9fce6e90502a00f73c6bc8df30be9431",
+    "bytes": 3057
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/check_final_window_extension_v1.py",
+    "target": "04_source/original/test/llm/check_final_window_extension_v1.py",
+    "sha256": "40ba8b685c4e6ad99a23251694c9ff5c4790441453cca759a2625dd7698ae511",
+    "bytes": 3306
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/close_shared_accounting_v1.py",
+    "target": "04_source/original/test/llm/close_shared_accounting_v1.py",
+    "sha256": "571f07b03c8862a4ba33c8fa9c34819132e56dbf94dd9b3950b036f144949ceb",
+    "bytes": 8821
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/configurator_contract_v3.py",
+    "target": "04_source/original/test/llm/configurator_contract_v3.py",
+    "sha256": "73983f4a52458e8146766b25203f918b441fd406800bc82db0a403b07dcd36d1",
+    "bytes": 6865
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/configurator_transport_v1.py",
+    "target": "04_source/original/test/llm/configurator_transport_v1.py",
+    "sha256": "08a4fda7e77825d0c36dc339842ed68cfe23f0c4ad9bc03759a1cf7c3145fa6d",
+    "bytes": 1060
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/final_measurement_gate_v1.py",
+    "target": "04_source/original/test/llm/final_measurement_gate_v1.py",
+    "sha256": "c0e574a0915f08685004edc7a15ffe46d79c8f201a1e7c0607bf4a797a5a87df",
+    "bytes": 10311
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/final_measurement_gate_v2.py",
+    "target": "04_source/original/test/llm/final_measurement_gate_v2.py",
+    "sha256": "3916aefca0275f068d2a7f85c66f9759b45161540a7c654d1771ee18af0101da",
+    "bytes": 11474
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/final_measurement_gate_v3.py",
+    "target": "04_source/original/test/llm/final_measurement_gate_v3.py",
+    "sha256": "dcb80b467bb9fd714f192e7ead7fa48717a85b954ba4d5e4424a5a1bfe19fd10",
+    "bytes": 12741
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/final_window_controller_v1.py",
+    "target": "04_source/original/test/llm/final_window_controller_v1.py",
+    "sha256": "0015df3268352290bdc5fba335c22a184b52f45c3aada45cd8ec3b6a0d6f93a1",
+    "bytes": 9857
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/final_window_engine_v1.py",
+    "target": "04_source/original/test/llm/final_window_engine_v1.py",
+    "sha256": "19249b0ffe64bbf0a9d4cd123b5b02723c31264d959e453e09dc212a466f7101",
+    "bytes": 3984
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/freeze_main_release.py",
+    "target": "04_source/original/test/llm/freeze_main_release.py",
+    "sha256": "8b8d9a20d61d50a4a37f9bc36cc87a73726fa55985d3dbfa26fb845f98b1c088",
+    "bytes": 8788
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/freeze_sequential_preflight.py",
+    "target": "04_source/original/test/llm/freeze_sequential_preflight.py",
+    "sha256": "e492420457ba47498afc2b6108cbb4e305c8687f9d448f6d494949795b1fe8dc",
+    "bytes": 1463
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/main_execution.py",
+    "target": "04_source/original/test/llm/main_execution.py",
+    "sha256": "183fcfe7e78e45f56fe81e56c367739c4b61a5199b08acdd002f06f877cfed54",
+    "bytes": 10882
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/main_protocol.py",
+    "target": "04_source/original/test/llm/main_protocol.py",
+    "sha256": "2599eb16c00bdc6f72da90f43864551f5b28c7ea1eeac8ed3126ef56247e31cb",
+    "bytes": 12588
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/main_statistics.py",
+    "target": "04_source/original/test/llm/main_statistics.py",
+    "sha256": "6bc5275a29b3ec1901f1b5f8602d35f0f1e78f44b3e7b277590fbd65e59da89f",
+    "bytes": 2053
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/main_workflow.py",
+    "target": "04_source/original/test/llm/main_workflow.py",
+    "sha256": "662727af29b2c03b2cc362228239765e88b57c27468289cd9b8adc7496c004a0",
+    "bytes": 10687
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/persistent_search.py",
+    "target": "04_source/original/test/llm/persistent_search.py",
+    "sha256": "82bd2c23af705df28dc7db0b16fd1cd23e4bfee07d1c8b23876ec15d3b63e406",
+    "bytes": 12402
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/pilot_nonllm_controls.py",
+    "target": "04_source/original/test/llm/pilot_nonllm_controls.py",
+    "sha256": "0b90361aafa36c4bb6f9d267bba8915e56b598fc6aea945836365257118f8751",
+    "bytes": 5524
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/pilot_persistent_controller.py",
+    "target": "04_source/original/test/llm/pilot_persistent_controller.py",
+    "sha256": "140799fc74aceb78a21039876afb62d764fbcd2132236a4705b3a562da86ba96",
+    "bytes": 10656
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/preflight_support.py",
+    "target": "04_source/original/test/llm/preflight_support.py",
+    "sha256": "9e8962f8360bf0c27ca1e9463458747586c77214eb19bd15f7696ea0c4e4ad35",
+    "bytes": 1940
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/prepare_local_models.py",
+    "target": "04_source/original/test/llm/prepare_local_models.py",
+    "sha256": "591c84ebb18967d7b132d55aaa1a1c82a693b054a7febc5a860bb6f97ac258ff",
+    "bytes": 3897
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/prepare_main_candidate.py",
+    "target": "04_source/original/test/llm/prepare_main_candidate.py",
+    "sha256": "1c7c4757923d941bc28f5452bc3c65233c227ca44a7faa90c7b4e45b58f7c462",
+    "bytes": 6078
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/propose_configuration_transport_v1.py",
+    "target": "04_source/original/test/llm/propose_configuration_transport_v1.py",
+    "sha256": "1799e79456b4fb89368297ad5dd4145913b0a33d0455ee9d93049b04735e2784",
+    "bytes": 1866
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/propose_configuration_v3.py",
+    "target": "04_source/original/test/llm/propose_configuration_v3.py",
+    "sha256": "bf5df494ac08311d1eedd462268a501555badd9923efa0a5b75a811361b5c828",
+    "bytes": 6077
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/propose_local_configuration.py",
+    "target": "04_source/original/test/llm/propose_local_configuration.py",
+    "sha256": "28f5522c8c92d73206ed1148c612378c67e49fc1de83784d856466677371bd22",
+    "bytes": 6938
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/repair_granite_feedback.py",
+    "target": "04_source/original/test/llm/repair_granite_feedback.py",
+    "sha256": "1e045d5b7ba5c5606cee29c3f46a343cdd6feb4c12b5173b7fdf22efaee69be6",
+    "bytes": 5028
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/review_controller_latency.py",
+    "target": "04_source/original/test/llm/review_controller_latency.py",
+    "sha256": "826cc5dffacfb7a55377215e65c17cf91c1b6963f72b0be19bfc62bd71c43ed7",
+    "bytes": 9285
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/review_feedback_pilot.py",
+    "target": "04_source/original/test/llm/review_feedback_pilot.py",
+    "sha256": "e391d7c46cd415eafa832af2d6cc19a6d3166ae72cbd87f45dd7e112fb7a3dc2",
+    "bytes": 5775
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/review_final_measurements_v3.py",
+    "target": "04_source/original/test/llm/review_final_measurements_v3.py",
+    "sha256": "62f27bf32230848b2b0f7ab591d593bfbd7d64893194b67da13fa9f4d8caf175",
+    "bytes": 8077
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/review_main_canary.py",
+    "target": "04_source/original/test/llm/review_main_canary.py",
+    "sha256": "8d6e9c398d80abba036daaeccf7574c29a23810f571ac4a928662caef1c8ff36",
+    "bytes": 7137
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/review_search_preparation.py",
+    "target": "04_source/original/test/llm/review_search_preparation.py",
+    "sha256": "6139eeb75fe061d156a4b3c54c08e4299b40c2aaf1602c55851878795b6eac1e",
+    "bytes": 7371
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/review_sequential_preflight.py",
+    "target": "04_source/original/test/llm/review_sequential_preflight.py",
+    "sha256": "0ca5acbbd5fb02f7a17feb00aed5ab7165dc1b4de7db203e8cdf0c9034f08332",
+    "bytes": 9433
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/review_transport_confirmation.py",
+    "target": "04_source/original/test/llm/review_transport_confirmation.py",
+    "sha256": "90ff5bae0fa82c827c89a43599cf499e0b963cf1edb7987d63bb512c8eb4c5cc",
+    "bytes": 8114
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/run_feedback_pilot.py",
+    "target": "04_source/original/test/llm/run_feedback_pilot.py",
+    "sha256": "04a042d9e8ba4a2fe65dbbf0f3c41199fabbdc87cad799874aba80c4330190a2",
+    "bytes": 9317
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/run_sequential_preflight.py",
+    "target": "04_source/original/test/llm/run_sequential_preflight.py",
+    "sha256": "bfc7adfccb76a6c57b083527866b2894cd9126fbbe9483ce7294767b7b49903c",
+    "bytes": 11562
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/run_transport_confirmation.py",
+    "target": "04_source/original/test/llm/run_transport_confirmation.py",
+    "sha256": "7304b8566405c31c9a3d8cf7098c68fe1e2a4a1396d7ef3f310e486af042a73a",
+    "bytes": 8096
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/search_controls.py",
+    "target": "04_source/original/test/llm/search_controls.py",
+    "sha256": "150470a93e972b617544cd47c6bdb5c7a63867b3788262184f8575996e57dc01",
+    "bytes": 6896
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/sequential_feedback.py",
+    "target": "04_source/original/test/llm/sequential_feedback.py",
+    "sha256": "3cc10cda91462bad303449e8cb3767883b8a30eee0b3470f9db58779d8397482",
+    "bytes": 1928
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/settle_allocation_uid.py",
+    "target": "04_source/original/test/llm/settle_allocation_uid.py",
+    "sha256": "9d9574f5ad55a44ae8ac2ff88d36d153aab3b88a64476336b02fd649cd6456ac",
+    "bytes": 2364
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/smoke_local_configurator.py",
+    "target": "04_source/original/test/llm/smoke_local_configurator.py",
+    "sha256": "5609bfab57f78e27e9369a861a1ef6f6929ad7479b5ce482d30b8396b30331b1",
+    "bytes": 15153
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/summarize_feasibility.py",
+    "target": "04_source/original/test/llm/summarize_feasibility.py",
+    "sha256": "ad43b6aae4521bca8b5ac38af13f5db2f1a1fefc8b9877bb4b93430de25a904b",
+    "bytes": 6474
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_allocation_budget.py",
+    "target": "04_source/original/test/llm/test_allocation_budget.py",
+    "sha256": "468a7619e68b3cb661877fee9d48354b46ca2a802fe7f22a6c4b0f6f47e6aadc",
+    "bytes": 4008
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_close_shared_accounting_v1.py",
+    "target": "04_source/original/test/llm/test_close_shared_accounting_v1.py",
+    "sha256": "1ad29f38a8f3fe2308dd9424de85b5e6d5f854b4e08e952cf3cec87f0db08dc1",
+    "bytes": 3697
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_configurator_transport.py",
+    "target": "04_source/original/test/llm/test_configurator_transport.py",
+    "sha256": "2903c4fbaee2c7119cdc6b52d212c6f281f96186998b26ad77a0cfb417709959",
+    "bytes": 1839
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_contract_v3.py",
+    "target": "04_source/original/test/llm/test_contract_v3.py",
+    "sha256": "f5ed9162d95d70ee5a3e01534f3d9c06db776c85e1523fbc7591c360af442922",
+    "bytes": 4852
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_final_measurement_v1.py",
+    "target": "04_source/original/test/llm/test_final_measurement_v1.py",
+    "sha256": "66ca845d767355ba9bb2e7b8770ace89450fc54745ca6af52f76fc49d9726ab4",
+    "bytes": 6237
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_final_measurement_v2.py",
+    "target": "04_source/original/test/llm/test_final_measurement_v2.py",
+    "sha256": "157614abdd6eacf308b868abcc7540b1054a238b73c44273653f3197022a33e3",
+    "bytes": 6237
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_final_measurement_v3.py",
+    "target": "04_source/original/test/llm/test_final_measurement_v3.py",
+    "sha256": "e13d733e46b88f22ff41d3675b5a00bcbfb8fd09b455a70947f17b2c7ea6f96b",
+    "bytes": 6237
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_final_windows_v1.py",
+    "target": "04_source/original/test/llm/test_final_windows_v1.py",
+    "sha256": "9171aee0735d05b321226b81e07eb81e1ebefe8d76a7936b747133d5adfab9bd",
+    "bytes": 9342
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_main_canary_review.py",
+    "target": "04_source/original/test/llm/test_main_canary_review.py",
+    "sha256": "41e129fc07c18ff42ff16081f5930e91c16d42bd7fdf0d26fec7888f4f397199",
+    "bytes": 2328
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_main_protocol.py",
+    "target": "04_source/original/test/llm/test_main_protocol.py",
+    "sha256": "d52dc8f7a6f8b4ee71a2b7529ac9d0cad3a8e1d377c19a41d9e757921aba88bd",
+    "bytes": 10915
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_main_release.py",
+    "target": "04_source/original/test/llm/test_main_release.py",
+    "sha256": "ec0650d66de9d6faa817bc843fc42bf890c63e31d731a5f39775b74a011f9dc9",
+    "bytes": 4657
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_main_statistics.py",
+    "target": "04_source/original/test/llm/test_main_statistics.py",
+    "sha256": "fe377f4eeb4e40d756863ef7944e714d4cd674a6e9848cbd35f2b5ae80fe6579",
+    "bytes": 1532
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_main_workflow.py",
+    "target": "04_source/original/test/llm/test_main_workflow.py",
+    "sha256": "c9ee3cd0dec7e9bd8c5cca84af1ad4456d2dc58363f7684f79fc3c6c07f5be90",
+    "bytes": 18217
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_persistent_search.py",
+    "target": "04_source/original/test/llm/test_persistent_search.py",
+    "sha256": "5a7a82fae5c1e987e55ad5ae5b461673d6dc5b8911a2c333c9af75a1acd1b285",
+    "bytes": 9342
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_search_controls.py",
+    "target": "04_source/original/test/llm/test_search_controls.py",
+    "sha256": "40924f7c7a197deec2215bf0354a26a94a6b8110e2b3774de80b1024c588999f",
+    "bytes": 3373
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/test_settle_allocation_uid.py",
+    "target": "04_source/original/test/llm/test_settle_allocation_uid.py",
+    "sha256": "9fbbbe29e741be3320e84a1b4b42f43f49c8acda4d188e5759872a77d37df623",
+    "bytes": 1228
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/llm/verify_main_workflow.py",
+    "target": "04_source/original/test/llm/verify_main_workflow.py",
+    "sha256": "23942ce9a56a15cf095c7eedb3ee5ce2dc38cec85627a98b67256b79f2658e46",
+    "bytes": 2777
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/01_testovacia_presnost.png",
+    "target": "01_results/final/01_testovacia_presnost.png",
+    "sha256": "2d00820491af152dd03dc1814fd9139c3af20c63983711c7d68bddbb3aa0ca09",
+    "bytes": 68117
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/01_testovacia_presnost.svg",
+    "target": "01_results/final/01_testovacia_presnost.svg",
+    "sha256": "e67c45619923fea49a3ee4d490de74b8367d0aaaa17fe1f68ad84bebffddd32b",
+    "bytes": 58158
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/02_porovnanie_llm_tpe.png",
+    "target": "01_results/final/02_porovnanie_llm_tpe.png",
+    "sha256": "6f54e170734df83e1d1fc6ffe38dd34f128edbe7584eb4a0251a80aa11661cfb",
+    "bytes": 48912
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/02_porovnanie_llm_tpe.svg",
+    "target": "01_results/final/02_porovnanie_llm_tpe.svg",
+    "sha256": "7a21191a8491666003e028f744f77f43daa5cdcaecedf967c406579a1878e5b6",
+    "bytes": 51400
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/03_naklady_vyberu.png",
+    "target": "01_results/final/03_naklady_vyberu.png",
+    "sha256": "2bf6f8e8cd813a5ea2a660452629a137877396db987e8a4a981f1f09361a9e03",
+    "bytes": 72532
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/03_naklady_vyberu.svg",
+    "target": "01_results/final/03_naklady_vyberu.svg",
+    "sha256": "9de9dca6cd3296314fc5978827f8ea098c08489e03be81d65803c7f6c7fee2fd",
+    "bytes": 59013
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/04_priebeh_hladania.png",
+    "target": "01_results/final/04_priebeh_hladania.png",
+    "sha256": "6665cb5fec70e02c3a21fa28919b0ccd9ac457e24874ddc95dff7265f7dbc267",
+    "bytes": 92174
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/04_priebeh_hladania.svg",
+    "target": "01_results/final/04_priebeh_hladania.svg",
+    "sha256": "1df46eda21a229c969a5665e412c073639707c13269147e4c97f64c9f9015d9e",
+    "bytes": 66179
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/05_latencia.png",
+    "target": "01_results/final/05_latencia.png",
+    "sha256": "19e83c409f1963c613172dacf01fb4911e05a1d32ffa90de3cb993c87f02b991",
+    "bytes": 50729
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/05_latencia.svg",
+    "target": "01_results/final/05_latencia.svg",
+    "sha256": "c9692bccb8c4ba4d3bb77b44c078ccc04ac757630f7cee4eb53aa88fee92e05b",
+    "bytes": 47569
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/comparison_numbers.json",
+    "target": "01_results/final/comparison_numbers.json",
+    "sha256": "7e0e6c91e36c5993bb718964cb80d42ebc7e4eb4ec303750fe5749ccd8b43fc6",
+    "bytes": 28695
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/contact_sheet.png",
+    "target": "01_results/final/contact_sheet.png",
+    "sha256": "6bace1835dc78ca53af5fc3dd62eadda09af1df3dcba06a2ab10b7d4fe1e1615",
+    "bytes": 205511
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/input_receipt.json",
+    "target": "01_results/final/input_receipt.json",
+    "sha256": "807f72c788445e14f014dda696f447fb43edec4636e1738b4c39a3e7572d051e",
+    "bytes": 164
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/output_receipt.json",
+    "target": "01_results/final/output_receipt.json",
+    "sha256": "3c7229ce38e45a1296095d64f9a77914ccfc2af7a541a31bbed7396e0925339c",
+    "bytes": 2333
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/report.html",
+    "target": "01_results/final/report.html",
+    "sha256": "098e47a3fac7765c5a0071d9c6613c769dea8c90761db83af066242b8f656d66",
+    "bytes": 20127
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/report.txt",
+    "target": "01_results/final/report.txt",
+    "sha256": "4812432476ac363569f890a6be65ab68bbafc7637d9ec535db8f4bc8974f5a9f",
+    "bytes": 18396
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/report/report_inputs.json",
+    "target": "01_results/final/report_inputs.json",
+    "sha256": "d3ec70958151c8988286b1f6aa518f61862373b242881c77fe2349d956fe9da1",
+    "bytes": 2629359
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/PRECITAJ_MA.txt",
+    "target": "05_history/cfd_pilots/PRECITAJ_MA.txt",
+    "sha256": "2a845ae356332da6a06530f82dd729b29c5e100b1c7469e586d9c57a91957615",
+    "bytes": 880
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/chain_submission.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_full_20261025_v3/chain_submission.json",
+    "sha256": "5da1665453c950d889d53509ad644bd12b8b17b198775f6ca6225c0dc57ab828",
+    "bytes": 1338
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/completion_review_20261027.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_full_20261025_v3/completion_review_20261027.json",
+    "sha256": "f5f927a9a6fb858ba8c9e43f454fc73e7b81caf73bdcf4d9f5250762c945e4c1",
+    "bytes": 4109
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/failed_start_130593.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_full_20261025_v3/failed_start_130593.json",
+    "sha256": "2a050cd3f17116c7f75460f43e2d5f140c333eebacda61377d7c172557884abc",
+    "bytes": 388
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/initialization.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_full_20261025_v3/initialization.json",
+    "sha256": "562b5ec0b2b2e260547c2f20e27dde1a3561c89e268cedb55dcb3dcf01df85ea",
+    "bytes": 532
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/source_freeze.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_full_20261025_v3/source_freeze.json",
+    "sha256": "f65e7570478d70a445bc3346bef4213b6d26085e84170c77ec8ab98239f0ccc4",
+    "bytes": 48037
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_full_20261025_v3/summary.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_full_20261025_v3/summary.json",
+    "sha256": "3ec9bb4e9109e72ebf05a216bee1f459d743d6a887c54c7edffc421e4fc7d14d",
+    "bytes": 886
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_full_fine_20261027_v1/chain_submission.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_full_fine_20261027_v1/chain_submission.json",
+    "sha256": "a942009ad52f3262c413ca4c83325fcf7db5e9d4496ba30e9c3341dcf57aec0a",
+    "bytes": 2073
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_full_fine_20261027_v1/comparison_freeze.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_full_fine_20261027_v1/comparison_freeze.json",
+    "sha256": "2d2615780fe4cd24440190c1291a939290196fbd827bf604cd6f5a60757097d0",
+    "bytes": 25724
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_full_fine_20261027_v1/source_freeze.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_full_fine_20261027_v1/source_freeze.json",
+    "sha256": "df3d417ceb9ecf2af142ed0e335e27ee9f9541cdff7bc7a236fa9c4b7bea918e",
+    "bytes": 25230
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/diagnostic_128127.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_refinement_20261023/diagnostic_128127.json",
+    "sha256": "21f70900f994feaf08b334b80413cf8390fbc18af32c8b440d008e1b26e17e79",
+    "bytes": 5361
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/review_128119.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_refinement_20261023/review_128119.json",
+    "sha256": "d12c81f57161bd0c69f053fa1925d2492d779dd4b47a66a9311af45edf3ce259",
+    "bytes": 5621
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/review_capture_submission.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_refinement_20261023/review_capture_submission.json",
+    "sha256": "bb2e9b090a0da310db7c7960e7fbeadb573b96aca9650529b91e29d3c6132379",
+    "bytes": 44
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/review_submission.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_refinement_20261023/review_submission.json",
+    "sha256": "0bd262167e81335bbc4f894ae3e65e7b1ad3396c076d97d40215b2e06b98037c",
+    "bytes": 215
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_refinement_20261023/solver_summary.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_refinement_20261023/solver_summary.json",
+    "sha256": "1365bc4e7fe1fc17af023cb95c0f5939856c563a3cfdfcb6ec66524382d662f7",
+    "bytes": 583
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/review_129256.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_spatial_20261024/review_129256.json",
+    "sha256": "8643fff99cc4721e6a1f45a03b5ff3a412fe60e468c96add7bb794975e441c96",
+    "bytes": 5853
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/review_submission.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_spatial_20261024/review_submission.json",
+    "sha256": "f7d47bd3771a2da5cd49b1f360371fc1ee35a0b5fe1e23b4d7ecfa36b94c8b97",
+    "bytes": 133
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/scheduler_129254_0.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_spatial_20261024/scheduler_129254_0.json",
+    "sha256": "c7cce9b90dd1711e5cf3a4f51e0a3fe1456396c02cc08073adccc4fb20379f61",
+    "bytes": 400
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/scheduler_129256.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_spatial_20261024/scheduler_129256.json",
+    "sha256": "236bc61f0f956ad22643bcec9dc7b8e56545fc49c0c2e3fa78bcc76390f69e0d",
+    "bytes": 391
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/solver_summary.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_spatial_20261024/solver_summary.json",
+    "sha256": "a369009f802fdec399e38364bfb160ed3d5a615522aa2114d221939403b0f4c7",
+    "bytes": 582
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_spatial_20261024/submission.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_spatial_20261024/submission.json",
+    "sha256": "304662e5e48dbda0b69394b6a5eb6c8dc5bb618ad598497e81d076241086312f",
+    "bytes": 243
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_temporal_20261023/review_128181.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_temporal_20261023/review_128181.json",
+    "sha256": "db6e8c76fe2e9af17950cb92c194a41034e5ac19d8755297afe9fc7e934f13ba",
+    "bytes": 5623
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_temporal_20261023/review_submission.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_temporal_20261023/review_submission.json",
+    "sha256": "3b94437a471164f78837be156c8fb5197a54b328913f17519809671b019ccbad",
+    "bytes": 137
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_temporal_20261023/solver_summary.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_temporal_20261023/solver_summary.json",
+    "sha256": "78f80bc9dde8d85074b41bb96b6e0f11de98c6164083cd9039c9188101404752",
+    "bytes": 581
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_cylinder_temporal_20261023/submission.json",
+    "target": "05_history/cfd_pilots/podklady/native_cylinder_temporal_20261023/submission.json",
+    "sha256": "f797f692b727699ad3c416698c5cec299d39512bdf29436a664e11cf908b9dff",
+    "bytes": 272
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_quality_review_20261023/freeze.json",
+    "target": "05_history/cfd_pilots/podklady/native_quality_review_20261023/freeze.json",
+    "sha256": "c39826d621a70edd1529e5037c167341b686b2504b249581dfdb0e445dbbe4bd",
+    "bytes": 1463
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/02_vlastne_3d_cfd/podklady/native_quality_review_20261023/summary.json",
+    "target": "05_history/cfd_pilots/podklady/native_quality_review_20261023/summary.json",
+    "sha256": "b392b38e91b767a13f5a128b6e5312c8f992f6b76af361bdc69c82db4810cbd1",
+    "bytes": 15971
+  }
+]

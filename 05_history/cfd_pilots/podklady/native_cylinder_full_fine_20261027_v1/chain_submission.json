@@ -1,0 +1,118 @@
+{
+  "status": "RELEASED",
+  "stages": [
+    {
+      "index": 0,
+      "job": "135327",
+      "tau_start": 40,
+      "tau_end": 80,
+      "delta_tau": 0.4
+    },
+    {
+      "index": 1,
+      "job": "135328",
+      "tau_start": 80,
+      "tau_end": 120,
+      "delta_tau": 4
+    },
+    {
+      "index": 2,
+      "job": "135329",
+      "tau_start": 120,
+      "tau_end": 160,
+      "delta_tau": 4
+    },
+    {
+      "index": 3,
+      "job": "135330",
+      "tau_start": 160,
+      "tau_end": 200,
+      "delta_tau": 4
+    },
+    {
+      "index": 4,
+      "job": "135331",
+      "tau_start": 200,
+      "tau_end": 240,
+      "delta_tau": 4
+    },
+    {
+      "index": 5,
+      "job": "135332",
+      "tau_start": 240,
+      "tau_end": 280,
+      "delta_tau": 4
+    },
+    {
+      "index": 6,
+      "job": "135333",
+      "tau_start": 280,
+      "tau_end": 320,
+      "delta_tau": 4
+    },
+    {
+      "index": 7,
+      "job": "135334",
+      "tau_start": 320,
+      "tau_end": 360,
+      "delta_tau": 0.4
+    },
+    {
+      "index": 8,
+      "job": "135335",
+      "tau_start": 360,
+      "tau_end": 400,
+      "delta_tau": 0.4
+    }
+  ],
+  "export_job": "135336",
+  "comparison_job": "135337",
+  "capture_jobs": [
+    {
+      "job": "135338",
+      "target": "135327"
+    },
+    {
+      "job": "135339",
+      "target": "135328"
+    },
+    {
+      "job": "135340",
+      "target": "135329"
+    },
+    {
+      "job": "135341",
+      "target": "135330"
+    },
+    {
+      "job": "135342",
+      "target": "135331"
+    },
+    {
+      "job": "135343",
+      "target": "135332"
+    },
+    {
+      "job": "135344",
+      "target": "135333"
+    },
+    {
+      "job": "135345",
+      "target": "135334"
+    },
+    {
+      "job": "135346",
+      "target": "135335"
+    },
+    {
+      "job": "135347",
+      "target": "135336"
+    },
+    {
+      "job": "135348",
+      "target": "135337"
+    }
+  ],
+  "freeze_sha256": "df3d417ceb9ecf2af142ed0e335e27ee9f9541cdff7bc7a236fa9c4b7bea918e",
+  "comparison_freeze_sha256": "2d2615780fe4cd24440190c1291a939290196fbd827bf604cd6f5a60757097d0"
+}

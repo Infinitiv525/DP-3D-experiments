@@ -1,0 +1,5 @@
+{
+  "job": "128179",
+  "source_freeze_sha256": "ac96c06a515675a30d989777229155d26212a64edb826095d53d4a89fa1c68f7",
+  "purpose": "TRAIN-only fixed-mesh temporal sensitivity control: fine1.0 mesh/initial state unchanged, halve maxCo/maxDeltaTau; no production acceptance"
+}

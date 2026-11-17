@@ -1,0 +1,12 @@
+{
+  "status": "CPU_SCHEDULER_CAPTURED",
+  "job": "129254_0",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "cpu_count": 32,
+  "runtime_seconds": 55419,
+  "allocated_core_seconds": 1773408,
+  "peak_memory_unavailable": true,
+  "query_sha256": "984ff0cdc45290b5f7de03e1884f2ba99575dfbba16595e710b8ebf02227986b",
+  "source_sha256": "390261a4d4ba9fa5d4cc3d7aab72fcc16120cc168ed155070ade4f5bac645b0d"
+}

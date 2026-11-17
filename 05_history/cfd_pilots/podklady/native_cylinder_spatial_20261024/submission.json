@@ -1,0 +1,5 @@
+{
+  "job": "129254",
+  "freeze_sha256": "6cdecb54b83b130052e7f9c96bebc4288d7f12eabfd4e36e441240566c0831d1",
+  "scope": "TRAIN-only spatial sensitivity: mesh factor0.8 vs existing1.0, both maxCo0.1/maxDeltaTau0.01. No production acceptance."
+}

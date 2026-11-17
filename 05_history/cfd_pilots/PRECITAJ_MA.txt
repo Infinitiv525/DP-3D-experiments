@@ -1,0 +1,15 @@
+VLASTNE 3D CFD – PODKLADY, NIE HOTOVY DYNAMICKY LLM EXPERIMENT
+
+podklady/obsahuju male lokalne zhrnutia a audity skor vykonanych kontrol.
+native_cylinder_full_20261025_v3/completion_review_20261027.json potvrdzuje
+461stavov jedneho TRAIN pripadu tau0..400. production_accepted=false.
+native_cylinder_full_fine_20261027_v1/chain_submission.json dokumentuje
+odoslane jemnejsie pokracovanie135327..135335,export135336 a review135337.
+Ziadne chybajuce konecne vysledky sa v tomto baliku nepredpokladaju.
+
+Perun koren:/mnt/project/perun2601449/dp_llm_cfd
+Hotovy pilot:results/native_expansion/cylinder_full_20261025_v3/
+Jemnejsie pokracovanie:results/native_expansion/cylinder_full_fine_20261027_v1/
+Velke polia su iba naPerune. Vytvorenie tohto priecinka nic naPerune
+nemenilo, nestahovalo ani nerusilo. Aktualny vzdialeny stav sa pri
+tomto lokalnom triedeni samostatne neoveroval.

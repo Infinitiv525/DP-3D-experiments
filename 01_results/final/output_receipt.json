@@ -1,0 +1,69 @@
+{
+  "input_sha256": "d3ec70958151c8988286b1f6aa518f61862373b242881c77fe2349d956fe9da1",
+  "builder_sha256": "0b5be6d03671d00240756c09b1fb570058b44eb3d0ad153586e73e53e81b4fda",
+  "figures": [
+    "01_testovacia_presnost",
+    "02_porovnanie_llm_tpe",
+    "03_naklady_vyberu",
+    "04_priebeh_hladania",
+    "05_latencia"
+  ],
+  "files": {
+    "report.txt": {
+      "sha256": "4812432476ac363569f890a6be65ab68bbafc7637d9ec535db8f4bc8974f5a9f",
+      "bytes": 18396
+    },
+    "report.html": {
+      "sha256": "098e47a3fac7765c5a0071d9c6613c769dea8c90761db83af066242b8f656d66",
+      "bytes": 20127
+    },
+    "comparison_numbers.json": {
+      "sha256": "7e0e6c91e36c5993bb718964cb80d42ebc7e4eb4ec303750fe5749ccd8b43fc6",
+      "bytes": 28695
+    },
+    "contact_sheet.png": {
+      "sha256": "6bace1835dc78ca53af5fc3dd62eadda09af1df3dcba06a2ab10b7d4fe1e1615",
+      "bytes": 205511
+    },
+    "01_testovacia_presnost.png": {
+      "sha256": "2d00820491af152dd03dc1814fd9139c3af20c63983711c7d68bddbb3aa0ca09",
+      "bytes": 68117
+    },
+    "01_testovacia_presnost.svg": {
+      "sha256": "e67c45619923fea49a3ee4d490de74b8367d0aaaa17fe1f68ad84bebffddd32b",
+      "bytes": 58158
+    },
+    "02_porovnanie_llm_tpe.png": {
+      "sha256": "6f54e170734df83e1d1fc6ffe38dd34f128edbe7584eb4a0251a80aa11661cfb",
+      "bytes": 48912
+    },
+    "02_porovnanie_llm_tpe.svg": {
+      "sha256": "7a21191a8491666003e028f744f77f43daa5cdcaecedf967c406579a1878e5b6",
+      "bytes": 51400
+    },
+    "03_naklady_vyberu.png": {
+      "sha256": "2bf6f8e8cd813a5ea2a660452629a137877396db987e8a4a981f1f09361a9e03",
+      "bytes": 72532
+    },
+    "03_naklady_vyberu.svg": {
+      "sha256": "9de9dca6cd3296314fc5978827f8ea098c08489e03be81d65803c7f6c7fee2fd",
+      "bytes": 59013
+    },
+    "04_priebeh_hladania.png": {
+      "sha256": "6665cb5fec70e02c3a21fa28919b0ccd9ac457e24874ddc95dff7265f7dbc267",
+      "bytes": 92174
+    },
+    "04_priebeh_hladania.svg": {
+      "sha256": "1df46eda21a229c969a5665e412c073639707c13269147e4c97f64c9f9015d9e",
+      "bytes": 66179
+    },
+    "05_latencia.png": {
+      "sha256": "19e83c409f1963c613172dacf01fb4911e05a1d32ffa90de3cb993c87f02b991",
+      "bytes": 50729
+    },
+    "05_latencia.svg": {
+      "sha256": "c9692bccb8c4ba4d3bb77b44c078ccc04ac757630f7cee4eb53aa88fee92e05b",
+      "bytes": 47569
+    }
+  }
+}
