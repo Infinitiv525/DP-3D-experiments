@@ -1,0 +1,867 @@
+NÁVRH EXPERIMENTÁLNEHO PROTOKOLU
+Prínos LLM pri nastavovaní tréningu modelu 3D prúdenia
+Verzia 0.3 | 21. 10. 2026 | STAV: NÁVRH, NIE UZAMKNUTÝ EXPERIMENT
+Aktualizácia: lokálne LLM sú záväzná voľba; dodatok13 spresňuje viac modelov.
+
+1. ČO CHCEME ZISTIŤ
+
+Chceme overiť, či LLM pri obmedzenom rozpočte nájde lepšie nastavenie
+tréningu neurónového operátora než ručné nastavenie, náhodné hľadanie
+a optimalizácia Optuna TPE. Lepšie znamená najmä presnejšiu predikciu
+rýchlosti a tlaku na geometriách, ktoré model pri tréningu nevidel.
+Osobitne zmeriame fyzikálne vlastnosti, stabilitu a výpočtové náklady.
+
+LLM nebude nahrádzať numerický CFD solver ani priamo generovať prúdenie.
+Bude konfigurátor: navrhne parametre, model sa natrénuje, vyhodnotí sa
+na validačných dátach a konfigurátor dostane výsledok pre ďalší návrh.
+Prúdenie bude predikovať samostatný FNO model, nie samotný LLM.
+
+Hlavná hypotéza: LLM dosiahne pri rovnakom rozpočte nižšie hlavné
+testovacie skóre než Optuna TPE. Porovnanie s random a ručným základom
+ukáže, či prípadné zlepšenie presahuje aj jednoduchšie alternatívy.
+Nulový alebo negatívny výsledok je platný výsledok, nie dôvod meniť metriku.
+Záver sa bude týkať konkrétneho LLM, úlohy a rozpočtu, nie všetkých LLM.
+
+2. DVA BENCHMARKY, DVE ODDELENÉ OTÁZKY
+
+A. Najprv FlowBench LDC_NS_3D: geometria a Reynoldsovo číslo na vstupe,
+ustálené 3D polia u, v, w, p na výstupe. Nejde o časový vývoj ani hladinu.
+Toto bude prvý hlavný experiment, lebo referenčné dáta už máme pripravené.
+
+B. Neskôr vlastné CFD dáta: časový vývoj 3D laminárneho prúdenia okolo
+prekážok. Pred spustením dostanú samostatný dodatok s časovým vstupom,
+rollout horizontom, metrikami a rozpočtom. Pravidlá prístupu k testu
+a porovnávania konfigurátorov sa zachovajú. Výsledky sa nezlejú do jedného
+skóre s FlowBench. Otvorená hladina zatiaľ nie je súčasťou tohto protokolu.
+
+Vlastná produkčná sada ešte nie je hotová. Šesť reprezentatívnych rodín
+prešlo sieťou a krátkym solver testom; dlhší fidelity screen majú box
+a mixed-pair. To neznamená validáciu všetkých prípadov a celého času.
+Tento dokument neschvaľuje automatické generovanie celej sady72prípadov.
+
+3. DÁTA PRE FLOWBENCH A OCHRANA TESTU
+
+Použijeme revíziu937c672604d4c9f39aceedf1fa2f0a603695264b a výhradne
+opravený cache uniform64_native_gauge. Pôvodné archívy zostanú zachované.
+Tlaková konštanta sa odstráni na natívnej fluid oblasti pred interpoláciou;
+na coarse mriežke sa použije existujúce per-sample fluid mean centrovanie.
+Referencia aj predikcia sa pri hodnotení tlaku zarovnajú cez fluid mean.
+Maska kvapaliny: SDF>0. Výstupné čísla sa vyhodnocujú vo fluid oblasti.
+Train-only normalizácia sa nemení podľa výsledkov validačnej/testovej sady.
+
+Pracovné rozlíšenie hlavnej úlohy je64x64x64 s oboma koncami domény.
+Ide o predikciu spracovanej coarse referencie, nie dôkaz presnosti na128^3
+ani dôkaz fyzikálnej správnosti natívneho solvera. Cache audit, osi,
+boundary podmienky, maska a interpolácia musia byť skontrolované pred freeze.
+
+Existujúci split je700train/150validation/150test vzoriek, teda70/15/15
+presných geometrických skupín, každá s10Re. Rovnaká presná geometria
+nesmie byť v dvoch splitoch. Split a checksum sa zapíšu do manifestu.
+Pred freeze dokončíme audit blízkych geometrií a rozloženia Re bez čítania
+testových cieľových polí alebo chýb modelov. Nález úniku sa vyrieši
+zdokumentovanou revíziou pred experimentom, nie po zhliadnutí testu.
+Bez rodinového auditu nebudeme výsledok označovať ako silnú OOD generalizáciu.
+
+Validation už bol použitý pri pilotoch; túto skutočnosť priznávame.
+Slúži na ladenie a výber, nie na nezávislé potvrdenie hypotézy.
+Testové ciele, chyby a poradie metód nebudú dostupné konfigurátorom.
+Test sa otvorí až po uzamknutí všetkých vybraných konfigurácií a checkpointov.
+Po otvorení testu sa nastavenia neopravia podľa testových výsledkov.
+
+4. POROVNÁVANÉ METÓDY
+
+M0: pevné ručné nastavenie, zafixované pred hlavným hľadaním.
+M1: náhodné hľadanie v povolenom priestore.
+M2: Optuna TPE s uloženou verziou knižnice a sampler nastaveniami.
+M3: LLM konfigurátor s pevne zvoleným modelom a promptom.
+
+LLM+Optuna nie je súčasťou hlavného porovnania verzie0.1. Ak bude rozpočet,
+pridá sa ako vopred označený samostatný experiment, nie dodatočný víťaz.
+M0 je pevný referenčný bod, nie adaptívna metóda s rovnakým hľadaním.
+Rovnosť vyhľadávacieho rozpočtu sa preto požaduje medzi M1, M2 a M3;
+pri M0 vykážeme skutočné nižšie náklady a nepredstierame rovnaké hľadanie.
+
+5. ČO JE PEVNÉ A ČO SA SMIE MENIŤ
+
+Pevné: steady FNO, width12,2vrstvy,4Fourier módy, padding4 na každej
+strane, vstupSDF/Re+3súradnice, výstupu/v/w/p, rozlíšenie64^3, FP32,
+batch1, AdamW, gradient clipping1, rovnaké dáta, implementácia a hardvér.
+Nemeníme architektúru, rovnice, CFD dáta, počet epoch podľa metódy ani
+nepovoľujeme LLM písať a spúšťať vlastný kód.
+
+Navrhovaný spoločný priestor štyroch parametrov:
+- learning_rate: spojitá log-uniform distribúcia [1e-4,3e-3];
+- weight_decay: spojitá log-uniform distribúcia [1e-6,1e-2];
+- pressure_weight: kategórie {0.25,0.5,1,2,4};
+- divergence_weight: kategórie {0,0.001,0.003,0.01,0.03}.
+LLM musí zvoliť hodnoty z rovnakého priestoru; nedostane širšie možnosti.
+Pevný ručný základ: lr0.001, weight_decay0.01, pressure_weight1,
+divergence_weight0. Toto je pilotom informovaný základ, nie slepý výber.
+
+Definícia tréningovej straty po train-only štandardizácii:
+MSE_U = priemer štvorcových chýb troch zložiek rýchlosti cez celú mriežku;
+MSE_p = priemer štvorcových chýb tlaku cez celú mriežku;
+L_data = (3*MSE_U + pressure_weight*MSE_p)/(3+pressure_weight);
+L_total = L_data + divergence_weight*L_div.
+Pri pressure_weight1 sa dátová časť rovná terajšej štvor-kanálovej MSE.
+Solids sa v tréningovej dátovej strate zatiaľ ponechajú rovnako pre všetkých;
+hlavné hodnotenie je fluid-only. Žiadna metóda nesmie masku sama zmeniť.
+
+L_div je existujúca central-FD divergencia v jednotkovej doméne,
+iba na stencile s fluid stredom a všetkými6fluid susedmi:
+mean(div(U_pred)^2)/max(mean(div(U_ref)^2),1e-4).
+Nie je to úplné Navierovo-Stokesovo rezíduum ani dimenzionálna divergencia.
+Jej vyhodnotenie prebehne aj pri nulovej váhe, aby sa náklady nezvýhodnili.
+Referenčná coarse divergencia nemusí byť nulová; nižšia predikovaná hodnota
+sama osebe nedokazuje lepšiu fyziku.
+
+Terajší smoke tréner ešte nemá všetky uvedené voľby ani nové checkpoint
+selection pravidlo. Najprv sa implementujú a overia; nejde o opis už
+spusteného experimentu. Historické pilotné výsledky sa nepreznačia.
+
+6. HLAVNÉ SKÓRE A VÝBER CHECKPOINTU
+
+Pre každú vzorku vo fluid oblasti vypočítame:
+e_U = ||U_pred-U_ref||_2 / max(||U_ref||_2,1e-12), všetky3zložky spolu;
+e_p = ||p_pred_centered-p_ref_centered||_2 /
+      max(||p_ref_centered||_2,1e-12).
+Normy používajú float64 akumuláciu; uvádza sa počet prípadov pod epsilon.
+Pred freeze overíme na train/validation, že menovatele nie sú degenerované.
+Pri ich zlyhaní sa metrika opraví otvorene ešte pred hlavným porovnaním.
+
+Pre každú geometriu najprv spriemerujeme chyby jej10Re, potom geometrie:
+E_U = geometrický-skupinový priemer e_U;
+E_p = geometrický-skupinový priemer e_p;
+S = 0.5*E_U + 0.5*E_p. Nižšie je lepšie.
+Ide o aritmetický priemer cez skupiny, nie geometrický priemer čísel.
+Rovnaká váha rýchlosti a tlaku je naša explicitná výskumná voľba, nie
+univerzálny štandard. Obe zložky preto vždy ukážeme aj samostatne.
+
+Každý pokus uloží checkpoint s najnižším validačným S v danom počte epoch.
+Pri presnej zhode vyhrá skoršia epocha. Víťazná konfigurácia každej metódy
+má najnižšie validačné S; pri zhode vyhrá skorší pokus. Fyzikálna strata
+nie je súčasťou výberového S, aby zmena jej váhy nemenila samotné meradlo.
+Sekundárne ukážeme kompromis S/divergencia a rozklad podľa Re.
+Pokles S so zhoršením niektorej zložky sa nesmie opísať ako zlepšenie všetkého.
+
+7. PRIEBEH HĽADANIA A ROZPOČET
+
+Navrhovaný rozsah:3nezávislé opakovania hľadania pre M1/M2/M3,
+12celkových pokusov na metódu v každom opakovaní,20epoch na pokus,
+vždy všetkých700train/150validation vzoriek. Bez pruning a early stopping;
+počet epoch je rovnaký aj pri zlom priebehu, okrem NaN/OOM/technickej chyby.
+Každý pokus začína od novej inicializácie, nie z úspešného starého checkpointu.
+
+V každom opakovaní prvé3konfigurácie predstavujú spoločný štart:
+ručný základ +2vopred vygenerované náhodné konfigurácie. Rovnaké3výsledky
+dostane random/TPE/LLM; každý zvyšných9pokusov vyberie svojou metódou.
+Náklady spoločného štartu sa logicky započítajú každej metóde, aj keď sa
+identické tréningy fyzicky vykonajú iba raz. Rovnaké zdieľané informácie
+dostanú všetci; staré pilotné tabuľky nedostane iba samotný LLM.
+
+Seedy: rozdelenie dát ostáva pôvodné; hľadanie20261101/20261102/20261103.
+Tréningový seed v pokusej opakovaniar bude310000+100*r+j,
+r=0..2,j=0..11. Na zhodnej pozícii majú metódy rovnakú inicializáciu
+a poradie vzoriek. Samostatný RNG riadi výber konfigurácií, nie dáta.
+Softvérovú nedeterministickosť zaznamenáme; seed negarantuje bitovú zhodu.
+
+Primárny rozpočet pre M1/M2/M3 je rovnaký pevný strop B tréningových GPU-h
+na jedno opakovanie; súčasne platí maximálne12pokusov. B sa číselne určí
+z technickej skúšky, s rezervou, a doplní PRED hlavným experimentom.
+Pokus prekračujúci B sa zastaví, spotreba sa započíta a nedokončený pokus
+sa nepoužije na výber. Čerpanie zahŕňa inicializáciu, tréning a validáciu;
+účtované GPU-h pridelenia sa vykážu oddelene od aktívneho meraného času.
+Najlepšie skóre sa porovná aj pri spoločných dosiahnutých GPU-h bodoch;
+krivka podľa počtu pokusov je sekundárna. Rovnaký počet pokusov sám osebe
+nie je dôkaz rovnakých nákladov.
+
+LLM čas/GPU-h/tokeny/cenu vykážeme osobitne a pripočítame pri celkovom
+nákladovom porovnaní. Primárny záver pri rovnakom tréningovom rozpočte
+sa nesmie prezentovať ako záver pri rovnakých celkových nákladoch.
+Ak LLM spotreba nie je zanedbateľná, doplníme porovnanie pri celkovom
+nákladovom limite, s pravidlami schválenými pred zberom hlavného výsledku.
+
+NaN/OOM/nesprávny návrh spotrebuje pokus a skutočný čas, výsledok je +inf.
+Výpadok infraštruktúry možno raz zopakovať s rovnakou konfiguráciou/seed;
+obe spotreby sa evidujú, výnimka sa nesmie viazať na dosiahnutú presnosť.
+Žiadna metóda nedostane dodatočné pokusy preto, že prehráva.
+
+8. LOKÁLNY LLM NA PERUNE
+
+Na výslovné rozhodnutie používateľa použijeme iba lokálne modely s dostupnými váhami,
+spustený na výpočtovom GPU uzle Perunu, nie na prihlasovacom uzle.
+Po získaní váh môže samotné generovanie návrhov bežať bez internetového
+API. Lokálne váhy automaticky neznamenajú nekomerčnú alebo neobmedzenú
+licenciu: licenciu vybraného modelu overíme pred použitím.
+Konkrétny model zatiaľ NIE JE vybraný, stiahnutý ani odskúšaný.
+
+Lokálny model uľahčí uloženie presnej revízie váh a obmedzí závislosť
+od dostupnosti poskytovateľa; spotrebuje však vlastné GPU-h a pamäť.
+Externé API sa v tomto experimente nepoužije. Výber lokálneho runtime
+a revízií modelov sa uzamkne pred hlavným experimentom.
+
+Spôsobilosť LLM overíme iba na syntetickej tabuľke, bez CFD/test metrík:
+vie vrátiť validný JSON, dodržať rozsahy a spracovať históriu12pokusov.
+Model sa nesmie vybrať podľa toho, ktorý najlepšie dopadol na našom teste.
+Zafixujeme model/revíziu/tokenizer, licenciu, checksum váh, kvantizáciu,
+inference engine/verziu, prompt, kontextový limit a decoding nastavenia.
+Predvolený režim je greedy bez sampling, max1024výstupných tokenov;
+prompt aj celá12pokusová história sa musia zmestiť bez skrytého skracovania.
+Pri každom lokálnom modeli sa uloží presná verzia runtime a chat template.
+
+LLM uvidí definíciu úlohy, povolený priestor, hodnotiace pravidlo, zostávajúci
+rozpočet a rovnakú tabuľku doterajších konfigurácií a validačných metrík.
+TPE má prístup k rovnakej dátovej tabuľke, jeho sampler používa S.
+Sémantické znalosti LLM sú súčasťou skúmanej metódy, nie tvrdenie o rovnakej
+predtrénovacej znalosti. Verejný FlowBench mohol byť v predtréningu LLM;
+túto možnosť nevieme vylúčiť. Vlastné dáta budú preto dôležité overenie.
+LLM neuvidí testové polia, testové chyby ani samostatné vzorkové tréningové dáta.
+Nemá shell, web, filesystem ani právo meniť tréning. Vracia iba JSON
+so štyrmi parametrami a krátkym zdôvodnením, ktoré nie je dôkaz správnosti.
+Neplatný JSON dostane najviac1opravu s rovnakým generickým chybovým hlásením;
+pri opätovnej chybe pokus zlyhá. Oba vstupy/výstupy a náklady sa uložia.
+Duplikát konfigurácie sa nezamieňa potichu; spotrebuje pokus podľa rovnakého
+pravidla aj pri random/TPE. Pri výpadku modelu sa nemení poskytovateľ uprostred.
+
+LLM je mimo predikčnej slučky: jeho návrh môže trvať sekundy či minúty.
+Limit5ms sa vzťahuje na inferenciu natrénovaného FNO, NIE na odpoveď LLM.
+
+9. KONEČNÉ TRÉNINGY, TEST A ŠTATISTIKA
+
+Z každého opakovania hľadania vyberieme jednu konfiguráciu metódy cez validation.
+Každú vybranú konfiguráciu znovu od začiatku natrénujeme s5novými seedmi
+410001..410005, rovnakými medzi metódami; opäť20epoch a rovnaké selection S.
+Pevný manuálny základ potrebuje iba5takých tréningov, nie15duplicitných.
+Výsledky ukážeme aj po jednotlivých opakovaniach, nevyberieme len najlepšie
+hľadanie LLM. Náklady finálnych tréningov vykážeme mimo search rozpočtu.
+
+Test sa vyhodnotí jedným naplánovaným krokom pre všetky uzamknuté checkpointy.
+Hlavné reporty: S, E_U, E_p, distribúcia chýb podľa geometrie/Re, FD divergencia
+predikcie aj referencie, chyby wall/no-slip a lid podmienok, konečnosť polí,
+náklady, zlyhania a latencia. Divergenciu nebudeme nazývať úplnou fyzikou.
+FlowBench test sa nepoužije na tréning, fine-tuning ani dopĺňanie pokusov.
+
+Primárny kontrast: deltaS = S_LLM - S_TPE; záporné je v prospech LLM.
+Ďalšie kontrasty LLM-random a LLM-manual uvedieme oddelene. Vopred navrhujeme
+praktický cieľ aspoň5%relatívneho zníženia S voči TPE; nejde o normu odboru.
+Uvádzame aj absolútny rozdiel a nezávislé zložky, nie iba percentuálny slogan.
+Praktický cieľ sa posúdi bodovým odhadom; neistota rozdielu sa uvádza
+osobitne. Presvedčivá podpora hlavnej hypotézy vyžaduje zároveň záporný
+celý95%interval primárneho deltaS, nie iba lepší bodový priemer.
+
+95%intervaly:10000párových bootstrap resamplov, seed510001.
+Vzorkuje sa po geometriách a celých opakovaniach hľadania; tréningové seedy
+sa resamplujú párovo a oddelene od geometrií (krížené zdroje variability).
+Re rovnakej geometrie nie sú nezávislé pozorovania. Zdieľaný manuálny základ
+sa nesmie počítať ako3nezávislé hľadania. Uvedieme aj variabilitu zdrojov
+osobitne, aby úzke podmienené intervaly nezakrývali nestabilitu tréningu.
+
+Pri15test geometriách a3hľadaniach bude sila záveru obmedzená. Interval,
+ktorý zahŕňa nulu, označíme ako nejednoznačný výsledok, nie dôkaz rovnosti.
+Primárne používame efekt a intervaly; dodatočné testy významnosti a nové
+kontrasty budú exploračné. Ak budú p-hodnoty súčasťou freeze dodatku,
+zafixuje sa permutačná jednotka a Holm korekcia troch LLM kontrastov.
+
+10. LIMIT5ms A JEHO MERANIE
+
+5ms je zvolený technický cieľ zodpovedajúci200predikciám za sekundu,
+nie fyzikálna požiadavka Navierových-Stokesových rovníc a nie univerzálna
+hranica literatúry. Sekundárne vykážeme aj16,7ms a33,3ms. Trvanie fyzikálneho
+kroku nie je automaticky5ms; pri steady FlowBench vôbec nejde o časový krok.
+
+Meranie na jednej identifikovanej NVIDIA H200, batch1, FP32,64^3,
+rovnaký softvér, bez súbežnej LLM alebo cudzej GPU záťaže. Uložíme GPU model,
+ovládač, CUDA/Torch, nastavenia, checkpoint hash a vstupné tvary.
+Použijeme100warm-up a1000meraných behov, opakované v3samostatných sériách;
+synchronizácia pred/po meraní a CUDA events aj wall-clock. Report p50/p95/p99
+po sériách; splnenie hlavného cieľa vyžaduje p99<=5ms v každej sérii.
+
+A: GPU-resident vstup a výstup, iba model; toto je hlavný modelový limit.
+B: od pripravených CPU polí cez normalizáciu, prenos na GPU, model,
+denormalizáciu a návrat fyzikálnych polí do CPU; samostatný end-to-end údaj.
+Čítanie diskov a rendering sú mimo A/B a vykazujú sa oddelene, ak sa merajú.
+Typ prenosu/pamäte a súradnicové cache musia byť totožné medzi metódami.
+Merania na interpolovanom128^3vstupe sú iba compute timing, nie dôkaz
+presnosti128^3. BF16 prípadne doplníme ako oddelený experiment s kontrolou chyby.
+Pri pevnej architektúre neočakávame od konfigurátora automatické zrýchlenie;
+latencia overuje použiteľnosť výsledku, nie samostatný prínos LLM.
+
+11. TECHNICKÁ SKÚŠKA A PODMIENKY ŠTARTU
+
+Pred hlavným porovnaním implementujeme chýbajúce parametre a S-checkpoint
+selection; jednotkové testy overia stratu, masku, gauge, metriky, seed,
+train-only normalizáciu, rozpočet, neplatný JSON a neprístupný test.
+Spustíme malú skúšku celého cyklu pre každú metódu, označenú ako technický
+pilot. Jej výsledky sa nestanú hlavnými pokusmi ani bonusovou históriou LLM.
+Na pilotných nákladoch určíme B, maximálne wall-time/CPU/RAM a celkový
+strop vrátane finálnych tréningov a prevádzky LLM. Overíme aktuálny zostatok
+alokácie; starý portálový screenshot nie je aktuálne účtovníctvo.
+
+Pred freeze sa doplní: výsledok dátového auditu, split/cache checksumy,
+konkrétny LLM/backend/licencia/prompt hash, TPE sampler nastavenia/verzia,
+číselné B aj celkový strop, otestované timeouty, presné finálne metrické
+a bootstrap implementácie a hardvérový manifest. Overí sa dostatočná
+kapacita miestneho LLM a pravidlá Perunu. Bez týchto údajov hlavný beh nezačne.
+
+Po odsúhlasení sa uloží nemenná verzia protokolu a hash. Každá neskoršia
+zmena bude mať dátum, dôvod, dopad a označenie, či už bol otvorený test.
+Tento návrh je FlowBench-špecifické spresnenie starších pilotných plánov,
+nie ich tiché prepísanie: hlavné S je kombinované, free-surface metriky
+sa sem nepreberajú a LLM+Optuna je zatiaľ vynechaný. Pri freeze sa zosúladia
+strojové konfigurácie vrátane comparison_protocol.json a latency_protocol.json.
+
+12. ČO SA ULOŽÍ A ČO BUDE V DIZERTÁCII
+
+Pre každý pokus: ID/metóda/opakovanie/seedy, úplná konfigurácia, história
+epoch, checkpoint hash a best epocha, validation metriky po geometriách,
+normalizácia, logy, runtime, alokované zdroje, zlyhania, zdrojový kód/verzie.
+Pre LLM navyše: úplné prompty/odpovede, validácia a opravy JSON, model hash,
+decoding, tokeny, čas a GPU/API náklady. Žiadne API kľúče ani SSH tajomstvá
+sa nesmú ukladať do reportov; prípadné API používa len schválené súhrny.
+
+Čísla budú v JSON/CSV, ku každej tabuľke jasné jednotky a pôvod, malé
+grafy a ľudský súhrn v dokumentacia.txt. Veľké dáta/checkpointy ostávajú
+na Perune; do PC pôjdu iba malé výstupy. Súbory iného chatu sa nemenia.
+
+Do práce vzniknú: diagram experimentu, dátový audit, presný protokol,
+krivky najlepšieho validačného S podľa GPU-h, finálne testové tabuľky
+s intervalmi, rýchlosť/tlak/divergencia kompromisy, náklady a latencie,
+reprezentatívne3Drezy/chybové mapy a otvorený opis obmedzení.
+Ukážky sa vyberú vopred určeným pravidlom (medián a najhoršie S), nie
+iba vizuálne najkrajšie. Výsledkom nemá byť iba video alebo funkčný program,
+ale odpoveď, kedy a za akú cenu LLM pomáha, nepomáha alebo výsledok nie je jasný.
+
+Používateľ rozhodol pre lokálne modely. Ich finálny zoznam, presné revízie
+a celkový rozpočet ostávajú na overenie pred freeze. V rámci prípravy
+tohto súboru sa nič na Perune nespúšťa ani nesťahuje.
+
+13. DODATOK: VIAC LOKÁLNYCH MODELOV A ZÁZNAM ROZHODOVANIA
+
+Overené kandidátske modelové karty k21.10.2026, štyri rôzne rodiny:
+A. Qwen/Qwen3-8B:8B trieda, Apache2.0, hybridný thinking/non-thinking.
+   Kandidát na všeobecný konfigurátor; pre hlavné porovnanie navrhujeme
+   non-thinking režim a krátke zdôvodnenie, nie neobmedzené reasoning tokeny.
+   https://huggingface.co/Qwen/Qwen3-8B
+B. mistralai/Ministral-3-8B-Instruct-2512:8.4B jazyková časť +0.4B vision,
+   Apache2.0; pôvodný instruct checkpoint je FP8. Kandidát aj pre JSON výstup.
+   Použijeme iba text; presnosť načítania sa nesmie zameniť za BF16 bez záznamu.
+   https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
+C. microsoft/Phi-4-mini-instruct:3.8B, MIT; menší kandidát na úsporný baseline.
+   https://huggingface.co/microsoft/Phi-4-mini-instruct
+D. google/gemma-3-12b-it:12B trieda, vlastné podmienky Gemma; prístup na HF
+   vyžaduje prijatie podmienok používateľom. Nie je to licencia Apache/MIT.
+   Kandidát na väčší model z ďalšej rodiny, používaný iba s textovým vstupom.
+   https://huggingface.co/google/gemma-3-12b-it
+
+Všetky majú dostupné váhy pre lokálne použitie podľa vlastnej licencie;
+bez poplatkov za API neznamená bez spotreby alokácie. Nejde o zoznam
+najnovších alebo preukázateľne najlepších modelov pre našu úlohu.
+Výber pokrýva rôzne rodiny a veľkosti, nie kontrolovaný experiment veľkosti.
+H200 je realistický cieľ na technickú skúšku po jednom modeli; presná VRAM
+a kompatibilita runtime sa musia zmerať pri našej dĺžke kontextu.
+Váhy sa budú prípadne sťahovať iba na Perun, nie do používateľovho PC.
+Konverzia/kvantizácia ovplyvňuje kvalitu; každá použitá verzia je samostatne
+identifikovaná súčasť konfigurátora, nie potichu vymenený ekvivalent.
+
+Namiesto jednej M3 navrhujeme M3a/M3b/M3c/M3d. Každá bude samostatná metóda
+s tým istým tréningovým rozpočtom B ako random/TPE. Nevyberieme najlepší
+LLM na teste a nebudeme ho spätne prezentovať ako jediný vopred vybraný.
+Pri rovnakom počte opakovaní to rozširuje adaptívne vetvy z3 na6,
+teda približne zdvojnásobuje logický search rozpočet; reálna spotreba
+zohľadní zdieľaný štart a rôzne overheady. Finálne tréningy tiež pribudnú.
+Pred freeze treba potvrdiť uskutočniteľnosť a prípadný menší počet pokusov
+upraviť rovnako pre všetky metódy, nie iba pre slabšie alebo drahšie modely.
+Hlavné kontrasty budú štyri LLM vsTPE; návrh viacnásobnej inferencie je
+Bonferroni simultánnych98.75% bootstrap intervalov pre4kontrasty, popri
+deskriptívnych95%intervaloch. Ich interpretáciu a implementáciu overíme
+pred freeze; samotný najlepší z4bodových výsledkov nepotvrdzuje hypotézu.
+Ostatné porovnania sú sekundárne. Toto spresnenie má prednosť pred pravidlom
+jedného LLM kontrastu v časti9; celý protokol ostáva návrhom.
+
+Pri každom návrhu budeme vyžadovať a ukladať stručné verejné zdôvodnenie:
+- ktoré hyperparametre navrhol alebo zmenil;
+- na ktoré predchádzajúce validačné výsledky sa odvoláva (ID pokusov);
+- aké zlepšenie a aký kompromis očakáva, prípadne aké vidí riziko.
+Uložíme celý prompt, pôvodnú odpoveď, parsovaný JSON, opravy aj konečnú
+konfiguráciu. Zdôvodnenie je tvrdenie modelu, nie prístup k jeho internému
+uvažovaniu ani dôkaz skutočnej príčiny rozhodnutia. Očakávanie pripojíme
+k reálnemu neskoršiemu výsledku, aby sa dal auditovať súlad a omyly.
+Nehodnotíme kvalitu konfigurátora podľa presvedčivosti textu zdôvodnenia.
+
+Meranie rozdelíme na rozhodovanie a následný tréning:
+1. Konfigurátor: čas načítania modelu (cold start) a veľkosť váh,
+   warm čas zostavenia vstupu/tokenizácie, prefill/generovania/validácie
+   a celkový čas do platnej konfigurácie vrátane opráv a zlyhaní;
+   vstupné/výstupné tokeny, peak GPU VRAM a CPU RAM, aktívne GPU-h a
+   celé alokované GPU-h vrátane čakania či nečinnej bežiacej služby.
+2. FNO tréning: čas inicializácie/tréningu/validácie, počet krokov/epoch,
+   aktívne aj alokované GPU-h, CPU-h, peak VRAM/RAM, finálne metriky.
+3. Celý proces: návrh+tréning+výber+finálne overenie, s oddeleným queue time.
+
+Zodpovedajúci rozhodovací overhead CPU/RAM/čas meriame aj random/TPE,
+nielen LLM. Cold start vykážeme samostatne a pri celkovej spotrebe ho
+započítame toľkokrát, koľkokrát naozaj nastal. Zdieľané náklady sa rozdelia
+transparentne, nie dvojito. GPU peak zahŕňa aj rezervácie runtime/KV cache,
+preto odlíšime framework allocated/reserved od vzorkovaného process/device
+merania a uvedieme interval vzorkovania; samotné torch štatistiky nestačia
+pre iný inference engine. Chýbajúci údaj sa označí ako nedostupný, nie nula.
+Energiu netvrdíme ako presne zmeranú bez podporovanej telemetrie.
+Nové meracie funkcie sú požiadavka implementácie; zatiaľ neboli odskúšané.
+
+14. TECHNICKÁ SKÚŠKA SCHVÁLENÁ POUŽÍVATEĽOM
+
+Používateľ schválil získanie váh a skúšku nákladov; potvrdil štyri dostupné
+rodiny vrátane Granite namiesto Gemmy. Gemma ostáva odložená pre gated
+prístup, nie pre zlý výsledok. Štvrtá vetva M3d je preto v aktuálnom návrhu
+ibm-granite/granite-3.3-8b-instruct,8B trieda,Apache2.0. Jej oficiálna karta:
+https://huggingface.co/ibm-granite/granite-3.3-8b-instruct
+
+Presné revízie a nastavenia skúšky sú v config/llm_feasibility_20261021.json.
+Download plán:61 313 251 943bajtov (~61.3GB), iba na Perune; zahŕňa vybrané
+váhy, tokenizer, konfigurácie a licenčné súbory. Vybrané LFS súbory sa
+overia oficiálnym SHA256. Technické úlohy nemenia hlavný CFD/FNO experiment.
+Plán CPU prípravy max2h/4CPU; GPU max20min na každý model, postupne1GPU,
+spolu maximálny rezervačný strop1.3333GPU-h. Skutočná spotreba sa vykáže zvlášť.
+
+Tri syntetické otázky/model: krátka história3pokusov, dlhá12pokusov,
+opakovaná krátka história; čísla sú vymyslené a neobsahujú test ani CFD polia.
+Krátky warm-up, greedy, max512výstupných tokenov na odpoveď, max1oprava,
+90s mäkký generačný limit a1080s tvrdý procesný limit/task. Krátke
+zdôvodnenie a odkazy na ID sa validujú a ukladajú; nejde o hidden reasoning.
+Qwen/Granite non-thinking, Ministral podľa oficiálneho BF16 dequant receptu,
+ostatné BF16. Ide o porovnanie konkrétnych nasadení, nie čisto veľkosti modelov.
+Meranie zahŕňa načítanie, warm návrhy, first token, JSON správnosť, opakovanie,
+CPU/RAM/VRAM, vzorkovanú NVML pamäť a aktívny vsalokovaný čas. Inference
+beží offline s trust_remote_code=False, bez zmien tréningových dát.
+
+Pred interpretáciou: dokončenie všetkých3návrhov, platnosť po najviac1oprave,
+pamäť s rezervou pre daný GPU a skutočný čas do konfigurácie sú technické
+kritériá použiteľnosti. Priemerný/max čas a počet zlyhaní sa uvedú priamo;
+z3otázok neodhadujeme spoľahlivosť ani p99 pre produkciu. Relatívny overhead
+odhadneme voči existujúcemu pilotnému FNO času, ale jasne odlíšime, že nový
+hlavný20epoch tréner sa ešte musí zmerať. Rentabilita v zmysle lepšej
+presnosti za rovnaký rozpočet sa syntetickou skúškou preukázať nedá.
+
+15. VÝSLEDOK TECHNICKEJ SKÚŠKY - NIE HLAVNÝ EXPERIMENT
+
+Príprava123299 a štyri GPU tasky array123301 úspešne skončili na H200.
+Všetkých12návrhov bolo platných na prvý pokus; pri opakovanej krátkej
+otázke boli parametre zhodné pre každý model. GPU pamäť NVML peak:
+Qwen16.48GiB,Ministral19.00GiB,Phi8.25GiB,Granite16.53GiB.
+Časy troch návrhov po načítaní v sekundách:
+Qwen27.05/27.31/1.31;Ministral47.32/42.33/1.86;
+Phi29.37/29.21/3.27;Granite42.28/42.76/2.17.
+Samostatné načítanie modelov približne20.6–41.9s; nejde o disk-cold test,
+filesystem cache sa neflushovala. Celkom471s prideleného GPU cez4tasky
+zo Slurm runtime =0.130833GPU-h; CPU príprava sa počíta osobitne.
+Autoritatívny malý report: test/results/llm_feasibility_123301/summary.json
+a vysledok.txt, remote results/llm_feasibility/review_123301_checked.
+Oprava analytického výberu Slurm array tasku je popísaná v dokumentácii.
+
+Technická uskutočniteľnosť potvrdená v rozsahu tejto skúšky, nie prínos LLM
+pre presnosť alebo ekonomická prevaha nad random/TPE. Všetky4rodiny ostanú
+kandidátmi; podľa týchto3otázok sa nevyberá víťaz. Pred hlavnými behmi
+ostáva zmerať nový tréner, overiť celkový startup/idle overhead a rozpočet,
+implementovať metriky/orchestrátor a uzamknúť zostávajúce podmienky protokolu.
+
+16. NASLEDUJÚCI TECHNICKÝ PILOT S REÁLNYM VALIDAČNÝM FEEDBACKOM
+
+Nový train_flowbench_protocol.py je oddelený od historického smoke trénera.
+Implementuje4hyperparametre, train-only normalizáciu, S-selection a
+geometrický-skupinový priemer s float64 normami vo fluid oblasti. Sedem
+CPU testov a opätovná integrita cache prešli vCPU úlohe123437.
+Prístup k indexom testu je odmietnutý wrapperom; celý testový súbor sa
+číta iba pri štrukturálnom checksum audite, nie pre modelové metriky.
+
+GPU pilot123438:3shared počiatočné konfigurácie a1nový návrh/tréning pre
+každý z4lokálnych modelov. Každý tréning2epoch,700train/150validation,
+64^3/FP32/batch1 a rovnaká architektúra; main20epoch pravidlo sa nemení.
+Každý model dostáva tú istú malú tabuľku reálnych validačných výsledkov,
+nikdy polia/test, iba krátky allowlist. Jazyk promptu aj zdôvodnení je
+rovnaký anglický pre všetky4modely; originály sa archivujú bez prekladu.
+Po návrhu sa LLM proces ukončí a GPU uvoľní pred novým FNO tréningom.
+Neplatný návrh sa nespustí, spoločný neúspešný štart zastaví celý pilot.
+
+Config flowbench_feedback_pilot_20261021.json určuje seedy, rozsahy,
+2epoch režim, časové limity a manuálny základ. Rezervácia max30min/1GPU
+=0.5GPU-h, celkový proces max25min; samostatné logy rozhodnutí a tréningov.
+Porovnávací TPE/random adaptívny search sa týmto ešte nespúšťa. Aj keď
+vzniknú rozdielne S, z jediného2epoch pokusu/model sa nevyberá víťaz.
+CPU review123439 overí väzby feedback->návrh->konfigurácia->tréning,
+zhodnú normalizáciu, seed, výber checkpointu a metriky po15geometriách.
+
+17. VÝSLEDOK PREPOJENIA A VERZIOVANÁ OPRAVA FORMÁTU
+
+Pôvodný cyklus123438 dokončil6tréningov:3shared a po1pre Qwen/Ministral/Phi.
+Granite2xpridal nepovolené pole total_words, preto sa jeho tréning správne
+nespustil. Report123439 je NOT_PASSED pre chýbajúci siedmy trial, nie
+pre nezhodu existujúcich6normalizácií alebo skórovania. SlurmFAILED
+pôvodného GPU jobu odráža tento zámerne nenulový návratový kód.
+
+Kontrakt promptu2 výslovne určuje EXACTLY8keys a zakazuje ďalšie kľúče
+vrátane word-count metadát; validátor ani hyperparameter priestor sa
+nezmierňujú. Samostatný opravný job123449 s rovnakým pôvodným feedbackom
+úspešne vytvoril platný Granite návrh a následný2epoch tréning so seedom310003.
+Pôvodný priebeh sa neprepisuje. Všetkých7dokončených tréningov naprieč
+oboma behmi má rovnaký checksum train-only normalizácií; konfigurácia,
+seed a feedback hash opravnej vetvy sú overené. Skóre/checkpoint výber
+boli nezávisle prepočítané z150val vzoriek/15geometrií.
+
+Časy Slurm701s+204s =905s jedného prideleného GPU,0.251389GPU-h,
+vrátane neúspešného Granite návrhu a opravy; CPU audit/review sa vykazuje zvlášť.
+Na pôvodnom uzle trval2epoch trial po zdieľanej normalizácii približne53s;
+opravný trial na inom uzle106s (prvá epocha73.97s,druhá23.05s).
+Počiatočné náklady sa nezahadzujú. Čas20epoch hlavného režimu sa ešte musí
+priamo zmerať, nie tvrdiť ako presná extrapolácia z tohto pilotu.
+
+Ide o potvrdenie fungovania dátového/riadiaceho prepojenia, nie o porovnanie
+účinnosti LLM. Opravný Granite používal promptv2, ostatnív1; z tejto
+zmiešanej technickej skúšky sa nesmie zostaviť vedecké poradie modelov.
+Pred hlavným porovnaním dostanú všetci rovnakú zafixovanú verziu2 promptu.
+Vysvetlenia sú uložené, ale overenie existencie evidence ID nie je dôkaz
+správnosti slovného tvrdenia. Testová sada nebola hodnotená.
+Reporty: test/results/llm_feedback_cycle_123438 a llm_feedback_repair_123449.
+Main search, adaptívna Optuna/random vetva, ďalšie seedy, hlavný20epoch
+rozpočet a finálne latency/boundary audity zostávajú na prípravu/freeze.
+
+18. KALIBRÁCIA20EPOCH, RANDOM/TPE A NÁVRH KONKRÉTNEHO ROZPOČTU
+
+Technický full20epoch job123454 úspešne skončil: nový tréner, freshseed310010,
+manuálny základ,700train/150validation,64^3. Slurm487s, tréner484.138s,
+priamo obalený proces486s. Najlepší checkpoint bol20.epocha, validačné
+S0.253664502, E_U0.115594748,E_p0.391734256. Nie sú to testové chyby.
+Ide o1konfiguráciu/seed/uzol, nie worst-case runtime pre všetky pokusy.
+
+CPU testy123455:Optuna5.0.0,9testov prešlo. Vlastný random/TPE controller,
+ask/tell a TrainingBudget zahŕňajú shared náklady, chyby a počty pokusov.
+TPE explicitne n_startup_trials3,n_ei_candidates24,multivariateFalse,
+constant_liarFalse,NopPruner,minimize. Neúspech sa do TPE zadá ako+inf,
+v JSON je None s explicitným penalty príznakom. Skutočný CPU subprocess
+bol v teste zastavený po krátkom timeoute; GPU trial sa umelo neprerušoval.
+Rezerva na cleanup a akýkoľvek prekročený čas sa evidujú, nie skryjú.
+
+GPU wiring job123457:každý random/TPE dostal tú istú shared3riadkovú
+2epoch históriu a navrhol1nový2epoch tréning so seedom310003. Random
+proces88.317s,S0.498053362;TPE54.821s,S0.824561107. Rovnaké dáta,
+normalizácia a priestor,3shared+1adaptive pokus, ďalší bol zablokovaný.
+Slurm144s. Výsledky nie sú vedeckým porovnaním algoritmov: jediný návrh,
+krátky tréning a žiadne nezávislé opakovanie/test. Priestor ani TPE nastavenia
+sa podľa týchto validačných rozdielov nemenia. Seed návrhov21261101 je
+oddelený od spoločného štartu20261101; main pravidlo navrhujeme ako
+sampler_seed=search_repeat_seed+1000000 pre random aj TPE.
+
+CPU review123461 všetky kontroly prešli:SEARCH_PREPARATION_QC_PASSED.
+Nezávislý výpočet geometry-macro S a výberu best epochy, správne štúdiové
+ask/tell s reálnym S,počty/časy/normalizácie a train/validation-only členstvo.
+Report test/results/search_preparation_123454_123457 obsahuje malé JSON/TXT
+a budget_proposal.json; váhy/checkpointy/polia ostávajú na Perune.
+
+NAVRHOVANÉ LIMITY PRE PRVÝ BENCHMARK FLOWBENCH - EŠTE NESCHVÁLENÉ:
+2GPU-h tréningového procesu na metódu a opakovanie hľadania, max12pokusov
+vrátane3shared. Odvodenie:12*486s*1.2=6998.4s, zaokrúhlenie nahor
+na15min dáva7200s. Je to praktická rezerva zjedného merania, nie garancia
+počtu dokončených pokusov. Pri vyčerpaní času sa ďalší nezačne; všetky
+neúspechy a partial pokusy sa započítajú podľa uzamknutého pravidla.
+Šesť vyhľadávacích metód (random,TPE,4LLM) x3opakovania:logický strop36GPU-h.
+Shared štarty sa fyzicky vykonajú iba raz, ale každému sa logicky účtujú.
+
+Finálne tréningy:6metód*3vybrané konfigurácie*5seedov +5manual =95pred
+prípadnou presnou deduplikáciou. Navrhovaný hard procesný strop15min/tréning,
+teda max23.75GPU-h; pri systémovom probléme sa nereštartuje bez počítania
+spotreby a kontroly celkového limitu. LLM9návrhov*4modely*3opakovaní
+*210s =6.3GPU-h horný procesný rozpočet; aktívny aj pridelený čas sa
+vykážu vrátane startup/cleanup/idle overheadu. QC/latencie rezerva1GPU-h.
+36+23.75+6.3+1=67.05GPU-h; zaokrúhlený návrh globálneho FYZICKÉHO
+stropu je70GPU-h. Nie je to predpoveď spotreby ani príkaz vyčerpať70hodín.
+Platí len pre pripravovaný FlowBench benchmark, nie vlastnú CFD výrobu,
+neskorší časový benchmark alebo celú dizertáciu. Staršie piloty sú zvlášť.
+
+Tento návrh nedáva povolenie spustiť hlavné hľadanie. Pred freeze treba
+aktuálny zostatok alokácie, potvrdenie celkového stropu, audit blízkych
+geometrií/boundary/latencie a zjednotený promptv2. Zostáva integrácia
+perzistentného účtovania a obnovy sampler/RNG stavu; dnešný unit test
+reprodukovateľnosti nie je dôkaz obnovenia prerušenej hlavnej štúdie.
+Pri najbližšom hlavnom spustení sa aktualizujú aj strojové konfigurácie.
+
+AKTUALIZÁCIA DOSTUPNOSTI ALOKÁCIE21.10.2026
+Používateľova snímka portálu:GPU2246pridelených/2použité, teda zobrazených
+2244GPU-h zostáva; CPU44237pridelených/2396použitých, teda41841core-h.
+Navrhovaný70GPU-h FlowBench cap je približne3.12%zostávajúcich GPU-h,
+pri jeho plnom čerpaní by bez inej spotreby ostalo2174GPU-h. Portálové
+hodnoty môžu byť zaokrúhlené/oneskorené a zostatok sa môže súbežne meniť.
+Dostupnosť prostriedkov je podľa snímky dostatočná, ale sama nenahrádza
+schválenie behu, dokončenie auditov ani uzamknutie protokolu.
+
+19. AUDIT DÁT A OBNOVA PRERUŠENIA (21.10.2026, STÁLE PRE-FREEZE)
+
+CPU audit123590 prešiel8kontrolami: SHA256 archívov/cache,700/150/150split
+po100geometriách/10Re, neprítomnosť presných aj označených blízkych
+cross-split kópií a kontrola850train+validation cieľových polí.
+Vopred nastavené near-duplicate kritérium solid IoU>=.98 nemalo príznak
+vnatívnom ani64rozlíšení. Zo4950dvojíc je7cross-split dvojíc>=.90,
+maximum nativeIoU.9350767583. Split sa nemenil. Neuvádzať family-level
+OOD: ide o nové identity geometrií v rámci zdrojového datasetu.
+Natívne a coarse wall/lid velocity face interiors mali max odchýlku0;
+rohy/hrany s konfliktom wall/lid sa nehodnotia. Tlakové normy nenulové.
+Recomputácia corrected X/Y64 z natívnych dát presná (maxdelta0).
+Testové Y ani modelové testové chyby neboli analyzované; kontrola celého
+archívneho SHA/CRC sa nerovná vyhodnocovaniu testových cieľových polí.
+
+Limity referencie: priemerný FD divergence RMS.131442native/.105941coarse,
+max absolútnej solid velocity.006868native/.013647coarse. Sú to opisné
+diagnostiky odlišnej masky/interpolácie/stencilu, nie autorov solver residual.
+Nižší takto vypočítaný L_div NN nie je dôkaz vyššej fyzikálnej presnosti.
+QC audit nenahrádza mesh convergence ani nezávislé overenie celého CFD.
+
+Obnova: llm/persistent_search.py je JSON-only per-search implementácia.
+SHA256/identity/software guard, atomický checkpoint fsync+replace,
+výlučný writer lock. Random/TPE RNG sa obnoví presným replay ask/tell
+zo seedu a uložených parametrov; porovnanie replay parametrov musí sedieť.
+LLM proposal/reason sa persistuje, po výpadku sa negeneruje znovu.
+Pokus sa započíta pred spustením, čas sa vopred rezervuje. Pri neznámom
+ukončení ostane plná rezerva; pri známom skutočný meraný čas vrátane
+prekročenia. Bezplatný reštart nie je povolený. TPE neúspech=+inf.
+LLM decision čas je samostatný od training budgetu; invalid reply sa počíta.
+Main vlastnícke joby musia mať --no-requeue. Obnoviť až po úspešnom
+squeue bez starého jobu; pri chybe schedulera/živom procese fail closed.
+Po obnove nesmie byť starý job manuálne requeue-nutý súbežne s novým.
+
+Overené9CPU unit testami a dvojicou123598(zámerný exit77)/123599(recovery).
+PERSISTENT_SEARCH_SLURM_RECOVERY_PASSED, žiadne GPU/LLM/modelové polia.
+Pôvodná7testová verzia123595/123596 má zachované samostatné snapshoty.
+Kontrolované pokračovanie random/TPE zodpovedá neprerušenej referencii
+srovnakým penalizovaným neúspechom; LLM fixture dokazuje persistenciu,
+nie deterministickosť skutočného generovania. Nie je to test GPU node failure.
+Per-search modul ešte nie je zapojený do main controlleru ani globálneho
+70GPU-h fyzického stropu; tieto kroky a latencia ostávajú pred freeze.
+
+20. REÁLNA INTEGRÁCIA A LATENCIA (21.10.2026, STÁLE TECHNICKÝ PILOT)
+
+Aktuálny corrected64 runtime20 checkpoint123454 sa meral vGPUjob123650.
+FP32 eager,complex64FFT,TF32off,batch1,5val geometrií,3kolá/režim,
+100warmup+1000meraní/kolorežim, rotované poradie, synchronizácia každého
+volania. CUDAevent aj wall časy sa archivujú. Všetky3obaly dávajú zhodné
+výstupy; modelové zdroje sa zhodujú sarchivovaným tréningovým zdrojom.
+Model-only wall p50/p95/p99=.6798/.6852/.6883ms;
+GPU pipeline (normalizácia+coords+forward+denormalizácia)
+.7151/.7205/.7232ms; host-to-host (pageable RAM,H2D+pipeline+D2H)
+1.0456/1.0545/1.0590ms. Každé3kolá každého režimu p99pod5ms.
+Primárny5msindikátor je synchronizovaný GPU-pipeline wall p99,
+nie samotný CUDAevent kernel-only čas. Host-to-host sa musí uvádzať zvlášť.
+
+Platí pre1checkpoint,1alokáciuH200,64^3 a predpripravené vstupy.
+Nie sú zahrnuté model-load,disk,SDF/mesh/geometry tvorba,rendering aniLLM.
+Opakované timingv jednej alokácii nie sú nezávislé modelové/uzlové replikácie.
+Nejde o dôkaz accuracy, časového rolloutu, voľnej hladiny ani128^3latencie.
+Starý latency_protocol.json zachovaný ako historický; explicitná nová
+flowbench_latency_audit_20261021.json je FP32v2. BF16 sa necertifikovalo.
+
+Global physical ledger allocation_budget.py rezervuje celý1GPU Slurm time
+limit+1s granularitu PRED sbatch --hold, uložíjobID, až potom release.
+Účtuje alokáciu vrátane load/startup/idle/cleanup, nie iba tréningové slučky.
+Neistý submit/dostupnosť schedulera nespôsobí refund. Vyúčtovanie je
+idempotentné až z overeného ended vlastného jobu s Requeue0; overrunviditeľný.
+UID adapter settle_allocation_uid.py rieši NSS numeric display na compute
+cez os.getuid dôkaz, uchováva rawtext/hash a nemení kontrolu účtu/GPU/ID.
+Toto je len samostatný technický ledger960GPU-s, nie aktivácia70GPU-h main.
+
+Controller123651: všetky random/TPE/Granitev2 návrh->fresh2epoch tréning->
+S->persistent tell úspešné. Rovnaké3shared2epoch feedbacky, seed310003,
+700train/150validation, max4pokusy vrátane shared aďalší ask blocked.
+Základné training limity a LLMdecision overhead sú oddelené, fyzický ledger
+účtuje celýGPUjob. LLM vidí iba povolenúJSONhistóriu, nie polia/testy.
+Deklarovaný reason,evidence_ids,risk,raw odpovede,repair a model/resources
+sa ukladajú. Pilot nezahŕňa adaptívne viacpokusové hľadanie všetkých4rodín.
+Tréningové časy random52.715,TPE52.264,Granite52.467s; LLMproces49.243s
+vrátane import/load/exit. Vyhodnotené2epoch pilotné S sa nepoužije na ranking.
+
+CPU QC123656 všetkých67kontrol true, vrátane reload reálnej štúdie,
+nezávislého macroS, timingpercentilov a celého účtovníctva. Regresie7global,
+9persistent a4UID testov úspešné. Precedens:review123652/123654 zlyhali
+na menovom NSS overení/import USERcache; vyriešené bez GPU rerunu,
+failedlogy/snapshoty zachované. Fyzicky226GPU-s podľa Slurm, konzervatívne
+228GPU-s=.063333GPU-h vledgeri. Žiadna modelová testová metrika.
+
+Význam reason: je verejné deklarované zdôvodnenie, nie dôkaz vnútorného
+kauzálneho rozhodovania LLM. Valid evidence_ids/JSON nie sú záruka pravdy.
+Opisný postreh zpilota:Granite tvrdil minimumpri s01(.418568), hoci
+vposkytnutej histórii bolo s02nižšie(.409458). Záznam je archivovaný,
+nie je to nový posthoc primárny ukazovateľ ani dôvod zmeniť searchspace.
+
+Predmain ostáva všeobecný20epoch prompt+rovnaký kontrakt pre4rodiny,
+viacpokusový controller/finalseed fáza, zjednotenie strojových konfigurácií,
+freeze aschválenie70GPU-h. Main3shared štarty sa vykonajú nanovo s20epochami;
+dvojepochová pilotná história sa nesmie použiť ako hlavné štartové dáta.
+
+21. JEDNOTNÝ KONTRAKT A SEKVENČNÁ SKÚŠKA ŠTYROCH RODÍN (21.10.2026)
+
+Pripravený samostatný contract v3 bez natvrdo TWO-EPOCH formulácie:
+epochs_per_trial,fáza a zostávajúci rozpočet sú allowlistované položky vstupu.
+Všetky štyri rodiny majú totožný SYSTEM, pravidlá JSON a generovania.
+SYSTEM_SHA256=e202808d6dcdf34423188b1e2cd0e679fcdfdda667a36ce6f1cdb773b91c0aaf.
+Kontext8192beztruncation,greedy512newtokens,max90s/generation,1repair.
+Váhy/revízie/loadery ostali tie isté; Qwen/Phi/Granite BF16, Ministral
+FP8 checkpoint dequantizovaný doBF16. Nie je to kontrolovaná štúdia veľkosti.
+
+Výstup presne8kľúčov:4parametre a reason/evidence_ids/expected_effect/risk.
+ŽiadneNaN/duplicate keys/extra fields; texty dohromady max100word.
+Evidence iba unikátne existujúceIDs dokončených výsledkov. Tieto kontroly
+neoverujú faktickú pravdivosť každého slovného tvrdenia. Nezávislé kroky
+sa nesmú meniť na tool/code execution. LLM nevidí polia alebo testové metriky.
+
+História pri ďalšom návrhu obsahuje skutočné parametre,status,S,Eu,Ep,
+diagnostickú FDdiv,training a decision čas každého predchádzajúceho pokusu.
+Neúspechy sú viditeľné s nullskóre, nie falošné0; spotrebujú pokus/čas.
+Duplicate konfigurácia je dovolená, ale bez free deduplikácie vsearch fáze.
+Čas decision je oddelený odtrainingB a zároveň zahrnutý vphysical ledger.
+
+Pred začiatkom freeze123757 prešiel30CPU testami (10v3/9persistent/7global/
+4UID), uložené hashe20zdrojov a všetkých malých vstupných manifestov.
+GPU123758Qwen/123759Ministral/123760Phi/123761Granite/123762random+TPE:
+každá6metóda mala3shared2epoch štarty a2adaptívne2epoch pokusy,
+so seedmi310003/310004. Pôvodné štúdie/história/normalizácia sa nezmenili.
+Prvý feedback/messages bol zhodný pre všetkých6; druhý už obsahoval skutočný
+výsledok prvého, jeho čas a zvyšný rozpočet. Po piatom pokuse ďalší blocked.
+
+Review123763:120kontrol,117prešlo,3neprešli iba pre2Ministral neúspechy.
+Qwen/Phi/Granite/random/TPE každý dokončil2skutočné tréningy. Ministral
+vždy vrátil JSON v```json obale aj po1oprave, preto strict parser nespustil
+tréning. Je to formátový failure, nie dôkaz zlých hyperparametrov/CFD solvera.
+Pôvodný result SEQUENTIAL_V3_PREFLIGHT_QC_NOT_PASSED zostáva zachovaný,
+obe failedpokusy aj príslušné náklady zostali vledgeroch.
+
+Spoločná transport policy v1 povoľuje odstrániť výlučne1úplnýJSON code
+fence okolo CELEJ odpovede, nie extrahovať objekt zvoľnej prózy. Nemení
+číselné hodnoty, kľúče, evidence alebo100wordlimit a nezavádza fallback.
+Surový výstup ostáva; raw-strict-JSON compliance sa vykazuje oddelene od
+usable-payload validity. Pravidlo je model-independent. Staré v3súbory/
+freeze sa neopravujú, nový proposer adapter má osobitný sourcehash/policy.
+CPU123870:5transport+10v3regresných testov OK. Offline replay10uložených
+odpovedí zo4rodín (vrátaneMin repair) prešiel, už validné payloady nezmenené.
+Tento replay nenahrádza skutočný nadväzujúci tréning a nedáva starýmfailomS.
+
+Na overenie reálneho nadviazania pripravená osobitnáMinistral study123871
+pod tým istým3000GPU-s technickým stropom. Zachováva totožný pôvodný prvý
+feedback,SYSTEM,decode,training seeds/length, ale druhý feedback má nový
+platný prvý výsledok. CPUreview123872 po skončení overí normalizer/payload
+provenienciu, nezávislé macroS,skutočné časy,nový savedstudy aj staréfailed.
+Výsledok potvrdenia sa uvedie samostatne, bez premenovania pôvodného review.
+
+Táto fáza nie je vedecké porovnanie účinnosti modelov:2epochy a1hľadanie
+nestačia na ranking. Main potrebuje fresh20epoch3shared,3search repetície,
+9ďalších návrhov/metódu,finálne5seed tréningy a jednorazový test podľa
+uzamknutého protokolu. Povolených3000GPU-s nie je autorizácia70GPU-h main.
+
+DOPLNENÝ VÝSLEDOK POTVRDENIA:
+GPU123871 obaMinistral nové2epoch tréningy úspešné, CPU123872 všetkých
+24QC true, FOUR_FAMILY_TRANSPORT_CONFIRMATION_QC_PASSED.
+Normalizácia, seed310003/310004,macroS,čas/proveniencia a nadväznosť na
+skutočný prvý výsledok sú overené. Spolu6GPUalokácií vrátane2pôvodných
+Minfailov:1421GPU-s podľaSlurm;1427GPU-s=.396389GPU-h vledgeri,
+samostatný3000GPU-s cap splnený. Žiadny nový modeldownload alebo test.
+Nový review nie je premenovanie starého NOT_PASSED. Podklady sú kombinácia
+pôvodných3LLM štúdií,all-family transportreplaya samostatnejMin potvrdenej
+štúdie; nie uniformný čerstvý rerun všetkých4podadapterom. Main musí začať
+nanovo so spoločnou policy pre všetkých,bez zlúčenia týchto pilotov do
+hlavnýchsearch výsledkov alebo bez zvýhodnenia Min novými extra pokusmi.
+Vedecké porovnanie presnosti/prínosu LLM zatiaľ nebolo vykonané.
+
+22. STROJOVÝ MAIN CANDIDATE A PLÁNOVANIE (21.10.2026, BEZ MAIN BEHU)
+
+flowbench_main_candidate_20261021.json prepája aktuálny rozsah6adaptívnych
+metód s3repeatmi a20epochami. Nie je to starý comparison_protocol.json,
+ktorý ostáva historický (hybrid/časovémetriky sa do FlowBench mainneprenášajú).
+Candidate je NOT_APPROVED/execution_readyfalse. Explicitný70GPU-h návrh
+nie je premenený na runtimepovolenie. Shared9fresh configov,18searchspecs
+a max162adaptívnych tréningov sa pripravili bez ich vykonania.
+Seedy zostávajú podľa časti7 a9, žiadny pilotnýcheckpoint/2epochskóre.
+
+Pure planner vyberá minimum iba z úspešných main20epoch validationS,
+earlierattempt tie. Vyžaduje zhodnýmanifest,presne18method/repeat štúdií,
+správne3freshshared vstupy, správneseedy, riadneukončenie s attemptcap
+alebo skutočnevyčerpaným budgetom. Predčasný/globalabort sa nedá
+prezentovať ako kompletný benchmark. Partial/failed výsledok nevstupuje
+do výberu, aj keďmá uloženú dočasnú lepšiuval metriku.
+Finalplan zachová95logickýchreferencií (90vyhľadávané+5manual), ale
+vykoná len uniqueparameter+finalseed+manifest tréningy. Žiadna search
+deduplikácia alebo3násobné počítanie manuálu ako nezávislýchhľadaní.
+Finálne modely sú vždyznovu inicializované, nie searchcheckpointfine-tuning.
+
+Gate vnovom train_flowbench_main.py kontroluje release/approval/freeze
+ešte pred Torch/GPU/datasetom. Numerický backend zostáva nezmenený,
+pri budúcom autorizovanom maintréningu sa raw backendreport zachová
+osobitne a nová provenance doplní mainreport; historickébehy sa neprepisujú.
+840sprocesscap pod900sallocationcap, vnútornýbudget<=830s,10s+rezerva.
+Nesmie sa obchádzať mainentry volaním historickéhopilotnéhoscriptu.
+
+CPU12448519unit testov a11manifest/provenance kontrol prešlo.
+Počty95/5physical sú unitfixtures pre dedup, nie vykonané tréningy ani
+už vybranéhlavné konfigurácie. Novýsnapshotje candidate/provenance,
+nie MAIN_SOURCE_FREEZE_PASSED; váhy modelovsa terazneprehashovali,
+kontrolované boli pinnedverifyJSON a malévstupnémanifesty.
+GPUspotreba tohto kroku0, žiadne testovéY alebo modelovétestovéchyby.
+
+Predspustením zostáva shared/search/final orchestrácia srovnakým
+physicalledgerom, executionreview, úplnýmainfreeze a explicitnéapproval.
+Predtestom musíbyť uzamknuté aj simultánne pravidlo pre4LLM-TPE kontrasty;
+žiadne vybratie najlepšejrodiny na teste alebo dodatočná zmena primárnejS.
+Existujúca devätnásťtestová príprava nie je certifikácia celého mainspúšťača.
+
+24. DEFINITÍVNE PRAVIDLÁ MAIN TRAIN/VALIDATION RELEASE (21.10.2026)
+
+Táto časť nahrádza vyššie uvedený neuzavretý stav plánovania, nie výsledky
+historických pilotov. Používateľ súhlasil správou „okej nech sa paci“ po
+výslovnom uvedení potreby schváliť rozpočet70GPU-h. Nový release manifest
+flowbench_main_release_20261021.json je oddelený od starého kandidáta.
+Zostáva pevná6metód/3hľadania/20epoch/95finalreferencií architektúra,
+rovnaká train-onlynormalizácia a oddelené testovanie podľa predchádzajúcich
+pravidiel. User súhlas autorizuje najviac70GPU-h pre train/validation fázy;
+neotvára heldouttest a neznamená povinnosť celých70h minúť.
+
+CONFIRMATORY ŠTATISTIKA – UZAVRETÁ PRED PRVÝM MAIN VÝSLEDKOM:
+Primárne4kontrasty sú každýLLM mínusTPE v geometrymacroS. Nižšie/negatívne
+je lepšie preLLM. Všetky4sa vykážu, bez posthoc výberu najlepšejrodiny.
+Najprv priemer10Re v každejgeometrii, potom mean rozdielov cez geometriu,
+3searchrepeats a5finalseeds. 10000replicates,NumPydefault_rng510001.
+Vkaždomreplicate nezávisle vzorkovať s náhradou osgeometrieG, os3repeatov
+a os5finalseedov, vždy zachovať celé skóre bunky a rovnaké indexy pre všetky
+metódy/kontrasty. Ide o crossedpaired bootstrap, nie vzorkovanie voxelov,
+nezávislýchRe alebo95aliasov ako nezávislých tréningov. Deduplikované
+finalcheckpointy zostanú valiasoch presnezhodné, nie náhodne duplikované
+ako nové dôkazy. Manuál/random a jednotlivéEu/Ep/div sú sekundárneopisné.
+
+Bonferroni pre4primárneporovnania: familyalpha.05, alpha/4=.0125,
+obojstranné98.75percent percentileintervaly s kvantilmi.00625 a.99375,
+NumPyquantile(method=linear). Primárna podpora prínosu konkrétnehoLLM iba
+ak je horná upravenáhranica<0. Ukážeme ajmeanpaired efekt každéhoz3repeatov
+a variabilitu podľa seedov/geometrií; žiadne p-hodnoty z pilotov alebo
+confirmatoryclaims z neupravených sekundárnych95percent intervalov.
+Nominal95percentfamilywise platí len približne podľa bootstrap coverage,
+NIE ako exactfinite-samplegarancia. Iba3searchrepeats obmedzujú istotu;
+samotný väčší početgeometrií/seedov tento nedostatok neodstráni. Dataset
+nedokazujefamily-levelOOD, free-surface fyziku ani časovýrollout.
+Implementácia main_statistics.py neotvára dáta; prijíma až hotovú úplnú
+maticu6xGx3x5skóre, odmietne chýbajúce/NaN/negative hodnoty.
+Metodické opory overené21.10.2026 (nie dôkaz validity nášho konkrétneho
+maléhoexperimentu):
+https://www.statsmodels.org/stable/_modules/statsmodels/stats/multitest.html
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html
+
+RELEASE A PORADIE:
+CPUregresia, zdrojovéSHA, malémanifesty a úplnýstreamingrehash váh štyroch
+lokálnychmodelov aX/Ycorrectedcache pred povolením GPU. HashovanieY číta
+jeho bajty kvôliintegrite, NIE hodnoty/štatistiky/testovéchyby. Rehash na
+Perune bez downloadu a bez načítania celýchveľkýchsúborov doRAM.
+Každá ďalšia brána overí size/mtime/inode assetov a verzie kritických
+knižníc v obochPythonprostrediach; pri zmene zastaviť a znovuprehodnotiť.
+Nemennýfreeze s explicitnýmreceiptom a schválením70h sa uložia osobitne.
+GPUhardvér pevneNVIDIA H200; štart na inomGPU sa odmietne predtréningom.
+
+Všetkých9sharedalokácií rezervovať a pripojiť k fyzickémuledgeru, ale
+najprv uvoľniť iba vopredurčenýr0_s00(manual,seed310000). Je to prvý
+riadny20epochmaintréning, NIE ďalšínepočítanýpilot. Overiť jeho úplnosť,
+config/hash/seed,20epochhistóriu,checkpoint a validáciu, uzavretieSlurm
+alokácie a skutočnúspotrebu. Ažpotom uvoľniť zvyšných8 užpripravenýchúloh.
+Ak kanárik zlyhá, nepokračovať ani bezplatne neopakovať, rezervácie zachovať.
+Fázy search/final potrebujú dokončenýchpredchodcov a vlastnéstagekontroly.
+Neexistuje automatický prechod do hodnotenia heldouttestu.

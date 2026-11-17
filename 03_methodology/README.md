@@ -1,0 +1,10 @@
+# Metodika experimentu
+
+Finálne znenie a obmedzenia čítaj spolu s hlavným výsledkovým reportom v `01_results`. Historické protokoly obsahujú aj postupné dodatky; dátované rozhodnutia nemenia staršie uložené váhy alebo výsledky.
+
+- [main protocol](main_protocol.txt)
+- [measurement protocol](measurement_protocol.txt)
+- [main design](main_design.json)
+- [Výpočet reportu](../04_source/build_comparative_report.py)
+
+[Externé dáta a podmienky použitia](DATA_AND_REUSE.md). Presné konfigurácie, návrhy LLM, histórie učenia a merania sú aj v prílohách Release, pod `records/`. Doplnkové a pilotné pokusy sú oddelené v `05_history`.

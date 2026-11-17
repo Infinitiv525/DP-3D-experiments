@@ -1,0 +1,22 @@
+[
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/metodika/protokol_povodny.txt",
+    "target": "03_methodology/main_protocol.txt",
+    "sha256": "0423f4eac964e440019775d8a84554af73d831732c03ccd910046a8589898718"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/metodika/finalne_meranie_protokol_v3.txt",
+    "target": "03_methodology/measurement_protocol.txt",
+    "sha256": "b5e8117b9c0a963aea2b42e1cbffc65b6543f8f1b4f01c4faa90237c7e729da1"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/metodika/flowbench_main_release_20261021.json",
+    "target": "03_methodology/main_design.json",
+    "sha256": "c35074686a660e46c7f09b7b29b3a76b801456f03bfc147b182da121e828c95c"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/publikacia_3d/01_flowbench_3d_fno/metodika/build_comparative_report_v1.py",
+    "target": "04_source/build_comparative_report.py",
+    "sha256": "0b5be6d03671d00240756c09b1fb570058b44eb3d0ad153586e73e53e81b4fda"
+  }
+]
