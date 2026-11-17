@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-20",
+  "status": "all_six_representative_family_short_gates_passed_mixed_pair_and_box_long_screens_passed",
+  "last_checked": "2026-10-21",
+  "reference": {"solver_job": 121235, "mesh_size_factor": 1.0, "wake_transition_m": 0.01, "cells": 1525054},
+  "candidate": {"full_pilot_job": 109922, "mesh_size_factor": 1.7, "wake_transition_m": 0.0, "cells": 291997, "max_co": 0.2},
+  "review_job": 121700,
+  "passed_windows_tau": [[4,12],[12,24],[24,40]],
+  "frozen_limits_source": "dataset_a_v2_fidelity_gate.json",
+  "next_step": "Review and freeze a staged production protocol using family-specific passing mesh settings before any limited TRAIN batch. No full-series bulk generation automatically.",
+  "scenario_ids": ["a2_sc_001","a2_sp_001","a2_fc_001","a2_bx_001","a2_cp_001"],
+  "limitations": ["Two configurations, not a mesh-convergence proof", "Fine reference tau0-40 only", "No validation of other families or late-time accuracy implied", "Mixed-pair full pilot reuse decision deferred until staged protocol and family checks are reviewed"],
+  "production_scenarios_accepted": 0,
+  "bulk_generation_authorized_automatically": false,
+  "family_mesh_job": 121722,
+  "family_gate_findings": {
+    "a2_sc_001": "failed: determinant fraction 357/190616 > 0.001",
+    "a2_sp_001": "failed: determinant fraction 272/170759 > 0.001",
+    "a2_fc_001": "failed: determinant fraction 272/230805 > 0.001",
+    "a2_bx_001": "mesh passed: 328123 cells; short solver job 121729",
+    "a2_cp_001": "failed: determinant fraction 432/267314 > 0.001 and max nonorthogonality 70.9309 > 70"
+  },
+  "blocked_dependency_cleanup": "121723 cancelled without running solver tasks after mesh array failure",
+  "mesh_retry": {"job": 121728, "indices": [0,1,2,4], "mesh_size_factor": 1.4, "wake_transition_m": 0.01, "purpose": "Quality-gate search, not a causal mesh ablation; solver and fidelity not accepted automatically"},
+  "latest_family_updates": {
+    "a2_bx_001": "Short solver121729 passed; tau0-40 coarse122475 vs fine122476/resume122973 passed all exploratory windows in review122974; configuration comparison, not pure h convergence",
+    "a2_sp_001": "mesh121728 passed 334493 cells; short solver122337 index1 passed tau0-2",
+    "a2_fc_001": "mesh121728 passed 442493 cells; short solver122337 index2 passed tau0-2",
+    "a2_sc_001": "mesh122338 passed 572131 cells, factor1.2 transition0.01; short solver122390 index0 passed tau0-2",
+    "a2_cp_001": "mesh122338 passed 793681 cells, factor1.2 transition0.01; short solver122411 index4 passed tau0-2"
+  },
+  "second_family_fidelity": {"scenario_id":"a2_bx_001","protocol":"box_fidelity_protocol_20261020.json","coarse_job":122475,"fine_job":122476,"resume_job":122973,"review_job":122974,"status":"all_exploratory_screens_passed","scope":"tau0-40; configuration comparison only; production acceptance remains separate"}
+}

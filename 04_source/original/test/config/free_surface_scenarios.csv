@@ -1,0 +1,14 @@
+scenario_id,split,geometry_group,column_width_m,column_height_m,obstacle_x_m,obstacle_width_m,obstacle_height_m,water_kinematic_viscosity_m2_s,surface_tension_n_m,seed
+fs_train_001,train,box_center,0.28,0.22,0.60,0.10,0.16,0.000001,0.072,2101
+fs_train_002,train,box_center,0.30,0.24,0.62,0.10,0.16,0.000001,0.072,2102
+fs_train_003,train,box_shift,0.32,0.22,0.66,0.08,0.14,0.000001,0.072,2103
+fs_train_004,train,box_shift,0.26,0.26,0.58,0.12,0.18,0.000001,0.072,2104
+fs_train_005,train,box_size,0.34,0.20,0.64,0.09,0.17,0.000001,0.072,2105
+fs_train_006,train,box_size,0.29,0.25,0.68,0.11,0.15,0.000001,0.072,2106
+fs_val_001,validation,box_center,0.31,0.23,0.61,0.09,0.16,0.000001,0.072,2201
+fs_val_002,validation,box_shift,0.27,0.24,0.65,0.11,0.17,0.000001,0.072,2202
+fs_test_id_001,test_id,box_center,0.29,0.21,0.63,0.10,0.15,0.000001,0.072,2301
+fs_test_id_002,test_id,box_shift,0.33,0.25,0.67,0.09,0.18,0.000001,0.072,2302
+fs_test_ood_001,test_ood,tall_box,0.35,0.27,0.72,0.08,0.22,0.000001,0.072,2401
+fs_test_ood_002,test_ood,two_boxes,0.25,0.28,0.56,0.10,0.18,0.000001,0.072,2402
+

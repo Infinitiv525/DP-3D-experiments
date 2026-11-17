@@ -1,0 +1,18 @@
+FoamFile
+{
+    format ascii;
+    class volScalarField;
+    object p;
+}
+dimensions [0 2 -2 0 0 0 0];
+internalField uniform 0;
+boundaryField
+{
+    inlet { type zeroGradient; }
+    outlet { type fixedValue; value uniform 0; }
+    sideBottom { type symmetryPlane; }
+    sideTop { type symmetryPlane; }
+    periodicFront { type cyclic; }
+    periodicBack { type cyclic; }
+    obstacle { type zeroGradient; }
+}

@@ -1,0 +1,67 @@
+{
+  "protocol_version": 1,
+  "status": "pilot_before_freeze",
+  "research_question": "Does an LLM-guided configurator find a more accurate and physically consistent neural-operator training configuration than non-LLM methods under the same compute budget?",
+  "methods": [
+    "fixed_manual_configuration",
+    "random_search",
+    "optuna_tpe",
+    "llm_configurator",
+    "llm_plus_optuna_tpe"
+  ],
+  "budget_rule": {
+    "primary_unit": "gpu_hours",
+    "same_budget_for_every_method": true,
+    "budget_value": "set_after_pilot_runtime_measurement",
+    "count_failed_runs": true,
+    "count_llm_wall_time_separately": true,
+    "record_llm_token_usage_and_cost": true
+  },
+  "data_access": {
+    "optimizer_can_read": [
+      "training_metrics",
+      "validation_metrics",
+      "training_logs",
+      "current_configuration",
+      "remaining_budget"
+    ],
+    "optimizer_cannot_read": [
+      "test_id_metrics",
+      "test_ood_metrics",
+      "test_fields",
+      "final_test_ranking"
+    ]
+  },
+  "llm_reproducibility": {
+    "freeze_provider_model_and_version": true,
+    "freeze_system_prompt_and_tools": true,
+    "structured_json_output_required": true,
+    "log_complete_inputs_and_outputs": true,
+    "temperature": 0.0,
+    "allow_free_form_code_execution": false,
+    "allowed_actions": "choose values only from the frozen hyperparameter search space"
+  },
+  "final_evaluation": {
+    "independent_training_seeds_per_selected_configuration": 5,
+    "primary_metric": "normalized_velocity_field_error_on_test_ood",
+    "secondary_metrics": [
+      "pressure_field_error",
+      "free_surface_field_error",
+      "divergence_residual",
+      "mass_conservation_error",
+      "water_volume_conservation_error",
+      "rollout_stability",
+      "training_gpu_hours",
+      "inference_latency_p50_p95_p99"
+    ],
+    "report_confidence_intervals": true,
+    "paired_evaluation_by_test_scenario": true,
+    "statistical_tests_to_freeze_before_final_run": [
+      "paired_bootstrap_confidence_interval",
+      "paired_permutation_test",
+      "multiple_comparison_correction"
+    ]
+  },
+  "selection_rule": "Each method selects its final configuration using validation results only. Test sets are evaluated once after all method decisions are frozen."
+}
+

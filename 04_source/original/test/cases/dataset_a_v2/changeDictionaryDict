@@ -1,0 +1,37 @@
+FoamFile
+{
+    format ascii;
+    class dictionary;
+    object changeDictionaryDict;
+}
+
+boundary
+{
+    front
+    {
+        type cyclicAMI;
+        inGroups 1(cyclicAMI);
+        neighbourPatch back;
+        transform translational;
+        separationVector (0 0 0.04);
+        matchTolerance 0.0001;
+        AMIMethod faceAreaWeightAMI;
+        restartUncoveredSourceFace 1;
+    }
+    back
+    {
+        type cyclicAMI;
+        inGroups 1(cyclicAMI);
+        neighbourPatch front;
+        transform translational;
+        separationVector (0 0 -0.04);
+        matchTolerance 0.0001;
+        AMIMethod faceAreaWeightAMI;
+        restartUncoveredSourceFace 1;
+    }
+    sideBottom { type symmetryPlane; }
+    sideTop { type symmetryPlane; }
+    inlet { type patch; }
+    outlet { type patch; }
+    obstacle { type wall; }
+}

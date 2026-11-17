@@ -1,0 +1,39 @@
+{
+  "status": "ALL_PUBLIC_REPOSITORY_CHECKPOINTS_AND_REMOTE_READBACKS_VERIFIED",
+  "repository": "Infinitiv525/DP-3D-experiments",
+  "selected_models": 70,
+  "checkpoint_files": 284,
+  "scientific_records": 4983,
+  "manifest_sha256": "02ee8970386b6c3d13ac65ede454bdca0d1c9d77e7ab1af37137d1c2ffab3df8",
+  "release_url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/research-artifacts-v1",
+  "assets": [
+    {
+      "name": "3d-models-and-records-part01-of01.tar.gz",
+      "bytes": 463367642,
+      "sha256": "b7c85b60f512cb74efb1b7b5d4f3337ebecb721646edf6d019abd892768ca77c",
+      "server_digest": "sha256:b7c85b60f512cb74efb1b7b5d4f3337ebecb721646edf6d019abd892768ca77c",
+      "asset_id": 760886786,
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-bba26b73f6426149cef5/3d-models-and-records-part01-of01.tar.gz",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "ARTIFACT_MANIFEST.json",
+      "bytes": 2549660,
+      "sha256": "02ee8970386b6c3d13ac65ede454bdca0d1c9d77e7ab1af37137d1c2ffab3df8",
+      "server_digest": "sha256:02ee8970386b6c3d13ac65ede454bdca0d1c9d77e7ab1af37137d1c2ffab3df8",
+      "asset_id": 760889880,
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-bba26b73f6426149cef5/ARTIFACT_MANIFEST.json",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 196,
+      "sha256": "6891727d85ddda1ef66c00152462db3e00882cc9a93c3de5b1e108c2cbea20d9",
+      "server_digest": "sha256:6891727d85ddda1ef66c00152462db3e00882cc9a93c3de5b1e108c2cbea20d9",
+      "asset_id": 760889997,
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-bba26b73f6426149cef5/SHA256SUMS.txt",
+      "full_readback_verified_on_Perun": true
+    }
+  ],
+  "model_or_archive_download_to_PC": false
+}

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "scope": "TRAIN-only spatial sensitivity: mesh factor0.8 vs existing1.0, both maxCo0.1/maxDeltaTau0.01. No production acceptance.",
+  "user_authorization": {
+    "date": "2026-10-22",
+    "instruction": "Najprv skontroluj kvalitu a potom hned mozes pustit Testovanie; vsetky vybrane modely LLM; neodhaduj naklady",
+    "reported_available_gpu_hours": 2000,
+    "restrict_to_old_internal_70_gpu_hours": false,
+    "no_cost_estimation_requested": true,
+    "preserve_actual_resource_accounting": true
+  },
+  "methods": [
+    "manual",
+    "random",
+    "tpe",
+    "qwen3_8b",
+    "ministral3_8b",
+    "phi4_mini",
+    "granite33_8b"
+  ],
+  "old_flowbench_freeze_and_ledger": "unchanged; never increase or reset the existing70h ledger",
+  "target_dataset_protocol": "test/config/dataset_a_v2_protocol.json",
+  "target_scenarios": 72,
+  "full_llm_comparison_status": "blocked_until_reference_data_and_training_integration_pass",
+  "pilot_dataset_relative": "results/dataset_a/uniform_dataset_128_108616",
+  "pilot_role": "integrity and historical readiness audit only, not silently promoted to a new final benchmark",
+  "protected_data_policy": "hash and header checks allowed for all splits; numeric pilot field diagnostics only train and validation; no neural model test metric",
+  "quality_work_root": "results/native_expansion/cylinder_spatial_20261024_v1",
+  "missing_long_window_families": [
+    {
+      "scenario_id": "a2_sc_001",
+      "index": 0,
+      "factor": 0.8,
+      "transition_m": 0.01,
+      "coarse_source": "new mesh/gate from same submitted array job"
+    }
+  ],
+  "fine_configuration": {
+    "mesh_factor": 1,
+    "transition_m": 0.01
+  },
+  "fidelity_windows_tau": [
+    [
+      4,
+      12
+    ],
+    [
+      12,
+      24
+    ],
+    [
+      24,
+      40
+    ]
+  ],
+  "solve_tau": [
+    0,
+    40
+  ],
+  "snapshot_delta_tau": 0.4,
+  "max_co_target": 0.1,
+  "force_normalization": {
+    "u_ref": "scenario inlet velocity",
+    "length_ref": "scenario reference length",
+    "area_ref": "reference_length_m squared; same in coarse and fine"
+  },
+  "solver_gate": {
+    "actual_max_co": 0.11,
+    "absolute_cumulative_continuity": 0.00001,
+    "max_relative_flux_imbalance": 0.0001
+  },
+  "exploratory_limits": {
+    "velocity_relative_l2_global": 0.05,
+    "velocity_relative_l2_wake": 0.05,
+    "pressure_mean_aligned_relative_l2_global": 0.1,
+    "mean_drag_coefficient_relative_difference": 0.05,
+    "mean_lift_coefficient_absolute_difference": 0.05
+  },
+  "limitations": [
+    "Keep existing exploratory tolerances; do not loosen thresholds after results",
+    "Two configuration comparisons are not mesh convergence or late tau320-400 verification",
+    "Successful numerical run alone does not certify physical fidelity",
+    "No bulk72-case production or LLM training on absent datasets",
+    "No weights or CFD arrays downloaded locally"
+  ],
+  "trigger": {
+    "temporal_review": 128181,
+    "all_temporal_screens_passed": true,
+    "late_pressure_relative_l2": 0.023975352423743847,
+    "late_wake_velocity_relative_l2": 0.010122919946749442,
+    "spatial_fidelity_still_unqualified": true
+  },
+  "fine_reference": {
+    "job": 128179,
+    "index": 0,
+    "mesh_factor": 1,
+    "max_co": 0.1,
+    "max_delta_tau": 0.01,
+    "work_root": "results/native_expansion/cylinder_temporal_20261023_v1"
+  },
+  "refinement_rule": "Keep physical model, initialization expression, transition0.01m and temporal settings fixed. Change mesh-scale1.0 to0.8. Compare against128179 with unchanged exploratory thresholds; no lag alignment for acceptance.",
+  "max_delta_tau": 0.01,
+  "branch_label_note": "Legacy path labels coarse/fine denote candidate/reference, not actual relative mesh resolution; candidate0.8 is finer than reference1.0."
+}

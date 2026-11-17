@@ -1,0 +1,19 @@
+{
+  "status":"technical_real_validation_feedback_pilot_not_main_experiment",
+  "revision":"937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "dataset_relative":"public_data/flowbench/937c672604d4c9f39aceedf1fa2f0a603695264b/uniform64_native_gauge",
+  "split_sha256":"778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+  "llm_config_relative":"test/config/llm_feasibility_20261021.json",
+  "preparation_relative":"results/llm_feasibility/prepare_123299",
+  "training":{"width":12,"layers":2,"modes":4,"epochs":2,"max_train_samples":700,"max_validation_samples":150},
+  "manual":{"learning_rate":0.001,"weight_decay":0.01,"pressure_weight":1,"divergence_weight":0},
+  "initial_random_seed":20261101,
+  "initial_training_seeds":[310000,310001,310002],
+  "proposal_training_seed":310003,
+  "overall_process_seconds":1500,
+  "trial_timeout_seconds":240,
+  "proposal_timeout_seconds":210,
+  "gpu_job_limit_minutes":30,
+  "max_gpu_allocation_hours":0.5,
+  "warning":"Only wiring and resource measurements: three shared starts then one proposal/trial per LLM. No Optuna/random adaptive comparison, no test, no main-search evidence."
+}

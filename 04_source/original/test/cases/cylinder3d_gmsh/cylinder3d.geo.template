@@ -1,0 +1,80 @@
+SetFactory("Built-in");
+
+Mesh.MshFileVersion = 2.2;
+Mesh.Binary = 0;
+Mesh.Algorithm = 6;
+Mesh.Optimize = 1;
+Mesh.OptimizeNetgen = 1;
+Mesh.RecombineAll = 1;
+Mesh.RecombinationAlgorithm = 1;
+Mesh.RecombineOptimizeTopology = 10;
+
+z0 = -0.02;
+R = 0.005;
+lcFar = __LC_FAR__;
+lcCylinder = __LC_CYLINDER__;
+
+Point(1) = {-0.05, -0.05, z0, lcFar};
+Point(2) = { 0.15, -0.05, z0, lcFar};
+Point(3) = { 0.15,  0.05, z0, lcFar};
+Point(4) = {-0.05,  0.05, z0, lcFar};
+
+Point(10) = {0, 0, z0, lcCylinder};
+Point(11) = { R, 0, z0, lcCylinder};
+Point(12) = { 0, R, z0, lcCylinder};
+Point(13) = {-R, 0, z0, lcCylinder};
+Point(14) = { 0,-R, z0, lcCylinder};
+
+Line(1) = {1, 2};
+Line(2) = {2, 3};
+Line(3) = {3, 4};
+Line(4) = {4, 1};
+Circle(5) = {11, 10, 12};
+Circle(6) = {12, 10, 13};
+Circle(7) = {13, 10, 14};
+Circle(8) = {14, 10, 11};
+
+Curve Loop(1) = {1, 2, 3, 4};
+Curve Loop(2) = {-8, -7, -6, -5};
+Plane Surface(1) = {1, 2};
+Recombine Surface{1};
+
+Field[1] = Distance;
+Field[1].CurvesList = {5, 6, 7, 8};
+Field[1].Sampling = 240;
+Field[2] = Threshold;
+Field[2].InField = 1;
+Field[2].SizeMin = lcCylinder;
+Field[2].SizeMax = lcFar;
+Field[2].DistMin = 0.0025;
+Field[2].DistMax = 0.030;
+
+Field[3] = Box;
+Field[3].VIn = __LC_WAKE__;
+Field[3].VOut = lcFar;
+Field[3].XMin = 0.0;
+Field[3].XMax = 0.10;
+Field[3].YMin = -0.015;
+Field[3].YMax = 0.015;
+Field[3].ZMin = z0 - 0.001;
+Field[3].ZMax = z0 + 0.001;
+
+Field[4] = Min;
+Field[4].FieldsList = {2, 3};
+Background Field = 4;
+
+out[] = Extrude {0, 0, 0.04}
+{
+    Surface{1};
+    Layers{__NZ__};
+    Recombine;
+};
+
+Physical Surface("front") = {1};
+Physical Surface("back") = {out[0]};
+Physical Volume("fluid") = {out[1]};
+Physical Surface("sideBottom") = {out[2]};
+Physical Surface("outlet") = {out[3]};
+Physical Surface("sideTop") = {out[4]};
+Physical Surface("inlet") = {out[5]};
+Physical Surface("cylinder") = {out[6], out[7], out[8], out[9]};

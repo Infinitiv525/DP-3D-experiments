@@ -1,0 +1,11 @@
+{
+  "status": "common_contract_v3_technical_preflight_not_main",
+  "models": [
+    {"label":"qwen3_8b","repo":"Qwen/Qwen3-8B","revision":"b968826d9c46dd6066d109eabc6255188de91218","license":"apache-2.0","loader":"causal","disable_thinking":true},
+    {"label":"ministral3_8b","repo":"mistralai/Ministral-3-8B-Instruct-2512","revision":"5b26027e7b19eeb4b7352e1fed3926375dd2cb4d","license":"apache-2.0","loader":"mistral3_dequantize_fp8"},
+    {"label":"phi4_mini","repo":"microsoft/Phi-4-mini-instruct","revision":"cfbefacb99257ffa30c83adab238a50856ac3083","license":"mit","loader":"causal"},
+    {"label":"granite33_8b","repo":"ibm-granite/granite-3.3-8b-instruct","revision":"51dd4bc2ade4059a6bd87649d68aa11e4fb2529b","license":"apache-2.0","loader":"causal","disable_thinking":true}
+  ],
+  "generation": {"seed":20261021,"max_new_tokens":512,"max_time_seconds":90,"max_input_tokens":8192,"do_sample":false,"max_repairs":1},
+  "resource_sampling_seconds":0.2
+}

@@ -1,0 +1,71 @@
+{
+  "protocol_id": "dataset_a_v2_2026-10-14",
+  "status": "frozen_design_before_bulk_cfd",
+  "purpose": "Single-phase 3D CFD reference data for operator-learning and LLM-assisted configuration experiments.",
+  "scenario_count": 72,
+  "split_counts": {
+    "train": 46,
+    "validation": 8,
+    "test_ID": 8,
+    "test_OOD": 10
+  },
+  "families": {
+    "spanning_cylinder": 12,
+    "sphere": 12,
+    "finite_cylinder": 12,
+    "box": 12,
+    "cylinder_pair": 16,
+    "mixed_pair": 8
+  },
+  "domain_m": {
+    "x": [-0.05, 0.15],
+    "y": [-0.05, 0.05],
+    "z": [-0.02, 0.02]
+  },
+  "fluid": {
+    "model": "incompressible_laminar_Newtonian",
+    "kinematic_viscosity_m2_s": 1e-6,
+    "free_surface": false
+  },
+  "time_definition": {
+    "convective_time": "tau = t * U_inlet / L_reference",
+    "solve_tau_range": [0.0, 400.0],
+    "retained_segments": [
+      {"tau_start": 0.0, "tau_end": 80.0, "delta_tau": 0.4, "role": "startup_dense"},
+      {"tau_start": 80.0, "tau_end": 320.0, "delta_tau": 4.0, "role": "middle_sparse"},
+      {"tau_start": 320.0, "tau_end": 400.0, "delta_tau": 0.4, "role": "developed_dense"}
+    ],
+    "expected_unique_retained_states": 461
+  },
+  "ml_grid": {
+    "shape": [128, 64, 32],
+    "fields": ["Ux", "Uy", "Uz", "p", "fluid_mask"],
+    "geometry_representation": "fluid_mask_plus_scenario_metadata"
+  },
+  "mesh_gate": {
+    "regular_check": "Mesh OK",
+    "max_non_orthogonality_deg": 70.0,
+    "max_skewness": 4.0,
+    "max_low_determinant_cell_fraction": 0.001,
+    "min_mean_AMI_weight_sum": 0.999,
+    "rationale": "Tetrahedral meshes can trigger the strict determinant heuristic; acceptance additionally requires a stable solver smoke test and mass-balance audit."
+  },
+  "evaluation": {
+    "primary_accuracy": "normalized rollout MSE over a preregistered horizon",
+    "physics_metrics": ["normalized_divergence", "mass_balance", "force_coefficients"],
+    "latency_ms": {"primary_p99": 5.0, "secondary_p99": [16.7, 33.3]},
+    "latency_batch_size": 1,
+    "test_policy": "test_ID and test_OOD stay locked until model and hyperparameter protocol are frozen"
+  },
+  "storage_policy": {
+    "raw_openfoam": "PERUN only; delete non-retained time directories after verified export",
+    "compact_fields": "PERUN only",
+    "local": "manifests, summaries, figures and compressed representative videos only"
+  },
+  "scope_exclusions": [
+    "turbulence modelling",
+    "free-surface flow (separate Dataset B)",
+    "moving or suddenly inserted obstacles (separate intervention extension)",
+    "bulk generation before representative mesh and solver gates pass"
+  ]
+}

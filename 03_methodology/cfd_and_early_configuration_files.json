@@ -1,0 +1,524 @@
+[
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_dataset/controlDict_smoke.template",
+    "target": "04_source/original/test/cases/cylinder3d_dataset/controlDict_smoke.template",
+    "bytes": 1338,
+    "sha256": "62eecbab9f57306107712398af2bf01ed19368236738255702e661962218b107"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_dataset/cylinder3d_dataset.geo.template",
+    "target": "04_source/original/test/cases/cylinder3d_dataset/cylinder3d_dataset.geo.template",
+    "bytes": 1972,
+    "sha256": "3ec9bb5af7cf15ce75fbd426c0b8a258fa5b7380d8951c1b8d4f5109f5bb4806"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_dataset/setExprFieldsDict.template",
+    "target": "04_source/original/test/cases/cylinder3d_dataset/setExprFieldsDict.template",
+    "bytes": 471,
+    "sha256": "bb78aeb5568e43a65cc239e5ea236ff50573361c7d561806bfd41150087be9e7"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_extended/controlDict",
+    "target": "04_source/original/test/cases/cylinder3d_extended/controlDict",
+    "bytes": 1410,
+    "sha256": "d37f96b3b49c922ee78e3af6020cccf48f29d11ab301faeca2962eafa9254b66"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_extended/metadata.json",
+    "target": "04_source/original/test/cases/cylinder3d_extended/metadata.json",
+    "bytes": 643,
+    "sha256": "3123b2957499ccc21f4894bbddced317506267513afa5ccb01f205d1fece1e41"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_gmsh/changeDictionaryDict",
+    "target": "04_source/original/test/cases/cylinder3d_gmsh/changeDictionaryDict",
+    "bytes": 520,
+    "sha256": "f0ecdee698ef793dbd513036caa4beb00442a1c6985fbb36ed33e5a9501a55b8"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_gmsh/cylinder3d.geo.template",
+    "target": "04_source/original/test/cases/cylinder3d_gmsh/cylinder3d.geo.template",
+    "bytes": 1868,
+    "sha256": "6d5fa7cdad4ddc1734dd4155f2a78200bab19b15f5da5e7178802c1eb0fcc9a9"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/0/U",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/0/U",
+    "bytes": 574,
+    "sha256": "f9bfd5a77c224adc28027ab02fd539ce10f3227c3ca34f2434a47859cbfa12c3"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/0/p",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/0/p",
+    "bytes": 490,
+    "sha256": "ff8580bbd87ec0cccea74f8cdf79bedc69faf9757105ae53dcc2d7132fe12b43"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/constant/transportProperties",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/constant/transportProperties",
+    "bytes": 151,
+    "sha256": "c0c8d4cc81ec7833ff32f8a3cadc958d9167cb33c92000ee4ff60a1e9cc9ced2"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/constant/turbulenceProperties",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/constant/turbulenceProperties",
+    "bytes": 128,
+    "sha256": "fe00f20ea7bb9fc346f73fc86a963561de0ea11e81da2db2ae7bab8d4b2ada51"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/metadata.json",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/metadata.json",
+    "bytes": 702,
+    "sha256": "96c85eadf00bfdf7e7902c3689f2eab4fdd5bad6a285fcf0fcc74f1b5e02f90b"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/system/blockMeshDict",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/system/blockMeshDict",
+    "bytes": 918,
+    "sha256": "2af8adb46c24750c0da4c339446a428733e25985efcdd0a0ce62611836e66920"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/system/controlDict",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/system/controlDict",
+    "bytes": 1389,
+    "sha256": "c73a8d65bad0dcfd5ba11bc23a0c7b5ca542d2a8c43598030c79a97ec009c81c"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/system/decomposeParDict",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/system/decomposeParDict",
+    "bytes": 136,
+    "sha256": "bf702547cc1d2a36b33a55b945b4a37a9c7e32526e39e2796f4cc24d49088d2f"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/system/fvSchemes",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/system/fvSchemes",
+    "bytes": 512,
+    "sha256": "047200e6b928dec75b8145e520d232621f6c1ed7794c45833ae0ad40939d0832"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/system/fvSolution",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/system/fvSolution",
+    "bytes": 567,
+    "sha256": "674d2817577ff43c9cda55eb61819cb3eb4c1d9b8962b021add07d153bf2f335"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/system/setExprFieldsDict",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/system/setExprFieldsDict",
+    "bytes": 419,
+    "sha256": "50b59b98460f8fed0d6128765c5ab80021f09711daa2d6903ec6c55c8bc459b8"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_pilot/system/snappyHexMeshDict",
+    "target": "04_source/original/test/cases/cylinder3d_pilot/system/snappyHexMeshDict",
+    "bytes": 1630,
+    "sha256": "c17dd020f44eb957152c8ea4ef998d08a5bff49db9ad3c5c530db3ca86c9a08b"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_verification/blockMeshDict.template",
+    "target": "04_source/original/test/cases/cylinder3d_verification/blockMeshDict.template",
+    "bytes": 770,
+    "sha256": "85484f076ba523001295c95d851c08c6bb0af024b8ba89e310310fb5d21026f3"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_verification/controlDict",
+    "target": "04_source/original/test/cases/cylinder3d_verification/controlDict",
+    "bytes": 1214,
+    "sha256": "1f88ddf691a8c83ac097c2e9c86f8293990d171ab48447601b595fa6cd94c611"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_verification/controlDict_continuation.template",
+    "target": "04_source/original/test/cases/cylinder3d_verification/controlDict_continuation.template",
+    "bytes": 1204,
+    "sha256": "ddce6bd3ce10e8e5054d1a1283d860f7bcb23f1b3883347c98735a45272ca2eb"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/cylinder3d_verification/spanwiseModeASampling",
+    "target": "04_source/original/test/cases/cylinder3d_verification/spanwiseModeASampling",
+    "bytes": 1440,
+    "sha256": "e02ca906a638b1a19ea6ab063abf55649ed3c33a6aacf801932578085a8c1e65"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/U.template",
+    "target": "04_source/original/test/cases/dataset_a_v2/U.template",
+    "bytes": 501,
+    "sha256": "678389d1a94d9e540e69cd6cff6fe16ad967f41fec5525112bea3cfef86d5700"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/changeDictionaryDict",
+    "target": "04_source/original/test/cases/dataset_a_v2/changeDictionaryDict",
+    "bytes": 821,
+    "sha256": "4f9a2de4c9629707dfe03531bce57f8283cecc2a6b5da90088e2f1ff3e485937"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/changeDictionaryDict_uncoupled",
+    "target": "04_source/original/test/cases/dataset_a_v2/changeDictionaryDict_uncoupled",
+    "bytes": 306,
+    "sha256": "27b0fd37ed3833da7987e673b6382a8e56eb152ceb3eac971480ef475a5fc7f4"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/controlDict_fidelity.template",
+    "target": "04_source/original/test/cases/dataset_a_v2/controlDict_fidelity.template",
+    "bytes": 1294,
+    "sha256": "b62cdfd10c3232435be45f80c3b209e3e55b3f2c7507b9e00fa39b4dc615b459"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/controlDict_solver_gate.template",
+    "target": "04_source/original/test/cases/dataset_a_v2/controlDict_solver_gate.template",
+    "bytes": 977,
+    "sha256": "5409010ca5fc7c3a4a93f16cc607393ae4f8db999d192671964ab7db4822cb71"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/createPatchDict_cyclic",
+    "target": "04_source/original/test/cases/dataset_a_v2/createPatchDict_cyclic",
+    "bytes": 735,
+    "sha256": "1bcf14028e47cafb1317fd81c1b6122f90ecdb2a472136aaf21eea1f62629f93"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/decomposeParDict.template",
+    "target": "04_source/original/test/cases/dataset_a_v2/decomposeParDict.template",
+    "bytes": 275,
+    "sha256": "1b3ba7d380f63cd0f3d81f1f01c21b7cc063b07e9f3e27d3ad693933d224443f"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/fvSolution_pressure_diagnostic.template",
+    "target": "04_source/original/test/cases/dataset_a_v2/fvSolution_pressure_diagnostic.template",
+    "bytes": 527,
+    "sha256": "ab0ba215eaaa827f042747e2e08d643a3016226c181a2a157ca0258e94294f11"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/p",
+    "target": "04_source/original/test/cases/dataset_a_v2/p",
+    "bytes": 405,
+    "sha256": "20b337a55164eaae16cf5ea869ea7594ede9ac520e3fa047ee9200fbfdab5264"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/cases/dataset_a_v2/setExprFieldsDict.template",
+    "target": "04_source/original/test/cases/dataset_a_v2/setExprFieldsDict.template",
+    "bytes": 447,
+    "sha256": "0636592c61c109dec5898e2cdbd872d904e2825db5216ad40cf1739df4ca6e3d"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/baseline_smoke.yaml",
+    "target": "04_source/original/test/config/baseline_smoke.yaml",
+    "bytes": 471,
+    "sha256": "31ef5ddf96de86936ad66e0f13d42b120c95641c3f6bd1890dd782a21a3b0c45"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/box_fidelity_protocol_20261020.json",
+    "target": "04_source/original/test/config/box_fidelity_protocol_20261020.json",
+    "bytes": 1173,
+    "sha256": "510a61969a9f3f16cc2a877dcb8e3eab8de8664980eaefea8c8e2940400c53cf"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/cfd_protocol.json",
+    "target": "04_source/original/test/config/cfd_protocol.json",
+    "bytes": 2621,
+    "sha256": "8d781e7d51539b82c02908645cced6fe5f33dac6a25424a5c4dc23e87a8f60d7"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/comparison_protocol.json",
+    "target": "04_source/original/test/config/comparison_protocol.json",
+    "bytes": 2267,
+    "sha256": "56cd85617010e0cd18f7b61c74465f900b89e5a8538f6d9ec10cee086cbaa5f4"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/dataset_a_pilot_scenarios.csv",
+    "target": "04_source/original/test/config/dataset_a_pilot_scenarios.csv",
+    "bytes": 920,
+    "sha256": "d07fbe6ae5c1fb15d4f24e0228da2c5e31cc89cecf99b8637e0db75ff55400a7"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/dataset_a_v2_fidelity_gate.json",
+    "target": "04_source/original/test/config/dataset_a_v2_fidelity_gate.json",
+    "bytes": 2645,
+    "sha256": "6ed4b346a859dc96079c27a5b65df33c397bcfa4e0bdbeae0c118015952ae478"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/dataset_a_v2_first_batch_draft.json",
+    "target": "04_source/original/test/config/dataset_a_v2_first_batch_draft.json",
+    "bytes": 1875,
+    "sha256": "ab4dcea89924b9ffa96d0b2c215ade44d272f1504dba9c91ba88b315e77e934b"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/dataset_a_v2_manifest_audit.json",
+    "target": "04_source/original/test/config/dataset_a_v2_manifest_audit.json",
+    "bytes": 360,
+    "sha256": "b0b58f21a4d4117281770e35dd877eb7af7e36fbb18d9d9df3640428b762166d"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/dataset_a_v2_obstacles.csv",
+    "target": "04_source/original/test/config/dataset_a_v2_obstacles.csv",
+    "bytes": 7668,
+    "sha256": "debd29a8dc77dd0d75ccb8fa61fc43569b7a662a8980877dd2dbc47de050b732"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/dataset_a_v2_pressure_recovery.json",
+    "target": "04_source/original/test/config/dataset_a_v2_pressure_recovery.json",
+    "bytes": 1589,
+    "sha256": "fea2ccc1312e959c62bdc029830206b722ac692d300ccecb2e0cb0001fd37ba3"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/dataset_a_v2_protocol.json",
+    "target": "04_source/original/test/config/dataset_a_v2_protocol.json",
+    "bytes": 2607,
+    "sha256": "0f2073b6f7b80c72b23506ecf766b7a1a5497f2c9c0eee0f62be89aa11b54682"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/dataset_a_v2_scenarios.csv",
+    "target": "04_source/original/test/config/dataset_a_v2_scenarios.csv",
+    "bytes": 9263,
+    "sha256": "23114df9031df40c930dba1bd63115df3cb17586645fa4f54375ae0eefbdcc00"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/dataset_a_v2_staged_decision_20261020.json",
+    "target": "04_source/original/test/config/dataset_a_v2_staged_decision_20261020.json",
+    "bytes": 2885,
+    "sha256": "d7bc2d155f65c9f1f8bec3ef26d42f3b9a87529a22faf28204b70eaf93a2fa88"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_cache_status_20261020.json",
+    "target": "04_source/original/test/config/flowbench_cache_status_20261020.json",
+    "bytes": 1114,
+    "sha256": "cb8e807d5ff59b5d70a5c1b18d062a1b685c7679ff63a564325c3bbce02f47bf"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_data_audit_20261021.json",
+    "target": "04_source/original/test/config/flowbench_data_audit_20261021.json",
+    "bytes": 1064,
+    "sha256": "3b78e8bb0ebab6e8ac7e6c2559835f98fc764d932a10beb2c5b7e29d6abec743"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_feedback_pilot_20261021.json",
+    "target": "04_source/original/test/config/flowbench_feedback_pilot_20261021.json",
+    "bytes": 1138,
+    "sha256": "54f93989244b6f34af781689585de27c4f369da867eda4d882599a7635a016df"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_latency_audit_20261021.json",
+    "target": "04_source/original/test/config/flowbench_latency_audit_20261021.json",
+    "bytes": 1241,
+    "sha256": "173753e6eea55acaddf8c3cd1ea1213879efb7a73e9593c231365c4abea76fe3"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_main_candidate_20261021.json",
+    "target": "04_source/original/test/config/flowbench_main_candidate_20261021.json",
+    "bytes": 3403,
+    "sha256": "02dcf0694b7e669e57b318edde65fab6c5a43adb5840448ea04f76ef18a27b4a"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_main_release_20261021.json",
+    "target": "04_source/original/test/config/flowbench_main_release_20261021.json",
+    "bytes": 4535,
+    "sha256": "c35074686a660e46c7f09b7b29b3a76b801456f03bfc147b182da121e828c95c"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_native_gauge64_baseline.json",
+    "target": "04_source/original/test/config/flowbench_native_gauge64_baseline.json",
+    "bytes": 677,
+    "sha256": "abcbec39672a054839dfc86f1b7ce5bdf11860bccb9fccfc8e7da689d9896fa0"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_native_gauge_refine_control.json",
+    "target": "04_source/original/test/config/flowbench_native_gauge_refine_control.json",
+    "bytes": 891,
+    "sha256": "85b8a7e72ab7e76d513845a2ec633d595715ee0d791f1bef73d941b9f1f1ca8b"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_native_gauge_refine_divergence.json",
+    "target": "04_source/original/test/config/flowbench_native_gauge_refine_divergence.json",
+    "bytes": 879,
+    "sha256": "47cc36cdaa2c27a6d4f94d8328d8efa3ae2e8a4cb9b625b42f956b77a1ad6247"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_pilot.json",
+    "target": "04_source/original/test/config/flowbench_pilot.json",
+    "bytes": 1079,
+    "sha256": "0e59cb51868660f4eaa60502ae1fa5a90d63f23bf1112c1c6a8f063cae5b6c4f"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_refine_control.json",
+    "target": "04_source/original/test/config/flowbench_refine_control.json",
+    "bytes": 804,
+    "sha256": "c56b176405e7e8b8c2d92092cbe6c87a94d72ea93bedf9b9d853ed1f57b92517"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_refine_divergence.json",
+    "target": "04_source/original/test/config/flowbench_refine_divergence.json",
+    "bytes": 812,
+    "sha256": "ecc0409d7bbce071e66dfa5121d00517df545ea5be793c12ec369003506822e4"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_runtime20_20261021.json",
+    "target": "04_source/original/test/config/flowbench_runtime20_20261021.json",
+    "bytes": 447,
+    "sha256": "e2837a15c0adf90f249f5be12df9b3a925004ce6f38318b7fd7b009b45a2c85b"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_uniform64_baseline.json",
+    "target": "04_source/original/test/config/flowbench_uniform64_baseline.json",
+    "bytes": 893,
+    "sha256": "d7136ed307003b6d24c3fd28f00b5cfed669867fb9b47263b15d1b6fe98735dd"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/flowbench_uniform64_control.json",
+    "target": "04_source/original/test/config/flowbench_uniform64_control.json",
+    "bytes": 825,
+    "sha256": "1ddd19f36589089af03c242666620553a4b3374811b0f91d8d170f837bc90fad"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/fno_long_refine_control.yaml",
+    "target": "04_source/original/test/config/fno_long_refine_control.yaml",
+    "bytes": 1097,
+    "sha256": "54be5f7984405935463ec17d52bd92642bc96c0320d44685f5ac7421d8d7fbf0"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/fno_multiseed_pilot_runs.json",
+    "target": "04_source/original/test/config/fno_multiseed_pilot_runs.json",
+    "bytes": 1104,
+    "sha256": "8de055a1d62e9517696d2eedaa9cd949cf95ba33c108757dd12c527de00ebfa0"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/fno_multistep_pilot.yaml",
+    "target": "04_source/original/test/config/fno_multistep_pilot.yaml",
+    "bytes": 953,
+    "sha256": "56674784a6cb16af721194cd2a467be15609353c965f6baf795ae035c9a1dc67"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/fno_physics_refine_pilot.yaml",
+    "target": "04_source/original/test/config/fno_physics_refine_pilot.yaml",
+    "bytes": 1097,
+    "sha256": "d8a9c9e44a19d403d4dcf397879c49d9d6547e618770cef8bce699adcff633ea"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/free_surface_scenarios.csv",
+    "target": "04_source/original/test/config/free_surface_scenarios.csv",
+    "bytes": 1084,
+    "sha256": "692adb856e2b0b546c48756cb7642c1505c4030da02236b108bf0a9780fecfbe"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/integration_allocation_pilot_20261021.json",
+    "target": "04_source/original/test/config/integration_allocation_pilot_20261021.json",
+    "bytes": 246,
+    "sha256": "bc3c57fa3a0cf55b086ffa7bf93edc59f413edf9895691343033a1b16fc06589"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/latency_protocol.json",
+    "target": "04_source/original/test/config/latency_protocol.json",
+    "bytes": 665,
+    "sha256": "9d2d01b0b63fb87a68c57cc8aab98e660bb24e5876d20a05e7215e0282f5f52f"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/llm_configurator_v3_20261021.json",
+    "target": "04_source/original/test/config/llm_configurator_v3_20261021.json",
+    "bytes": 962,
+    "sha256": "11df0b1e4f6c44fe0694fa7f2499bd0a8ce2828fd54d92a8c729c7c6ad618309"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/llm_feasibility_20261021.json",
+    "target": "04_source/original/test/config/llm_feasibility_20261021.json",
+    "bytes": 1967,
+    "sha256": "6a201e6b68e2d6e3a71b95da2a5d469c0a7cc07d26abc5d35348c6628de9a2c5"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/meshing-environment.yml",
+    "target": "04_source/original/test/config/meshing-environment.yml",
+    "bytes": 70,
+    "sha256": "c4f8c44da121f8da5f1f90f32de7dde3435f913b4b91dc617cf1c8e66701722c"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/native_cylinder_full_20261025_v1.json",
+    "target": "04_source/original/test/config/native_cylinder_full_20261025_v1.json",
+    "bytes": 1109,
+    "sha256": "83900681feccd75bfde17c5bdc79d0e877b7b31b89fc397e7f59c572883649d8"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/native_cylinder_full_fine_20261027_v1.json",
+    "target": "04_source/original/test/config/native_cylinder_full_fine_20261027_v1.json",
+    "bytes": 2015,
+    "sha256": "5cdb76651a9a32ee65f099a4c1c39efbe78cbb8e0ebd2b5c35c17cbbc2625b6f"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/native_cylinder_refinement_20261023_v1.json",
+    "target": "04_source/original/test/config/native_cylinder_refinement_20261023_v1.json",
+    "bytes": 3463,
+    "sha256": "b33d4bd8d0b332247c8dc171311e06931430805a1a9ec01bdb2af8669a41b5df"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/native_cylinder_spatial_20261024_v1.json",
+    "target": "04_source/original/test/config/native_cylinder_spatial_20261024_v1.json",
+    "bytes": 3776,
+    "sha256": "aa954c34e7881d8cf2b8a2b25649b2d3d67a8502996cedf25efc7c82b253187a"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/native_cylinder_temporal_20261023_v1.json",
+    "target": "04_source/original/test/config/native_cylinder_temporal_20261023_v1.json",
+    "bytes": 3450,
+    "sha256": "55db1d589e1d39df7b3231389871c26a0d6d9a9d877bb8adc1df5c439de9a072"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/native_expansion_20261022_v1.json",
+    "target": "04_source/original/test/config/native_expansion_20261022_v1.json",
+    "bytes": 3052,
+    "sha256": "1329826bed54f39cb773bd13f77f764ef6794193b0257ae89bc54b6b1b40ab22"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/openfoam-environment.yml",
+    "target": "04_source/original/test/config/openfoam-environment.yml",
+    "bytes": 79,
+    "sha256": "a7c5580293384dfcecad76eee8b4d949bdef2e191d26937e7e568712d579328a"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/persistent_controller_pilot_20261021.json",
+    "target": "04_source/original/test/config/persistent_controller_pilot_20261021.json",
+    "bytes": 940,
+    "sha256": "c0d274d4872607fa252913348162b1b342c0c3c7b45ba53e81084012972d09c0"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/run_record.schema.json",
+    "target": "04_source/original/test/config/run_record.schema.json",
+    "bytes": 1651,
+    "sha256": "8ff042409cb1a051b3cb84e6c3c712081b710359dbc41181f560b4974cc5a05a"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/sequential_allocation_20261021.json",
+    "target": "04_source/original/test/config/sequential_allocation_20261021.json",
+    "bytes": 234,
+    "sha256": "777d39d70f4b3c083ee51c257b2828c13b8b6ce8cc53d62f817787221e7526f3"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/sequential_preflight_20261021.json",
+    "target": "04_source/original/test/config/sequential_preflight_20261021.json",
+    "bytes": 1152,
+    "sha256": "5b9ce5ef5996b203c9b01c3482742862c56a1a6f785d6cfdb3d108f6e049e2ff"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/single_phase_scenarios.csv",
+    "target": "04_source/original/test/config/single_phase_scenarios.csv",
+    "bytes": 1140,
+    "sha256": "d7c8e2b655f408425f4c2dd276bde59352eaafbf0a57c1a2427d7ccbee5979d6"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/config/visualization-environment.yml",
+    "target": "04_source/original/test/config/visualization-environment.yml",
+    "bytes": 169,
+    "sha256": "7c669603008ea48118a8817c958869f8ccfbf20fd6119bb5958a48ec6b72f359"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/meshing/generate_dataset_a_v2_geo.py",
+    "target": "04_source/original/test/meshing/generate_dataset_a_v2_geo.py",
+    "bytes": 6322,
+    "sha256": "15dec1907f9bede03391efc0c01972228a4bf9f6e83f77998ee322ffb99d4ff4"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/native/activate_openfoam.sh",
+    "target": "04_source/original/test/native/activate_openfoam.sh",
+    "bytes": 771,
+    "sha256": "ad1e028dc81feeda84e5741b4551630030d625317b09d8cd70ef924bc178d100"
+  },
+  {
+    "source": "experiment_3d_llm_flow/test/native/fluent_exit.jou",
+    "target": "04_source/original/test/native/fluent_exit.jou",
+    "bytes": 11,
+    "sha256": "b83f18518f18c81292cca00b45c43d90055bddde761ce409c63c397bb0025fef"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "status": "draft_blocked_on_fidelity_and_family_specific_mesh_validation",
+  "preferred_total_scenarios": 72,
+  "source_protocol": "dataset_a_v2_2026-10-14",
+  "scenario_ids": ["a2_sc_001", "a2_sp_001", "a2_fc_001", "a2_bx_001", "a2_cp_001", "a2_mp_001"],
+  "split": "train_only",
+  "purpose": "First staged production batch spanning all six families; no test metric used for tuning.",
+  "production_mesh_policy": "Pending fidelity review; no universal mesh factor assumed.",
+  "generation_gates": [
+    "Freeze an explicit production-protocol revision including fidelity limitations before generation.",
+    "Check each individual mesh quality and nonempty boundary patches.",
+    "Use the full-pilot storage schedule and validate each complete 461-state series.",
+    "Record costs, flux history, force history, provenance and field diagnostics per scenario.",
+    "Review first batch before dispatching remaining scenarios."
+  ],
+  "full_pilot_reuse": "a2_mp_001_fullcost_109922 may be reused only if its discretization is explicitly accepted in the production protocol.",
+  "bulk_jobs_submitted": false,
+  "latest_fidelity_review": {
+    "solver_job": 110147,
+    "review_job": 110746,
+    "mesh_pressure_screen": "failed_in_all_three_windows",
+    "coarse_time_step_screen": "passed_in_all_three_windows",
+    "decision": "Keep production blocked pending pressure diagnostics and reference verification."
+  },
+  "reference_pressure_diagnostic": {
+    "spatial_diagnostic_job": 110759,
+    "finding": "Fine reference contains suspicious localized raw-cell pressure peaks; no production mesh accepted.",
+    "checkpoint_response_solver_job": 110763,
+    "checkpoint_response_review_job": 110766,
+    "checkpoint_response_result": "Complete: spikes persist; finer pressure reference not accepted; production remains blocked."
+  },
+  "raw_data_location": "PERUN only"
+}

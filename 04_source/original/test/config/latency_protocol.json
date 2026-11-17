@@ -1,0 +1,23 @@
+{
+  "protocol_version": 1,
+  "hardware": "one NVIDIA H200",
+  "batch_size": 1,
+  "warmup_runs": 100,
+  "measured_runs": 1000,
+  "cuda_synchronize_before_each_run": true,
+  "cuda_synchronize_after_each_run": true,
+  "precision_modes": ["fp32", "bf16"],
+  "report_percentiles": [50, 95, 99],
+  "latency_thresholds_ms": [5.0, 16.7, 33.3],
+  "measurements": [
+    "model_only_device_tensors",
+    "end_to_end_with_tensor_transfers"
+  ],
+  "excluded_from_model_only": [
+    "dataset_loading",
+    "disk_io",
+    "visualization"
+  ],
+  "notes": "The 5 ms threshold is an ambitious deployment target. Conclusions must also use the complete error-latency Pareto curve."
+}
+

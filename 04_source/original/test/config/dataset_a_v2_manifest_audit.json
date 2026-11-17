@@ -1,0 +1,19 @@
+{
+  "family_counts": {
+    "box": 12,
+    "cylinder_pair": 16,
+    "finite_cylinder": 12,
+    "mixed_pair": 8,
+    "spanning_cylinder": 12,
+    "sphere": 12
+  },
+  "obstacle_count": 96,
+  "scenario_count": 72,
+  "split_counts": {
+    "test_ID": 8,
+    "test_OOD": 10,
+    "train": 46,
+    "validation": 8
+  },
+  "status": "MANIFEST_VALID"
+}

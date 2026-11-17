@@ -1,0 +1,6 @@
+name: openfoam-2412
+channels:
+  - conda-forge
+dependencies:
+  - openfoam=2412
+

@@ -1,0 +1,13 @@
+scenario_id,split,u_m_s,diameter_m,center_x_m,center_y_m,reynolds,shape,distribution_note
+tr001,train,0.0180,0.0090,-0.005,-0.006,162.0,cylinder,interior
+tr002,train,0.0200,0.0100,0.000,0.006,200.0,cylinder,interior
+tr003,train,0.0220,0.0110,0.005,-0.003,242.0,cylinder,interior
+tr004,train,0.0240,0.0095,-0.003,0.003,228.0,cylinder,interior
+tr005,train,0.0190,0.0105,0.003,0.000,199.5,cylinder,interior
+tr006,train,0.0230,0.0100,0.000,-0.008,230.0,cylinder,interior
+va001,validation,0.0210,0.0095,0.004,0.007,199.5,cylinder,interior_unseen
+va002,validation,0.0225,0.0105,-0.004,-0.005,236.25,cylinder,interior_unseen
+ti001,test_ID,0.0185,0.0105,0.002,0.004,194.25,cylinder,interior_unseen
+ti002,test_ID,0.0235,0.0095,-0.002,-0.004,223.25,cylinder,interior_unseen
+to001,test_OOD,0.0160,0.0080,-0.010,0.012,128.0,cylinder,outside_train_ranges
+to002,test_OOD,0.0270,0.0120,0.010,-0.012,324.0,cylinder,outside_train_ranges

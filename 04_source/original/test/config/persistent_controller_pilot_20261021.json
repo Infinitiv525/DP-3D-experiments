@@ -1,0 +1,19 @@
+{
+  "purpose": "technical persistent ask/propose/train/tell integration; NOT main comparison",
+  "pilot_only": true,
+  "source_relative": "results/llm_feedback/cycle_123438",
+  "pilot_config_relative": "test/config/flowbench_feedback_pilot_20261021.json",
+  "data_audit_relative": "results/flowbench/data_audit_123590",
+  "allocation_config_relative": "test/config/integration_allocation_pilot_20261021.json",
+  "allocation_ledger_relative": "results/llm_search_prepare/integration_allocation_20261021",
+  "methods": ["random", "tpe", "granite33_8b"],
+  "llm_index": 3,
+  "sampler_seed": 21261101,
+  "training_seed": 310003,
+  "epochs": 2,
+  "attempt_limit_including_shared": 4,
+  "additional_training_seconds_per_method": 150,
+  "decision_seconds_per_llm": 210,
+  "controller_process_seconds": 500,
+  "warning": "Single adaptive proposal per method and one seed. No algorithm ranking, no test evaluation, no full four-family benchmark."
+}

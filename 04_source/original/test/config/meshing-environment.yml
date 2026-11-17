@@ -1,0 +1,5 @@
+name: meshing
+channels:
+  - conda-forge
+dependencies:
+  - gmsh=4.13.*

@@ -1,0 +1,21 @@
+{
+  "status": "diagnostic_design_before_runs",
+  "source_case": "a2_mp_001_fidelity_110147_fine_dt02",
+  "source_checkpoint_tau": 24,
+  "end_tau": 28,
+  "write_delta_tau": 0.4,
+  "branches": [
+    {"index": 0, "label": "baseline", "p_tolerance": 1e-7, "p_rel_tol": 0.01, "outer_correctors": 1, "correctors": 2, "nonorth_correctors": 1, "target_co": 0.2},
+    {"index": 1, "label": "pressure_tight", "p_tolerance": 1e-10, "p_rel_tol": 0.001, "outer_correctors": 1, "correctors": 2, "nonorth_correctors": 1, "target_co": 0.2},
+    {"index": 2, "label": "coupling_tight", "p_tolerance": 1e-7, "p_rel_tol": 0.01, "outer_correctors": 3, "correctors": 3, "nonorth_correctors": 2, "target_co": 0.2},
+    {"index": 3, "label": "fine_half_dt", "p_tolerance": 1e-7, "p_rel_tol": 0.01, "outer_correctors": 1, "correctors": 2, "nonorth_correctors": 1, "target_co": 0.1}
+  ],
+  "initial_condition": "Identical fine-mesh checkpoint copied with its existing processor partition; no interpolation from coarse mesh.",
+  "purpose": "Test local persistence of fine pressure spikes under algebraic, coupling and time-step changes; baseline restart controls for checkpoint effects.",
+  "limitations": [
+    "This is a short checkpoint-response experiment, not an independently initialized full validation trajectory.",
+    "Coupling branch changes a group of correction counts; it cannot attribute the effect to one individual count.",
+    "Lower pressure extremes alone do not prove higher physical accuracy.",
+    "No production mesh is accepted automatically, and no acceptance tolerance is relaxed."
+  ]
+}

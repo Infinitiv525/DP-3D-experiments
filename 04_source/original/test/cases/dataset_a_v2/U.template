@@ -1,0 +1,18 @@
+FoamFile
+{
+    format ascii;
+    class volVectorField;
+    object U;
+}
+dimensions [0 1 -1 0 0 0 0];
+internalField uniform (__U_INLET__ 0 0);
+boundaryField
+{
+    inlet { type fixedValue; value uniform (__U_INLET__ 0 0); }
+    outlet { type inletOutlet; inletValue uniform (__U_INLET__ 0 0); value uniform (__U_INLET__ 0 0); }
+    sideBottom { type symmetryPlane; }
+    sideTop { type symmetryPlane; }
+    periodicFront { type cyclic; }
+    periodicBack { type cyclic; }
+    obstacle { type noSlip; }
+}

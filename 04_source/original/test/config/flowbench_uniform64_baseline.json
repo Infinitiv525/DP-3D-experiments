@@ -1,0 +1,15 @@
+{
+  "repository": "BGLab/FlowBench",
+  "revision": "937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "license": "CC-BY-NC-4.0",
+  "cache_audit": "regrid_audit.json",
+  "cache_description": "Endpoint-aligned trilinear uniform64 cache; no anti-alias filtering",
+  "pilot_resolution": 64,
+  "seed": 20261019,
+  "input_channels": ["signed_distance", "Re"],
+  "output_channels": ["u", "v", "w", "p"],
+  "pilot_pressure_preprocessing": "per-sample fluid SDF>0 mean subtraction; solid pressure set to zero",
+  "run_stage": "FLOWBENCH_SUPERVISED_BASELINE_COMPLETE",
+  "training": {"width": 12, "layers": 2, "modes": 4, "epochs": 20, "max_train_samples": 700, "max_validation_samples": 150, "learning_rate": 0.001},
+  "purpose": "Single-seed exploratory supervised baseline on all training groups, no LLM and no physics loss. Not a data-size-only or epoch-count-only causal ablation. Test stays locked."
+}

@@ -1,0 +1,12 @@
+{
+  "status":"frozen_before_box_window_solver_submission",
+  "scenario_id":"a2_bx_001", "split":"train",
+  "purpose":"Independent second-family long-window pressure/velocity/force check before staged full-series generation",
+  "branches":{"coarse":{"mesh_job":121722,"factor":1.7,"wake_transition_m":0.0},"fine":{"factor":1.0,"wake_transition_m":0.01}},
+  "u_inlet_m_s":0.02125,"reference_length_m":0.0115,"reference_area_m2":0.00013225,
+  "max_co":0.2,"solve_tau":[0,40],"delta_tau":0.4,"restart_at_tau":2,
+  "comparison_windows_tau":[[4,12],[12,24],[24,40]],
+  "screen_limits":{"velocity_relative_l2_global_max":0.05,"velocity_relative_l2_wake_max":0.05,"pressure_mean_aligned_relative_l2_global_max":0.10,"mean_drag_coefficient_relative_difference_max":0.05,"mean_lift_coefficient_absolute_difference_max":0.05},
+  "limitations":["Exploratory limits carried unchanged from mixed-pair screen, not universal physical tolerances","Configuration comparison changes resolution and transition, not pure h-convergence","Not a fine time-step study or tau320-400 verification","No production acceptance without review"],
+  "test_metrics_used":false,"production_accepted":false
+}

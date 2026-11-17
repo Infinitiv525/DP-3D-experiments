@@ -1,0 +1,9 @@
+{
+  "gpu_seconds_limit": 3000,
+  "identity": {
+    "purpose": "four-family v3 sequential technical preflight, NOT main experiment",
+    "version": "20261021-sequential-v1",
+    "user": "lutoke823",
+    "account": "perun2601449"
+  }
+}

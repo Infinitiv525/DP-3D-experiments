@@ -1,0 +1,11 @@
+{
+  "date":"2026-10-20",
+  "repository_revision":"937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "original_archives":"unchanged; SHA256-verified",
+  "pilot32":"technical-only; stride omitted upper wall",
+  "uniform64_endpoints":"legacy pilot: pressure gauge removal occurred after interpolation across fluid/zero-solid interface; gauge-order probe proved sensitivity. Do not use its pressure-trained models as final benchmark evidence.",
+  "uniform64_native_gauge":"cache122479 complete; fresh baseline122480 and corrected paired refinements control122976/divergence122975 complete. Native fluid pressure centered before interpolation; velocities and split unchanged. Validation only, one training seed, no LLM comparison yet",
+  "last_checked":"2026-10-21",
+  "retained_legacy_results":["uniform64_baseline_122336","refine_control_122413","refine_divergence_122412"],
+  "warning":"Legacy paired results describe the old processed task. They do not establish an LLM contribution or final physical-pressure accuracy. Joint-model velocity learning also depended on the old pressure loss; rerun on corrected labels."
+}

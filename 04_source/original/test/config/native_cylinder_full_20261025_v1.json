@@ -1,0 +1,18 @@
+{
+  "scope": "One TRAIN full-length continuation pilot; not bulk72 generation and not LLM training",
+  "scenario_id": "a2_sc_001",
+  "prefix_job": 128179,
+  "prefix_review_job": 128181,
+  "spatial_review_job": 129256,
+  "mesh_factor": 1.0,
+  "transition_m": 0.01,
+  "max_co": 0.1,
+  "max_delta_tau": 0.01,
+  "initial_delta_tau": 0.0001,
+  "numerical_limits": {"max_actual_co": 0.11, "absolute_continuity": 0.00001, "relative_flux": 0.0001},
+  "mpi_ranks": 32,
+  "stages": [[40,80,0.4],[80,160,4],[160,240,4],[240,320,4],[320,360,0.4],[360,400,0.4]],
+  "expected_total_states": 461,
+  "policy": "Copy checkpoint40 into a new private case. Reuse original101 compact prefix states in manifest, do not rerun or overwrite original data. Afterok chaining stops on failure. Keep raw and compact data on Perun. Never delete data automatically.",
+  "limitations": ["Only one TRAIN geometry", "Full numerical stability and completeness do not establish late physical fidelity", "No matched fine0.8 full-length comparator yet", "Segmented restarts are recorded", "No production acceptance or new neural test metrics"]
+}

@@ -1,0 +1,14 @@
+scenario_id,split,geometry_group,inlet_velocity_m_s,cylinder_count,cylinder_diameter_m,cylinder_x_m,cylinder_y_m,kinematic_viscosity_m2_s,reynolds_number,seed
+sp_train_001,train,cylinder_center,0.005,1,0.010,0.055,0.0205,0.000001,50,1101
+sp_train_002,train,cylinder_center,0.008,1,0.010,0.055,0.0205,0.000001,80,1102
+sp_train_003,train,cylinder_shift_y,0.010,1,0.010,0.060,0.0180,0.000001,100,1103
+sp_train_004,train,cylinder_shift_y,0.012,1,0.012,0.060,0.0230,0.000001,144,1104
+sp_train_005,train,cylinder_size,0.015,1,0.008,0.065,0.0205,0.000001,120,1105
+sp_train_006,train,cylinder_size,0.018,1,0.011,0.070,0.0205,0.000001,198,1106
+sp_val_001,validation,cylinder_center,0.009,1,0.011,0.058,0.0205,0.000001,99,1201
+sp_val_002,validation,cylinder_shift_y,0.014,1,0.009,0.064,0.0220,0.000001,126,1202
+sp_test_id_001,test_id,cylinder_center,0.011,1,0.010,0.062,0.0205,0.000001,110,1301
+sp_test_id_002,test_id,cylinder_shift_y,0.016,1,0.012,0.068,0.0190,0.000001,192,1302
+sp_test_ood_001,test_ood,cylinder_large,0.020,1,0.012,0.075,0.0205,0.000001,240,1401
+sp_test_ood_002,test_ood,two_cylinders,0.012,2,0.010,0.060,0.0205,0.000001,120,1402
+

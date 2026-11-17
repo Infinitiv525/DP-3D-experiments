@@ -1,0 +1,16 @@
+{
+  "revision":"937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "expected_samples":1000,
+  "expected_geometry_groups":100,
+  "expected_split_samples":{"train":700,"validation":150,"test":150},
+  "expected_samples_per_geometry":10,
+  "native_near_duplicate_solid_iou":0.98,
+  "broad_similarity_solid_iou":0.90,
+  "coarse_near_duplicate_solid_iou":0.98,
+  "boundary_velocity_absolute_tolerance":0.00001,
+  "relative_error_denominator_epsilon":1e-12,
+  "verify_archive_sha256":true,
+  "test_input_geometry_audit_allowed":true,
+  "test_target_field_analysis_allowed":false,
+  "notes":["Thresholds fixed before audit. Flags require review, not automatic relabeling or split edits.","Compare SOLID masks, not fluid/background IoU, to avoid trivial similarity from large empty domain.","Boundary checks exclude conflicting wall/lid edge nodes; upper spatial axis1 lid u=1,v=w=0, other fluid face interiors zero.","All native X inputs inspected; native/coarse Y field diagnostics only train/validation. ZIP bytes may be traversed for CRC/hash, not test model evaluation."]
+}

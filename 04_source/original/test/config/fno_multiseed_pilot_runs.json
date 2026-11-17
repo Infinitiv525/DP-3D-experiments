@@ -1,0 +1,17 @@
+{
+  "20261014": {
+    "base": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_multistep_108858/summary.json",
+    "control": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_long_control_108902/summary.json",
+    "physics": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_physics_refine_108896/summary.json"
+  },
+  "20261015": {
+    "base": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_multistep_seed_20261015_108909_0/summary.json",
+    "control": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_control_seed_20261015_108919_0/summary.json",
+    "physics": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_physics_seed_20261015_108919_1/summary.json"
+  },
+  "20261016": {
+    "base": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_multistep_seed_20261016_108909_1/summary.json",
+    "control": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_control_seed_20261016_108919_2/summary.json",
+    "physics": "/mnt/project/perun2601449/dp_llm_cfd/results/training/fno_physics_seed_20261016_108919_3/summary.json"
+  }
+}

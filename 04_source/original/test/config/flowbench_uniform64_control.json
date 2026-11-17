@@ -1,0 +1,14 @@
+{
+  "repository": "BGLab/FlowBench",
+  "revision": "937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "license": "CC-BY-NC-4.0",
+  "cache_audit": "regrid_audit.json",
+  "cache_description": "Endpoint-aligned trilinear uniform64 cache; no anti-alias filtering",
+  "pilot_resolution": 64,
+  "seed": 20261019,
+  "input_channels": ["signed_distance", "Re"],
+  "output_channels": ["u", "v", "w", "p"],
+  "pilot_pressure_preprocessing": "per-sample fluid SDF>0 mean subtraction; solid pressure set to zero",
+  "training": {"width": 12, "layers": 2, "modes": 4, "epochs": 3, "max_train_samples": 64, "max_validation_samples": 16, "learning_rate": 0.001},
+  "purpose": "Same architecture, seed and sample selection as 32-stride smoke; different resolution AND preprocessing, not a resolution-only causal ablation. Test remains locked."
+}

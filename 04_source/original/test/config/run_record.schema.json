@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dissertation experiment run record",
+  "type": "object",
+  "required": [
+    "run_id",
+    "method",
+    "stage",
+    "seed",
+    "git_commit",
+    "container_sha256",
+    "started_at_utc",
+    "configuration",
+    "resource_usage",
+    "status"
+  ],
+  "properties": {
+    "run_id": {"type": "string"},
+    "method": {
+      "enum": [
+        "manual",
+        "random",
+        "optuna_tpe",
+        "llm",
+        "llm_plus_optuna"
+      ]
+    },
+    "stage": {"enum": ["pilot", "optimization", "final_evaluation"]},
+    "seed": {"type": "integer"},
+    "git_commit": {"type": "string"},
+    "container_sha256": {"type": "string"},
+    "started_at_utc": {"type": "string", "format": "date-time"},
+    "finished_at_utc": {"type": ["string", "null"], "format": "date-time"},
+    "configuration": {"type": "object"},
+    "resource_usage": {
+      "type": "object",
+      "required": ["gpu_hours", "cpu_core_hours", "wall_time_seconds"],
+      "properties": {
+        "gpu_hours": {"type": "number", "minimum": 0},
+        "cpu_core_hours": {"type": "number", "minimum": 0},
+        "wall_time_seconds": {"type": "number", "minimum": 0},
+        "llm_input_tokens": {"type": "integer", "minimum": 0},
+        "llm_output_tokens": {"type": "integer", "minimum": 0},
+        "llm_cost": {"type": "number", "minimum": 0}
+      }
+    },
+    "metrics": {"type": "object"},
+    "artifacts": {"type": "object"},
+    "status": {"enum": ["queued", "running", "completed", "failed", "cancelled"]},
+    "failure_reason": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}
+

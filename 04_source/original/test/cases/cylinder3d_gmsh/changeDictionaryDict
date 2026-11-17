@@ -1,0 +1,40 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      changeDictionaryDict;
+}
+
+boundary
+{
+    front
+    {
+        type            cyclic;
+        neighbourPatch  back;
+    }
+    back
+    {
+        type            cyclic;
+        neighbourPatch  front;
+    }
+    sideBottom
+    {
+        type symmetryPlane;
+    }
+    sideTop
+    {
+        type symmetryPlane;
+    }
+    inlet
+    {
+        type patch;
+    }
+    outlet
+    {
+        type patch;
+    }
+    cylinder
+    {
+        type wall;
+    }
+}

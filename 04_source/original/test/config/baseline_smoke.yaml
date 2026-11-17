@@ -1,0 +1,18 @@
+seed: 20261014
+dataset_root: /mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_108616
+scenario_table: /mnt/project/perun2601449/dp_llm_cfd/test/config/dataset_a_pilot_scenarios.csv
+history_steps: 1
+prediction_steps: 1
+batch_size: 8
+epochs: 5
+learning_rate: 0.001
+weight_decay: 0.0001
+model_width: 32
+residual_blocks: 4
+num_workers: 4
+mixed_precision: bf16
+training_split: train
+validation_split: validation
+protected_splits:
+  - test_ID
+  - test_OOD

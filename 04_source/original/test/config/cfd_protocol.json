@@ -1,0 +1,84 @@
+{
+  "protocol_version": 1,
+  "status": "pilot_before_freeze",
+  "units": "SI",
+  "single_phase": {
+    "solver": "pimpleFoam",
+    "flow_regime": "laminar_or_low_transition",
+    "domain_m": {
+      "length_x": 0.22,
+      "height_y": 0.041,
+      "depth_z": 0.02
+    },
+    "fluid": {
+      "kinematic_viscosity_m2_s": 0.000001
+    },
+    "boundary_conditions": {
+      "inlet": "uniform_velocity_from_scenario",
+      "outlet": "fixed_pressure_zero_gradient_velocity",
+      "walls_and_obstacles": "no_slip"
+    },
+    "pilot_mesh": {
+      "background_cells_xyz": [88, 32, 16],
+      "local_refinement_around_obstacle": true,
+      "minimum_cells_across_cylinder_diameter": 16
+    },
+    "time": {
+      "adaptive_time_step": true,
+      "max_courant_number": 0.5,
+      "physical_duration_s": 2.0,
+      "saved_snapshots": 101
+    },
+    "saved_fields": ["U", "p"],
+    "quality_checks": [
+      "mesh_quality",
+      "solver_convergence",
+      "mass_balance",
+      "courant_number",
+      "drag_and_lift_consistency"
+    ]
+  },
+  "free_surface": {
+    "solver": "interFoam",
+    "interface_method": "volume_of_fluid",
+    "domain_m": {
+      "length_x": 1.2,
+      "height_y": 0.4,
+      "depth_z": 0.3
+    },
+    "fluids": ["water", "air"],
+    "gravity_m_s2": [0.0, -9.81, 0.0],
+    "pilot_mesh": {
+      "background_cells_xyz": [96, 32, 24],
+      "local_refinement_near_interface_and_obstacle": true
+    },
+    "time": {
+      "adaptive_time_step": true,
+      "max_courant_number": 0.5,
+      "max_interface_courant_number": 0.25,
+      "physical_duration_s": 2.0,
+      "saved_snapshots": 101
+    },
+    "saved_fields": ["U", "p_rgh", "alpha.water"],
+    "quality_checks": [
+      "mesh_quality",
+      "solver_convergence",
+      "mass_balance",
+      "water_volume_conservation",
+      "courant_number",
+      "bounded_volume_fraction"
+    ]
+  },
+  "dataset_rules": {
+    "split_unit": "complete_cfd_scenario",
+    "allow_time_steps_from_one_scenario_in_multiple_splits": false,
+    "common_output_grid_required": true,
+    "store_geometry_mask": true,
+    "store_boundary_conditions": true,
+    "store_coordinates_and_time": true,
+    "normalization_statistics_source": "training_split_only"
+  },
+  "mesh_independence_rule": "Before production, compare at least three mesh levels on representative scenarios and choose the coarsest level whose monitored quantities differ by no more than the frozen tolerance from the next finer level.",
+  "pilot_note": "Numerical values are initial pilot values and must be revised using stability, mesh independence and runtime measurements before protocol freeze."
+}
+

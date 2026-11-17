@@ -1,0 +1,97 @@
+{
+  "scope": "One TRAIN fine0.8 full-length comparator for completed baseline1.0; no bulk72 or neural test",
+  "scenario_id": "a2_sc_001",
+  "prefix_job": 129254,
+  "prefix_review_job": 129256,
+  "spatial_review_job": 129256,
+  "mesh_factor": 0.8,
+  "transition_m": 0.01,
+  "max_co": 0.1,
+  "max_delta_tau": 0.01,
+  "initial_delta_tau": 0.0001,
+  "numerical_limits": {
+    "max_actual_co": 0.11,
+    "absolute_continuity": 0.00001,
+    "relative_flux": 0.0001
+  },
+  "mpi_ranks": 32,
+  "stages": [
+    [
+      40,
+      80,
+      0.4
+    ],
+    [
+      80,
+      120,
+      4
+    ],
+    [
+      120,
+      160,
+      4
+    ],
+    [
+      160,
+      200,
+      4
+    ],
+    [
+      200,
+      240,
+      4
+    ],
+    [
+      240,
+      280,
+      4
+    ],
+    [
+      280,
+      320,
+      4
+    ],
+    [
+      320,
+      360,
+      0.4
+    ],
+    [
+      360,
+      400,
+      0.4
+    ]
+  ],
+  "expected_total_states": 461,
+  "policy": "Copy checkpoint40 into a new private case. Reuse original101 compact prefix states in manifest, do not rerun or overwrite original data. Afterok chaining stops on failure. Keep raw and compact data on Perun. Never delete data automatically.",
+  "limitations": [
+    "One TRAIN geometry only",
+    "Matched baseline1.0 full series exists; comparison is a separate gated job",
+    "Two resolutions are not formal mesh convergence",
+    "Numerical completion alone does not authorize production",
+    "No phase alignment or threshold relaxation for acceptance"
+  ],
+  "late_windows_tau": [
+    [
+      320,
+      360
+    ],
+    [
+      360,
+      400
+    ],
+    [
+      320,
+      400
+    ]
+  ],
+  "baseline_work_root": "results/native_expansion/cylinder_full_20261025_v3",
+  "baseline_export_job": 130613,
+  "exploratory_limits": {
+    "velocity_relative_l2_global": 0.05,
+    "pressure_mean_aligned_relative_l2_global": 0.1,
+    "velocity_relative_l2_wake": 0.05,
+    "mean_drag_coefficient_relative_difference": 0.05,
+    "mean_lift_coefficient_absolute_difference": 0.05
+  }
+}

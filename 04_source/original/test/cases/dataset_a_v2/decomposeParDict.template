@@ -1,0 +1,18 @@
+FoamFile
+{
+    format ascii;
+    class dictionary;
+    object decomposeParDict;
+}
+numberOfSubdomains __NPROCS__;
+method scotch;
+
+constraints
+{
+    periodicPatches
+    {
+        type preservePatches;
+        patches (periodicFront periodicBack);
+        enabled true;
+    }
+}

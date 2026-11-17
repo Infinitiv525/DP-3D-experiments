@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "scope": "Independent own-CFD Dataset A v2, all four local LLM families and controls; NOT a change to completed FlowBench",
+  "user_authorization": {
+    "date": "2026-10-22",
+    "instruction": "Najprv skontroluj kvalitu a potom hned mozes pustit Testovanie; vsetky vybrane modely LLM; neodhaduj naklady",
+    "reported_available_gpu_hours": 2000,
+    "restrict_to_old_internal_70_gpu_hours": false,
+    "no_cost_estimation_requested": true,
+    "preserve_actual_resource_accounting": true
+  },
+  "methods": ["manual", "random", "tpe", "qwen3_8b", "ministral3_8b", "phi4_mini", "granite33_8b"],
+  "old_flowbench_freeze_and_ledger": "unchanged; never increase or reset the existing70h ledger",
+  "target_dataset_protocol": "test/config/dataset_a_v2_protocol.json",
+  "target_scenarios": 72,
+  "full_llm_comparison_status": "blocked_until_reference_data_and_training_integration_pass",
+  "pilot_dataset_relative": "results/dataset_a/uniform_dataset_128_108616",
+  "pilot_role": "integrity and historical readiness audit only, not silently promoted to a new final benchmark",
+  "protected_data_policy": "hash and header checks allowed for all splits; numeric pilot field diagnostics only train and validation; no neural model test metric",
+  "quality_work_root": "results/native_expansion/quality_20261022_v1",
+  "missing_long_window_families": [
+    {"scenario_id":"a2_sc_001","index":0,"coarse_source":"a2_sc_001_solvgate_122390_0_staged_coarse","factor":1.2,"transition_m":0.01},
+    {"scenario_id":"a2_sp_001","index":1,"coarse_source":"a2_sp_001_solvgate_122337_1_staged_coarse","factor":1.4,"transition_m":0.01},
+    {"scenario_id":"a2_fc_001","index":2,"coarse_source":"a2_fc_001_solvgate_122337_2_staged_coarse","factor":1.4,"transition_m":0.01},
+    {"scenario_id":"a2_cp_001","index":4,"coarse_source":"a2_cp_001_solvgate_122411_4_staged_coarse","factor":1.2,"transition_m":0.01}
+  ],
+  "fine_configuration": {"mesh_factor":1.0,"transition_m":0.01},
+  "fidelity_windows_tau": [[4,12],[12,24],[24,40]],
+  "solve_tau": [0,40],
+  "snapshot_delta_tau":0.4,
+  "max_co_target":0.2,
+  "force_normalization":{"u_ref":"scenario inlet velocity","length_ref":"scenario reference length","area_ref":"reference_length_m squared; same in coarse and fine"},
+  "solver_gate":{"actual_max_co":0.55,"absolute_cumulative_continuity":0.00001,"max_relative_flux_imbalance":0.0001},
+  "exploratory_limits": {
+    "velocity_relative_l2_global":0.05,
+    "velocity_relative_l2_wake":0.05,
+    "pressure_mean_aligned_relative_l2_global":0.10,
+    "mean_drag_coefficient_relative_difference":0.05,
+    "mean_lift_coefficient_absolute_difference":0.05
+  },
+  "limitations": [
+    "Keep existing exploratory tolerances; do not loosen thresholds after results",
+    "Two configuration comparisons are not mesh convergence or late tau320-400 verification",
+    "Successful numerical run alone does not certify physical fidelity",
+    "No bulk72-case production or LLM training on absent datasets",
+    "No weights or CFD arrays downloaded locally"
+  ]
+}

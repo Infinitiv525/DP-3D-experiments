@@ -1,0 +1,9 @@
+{
+  "repository":"BGLab/FlowBench", "revision":"937c672604d4c9f39aceedf1fa2f0a603695264b", "license":"CC-BY-NC-4.0",
+  "cache_audit":"pressure_gauge_audit.json", "cache_description":"Native-fluid pressure gauge centered before endpoint-aligned interpolation",
+  "pilot_resolution":64, "seed":20261019,
+  "initial_checkpoint":"/mnt/project/perun2601449/dp_llm_cfd/results/flowbench/native_gauge64_baseline_122480/best_model.pt",
+  "run_stage":"FLOWBENCH_NATIVE_GAUGE_PAIRED_REFINEMENT_COMPLETE",
+  "training":{"width":12,"layers":2,"modes":4,"epochs":10,"max_train_samples":700,"max_validation_samples":150,"learning_rate":0.0003,"measure_divergence":true,"divergence_weight":0.01,"reference_divergence_mse_floor":0.0001},
+  "purpose":"Divergence-penalized matched refinement on corrected pressure labels. One-seed exploratory preparation, not an LLM or final-test comparison."
+}

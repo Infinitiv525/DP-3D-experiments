@@ -1,0 +1,36 @@
+FoamFile
+{
+    format ascii;
+    class dictionary;
+    object createPatchDict;
+}
+pointSync false;
+patches
+(
+    {
+        name periodicFront;
+        patchInfo
+        {
+            type cyclic;
+            neighbourPatch periodicBack;
+            transform translational;
+            separationVector (0 0 0.04);
+            matchTolerance 0.001;
+        }
+        constructFrom patches;
+        patches (front);
+    }
+    {
+        name periodicBack;
+        patchInfo
+        {
+            type cyclic;
+            neighbourPatch periodicFront;
+            transform translational;
+            separationVector (0 0 -0.04);
+            matchTolerance 0.001;
+        }
+        constructFrom patches;
+        patches (back);
+    }
+);

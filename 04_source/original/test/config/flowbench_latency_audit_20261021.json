@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "purpose": "Audit current corrected-cache runtime20 checkpoint, no model selection or test labels",
+  "checkpoint_relative": "results/llm_search_prepare/runtime20_123454",
+  "data_relative": "public_data/flowbench/937c672604d4c9f39aceedf1fa2f0a603695264b/uniform64_native_gauge",
+  "split_sha256": "778d3631a4094f7a24e317e047bd3ddb31545ea46aad38a70d3ed918ebee49f5",
+  "precision": "FP32 eager; complex64 FFT; TF32 disabled; no autocast, compile or CUDA graphs",
+  "batch_size": 1,
+  "validation_geometries": 5,
+  "rounds": 3,
+  "warmup_per_mode_per_round": 100,
+  "measured_per_mode_per_round": 1000,
+  "mode_order": ["model_only", "gpu_pipeline", "host_to_host"],
+  "primary_5ms_measurement": "gpu_pipeline synchronized wall p99",
+  "thresholds_ms": [5.0, 16.7, 33.3],
+  "max_process_seconds": 250,
+  "host_input": "ordinary pageable float32 RAM; NOT pinned-memory optimization",
+  "excluded": ["disk IO", "model loading", "geometry/SDF generation", "visualization", "LLM decisions"],
+  "notes": "Steady mapping, not temporal rollout. Host-to-host includes H2D, preprocessing, model, denormalization, D2H. All modes evaluated with batch1 and a completed output each call. Latency alone is not accuracy certification."
+}

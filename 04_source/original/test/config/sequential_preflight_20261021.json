@@ -1,0 +1,23 @@
+{
+  "phase": "technical_pilot",
+  "main_authorized": false,
+  "source_relative": "results/llm_feedback/cycle_123438",
+  "data_audit_relative": "results/flowbench/data_audit_123590",
+  "pilot_config_relative": "test/config/flowbench_feedback_pilot_20261021.json",
+  "llm_config_relative": "test/config/llm_configurator_v3_20261021.json",
+  "preparation_relative": "results/llm_feasibility/prepare_123299",
+  "allocation_config_relative": "test/config/sequential_allocation_20261021.json",
+  "allocation_ledger_relative": "results/llm_search_prepare/sequential_allocation_20261021",
+  "methods": ["random", "tpe", "qwen3_8b", "ministral3_8b", "phi4_mini", "granite33_8b"],
+  "epochs": 2,
+  "attempt_limit_including_shared": 5,
+  "additional_training_seconds_per_method": 300,
+  "trial_cap_seconds": 150,
+  "decision_cap_seconds": 210,
+  "decision_seconds_per_llm": 420,
+  "sampler_seed": 21261101,
+  "training_seed_base": 310000,
+  "family_controller_seconds": 540,
+  "controls_controller_seconds": 300,
+  "warning": "Two adaptive attempts per method, one search repetition and two epochs. Technical preflight only: no final ranking, no test metrics."
+}

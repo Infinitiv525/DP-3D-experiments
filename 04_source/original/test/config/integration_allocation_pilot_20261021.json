@@ -1,0 +1,9 @@
+{
+  "gpu_seconds_limit": 960,
+  "identity": {
+    "purpose": "bounded technical latency and persistent-controller integration pilot, NOT main comparison",
+    "version": "20261021-v1",
+    "user": "lutoke823",
+    "account": "perun2601449"
+  }
+}

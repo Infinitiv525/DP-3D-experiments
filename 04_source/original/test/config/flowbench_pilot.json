@@ -1,0 +1,18 @@
+{
+  "repository": "BGLab/FlowBench",
+  "revision": "937c672604d4c9f39aceedf1fa2f0a603695264b",
+  "license": "CC-BY-NC-4.0",
+  "files": {
+    "X": {"path": "LDC_NS_3D/LDC_3d_X.npz", "bytes": 7250928700, "sha256": "913849febee8662546309aff27e4f15fa826e11bbefffdae6366773b56bbe376"},
+    "Y": {"path": "LDC_NS_3D/LDC_3d_Y.npz", "bytes": 26194477231, "sha256": "b5c1d3c06e8a6ef97414c940387d8c37779c6bcf2897a32543591c79f6725907"}
+  },
+  "input_channels": ["signed_distance", "Re"],
+  "channel_source": "https://arxiv.org/html/2503.17289v1 section 2.1; actual pinned X/Y numpy headers verified",
+  "output_channels": ["u", "v", "w", "p"],
+  "pilot_pressure_preprocessing": "per-sample fluid SDF>0 mean subtraction; solid pressure set to zero; original archive unchanged",
+  "pilot_resolution": 32,
+  "seed": 20261019,
+  "task": "steady_geometry_to_field_not_time_rollout",
+  "split": "full_resolution_sdf_le_zero_geometry_hash_70_15_15",
+  "training": {"width": 12, "layers": 2, "modes": 4, "epochs": 3, "max_train_samples": 64, "max_validation_samples": 16, "learning_rate": 0.001}
+}

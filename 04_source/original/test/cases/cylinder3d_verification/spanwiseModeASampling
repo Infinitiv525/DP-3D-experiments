@@ -1,0 +1,65 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      spanwiseModeASampling;
+}
+
+type                sets;
+libs                (sampling);
+writeControl        writeTime;
+setFormat           raw;
+interpolationScheme cellPoint;
+fields              (U vorticity);
+
+sets
+(
+    x1p5D_y0
+    {
+        type        uniform;
+        axis        xyz;
+        start       (0.015 0.000 -0.0199);
+        end         (0.015 0.000  0.0199);
+        nPoints     109;
+    }
+    x2p5D_y0
+    {
+        type        uniform;
+        axis        xyz;
+        start       (0.025 0.000 -0.0199);
+        end         (0.025 0.000  0.0199);
+        nPoints     109;
+    }
+    x4D_y0
+    {
+        type        uniform;
+        axis        xyz;
+        start       (0.040 0.000 -0.0199);
+        end         (0.040 0.000  0.0199);
+        nPoints     109;
+    }
+    x1p5D_y0p5D
+    {
+        type        uniform;
+        axis        xyz;
+        start       (0.015 0.005 -0.0199);
+        end         (0.015 0.005  0.0199);
+        nPoints     109;
+    }
+    x2p5D_y0p5D
+    {
+        type        uniform;
+        axis        xyz;
+        start       (0.025 0.005 -0.0199);
+        end         (0.025 0.005  0.0199);
+        nPoints     109;
+    }
+    x4D_y0p5D
+    {
+        type        uniform;
+        axis        xyz;
+        start       (0.040 0.005 -0.0199);
+        end         (0.040 0.005  0.0199);
+        nPoints     109;
+    }
+);

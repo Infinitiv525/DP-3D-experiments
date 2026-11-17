@@ -1,0 +1,63 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+
+application     pimpleFoam;
+startFrom       startTime;
+startTime       0;
+stopAt          endTime;
+endTime         20.0;
+deltaT          0.001;
+adjustTimeStep  yes;
+maxCo           0.5;
+maxDeltaT       0.01;
+writeControl    adjustableRunTime;
+writeInterval   5.0;
+purgeWrite      0;
+writeFormat     binary;
+writePrecision  10;
+writeCompression on;
+timeFormat      general;
+timePrecision   8;
+runTimeModifiable false;
+
+functions
+{
+    forceCoefficients
+    {
+        type forceCoeffs;
+        libs (forces);
+        patches (cylinder);
+        rho rhoInf;
+        rhoInf 998.2;
+        log true;
+        CofR (__CENTER_X__ __CENTER_Y__ 0);
+        liftDir (0 1 0);
+        dragDir (1 0 0);
+        pitchAxis (0 0 1);
+        magUInf __U_INLET__;
+        lRef __DIAMETER__;
+        Aref __REFERENCE_AREA__;
+        writeControl timeStep;
+        writeInterval 1;
+    }
+
+    wakeProbes
+    {
+        type probes;
+        libs (sampling);
+        fields (U p);
+        probeLocations
+        (
+            (__PROBE_X1__ __CENTER_Y__ 0)
+            (__PROBE_X2__ __CENTER_Y__ 0)
+            (__PROBE_X3__ __CENTER_Y__ 0)
+            (__PROBE_X2__ __PROBE_Y2__ __PROBE_Z2__)
+        );
+        writeControl timeStep;
+        writeInterval 1;
+    }
+}

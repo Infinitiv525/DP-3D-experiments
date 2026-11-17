@@ -1,0 +1,35 @@
+seed: 20261014
+dataset_root: /mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616
+scenario_table: /mnt/project/perun2601449/dp_llm_cfd/test/config/dataset_a_pilot_scenarios.csv
+training_statistics: /mnt/project/perun2601449/dp_llm_cfd/results/dataset_a/uniform_dataset_128_108616/training_statistics.json
+training_split: train
+validation_split: validation
+protected_splits:
+  - test_ID
+  - test_OOD
+model:
+  input_channels: 11
+  width: 24
+  layers: 3
+  modes_x: 12
+  modes_y: 8
+  modes_z: 6
+  padding_x: 6
+  padding_y: 4
+training:
+  epochs: 10
+  rollout_schedule: [1, 1, 2, 4, 8, 8, 16, 16, 32, 32]
+  max_train_sequences_per_epoch: 512
+  max_rollout_frames_per_epoch: 4096
+  batch_size: 2
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+  divergence_weight: 0.0
+  num_workers: 4
+  mixed_precision: bf16
+evaluation:
+  rollout_steps: 200
+  latency_iterations: 300
+  latency_warmup: 50
+  target_p99_ms: 5.0
