@@ -1,0 +1,2 @@
+a6ea9b768d56e9e2b27be02e4c72e33a3e7f560e0e303348211f7c57d1130742  3d-additional-scientific-records-part01-of01.tar.gz
+8cf68e22f42559faf9fa74ea37896e3bb138449c04fe734d2a22ac274d904751  SUPPLEMENT_MANIFEST.json
