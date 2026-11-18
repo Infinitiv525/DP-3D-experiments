@@ -1,0 +1,1524 @@
+{
+  "repository": "Infinitiv525/DP-3D-experiments",
+  "checked_UTC": "2026-11-18T21:50:38.138787+00:00",
+  "all_recorded_assets_anonymously_accessible": true,
+  "assets": [
+    {
+      "name": "3d-models-and-records-part01-of01.tar.gz",
+      "bytes": 463367642,
+      "sha256": "b7c85b60f512cb74efb1b7b5d4f3337ebecb721646edf6d019abd892768ca77c",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-artifacts-v1/3d-models-and-records-part01-of01.tar.gz",
+      "release_tag": "research-artifacts-v1",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "ARTIFACT_MANIFEST.json",
+      "bytes": 2549660,
+      "sha256": "02ee8970386b6c3d13ac65ede454bdca0d1c9d77e7ab1af37137d1c2ffab3df8",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-artifacts-v1/ARTIFACT_MANIFEST.json",
+      "release_tag": "research-artifacts-v1",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 196,
+      "sha256": "6891727d85ddda1ef66c00152462db3e00882cc9a93c3de5b1e108c2cbea20d9",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-artifacts-v1/SHA256SUMS.txt",
+      "release_tag": "research-artifacts-v1",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "3d-additional-scientific-records-part01-of01.tar.gz",
+      "bytes": 37142362,
+      "sha256": "a6ea9b768d56e9e2b27be02e4c72e33a3e7f560e0e303348211f7c57d1130742",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scientific-data-supplement-20261118/3d-additional-scientific-records-part01-of01.tar.gz",
+      "release_tag": "scientific-data-supplement-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "SUPPLEMENT_MANIFEST.json",
+      "bytes": 545968,
+      "sha256": "8cf68e22f42559faf9fa74ea37896e3bb138449c04fe734d2a22ac274d904751",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scientific-data-supplement-20261118/SUPPLEMENT_MANIFEST.json",
+      "release_tag": "scientific-data-supplement-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "SUPPLEMENT_SHA256SUMS.txt",
+      "bytes": 209,
+      "sha256": "f7ee060494b5ab7f5ddc81904fe41af2e0ee933a8313c16c120fa0fdaf7be324",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scientific-data-supplement-20261118/SUPPLEMENT_SHA256SUMS.txt",
+      "release_tag": "scientific-data-supplement-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_evaluation_121349_d1cd2d71__part01-of01.tar.gz",
+      "bytes": 2996155,
+      "sha256": "6d1ea161e00387ef91bffe26fcb4cbabc0bcdfdb88f996e2c1146014e40c51f1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_evaluation_121349_d1cd2d71__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_native_gauge64_baseline_122480_3ba18fe3__part01-of01.tar.gz",
+      "bytes": 23997141,
+      "sha256": "ee8b04274c47b9d351c29138363e1083ae6cb120be74daa7156c7c5fbfbe0d33",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_native_gauge64_baseline_122480_3ba18fe3__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_native_gauge_refine_control_122976_d15da0e0__part01-of01.tar.gz",
+      "bytes": 23990683,
+      "sha256": "c7e5303724909c1f03e99ac8ba77bf474676ac0955a8ccca2a3ee9c63604fada",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_native_gauge_refine_control_122976_d15da0e0__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_native_gauge_refine_divergence_122975_ee24d9b2__part01-of01.tar.gz",
+      "bytes": 23984745,
+      "sha256": "1dc4baf6995f8ad06a0341692f9baa0d7ce3a08b9df104fc2996d50cd037fc11",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_native_gauge_refine_divergence_122975_ee24d9b2__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_refine_control_122413_fb2756ec__part01-of01.tar.gz",
+      "bytes": 23517779,
+      "sha256": "9471e0e6690496370cef874d482c3a15427728f3eef2627bbc765537d59d545b",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_refine_control_122413_fb2756ec__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_refine_divergence_122412_69f10e65__part01-of01.tar.gz",
+      "bytes": 23503522,
+      "sha256": "b0a304d7d03be80a55ad8a49e77b645e9c8c00b47dd452e0f0f23478543e62f7",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_refine_divergence_122412_69f10e65__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_uniform64_baseline_122336_abb6470d__part01-of01.tar.gz",
+      "bytes": 23518509,
+      "sha256": "6f47780a66846105a13455a8eed4503417ab42983b86128e91d388a80ea084c0",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_uniform64_baseline_122336_abb6470d__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_uniform64_control_121721_ff8d2d5a__part01-of01.tar.gz",
+      "bytes": 23391122,
+      "sha256": "4bf609ff291b302b64f3d54ea9d754afa739e10c71296b47dd3210fce09d80a6",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_uniform64_control_121721_ff8d2d5a__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "NUMERICAL_HISTORY_MANIFEST.json",
+      "bytes": 11156,
+      "sha256": "a8549a56e1fb8cbf20f0e44ef90242dc730af62a7d742acccbd54d41befc1e07",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/NUMERICAL_HISTORY_MANIFEST.json",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "NUMERICAL_HISTORY_SHA256SUMS.txt",
+      "bytes": 1222,
+      "sha256": "f528fef04e9eac5209f1e2e169c132928d5815cc8177e825b71b50fddca62b61",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/NUMERICAL_HISTORY_SHA256SUMS.txt",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_206c5843__part01-of01.tar.gz",
+      "bytes": 77072,
+      "sha256": "23a0269d62e1884f42cf30b6121c61d397abfa5ead745e0f4c0ad0d256195e0d",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_flowbench_206c5843__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_llm_feasibility_e4b1c038__part01-of01.tar.gz",
+      "bytes": 14847,
+      "sha256": "e4fd1444003beb4e0160890da803556bc7f45d31450ce556b157367abafdc4e7",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_llm_feasibility_e4b1c038__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_llm_feedback_8984969d__part01-of01.tar.gz",
+      "bytes": 38625,
+      "sha256": "2a6fe99354430490d50691b4bfdbe0828bdc3c7550321230ecc41c5e8956408c",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_llm_feedback_8984969d__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_llm_main_8dcb5999__part01-of01.tar.gz",
+      "bytes": 92587,
+      "sha256": "0eee9f4252092e3c79776cd9c33c1a1bdc96579b1b9388ffbd143cff6091e4dc",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_llm_main_8dcb5999__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_llm_search_prepare_31e36d90__part01-of01.tar.gz",
+      "bytes": 373061,
+      "sha256": "591243528778442a327f31bab2207dbc5cd09bf0be0d5b223d0b179e6df30064",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_llm_search_prepare_31e36d90__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_verification_a3c8eb6a__part01-of02.tar.gz",
+      "bytes": 207001600,
+      "sha256": "39a42db31cae9f0440f1fe486aff6edbde13d6c0ba5e25f6df7b231b4799db8b",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_verification_a3c8eb6a__part01-of02.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_verification_a3c8eb6a__part02-of02.tar.gz",
+      "bytes": 1031405,
+      "sha256": "d468a49f11119938f8ed711bc9bc823f5d7c25cdb0458139ec884eaf0b335584",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_verification_a3c8eb6a__part02-of02.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "RESEARCH_RECORDS_MANIFEST.json",
+      "bytes": 318516,
+      "sha256": "d5efabfd54f2f6b98a1246e1c30dc3f70ade4f7383dae0e31d45089e23410859",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/RESEARCH_RECORDS_MANIFEST.json",
+      "release_tag": "research-records-completion-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "RESEARCH_RECORDS_SHA256SUMS.txt",
+      "bytes": 911,
+      "sha256": "33e694db955990cda7c5fe66b40191ffd931674838abd037dd236b8e0a93cc71",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/RESEARCH_RECORDS_SHA256SUMS.txt",
+      "release_tag": "research-records-completion-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "scheduler_stdout_stderr_3d4b7c2f__part01-of01.tar.gz",
+      "bytes": 285518,
+      "sha256": "ac21d75be107727f06aa4a708f179a1deb6fcc4d717535cc5676f8ddd2af139d",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scheduler-logs-20261118/scheduler_stdout_stderr_3d4b7c2f__part01-of01.tar.gz",
+      "release_tag": "scheduler-logs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "SLURM_LOGS_MANIFEST.json",
+      "bytes": 353456,
+      "sha256": "2473cffa688de13fd903031cc622998a14aeae5b8bc9ba7679a8530e1afaad66",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scheduler-logs-20261118/SLURM_LOGS_MANIFEST.json",
+      "release_tag": "scheduler-logs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "SLURM_LOGS_SHA256SUMS.txt",
+      "bytes": 210,
+      "sha256": "ba620224948681524e7ae6613272a2b1d17f12025192eb853409f19e4cf3b05c",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scheduler-logs-20261118/SLURM_LOGS_SHA256SUMS.txt",
+      "release_tag": "scheduler-logs-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "pilots_cylinder3d_4a87ad62__part01-of01.tar.gz",
+      "bytes": 220122259,
+      "sha256": "5faebe53d96244c368d7fd0dbfade24ab418640d696f066bb6135c6cf5a62973",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/pilots_cylinder3d_4a87ad62__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_extended_re200_coarse_101826_46dd2718__part01-of01.tar.gz",
+      "bytes": 1775371,
+      "sha256": "f7cfc82deb51909dfdcc7085fb3b360282b324e89755db07048b05f4768fbb8c",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_extended_re200_coarse_101826_46dd2718__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101599_6cb67537__part01-of01.tar.gz",
+      "bytes": 433,
+      "sha256": "88ce6dfb56093755bdcfff2beafa5c38ed43ae4d45534cb92fcc750ef13a3bd8",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101599_6cb67537__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101602_09ce4304__part01-of01.tar.gz",
+      "bytes": 1203,
+      "sha256": "61c77c9217938c6a7bc77ea9c60ab47f7c789f8b43525418c3c877994eb0af3d",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101602_09ce4304__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101604_471b5e45__part01-of01.tar.gz",
+      "bytes": 4822,
+      "sha256": "9649293f8353b543f6ffbe17664440af61ff6e592911b9f301f7ac9f791ea52c",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101604_471b5e45__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101606_75d97129__part01-of01.tar.gz",
+      "bytes": 8215,
+      "sha256": "5de07226f2b55c0ac794c63c2aa9e45c45e993ba0c0a08d2c6eeca17cb9de05d",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101606_75d97129__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101613_48d6bff8__part01-of01.tar.gz",
+      "bytes": 3655857,
+      "sha256": "962c909a697087f60be73ac7bcca491b871bc0641476692bbbda5a308988905d",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101613_48d6bff8__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_dense_pilot_f239bdd9__part01-of01.tar.gz",
+      "bytes": 126697786,
+      "sha256": "0cbb8503a8acd8f75cb1a3399d96f785917eb0faddc3b2f42df152a15f05a8e7",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_dense_pilot_f239bdd9__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_export_resolution_study_108616_6c70b661__part01-of01.tar.gz",
+      "bytes": 198598722,
+      "sha256": "ec0ed50d9ffc0785107dda9660c95d0285b413abad36dbc487cd87f1ff79d386",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_export_resolution_study_108616_6c70b661__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_late_stationarity_108545_fdf8d535__part01-of01.tar.gz",
+      "bytes": 49069,
+      "sha256": "9d9b73a4ef47b4f496c2fd9410df4bbbc5fa1c35e57caeec1580c15c6aaa8477",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_late_stationarity_108545_fdf8d535__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_pilot_meshes_4be54c14__part01-of01.tar.gz",
+      "bytes": 61587,
+      "sha256": "0f3ec124a1f80ed3bd1a8ad4ac4baa5f43770a761745e7ead62802dbb53d4af3",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_meshes_4be54c14__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_pilot_smoke_2ba53df6__part01-of01.tar.gz",
+      "bytes": 10489400,
+      "sha256": "d15a90f6cea9403b786d238b5f63edb116e7ca3d3557b7557caa7b46e91d9f8c",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_smoke_2ba53df6__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_pilot_warmup_99955eff__part01-of03.tar.gz",
+      "bytes": 201987435,
+      "sha256": "23d1a263a0f02d2afa561b19d6e46302e6ea8d3776714b71defb419f6e92715e",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_warmup_99955eff__part01-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_pilot_warmup_99955eff__part02-of03.tar.gz",
+      "bytes": 211333336,
+      "sha256": "074d0bc9ce45adf6fb502d66d06df040bbc0376b368d9ae663281680fe410728",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_warmup_99955eff__part02-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_pilot_warmup_99955eff__part03-of03.tar.gz",
+      "bytes": 84272473,
+      "sha256": "2f24d708ad9ab3bc595adbe9b916d4103e4da30690d8dd767ac688b214b42ea7",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_warmup_99955eff__part03-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_reference_divergence_128_5a046291__part01-of01.tar.gz",
+      "bytes": 41049,
+      "sha256": "76a0fb769fbf860054ae8d31a1947cbe9dedd3e9846c10fe9f433cc1d3e9a9a0",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_reference_divergence_128_5a046291__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_108616_7fba6b5c__part01-of02.tar.gz",
+      "bytes": 828028382,
+      "sha256": "13078a999c1594503673a6c51de9a4ca5a2310bedbfedc9b8d22c8994aed0d57",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_108616_7fba6b5c__part01-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_108616_7fba6b5c__part02-of02.tar.gz",
+      "bytes": 214603647,
+      "sha256": "c5d9519a691202c6949a8d6cd4dc2fb93efa7a855e50a01f49fb0440c7f6dea1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_108616_7fba6b5c__part02-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part01-of10.tar.gz",
+      "bytes": 842261035,
+      "sha256": "88956aa09aec563e54acbd3883bed7e826f9d118f47dcc3447413863e0a3abc0",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part01-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part02-of10.tar.gz",
+      "bytes": 845761675,
+      "sha256": "367727c1bdec696d33dafd310d67383018ac0b49b8c46e04ad21887333d31bc3",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part02-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part03-of10.tar.gz",
+      "bytes": 844335754,
+      "sha256": "9fed89dfb8c5a89f7fa3dec38cf345d8ab5515e0c32b0fa09f6a586e1ef784d8",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part03-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part04-of10.tar.gz",
+      "bytes": 843814760,
+      "sha256": "4a8339b79d5dff27d118e20ac37c4d83a03c0ddfc2ef95b98f2a59c301a56bf1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part04-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part05-of10.tar.gz",
+      "bytes": 844549594,
+      "sha256": "45d7616de4efcc25897ee6031a3a2ca5347cf0781c466a45b0f944524a3d2c5c",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part05-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part06-of10.tar.gz",
+      "bytes": 845593672,
+      "sha256": "368347995160e9e5f2b815e65912c795392f446fa8590ee941d72b1f15115ca3",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part06-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part07-of10.tar.gz",
+      "bytes": 847349508,
+      "sha256": "8aa0801ebe75926f9bf18f7f9b2798d570ea50d896fe5c69293f4dbd99ebe8b2",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part07-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part08-of10.tar.gz",
+      "bytes": 846639450,
+      "sha256": "d49fa2243ee7febefb5445a6c4da94a45a4ad084204c5f27410ffd4f6712af0a",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part08-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part09-of10.tar.gz",
+      "bytes": 842663096,
+      "sha256": "ca61089e14b41d282411ddfa806be2b812d4d5c9c1709acbbdd047eef9009023",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part09-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part10-of10.tar.gz",
+      "bytes": 740362112,
+      "sha256": "7e22e01433c4a1f3fe0e5562120f97b6a56e8383ac7ce830ae94352c2fd681d3",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part10-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_uniform_export_pilot_108582_cd0e3aa3__part01-of01.tar.gz",
+      "bytes": 1098796,
+      "sha256": "1858e85754972350fb4cf92b7faf3f0d5616fcd7c60bc3f4a9dbe8d1e88b85a1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_export_pilot_108582_cd0e3aa3__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_box_fidelity_c19281a4__part01-of01.tar.gz",
+      "bytes": 20319958,
+      "sha256": "ccc8a6f32715c0c6f708287d8b4572983c759e6aebf6da19d6fa24ab8e6b1522",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_box_fidelity_c19281a4__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_box_fidelity_review_f505ac82__part01-of01.tar.gz",
+      "bytes": 758221975,
+      "sha256": "3f5bc49f82026e4334f0fd0518ca0227eec7e752c50d30a08a366fb20d27be00",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_box_fidelity_review_f505ac82__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_box_resume_2d659ad9__part01-of01.tar.gz",
+      "bytes": 7911964,
+      "sha256": "ec19ada887d50df78904427003cef833983abcf70bb43436985b15d631a9908d",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_box_resume_2d659ad9__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_cost_calibration_250af7fa__part01-of01.tar.gz",
+      "bytes": 8596085,
+      "sha256": "06b7d8321c9c09f00b2a0d32b001d738028d47c6431a8ae16e1b193f664f6ec9",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_cost_calibration_250af7fa__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_fidelity_aabac848__part01-of02.tar.gz",
+      "bytes": 758934880,
+      "sha256": "3ae75688dbaa90ebb7991313fe57385c07775c3c84d192d070373b019c2a9c5a",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_fidelity_aabac848__part01-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_fidelity_aabac848__part02-of02.tar.gz",
+      "bytes": 36163390,
+      "sha256": "f5f87783f645188491e4bb9fc171de984c2be94deeaabbcc4a5736ab183d9ce2",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_fidelity_aabac848__part02-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_fidelity_review_37edfd33__part01-of01.tar.gz",
+      "bytes": 10153,
+      "sha256": "7dea1a0b845d8f47872a2a091ae9647c3d64c689ccd89760cc6178970c2b163a",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_fidelity_review_37edfd33__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_full_cost_pilot_d871c712__part01-of03.tar.gz",
+      "bytes": 846279596,
+      "sha256": "53a8a0739afbf8c30f73f5078443f129bc84b220806acd8f60a8ccf3dd2cfbbc",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_full_cost_pilot_d871c712__part01-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_full_cost_pilot_d871c712__part02-of03.tar.gz",
+      "bytes": 848617818,
+      "sha256": "7088e9e6631c0914f8ef4329c1a945c6462da014b8e96fabdb070468d69e2de8",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_full_cost_pilot_d871c712__part02-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_full_cost_pilot_d871c712__part03-of03.tar.gz",
+      "bytes": 112446602,
+      "sha256": "44a5a23b1cdd71e070af31f27e360251380832b465364dcf7679000099b8b8ad",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_full_cost_pilot_d871c712__part03-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_mesh_comparison_47966c9f__part01-of01.tar.gz",
+      "bytes": 2784,
+      "sha256": "23e4741cd9a75997816a675a96b56b00ae0011f1f3524d85d48bcd779b3314f1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_mesh_comparison_47966c9f__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_mesh_gate_e8315364__part01-of01.tar.gz",
+      "bytes": 289553,
+      "sha256": "5ecfc6922702be151b4099b58d303f40c170a463c29eab16fe21cef89de840a5",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_mesh_gate_e8315364__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_pressure_diagnostic_aedb8d53__part01-of01.tar.gz",
+      "bytes": 374215,
+      "sha256": "4aed420d5d5a1b5bb0e45ced2bcdf96ca8e91ffa1c0b26f0d6b0f81c11e9eca7",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_pressure_diagnostic_aedb8d53__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_pressure_recovery_e79932cb__part01-of01.tar.gz",
+      "bytes": 61893436,
+      "sha256": "4ff52e826b0cfd5dddf5136e7e78457df5f3cbbe2aaf9868a393032c5deed924",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_pressure_recovery_e79932cb__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_pressure_recovery_review_bb2a04db__part01-of01.tar.gz",
+      "bytes": 244902,
+      "sha256": "851e5b8a3184518e36d82a4d5e0aa9014137abac82a18c5e16c4ed74a2422ecd",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_pressure_recovery_review_bb2a04db__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_smooth_transition_e9db6cb7__part01-of01.tar.gz",
+      "bytes": 26024622,
+      "sha256": "d71f8ce28ac57e424c12423641531b72843e73e8d9b2dd1af3e4ec88744ecf3e",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_smooth_transition_e9db6cb7__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_smooth_window_review_c4a738fb__part01-of01.tar.gz",
+      "bytes": 345565789,
+      "sha256": "bb7c8bc3ec673c5f910f62647c7040ae05b9797b3323d83bfaa16c620cddfa12",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_smooth_window_review_c4a738fb__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_v2_solver_gate_f5771dff__part01-of01.tar.gz",
+      "bytes": 38366281,
+      "sha256": "4e05bfb401b3b405d4e02cfd5e4b7f4fdbb93631ffa5a0f15a47a9a929578f14",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_solver_gate_f5771dff__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_videos_128_4c9d8d32__part01-of01.tar.gz",
+      "bytes": 3014601,
+      "sha256": "ac6d00900a11286dad0c23ebd1abaa2920012a3b2b449584a3a06e24794b6e63",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_videos_128_4c9d8d32__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_dataset_a_warmup_analysis_108545_1bc42a54__part01-of01.tar.gz",
+      "bytes": 1235809,
+      "sha256": "a9dc2ec2d431cdcbcfae970e077b1fb359670804f55de4350b35d345673f67cd",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_warmup_analysis_108545_1bc42a54__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v1_8b164319__part01-of01.tar.gz",
+      "bytes": 18610,
+      "sha256": "7de937f58df208f2ee341251b99d15dfe74f0b50cb140ff7e4f3be9c46328a6d",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v1_8b164319__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v2_13d6834c__part01-of01.tar.gz",
+      "bytes": 19332,
+      "sha256": "f5ff23b6e6d949dc3aca60fda2432d72014fbd5e539bb489d52b684cf6617c98",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v2_13d6834c__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part01-of05.tar.gz",
+      "bytes": 848713798,
+      "sha256": "ff039bfc2272631941711449d7e1d623f1aacb9c88eb10295096051741305020",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part01-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part02-of05.tar.gz",
+      "bytes": 650556634,
+      "sha256": "e40e63fc6e86158ba177ce92034bcc351b4c5726dc746f071452042e3a85a819",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part02-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part03-of05.tar.gz",
+      "bytes": 89735313,
+      "sha256": "4ef00ec26e82dec668611aa6d92bbd03a155556f86921aba66cdcabd39526a1f",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part03-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part04-of05.tar.gz",
+      "bytes": 119787770,
+      "sha256": "eef9d0bcbf16c76b8fbf469df79902eeac9c95969722da80de27d438aa5313c0",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part04-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part05-of05.tar.gz",
+      "bytes": 59591809,
+      "sha256": "72811c0e48c7f72e45cbc911cfb2a6cc8954a19c142a20e063e30cb571eff655",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part05-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_fine_20261027_v1_bc968801__part01-of01.tar.gz",
+      "bytes": 137905517,
+      "sha256": "850775f86c96e25785db9a7fa9378d337bc05c71e1a7b2bc5f5da84189446738",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_fine_20261027_v1_bc968801__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_refinement_20261023_v1_821b1143__part01-of01.tar.gz",
+      "bytes": 579046697,
+      "sha256": "32c7e056372502af06d9f7bd611438a25a1c392cf2acd5961487a4e412936d83",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_refinement_20261023_v1_821b1143__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_spatial_20261024_v1_e91b18a0__part01-of02.tar.gz",
+      "bytes": 611926296,
+      "sha256": "9542bc746ea49faa25d4c23bdac229a6ab66b4fa10382c2efedf75599ccfb789",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_spatial_20261024_v1_e91b18a0__part01-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_spatial_20261024_v1_e91b18a0__part02-of02.tar.gz",
+      "bytes": 42407459,
+      "sha256": "a559caca58f434003ecb553404908ebe9c6d37b4969f516c003ad8e269e55b46",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_spatial_20261024_v1_e91b18a0__part02-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_cylinder_temporal_20261023_v1_125b6f73__part01-of01.tar.gz",
+      "bytes": 532206430,
+      "sha256": "389ecd7ba63b25f61ed551127b854e0ffeebe57052ad2d9c8ea24da57e27cdcd",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_temporal_20261023_v1_125b6f73__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part01-of06.tar.gz",
+      "bytes": 846716860,
+      "sha256": "f8bbece01164cbb86c50a51a58ec83d7e6d132520eb13a0a16c8a6c49c2be00a",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part01-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part02-of06.tar.gz",
+      "bytes": 848432580,
+      "sha256": "91aaa16f971c106c9c359c707254b95ff1cf90052d2c2935bb5941815d8a61d5",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part02-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part03-of06.tar.gz",
+      "bytes": 847203501,
+      "sha256": "3efebf01b720b50d09fa3899d828e25f37e84a4725d6cfb53611b1f93abaf97f",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part03-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part04-of06.tar.gz",
+      "bytes": 541666981,
+      "sha256": "15e36d8657a2ba99d740b5ad6c55d6416f05bc7df98fae1d1d4b99c1da0ca24a",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part04-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part05-of06.tar.gz",
+      "bytes": 454854760,
+      "sha256": "52035e31212841d40b46af4071839b051959e8241778752d20c78b0247a96080",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part05-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part06-of06.tar.gz",
+      "bytes": 414879150,
+      "sha256": "460a71392b2c596395767942bbb0b4cae2dbcadb98f5b84ca2d201f492823750",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part06-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "smoke_native-openfoam-cavity-101583_59ceb20a__part01-of01.tar.gz",
+      "bytes": 85396,
+      "sha256": "929e7b5ec1beea37e1e880580a2b519e17b8e922056f1ba153bb56a47a7d5176",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/smoke_native-openfoam-cavity-101583_59ceb20a__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "smoke_native-openfoam-cavity-101584_3e88bf20__part01-of01.tar.gz",
+      "bytes": 85476,
+      "sha256": "e6f42f26277bf471221aeb019c361cfb7fceb253eba75c53afdc6ec54fa07d65",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/smoke_native-openfoam-cavity-101584_3e88bf20__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "verification_cylinder3d_a2909ef5__part01-of02.tar.gz",
+      "bytes": 261075743,
+      "sha256": "12c382db6a4fb7549cf37e9ddd7b08a3dd1cb9e39a8a175863c245279c051e63",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/verification_cylinder3d_a2909ef5__part01-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "verification_cylinder3d_a2909ef5__part02-of02.tar.gz",
+      "bytes": 129886271,
+      "sha256": "680ca2c9e8b628b5b460917bbfb187f48ce40b05fa20012377ef86348c8ab2f9",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/verification_cylinder3d_a2909ef5__part02-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "OWN_CFD_MANIFEST.json",
+      "bytes": 7170800,
+      "sha256": "786fea8a1c660aba2dd48bcf12beea7d745cd4c1c1032f369a5cdd727cdb2d3a",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/OWN_CFD_MANIFEST.json",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "OWN_CFD_SHA256SUMS.txt",
+      "bytes": 9841,
+      "sha256": "0ecd78053deba98c54c80729ec43d470155cb50412790c61235502d85d9dbb68",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/OWN_CFD_SHA256SUMS.txt",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "full_readback_verified_on_Perun": true
+    }
+  ],
+  "anonymous_checks": [
+    {
+      "name": "3d-models-and-records-part01-of01.tar.gz",
+      "release_tag": "research-artifacts-v1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-artifacts-v1/3d-models-and-records-part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "ARTIFACT_MANIFEST.json",
+      "release_tag": "research-artifacts-v1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-artifacts-v1/ARTIFACT_MANIFEST.json",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "release_tag": "research-artifacts-v1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-artifacts-v1/SHA256SUMS.txt",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "3d-additional-scientific-records-part01-of01.tar.gz",
+      "release_tag": "scientific-data-supplement-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scientific-data-supplement-20261118/3d-additional-scientific-records-part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "SUPPLEMENT_MANIFEST.json",
+      "release_tag": "scientific-data-supplement-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scientific-data-supplement-20261118/SUPPLEMENT_MANIFEST.json",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "SUPPLEMENT_SHA256SUMS.txt",
+      "release_tag": "scientific-data-supplement-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scientific-data-supplement-20261118/SUPPLEMENT_SHA256SUMS.txt",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_flowbench_evaluation_121349_d1cd2d71__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_evaluation_121349_d1cd2d71__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_flowbench_native_gauge64_baseline_122480_3ba18fe3__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_native_gauge64_baseline_122480_3ba18fe3__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_flowbench_native_gauge_refine_control_122976_d15da0e0__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_native_gauge_refine_control_122976_d15da0e0__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_flowbench_native_gauge_refine_divergence_122975_ee24d9b2__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_native_gauge_refine_divergence_122975_ee24d9b2__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_flowbench_refine_control_122413_fb2756ec__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_refine_control_122413_fb2756ec__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_flowbench_refine_divergence_122412_69f10e65__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_refine_divergence_122412_69f10e65__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_flowbench_uniform64_baseline_122336_abb6470d__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_uniform64_baseline_122336_abb6470d__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_flowbench_uniform64_control_121721_ff8d2d5a__part01-of01.tar.gz",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/results_flowbench_uniform64_control_121721_ff8d2d5a__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "NUMERICAL_HISTORY_MANIFEST.json",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/NUMERICAL_HISTORY_MANIFEST.json",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "NUMERICAL_HISTORY_SHA256SUMS.txt",
+      "release_tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/historical-numerical-outputs-20261118/NUMERICAL_HISTORY_SHA256SUMS.txt",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_flowbench_206c5843__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_flowbench_206c5843__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_llm_feasibility_e4b1c038__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_llm_feasibility_e4b1c038__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_llm_feedback_8984969d__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_llm_feedback_8984969d__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_llm_main_8dcb5999__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_llm_main_8dcb5999__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_llm_search_prepare_31e36d90__part01-of01.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_llm_search_prepare_31e36d90__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_verification_a3c8eb6a__part01-of02.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_verification_a3c8eb6a__part01-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_verification_a3c8eb6a__part02-of02.tar.gz",
+      "release_tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/results_verification_a3c8eb6a__part02-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "RESEARCH_RECORDS_MANIFEST.json",
+      "release_tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/RESEARCH_RECORDS_MANIFEST.json",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "RESEARCH_RECORDS_SHA256SUMS.txt",
+      "release_tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/research-records-completion-20261118/RESEARCH_RECORDS_SHA256SUMS.txt",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "scheduler_stdout_stderr_3d4b7c2f__part01-of01.tar.gz",
+      "release_tag": "scheduler-logs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scheduler-logs-20261118/scheduler_stdout_stderr_3d4b7c2f__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "SLURM_LOGS_MANIFEST.json",
+      "release_tag": "scheduler-logs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scheduler-logs-20261118/SLURM_LOGS_MANIFEST.json",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "SLURM_LOGS_SHA256SUMS.txt",
+      "release_tag": "scheduler-logs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/scheduler-logs-20261118/SLURM_LOGS_SHA256SUMS.txt",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "pilots_cylinder3d_4a87ad62__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/pilots_cylinder3d_4a87ad62__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_extended_re200_coarse_101826_46dd2718__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_extended_re200_coarse_101826_46dd2718__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101599_6cb67537__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101599_6cb67537__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101602_09ce4304__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101602_09ce4304__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101604_471b5e45__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101604_471b5e45__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101606_75d97129__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101606_75d97129__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_cylinder3d_cylinder3d_pilot_re200_coarse_101613_48d6bff8__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_cylinder3d_cylinder3d_pilot_re200_coarse_101613_48d6bff8__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_dense_pilot_f239bdd9__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_dense_pilot_f239bdd9__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_export_resolution_study_108616_6c70b661__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_export_resolution_study_108616_6c70b661__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_late_stationarity_108545_fdf8d535__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_late_stationarity_108545_fdf8d535__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_pilot_meshes_4be54c14__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_meshes_4be54c14__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_pilot_smoke_2ba53df6__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_smoke_2ba53df6__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_pilot_warmup_99955eff__part01-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_warmup_99955eff__part01-of03.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_pilot_warmup_99955eff__part02-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_warmup_99955eff__part02-of03.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_pilot_warmup_99955eff__part03-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_pilot_warmup_99955eff__part03-of03.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_reference_divergence_128_5a046291__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_reference_divergence_128_5a046291__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_108616_7fba6b5c__part01-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_108616_7fba6b5c__part01-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_108616_7fba6b5c__part02-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_108616_7fba6b5c__part02-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part01-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part01-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part02-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part02-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part03-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part03-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part04-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part04-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part05-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part05-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part06-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part06-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part07-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part07-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part08-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part08-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part09-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part09-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_dataset_128_108616_930aea24__part10-of10.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_dataset_128_108616_930aea24__part10-of10.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_uniform_export_pilot_108582_cd0e3aa3__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_uniform_export_pilot_108582_cd0e3aa3__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_box_fidelity_c19281a4__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_box_fidelity_c19281a4__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_box_fidelity_review_f505ac82__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_box_fidelity_review_f505ac82__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_box_resume_2d659ad9__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_box_resume_2d659ad9__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_cost_calibration_250af7fa__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_cost_calibration_250af7fa__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_fidelity_aabac848__part01-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_fidelity_aabac848__part01-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_fidelity_aabac848__part02-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_fidelity_aabac848__part02-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_fidelity_review_37edfd33__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_fidelity_review_37edfd33__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_full_cost_pilot_d871c712__part01-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_full_cost_pilot_d871c712__part01-of03.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_full_cost_pilot_d871c712__part02-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_full_cost_pilot_d871c712__part02-of03.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_full_cost_pilot_d871c712__part03-of03.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_full_cost_pilot_d871c712__part03-of03.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_mesh_comparison_47966c9f__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_mesh_comparison_47966c9f__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_mesh_gate_e8315364__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_mesh_gate_e8315364__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_pressure_diagnostic_aedb8d53__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_pressure_diagnostic_aedb8d53__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_pressure_recovery_e79932cb__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_pressure_recovery_e79932cb__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_pressure_recovery_review_bb2a04db__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_pressure_recovery_review_bb2a04db__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_smooth_transition_e9db6cb7__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_smooth_transition_e9db6cb7__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_smooth_window_review_c4a738fb__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_smooth_window_review_c4a738fb__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_v2_solver_gate_f5771dff__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_v2_solver_gate_f5771dff__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_videos_128_4c9d8d32__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_videos_128_4c9d8d32__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_dataset_a_warmup_analysis_108545_1bc42a54__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_dataset_a_warmup_analysis_108545_1bc42a54__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v1_8b164319__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v1_8b164319__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v2_13d6834c__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v2_13d6834c__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part01-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part01-of05.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part02-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part02-of05.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part03-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part03-of05.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part04-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part04-of05.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part05-of05.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_20261025_v3_5a8e0382__part05-of05.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_full_fine_20261027_v1_bc968801__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_full_fine_20261027_v1_bc968801__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_refinement_20261023_v1_821b1143__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_refinement_20261023_v1_821b1143__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_spatial_20261024_v1_e91b18a0__part01-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_spatial_20261024_v1_e91b18a0__part01-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_spatial_20261024_v1_e91b18a0__part02-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_spatial_20261024_v1_e91b18a0__part02-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_cylinder_temporal_20261023_v1_125b6f73__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_cylinder_temporal_20261023_v1_125b6f73__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part01-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part01-of06.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part02-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part02-of06.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part03-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part03-of06.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part04-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part04-of06.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part05-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part05-of06.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "results_native_expansion_quality_20261022_v1_9004dc9b__part06-of06.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/results_native_expansion_quality_20261022_v1_9004dc9b__part06-of06.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "smoke_native-openfoam-cavity-101583_59ceb20a__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/smoke_native-openfoam-cavity-101583_59ceb20a__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "smoke_native-openfoam-cavity-101584_3e88bf20__part01-of01.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/smoke_native-openfoam-cavity-101584_3e88bf20__part01-of01.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "verification_cylinder3d_a2909ef5__part01-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/verification_cylinder3d_a2909ef5__part01-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "verification_cylinder3d_a2909ef5__part02-of02.tar.gz",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/verification_cylinder3d_a2909ef5__part02-of02.tar.gz",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "OWN_CFD_MANIFEST.json",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/OWN_CFD_MANIFEST.json",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    },
+    {
+      "name": "OWN_CFD_SHA256SUMS.txt",
+      "release_tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/own-cfd-reference-data-20261118/OWN_CFD_SHA256SUMS.txt",
+      "anonymous_HTTP_status": 200,
+      "checked_UTC": "2026-11-18T21:50:38.138787+00:00"
+    }
+  ]
+}

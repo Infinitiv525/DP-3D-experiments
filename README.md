@@ -1,5 +1,9 @@
 # Staršie 3D experimenty prúdenia
 
+## Úplný prehľad dostupných dát
+
+**[Katalóg výsledkov, váh a numerických polí](01_results/DOSTUPNE_DATA.md)** uvádza všetky publikované balíky, priame odkazy a aj výnimky z archivácie. Veľké súbory sú v Releases a nevyžadujú stiahnutie celého repozitára.
+
 V tejto štúdii lokálne LLM navrhovali konfiguráciu FNO pre ustálené 3D prúdenie FlowBench. Osobitne sú zachované vlastné dynamické CFD piloty; nie sú hotovým porovnaním LLM na dynamickom prúdení.
 
 Finálne porovnanie má **70 fyzických sietí a 95 logických odkazov**, pretože niektoré konfigurácie zdieľajú model. Najlepšie skóre dosiahlo TPE; testované LLM ho v tomto konkrétnom experimente neprekonali. [Čitateľný výsledok](01_results/final/report.txt) a [presné čísla](01_results/final/comparison_numbers.json).

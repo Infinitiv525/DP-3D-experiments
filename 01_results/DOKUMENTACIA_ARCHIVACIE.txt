@@ -1,0 +1,119 @@
+DOKUMENTÁCIA VEREJNÉHO ARCHÍVU
+Overenie UTC: 2026-11-18T21:50:38.138787+00:00
+Repozitár: Infinitiv525/DP-3D-experiments
+
+Zachované sú modely a výsledky starších 3D pokusov aj vlastné CFD referenčné exporty, trajektórie, siete výpočtovej oblasti, sondy, solverové logy a kontroly kvality. Úspešné, čiastočné a nahradené piloty sa rozlišujú pôvodnou cestou; ich prítomnosť neznamená úspešný finálny experiment.
+
+PUBLIKOVANÉ BALÍKY
+Modely a základné výsledky
+https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/research-artifacts-v1
+Pôvodných súborov: 5267; objem archívov: 465917498 B
+
+Doplnené vedecké záznamy a merania
+https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/scientific-data-supplement-20261118
+Pôvodných súborov: 1262; objem archívov: 37688539 B
+
+Historické numerické výstupy
+https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/historical-numerical-outputs-20261118
+Pôvodných súborov: 24; objem archívov: 168912034 B
+
+Ďalšie pôvodné diagnostiky a zdroje
+https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/research-records-completion-20261118
+Pôvodných súborov: 714; objem archívov: 208948624 B
+
+Pôvodné stdout a stderr úloh Slurm
+https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/scheduler-logs-20261118
+Pôvodných súborov: 1056; objem archívov: 639184 B
+
+Vlastné CFD referencie a pôvodné piloty
+https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/own-cfd-reference-data-20261118
+Pôvodných súborov: 16483; objem archívov: 22344657935 B
+
+OVERENIE
+Pôvodné súbory a každý rozbalený člen archívu boli overené pomocou SHA256; serverový digest a úplné spätné čítanie boli overené na Perune. Všetky aktuálne priame odkazy v PUBLIC_DOWNLOADS.json boli overené bez prihlásenia. Staršie odkazy untagged z rozpracovaných vydaní boli v prehľadoch opravené; pôvodné archívy ani ich kontrolné súčty sa nemenili. Pri tomto doplnení nevznikli ďalšie klony na PC, modely ani archívy neprechádzali cez PC a nepoužil sa nový tréning ani výpočet polí.
+
+ROZSAH A VÝNIMKY
+Toto je archív vlastných výskumných artefaktov, nie úplná kópia súborového systému Perunu. Neduplikujú sa verejné vstupné FlowBench dáta, obnoviteľné tréningové a vstupné cache, stiahnuté základné LLM váhy ani softvérové prostredia. Nezverejňujú sa prístupové údaje, autentifikačné pomocné súbory ani rozpracovaná dizertácia. Staré surové paralelné/reštartovacie CFD adresáre nie sú úplne zrkadlené; spracované referenčné exporty a diagnostiky sú zahrnuté. Pri čítaní starej reštartovacej metadátovej vetvy sa pozorovalo čakanie na NFS; túto výnimku audit uvádza otvorene. Pôvodné výskumné dáta na Perune neboli zmazané.
+
+POČTY
+{
+  "status": "PUBLIC_DATA_CATALOG_VERIFIED",
+  "checked_UTC": "2026-11-18T21:50:38.138787+00:00",
+  "repository": "Infinitiv525/DP-3D-experiments",
+  "checkpoint_files": 284,
+  "selected_models": 70,
+  "published_unique_source_files": 24806,
+  "published_unique_source_bytes": 31705851587,
+  "release_asset_bytes": 23226763814,
+  "release_assets": 101,
+  "releases": [
+    {
+      "label": "Modely a základné výsledky",
+      "tag": "research-artifacts-v1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/research-artifacts-v1",
+      "original_files": 5267,
+      "asset_count": 3,
+      "archive_bytes": 465917498,
+      "extra_assets_not_in_receipt": []
+    },
+    {
+      "label": "Doplnené vedecké záznamy a merania",
+      "tag": "scientific-data-supplement-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/scientific-data-supplement-20261118",
+      "original_files": 1262,
+      "asset_count": 3,
+      "archive_bytes": 37688539,
+      "extra_assets_not_in_receipt": []
+    },
+    {
+      "label": "Historické numerické výstupy",
+      "tag": "historical-numerical-outputs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/historical-numerical-outputs-20261118",
+      "original_files": 24,
+      "asset_count": 10,
+      "archive_bytes": 168912034,
+      "extra_assets_not_in_receipt": []
+    },
+    {
+      "label": "Ďalšie pôvodné diagnostiky a zdroje",
+      "tag": "research-records-completion-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/research-records-completion-20261118",
+      "original_files": 714,
+      "asset_count": 9,
+      "archive_bytes": 208948624,
+      "extra_assets_not_in_receipt": []
+    },
+    {
+      "label": "Pôvodné stdout a stderr úloh Slurm",
+      "tag": "scheduler-logs-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/scheduler-logs-20261118",
+      "original_files": 1056,
+      "asset_count": 3,
+      "archive_bytes": 639184,
+      "extra_assets_not_in_receipt": []
+    },
+    {
+      "label": "Vlastné CFD referencie a pôvodné piloty",
+      "tag": "own-cfd-reference-data-20261118",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/own-cfd-reference-data-20261118",
+      "original_files": 16483,
+      "asset_count": 73,
+      "archive_bytes": 22344657935,
+      "extra_assets_not_in_receipt": []
+    }
+  ],
+  "not_full_filesystem_backup": true,
+  "no_new_training": true,
+  "no_new_inference": true,
+  "model_archive_payload_bytes_through_PC": 0,
+  "context_SK": "Zachované sú modely a výsledky starších 3D pokusov aj vlastné CFD referenčné exporty, trajektórie, siete výpočtovej oblasti, sondy, solverové logy a kontroly kvality. Úspešné, čiastočné a nahradené piloty sa rozlišujú pôvodnou cestou; ich prítomnosť neznamená úspešný finálny experiment.",
+  "exclusions_SK": "Toto je archív vlastných výskumných artefaktov, nie úplná kópia súborového systému Perunu. Neduplikujú sa verejné vstupné FlowBench dáta, obnoviteľné tréningové a vstupné cache, stiahnuté základné LLM váhy ani softvérové prostredia. Nezverejňujú sa prístupové údaje, autentifikačné pomocné súbory ani rozpracovaná dizertácia. Staré surové paralelné/reštartovacie CFD adresáre nie sú úplne zrkadlené; spracované referenčné exporty a diagnostiky sú zahrnuté. Pri čítaní starej reštartovacej metadátovej vetvy sa pozorovalo čakanie na NFS; túto výnimku audit uvádza otvorene. Pôvodné výskumné dáta na Perune neboli zmazané.",
+  "source_files_unchanged": true,
+  "checks": [
+    "Source file SHA256",
+    "Every tar member decompressed and hashed",
+    "GitHub asset SHA256 and size",
+    "Complete release asset readback into RAM on Perun",
+    "Anonymous HEAD for every recorded public release asset"
+  ]
+}
