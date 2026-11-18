@@ -47,3 +47,7 @@ Doplnené pôvodné diagnostiky, protokoly, obrázky a zdroje sú v [samostatnom
 ## Pôvodné Slurm logy
 
 Doplnené pôvodné diagnostiky, protokoly, obrázky a zdroje sú v [samostatnom balíku](01_results/slurm_logy/README.md).
+
+## Pôvodné CFD referenčné dáta
+
+Dostupné pôvodné CFD referencie, trajektórie a diagnostika sú v [samostatnom dátovom balíku](01_results/vlastne_CFD_data/README.md).
