@@ -50,7 +50,7 @@ Doplnené pôvodné diagnostiky, protokoly, obrázky a zdroje sú v [samostatnom
 
 ## Pôvodné Slurm logy
 
-Doplnené pôvodné diagnostiky, protokoly, obrázky a zdroje sú v [samostatnom balíku](01_results/slurm_logy/README.md).
+Pôvodné výstupné a chybové záznamy jednotlivých úloh Slurm sú v [samostatnom balíku](01_results/slurm_logy/README.md); zahŕňajú aj prípravné a neúspešné pokusy.
 
 ## Pôvodné CFD referenčné dáta
 
