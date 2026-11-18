@@ -1,0 +1,37 @@
+{
+  "status": "ORIGINAL_SLURM_LOGS_PUBLISHED_AND_VERIFIED",
+  "repository": "Infinitiv525/DP-3D-experiments",
+  "release_url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/scheduler-logs-20261118",
+  "files": 1056,
+  "uncompressed_bytes": 897552,
+  "uploaded_bytes": 639184,
+  "assets": [
+    {
+      "name": "scheduler_stdout_stderr_3d4b7c2f__part01-of01.tar.gz",
+      "bytes": 285518,
+      "sha256": "ac21d75be107727f06aa4a708f179a1deb6fcc4d717535cc5676f8ddd2af139d",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-634e24e1ae5bab6bf33b/scheduler_stdout_stderr_3d4b7c2f__part01-of01.tar.gz",
+      "server_digest": "sha256:ac21d75be107727f06aa4a708f179a1deb6fcc4d717535cc5676f8ddd2af139d",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "SLURM_LOGS_MANIFEST.json",
+      "bytes": 353456,
+      "sha256": "2473cffa688de13fd903031cc622998a14aeae5b8bc9ba7679a8530e1afaad66",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-634e24e1ae5bab6bf33b/SLURM_LOGS_MANIFEST.json",
+      "server_digest": "sha256:2473cffa688de13fd903031cc622998a14aeae5b8bc9ba7679a8530e1afaad66",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "SLURM_LOGS_SHA256SUMS.txt",
+      "bytes": 210,
+      "sha256": "ba620224948681524e7ae6613272a2b1d17f12025192eb853409f19e4cf3b05c",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-634e24e1ae5bab6bf33b/SLURM_LOGS_SHA256SUMS.txt",
+      "server_digest": "sha256:ba620224948681524e7ae6613272a2b1d17f12025192eb853409f19e4cf3b05c",
+      "full_readback_verified_on_Perun": true
+    }
+  ],
+  "no_new_inference": true,
+  "no_PC_copy": true,
+  "job_id": "166644"
+}
