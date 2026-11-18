@@ -1,0 +1,93 @@
+{
+  "status": "HISTORICAL_NUMERICAL_OUTPUTS_PUBLISHED_AND_VERIFIED",
+  "repository": "Infinitiv525/DP-3D-experiments",
+  "release_url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/tag/historical-numerical-outputs-20261118",
+  "files": 24,
+  "uncompressed_bytes": 168848947,
+  "uploaded_bytes": 168912034,
+  "assets": [
+    {
+      "name": "results_flowbench_evaluation_121349_d1cd2d71__part01-of01.tar.gz",
+      "bytes": 2996155,
+      "sha256": "6d1ea161e00387ef91bffe26fcb4cbabc0bcdfdb88f996e2c1146014e40c51f1",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/results_flowbench_evaluation_121349_d1cd2d71__part01-of01.tar.gz",
+      "server_digest": "sha256:6d1ea161e00387ef91bffe26fcb4cbabc0bcdfdb88f996e2c1146014e40c51f1",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_native_gauge64_baseline_122480_3ba18fe3__part01-of01.tar.gz",
+      "bytes": 23997141,
+      "sha256": "ee8b04274c47b9d351c29138363e1083ae6cb120be74daa7156c7c5fbfbe0d33",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/results_flowbench_native_gauge64_baseline_122480_3ba18fe3__part01-of01.tar.gz",
+      "server_digest": "sha256:ee8b04274c47b9d351c29138363e1083ae6cb120be74daa7156c7c5fbfbe0d33",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_native_gauge_refine_control_122976_d15da0e0__part01-of01.tar.gz",
+      "bytes": 23990683,
+      "sha256": "c7e5303724909c1f03e99ac8ba77bf474676ac0955a8ccca2a3ee9c63604fada",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/results_flowbench_native_gauge_refine_control_122976_d15da0e0__part01-of01.tar.gz",
+      "server_digest": "sha256:c7e5303724909c1f03e99ac8ba77bf474676ac0955a8ccca2a3ee9c63604fada",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_native_gauge_refine_divergence_122975_ee24d9b2__part01-of01.tar.gz",
+      "bytes": 23984745,
+      "sha256": "1dc4baf6995f8ad06a0341692f9baa0d7ce3a08b9df104fc2996d50cd037fc11",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/results_flowbench_native_gauge_refine_divergence_122975_ee24d9b2__part01-of01.tar.gz",
+      "server_digest": "sha256:1dc4baf6995f8ad06a0341692f9baa0d7ce3a08b9df104fc2996d50cd037fc11",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_refine_control_122413_fb2756ec__part01-of01.tar.gz",
+      "bytes": 23517779,
+      "sha256": "9471e0e6690496370cef874d482c3a15427728f3eef2627bbc765537d59d545b",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/results_flowbench_refine_control_122413_fb2756ec__part01-of01.tar.gz",
+      "server_digest": "sha256:9471e0e6690496370cef874d482c3a15427728f3eef2627bbc765537d59d545b",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_refine_divergence_122412_69f10e65__part01-of01.tar.gz",
+      "bytes": 23503522,
+      "sha256": "b0a304d7d03be80a55ad8a49e77b645e9c8c00b47dd452e0f0f23478543e62f7",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/results_flowbench_refine_divergence_122412_69f10e65__part01-of01.tar.gz",
+      "server_digest": "sha256:b0a304d7d03be80a55ad8a49e77b645e9c8c00b47dd452e0f0f23478543e62f7",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_uniform64_baseline_122336_abb6470d__part01-of01.tar.gz",
+      "bytes": 23518509,
+      "sha256": "6f47780a66846105a13455a8eed4503417ab42983b86128e91d388a80ea084c0",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/results_flowbench_uniform64_baseline_122336_abb6470d__part01-of01.tar.gz",
+      "server_digest": "sha256:6f47780a66846105a13455a8eed4503417ab42983b86128e91d388a80ea084c0",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "results_flowbench_uniform64_control_121721_ff8d2d5a__part01-of01.tar.gz",
+      "bytes": 23391122,
+      "sha256": "4bf609ff291b302b64f3d54ea9d754afa739e10c71296b47dd3210fce09d80a6",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/results_flowbench_uniform64_control_121721_ff8d2d5a__part01-of01.tar.gz",
+      "server_digest": "sha256:4bf609ff291b302b64f3d54ea9d754afa739e10c71296b47dd3210fce09d80a6",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "NUMERICAL_HISTORY_MANIFEST.json",
+      "bytes": 11156,
+      "sha256": "a8549a56e1fb8cbf20f0e44ef90242dc730af62a7d742acccbd54d41befc1e07",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/NUMERICAL_HISTORY_MANIFEST.json",
+      "server_digest": "sha256:a8549a56e1fb8cbf20f0e44ef90242dc730af62a7d742acccbd54d41befc1e07",
+      "full_readback_verified_on_Perun": true
+    },
+    {
+      "name": "NUMERICAL_HISTORY_SHA256SUMS.txt",
+      "bytes": 1222,
+      "sha256": "f528fef04e9eac5209f1e2e169c132928d5815cc8177e825b71b50fddca62b61",
+      "url": "https://github.com/Infinitiv525/DP-3D-experiments/releases/download/untagged-d40578c958ee4e2a8cf1/NUMERICAL_HISTORY_SHA256SUMS.txt",
+      "server_digest": "sha256:f528fef04e9eac5209f1e2e169c132928d5815cc8177e825b71b50fddca62b61",
+      "full_readback_verified_on_Perun": true
+    }
+  ],
+  "no_new_inference": true,
+  "no_PC_copy": true,
+  "job_id": "166613"
+}

@@ -1,0 +1,180 @@
+{
+  "status": "HISTORICAL_NUMERICAL_OUTPUTS_HASH_VERIFIED",
+  "repository": "Infinitiv525/DP-3D-experiments",
+  "files": 24,
+  "uncompressed_bytes": 168848947,
+  "entries": [
+    {
+      "original_relative": "results/flowbench/evaluation_121349/validation_120.npz",
+      "archive_path": "historical_numeric/results/flowbench/evaluation_121349/validation_120.npz",
+      "bytes": 999772,
+      "sha256": "50729bee4df1f5efadf7fd9a568c150f3cc4ef92db53adc447403ec138f3db21",
+      "archive_part": "results_flowbench_evaluation_121349_d1cd2d71__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/evaluation_121349/validation_325.npz",
+      "archive_path": "historical_numeric/results/flowbench/evaluation_121349/validation_325.npz",
+      "bytes": 1003315,
+      "sha256": "82242b2036d7c10655ca770544d3e062fe623a4db912fbee73b59f90c8fe2f02",
+      "archive_part": "results_flowbench_evaluation_121349_d1cd2d71__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/evaluation_121349/validation_360.npz",
+      "archive_path": "historical_numeric/results/flowbench/evaluation_121349/validation_360.npz",
+      "bytes": 991326,
+      "sha256": "d9cfc49a85c6cde6895a2c0a8fc690394a130758f852cf5f9a74b3b5da248c38",
+      "archive_part": "results_flowbench_evaluation_121349_d1cd2d71__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/native_gauge64_baseline_122480/evaluation/validation_120.npz",
+      "archive_path": "historical_numeric/results/flowbench/native_gauge64_baseline_122480/evaluation/validation_120.npz",
+      "bytes": 7766205,
+      "sha256": "858d9e23d51eb74394de60f7ff89a65d54a7d44f3e1d4eb15f2f723d51f4f814",
+      "archive_part": "results_flowbench_native_gauge64_baseline_122480_3ba18fe3__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/native_gauge64_baseline_122480/evaluation/validation_325.npz",
+      "archive_path": "historical_numeric/results/flowbench/native_gauge64_baseline_122480/evaluation/validation_325.npz",
+      "bytes": 8057258,
+      "sha256": "5f0d0a8bfab747a3b0dc64d76192c3e35f3b2cf14dc104ef5a66a45580eb0df4",
+      "archive_part": "results_flowbench_native_gauge64_baseline_122480_3ba18fe3__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/native_gauge64_baseline_122480/evaluation/validation_360.npz",
+      "archive_path": "historical_numeric/results/flowbench/native_gauge64_baseline_122480/evaluation/validation_360.npz",
+      "bytes": 8166210,
+      "sha256": "a42eaa709d47c5ca88bcf07a200d2c26d05ff9dd1137e376a5209aff0c83466a",
+      "archive_part": "results_flowbench_native_gauge64_baseline_122480_3ba18fe3__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/native_gauge_refine_control_122976/evaluation/validation_120.npz",
+      "archive_path": "historical_numeric/results/flowbench/native_gauge_refine_control_122976/evaluation/validation_120.npz",
+      "bytes": 7764084,
+      "sha256": "30542e7c57ae17fb1b40d840dd204d2314a29861c932428cf264bd31e25cff58",
+      "archive_part": "results_flowbench_native_gauge_refine_control_122976_d15da0e0__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/native_gauge_refine_control_122976/evaluation/validation_325.npz",
+      "archive_path": "historical_numeric/results/flowbench/native_gauge_refine_control_122976/evaluation/validation_325.npz",
+      "bytes": 8055383,
+      "sha256": "efd39563a4419c012aa0c9cfa6e00e205f927455362b69be0ee4ce5ede695ab3",
+      "archive_part": "results_flowbench_native_gauge_refine_control_122976_d15da0e0__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/native_gauge_refine_control_122976/evaluation/validation_360.npz",
+      "archive_path": "historical_numeric/results/flowbench/native_gauge_refine_control_122976/evaluation/validation_360.npz",
+      "bytes": 8163749,
+      "sha256": "b959c08541a2440b695b1d25abcb97d4d2e2c63f94be033752b58539b180bc71",
+      "archive_part": "results_flowbench_native_gauge_refine_control_122976_d15da0e0__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/native_gauge_refine_divergence_122975/evaluation/validation_120.npz",
+      "archive_path": "historical_numeric/results/flowbench/native_gauge_refine_divergence_122975/evaluation/validation_120.npz",
+      "bytes": 7764234,
+      "sha256": "9f9aa21376a7ada64bd54cc2bc7a5116c7470a71cf645068bf6cd3363d16a3e6",
+      "archive_part": "results_flowbench_native_gauge_refine_divergence_122975_ee24d9b2__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/native_gauge_refine_divergence_122975/evaluation/validation_325.npz",
+      "archive_path": "historical_numeric/results/flowbench/native_gauge_refine_divergence_122975/evaluation/validation_325.npz",
+      "bytes": 8051509,
+      "sha256": "86dfd6838733b78489054fb2aca9b0593ca4632dd53eea9fc551a88907ab002a",
+      "archive_part": "results_flowbench_native_gauge_refine_divergence_122975_ee24d9b2__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/native_gauge_refine_divergence_122975/evaluation/validation_360.npz",
+      "archive_path": "historical_numeric/results/flowbench/native_gauge_refine_divergence_122975/evaluation/validation_360.npz",
+      "bytes": 8161477,
+      "sha256": "2a723d6d0976892cfb6a4c2d355a9d808019e04d87ca65c285ac943dec393d4d",
+      "archive_part": "results_flowbench_native_gauge_refine_divergence_122975_ee24d9b2__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/refine_control_122413/evaluation/validation_120.npz",
+      "archive_path": "historical_numeric/results/flowbench/refine_control_122413/evaluation/validation_120.npz",
+      "bytes": 7579953,
+      "sha256": "eee18dd115c2e67968bf6e57415936c219b2f812405b0bce5c4234a439f4cfb2",
+      "archive_part": "results_flowbench_refine_control_122413_fb2756ec__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/refine_control_122413/evaluation/validation_325.npz",
+      "archive_path": "historical_numeric/results/flowbench/refine_control_122413/evaluation/validation_325.npz",
+      "bytes": 8017881,
+      "sha256": "0f68ced692e7cf0e1a4f368b2d95c2564a1f1bf14edb14155ea46c3dc22aa675",
+      "archive_part": "results_flowbench_refine_control_122413_fb2756ec__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/refine_control_122413/evaluation/validation_360.npz",
+      "archive_path": "historical_numeric/results/flowbench/refine_control_122413/evaluation/validation_360.npz",
+      "bytes": 7913286,
+      "sha256": "d3cd3b186dcdc30deee5996d5c3dc9b2fdda741d1efecf2a40a96c1b36166054",
+      "archive_part": "results_flowbench_refine_control_122413_fb2756ec__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/refine_divergence_122412/evaluation/validation_120.npz",
+      "archive_path": "historical_numeric/results/flowbench/refine_divergence_122412/evaluation/validation_120.npz",
+      "bytes": 7576985,
+      "sha256": "668eac8f5f4986032acc0bd691df279c2fec4a07e033f32b8d3b0747f3b106b7",
+      "archive_part": "results_flowbench_refine_divergence_122412_69f10e65__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/refine_divergence_122412/evaluation/validation_325.npz",
+      "archive_path": "historical_numeric/results/flowbench/refine_divergence_122412/evaluation/validation_325.npz",
+      "bytes": 8010806,
+      "sha256": "834de9a778fd93a5b8830cb1190f5a0c098a32decfe06b738a4ce22161d8a7eb",
+      "archive_part": "results_flowbench_refine_divergence_122412_69f10e65__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/refine_divergence_122412/evaluation/validation_360.npz",
+      "archive_path": "historical_numeric/results/flowbench/refine_divergence_122412/evaluation/validation_360.npz",
+      "bytes": 7909109,
+      "sha256": "41d07ccdd7474c15dc39f189cefccd31bebdcf2fdc6a72ef7224da57277fe6fe",
+      "archive_part": "results_flowbench_refine_divergence_122412_69f10e65__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/uniform64_baseline_122336/evaluation/validation_120.npz",
+      "archive_path": "historical_numeric/results/flowbench/uniform64_baseline_122336/evaluation/validation_120.npz",
+      "bytes": 7579685,
+      "sha256": "456869e66888ad7242bc79f6287ee4f54720e2c7d05b58cbabdf9b3ed50f260e",
+      "archive_part": "results_flowbench_uniform64_baseline_122336_abb6470d__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/uniform64_baseline_122336/evaluation/validation_325.npz",
+      "archive_path": "historical_numeric/results/flowbench/uniform64_baseline_122336/evaluation/validation_325.npz",
+      "bytes": 8018921,
+      "sha256": "0ebdd59c65c745ecf29e7d2e87701cc2eff73945941f9e40a58dd0327187629b",
+      "archive_part": "results_flowbench_uniform64_baseline_122336_abb6470d__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/uniform64_baseline_122336/evaluation/validation_360.npz",
+      "archive_path": "historical_numeric/results/flowbench/uniform64_baseline_122336/evaluation/validation_360.npz",
+      "bytes": 7913287,
+      "sha256": "6d46b7b90058a7f738ca75f2aa24890ee07b627468416bcfcc306e9f1bd76b85",
+      "archive_part": "results_flowbench_uniform64_baseline_122336_abb6470d__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/uniform64_control_121721/evaluation/validation_120.npz",
+      "archive_path": "historical_numeric/results/flowbench/uniform64_control_121721/evaluation/validation_120.npz",
+      "bytes": 7537243,
+      "sha256": "890e08c0a44f7e04b80892b4583526e843dada6a0bee5030402f5a24eb41a4a2",
+      "archive_part": "results_flowbench_uniform64_control_121721_ff8d2d5a__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/uniform64_control_121721/evaluation/validation_325.npz",
+      "archive_path": "historical_numeric/results/flowbench/uniform64_control_121721/evaluation/validation_325.npz",
+      "bytes": 7984847,
+      "sha256": "9d333a0db18f4d9f5658faf020bcfaa631b2081a3dab56a3f3eaa800e8132226",
+      "archive_part": "results_flowbench_uniform64_control_121721_ff8d2d5a__part01-of01.tar.gz"
+    },
+    {
+      "original_relative": "results/flowbench/uniform64_control_121721/evaluation/validation_360.npz",
+      "archive_path": "historical_numeric/results/flowbench/uniform64_control_121721/evaluation/validation_360.npz",
+      "bytes": 7862422,
+      "sha256": "ac8b8113610228cdd0a5df561b22cbb36fd0bfcf3e290c6759a214446c049e6f",
+      "archive_part": "results_flowbench_uniform64_control_121721_ff8d2d5a__part01-of01.tar.gz"
+    }
+  ],
+  "no_new_inference": true,
+  "no_PC_copy": true,
+  "scope": "Historical saved predictions, validation examples, pointwise physical diagnostics and timing arrays. These exploratory/failed or partial stages never replace final results.",
+  "excludes": "Downloaded FlowBench arrays and reconstructible input/state caches; all final 59 native fields are in a separate release."
+}
